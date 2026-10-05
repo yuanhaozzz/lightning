@@ -1,0 +1,158 @@
+/* =========================================================================
+   雷穹 · 雷电数字孪生指挥舱  设计令牌 (Design Tokens)
+   基调：暗夜苍穹 / 深空玻璃拟态 / 极致色彩克制
+   对标：特斯拉车载导航（沉浸式地图 + 高亮引导线）
+        华为鸿蒙（纯净沉浸 + 微拟物 + 渐进式模糊 + 悬浮胶囊）
+   ========================================================================= */
+
+.cc-scope,
+.command-center {
+  /* —— 空间：底板与地层 —— */
+  --void: #04070f;
+  --deep: #070c17;
+  --globe: #0a1322;
+
+  /* —— 玻璃拟态 —— */
+  --glass: rgba(10, 18, 32, 0.58);
+  --glass-lift: rgba(13, 24, 42, 0.72);
+  --glass-deep: rgba(5, 10, 20, 0.78);
+  --glass-line: rgba(150, 198, 240, 0.14);
+  --glass-line-strong: rgba(150, 205, 255, 0.28);
+  --glass-inner: rgba(255, 255, 255, 0.07);
+  --blur: blur(22px) saturate(1.25);
+
+  /* —— 唯一的亮色体系 —— */
+  --ice: #6fe4ff;
+  --cyan: #23c8ff;
+  --ultra: #2b7dff;
+  --halo: rgba(35, 200, 255, 0.28);
+
+  /* —— 状态：极度克制，只留给告警 —— */
+  --alert: #ff3b52;
+  --alert-soft: rgba(255, 59, 82, 0.22);
+  --warn: #ff9f45;
+  --safe: #35d6a4;
+  --mute: rgba(190, 214, 236, 0.46);
+  --mute-dim: rgba(170, 196, 220, 0.28);
+
+  /* —— 文字层级 —— */
+  --t1: #eaf4ff;
+  --t2: rgba(214, 231, 247, 0.72);
+  --t3: rgba(178, 202, 224, 0.48);
+  --t4: rgba(160, 186, 212, 0.3);
+
+  /* —— 数字：等宽巨幕 —— */
+  --din: ui-monospace, "SF Mono", "JetBrains Mono", "Roboto Mono", Consolas, "DIN Alternate",
+    monospace;
+  --han: "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", system-ui,
+    sans-serif;
+
+  --radius-xl: 26px;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 26px 70px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.38);
+}
+
+/* 玻璃基底：所有悬浮面板共用同一材质，保证"同一个物理世界" */
+.cc-glass {
+  border: 1px solid var(--glass-line);
+  background: linear-gradient(150deg, var(--glass-lift), var(--glass));
+  box-shadow:
+    var(--shadow-soft),
+    inset 0 1px 0 var(--glass-inner);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+}
+
+/* 胶囊标签：浅底深字，绝不使用大色块 */
+.cc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 20px;
+  padding: 0 8px;
+  border: 1px solid var(--glass-line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--t3);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.cc-chip.is-alert {
+  border-color: rgba(255, 59, 82, 0.4);
+  background: var(--alert-soft);
+  color: #ffd7dc;
+}
+
+/* 呼吸微光：告警专用动效，节奏克制 */
+@keyframes cc-breathe {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 var(--alert-soft);
+  }
+  50% {
+    opacity: 0.72;
+    box-shadow: 0 0 0 7px rgba(255, 59, 82, 0);
+  }
+}
+
+@keyframes cc-live {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.82);
+  }
+}
+
+@keyframes cc-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes cc-sweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cc-flow {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+
+.cc-num {
+  font-family: var(--din);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+
+/* 可访问性：尊重系统降低动效偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .command-center *,
+  .command-center *::before,
+  .command-center *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

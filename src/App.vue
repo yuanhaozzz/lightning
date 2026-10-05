@@ -5,6 +5,7 @@ import 'cesium/Build/Cesium/Widgets/widgets.css'
 import { dbzColors, lightning, radarCells, riskMeta, storms, tenants } from './services/mockWeather'
 import type { Tenant } from './types'
 import ChinaMap from './features/china-map/index.vue'
+import CommandCenter from './features/command-center/index.vue'
 import DigitalTwin from './features/digital-twin/index.vue'
 import WaterScreen from './features/water-screen/index.vue'
 import { useRoute } from 'vue-router'
@@ -430,7 +431,8 @@ watch(timeline, (v) => (live.value = v > 94))
 </script>
 
 <template>
-  <DigitalTwin v-if="route.name === 'digital-twin-map'" />
+  <CommandCenter v-if="route.name === 'command-center'" />
+  <DigitalTwin v-else-if="route.name === 'digital-twin-map'" />
   <WaterScreen v-else-if="route.name === 'water-screen'" />
   <template v-else>
   <ChinaMap v-if="CHINA_MAP_ONLY" />

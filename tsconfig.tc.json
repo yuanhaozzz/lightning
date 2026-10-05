@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./tmp/tsconfig.tc.tsbuildinfo",
+    "noEmit": true
+  }
+}
