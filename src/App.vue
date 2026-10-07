@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import * as Cesium from 'cesium'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 import { dbzColors, lightning, radarCells, riskMeta, storms, tenants } from './services/mockWeather'
@@ -11,6 +11,7 @@ import WaterScreen from './features/water-screen/index.vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
+const TianjiCommand = defineAsyncComponent(() => import('./features/tianji-command/index.vue'))
 
 const mapEl = ref<HTMLDivElement>(),
   viewer = ref<Cesium.Viewer>(),
@@ -431,7 +432,8 @@ watch(timeline, (v) => (live.value = v > 94))
 </script>
 
 <template>
-  <CommandCenter v-if="route.name === 'command-center'" />
+  <TianjiCommand v-if="route.name === 'tianji-command'" />
+  <CommandCenter v-else-if="route.name === 'command-center'" />
   <DigitalTwin v-else-if="route.name === 'digital-twin-map'" />
   <WaterScreen v-else-if="route.name === 'water-screen'" />
   <template v-else>

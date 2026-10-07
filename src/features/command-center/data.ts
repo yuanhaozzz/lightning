@@ -516,6 +516,215 @@ export const onlineRate = 98.6
 
 export const voltageIndex = ['全部', '1000kV', '±1100kV', '500kV', '330kV', '220kV', '110kV', '35kV', '低压']
 
+/* =========================================================================
+   雷暴临近预警分级 / WARNING LADDER
+   -------------------------------------------------------------------------
+   客户（矿区/电厂安全生产部门）真正要的只有一句话：
+     「雷暴离我多远，现在该干什么。」
+
+   所以预警不按"雷击次数"分，按【雷暴单体到场区边界的距离】分：
+     四级 200 km  → 关注，启动气象跟踪
+     三级 150 km  → 准备，核查防护装置与户外作业
+     二级 100 km  → 预警，限制作业、值班加强
+     一级  50 km  → 紧急，启动应急预案、必要时停产撤人
+   这套阈值直接对应客户的应急预案文本，界面上的每一句话都要能落到预案里。
+   ========================================================================= */
+
+export interface WarningLevel {
+  /** 4 / 3 / 2 / 1，数字越小越紧急；0 = 无预警 */
+  level: 0 | 1 | 2 | 3 | 4
+  label: string
+  color: string
+  /** 该级别要求的动作，来自客户应急预案 */
+  action: string
+}
+
+export const WARNING_LADDER: Array<{ distance: number; level: 1 | 2 | 3 | 4 }> = [
+  { distance: 200, level: 4 },
+  { distance: 150, level: 3 },
+  { distance: 100, level: 2 },
+  { distance: 50, level: 1 },
+]
+
+const WARNING_META: Record<1 | 2 | 3 | 4, { label: string; color: string; action: string }> = {
+  4: { label: '四级预警', color: '#4fb2e8', action: '关注气象跟踪，正常作业' },
+  3: { label: '三级预警', color: '#ffd76b', action: '核查防护装置，暂停高空作业' },
+  2: { label: '二级预警', color: '#ff9f45', action: '限制作业，值班加强，物资到位' },
+  1: { label: '一级预警', color: '#ff3b52', action: '启动应急预案，必要时停产撤人' },
+}
+
+export function warningFor(distanceKm: number): WarningLevel {
+  /**
+   * 必须从【最紧的圈】往外判（50 → 200）。
+   * WARNING_LADDER 是按 200/150/100/50 排的展示顺序，
+   * 直接顺着遍历会让 45 km 先命中 200 那条、误报成四级预警 ——
+   * 预警分级的顺序错了，整套系统就废了，这里不能省这一步。
+   */
+  for (const step of [...WARNING_LADDER].reverse()) {
+    if (distanceKm <= step.distance) {
+      return { level: step.level, ...WARNING_META[step.level] }
+    }
+  }
+  return { level: 0, label: '无预警', color: '#35d6a4', action: '雷暴在 200 km 外，正常运行' }
+}
+
+/* =========================================================================
+   雷达回波 / RADAR ECHO
+   -------------------------------------------------------------------------
+   客户关心的第二件事：「这片雷达云会不会飘到我的矿区」。
+   所以每个回波单元带一个移动矢量，界面才能回答"它正朝谁去"。
+   ========================================================================= */
+
+export interface RadarCell {
+  lon: number
+  lat: number
+  /** 组合反射率 dBZ */
+  dbz: number
+  /** 单元半径（km） */
+  radius: number
+  /** 移动方向（度，气象约定：风的来向）与速度 km/h */
+  direction: number
+  speed: number
+}
+
+/** 雷暴单体：名称、中心、长宽半径（度）、移动方向/速度、峰值 dBZ */
+const STORM_CENTERS: Array<[
+  string,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+]> = [
+  // 位置是按"客户预案的预警级别"反推的：
+  //   A2309 逼近神东/大柳塔 → 二级预警（第二道圈内）
+  //   B1742 逼近粤东海上风电 → 二级预警
+  //   C3810 逼近滇中/六盘水 → 三级预警，攀西 → 四级预警
+  //   D0921 在渤海湾活动，全网最远 → 不触发预警
+  // 这样一屏之内就能同时看到"谁最急、谁该准备、谁可以正常干活"。
+  ['A2309', 110.35, 38.8, 1.7, 0.85, 138, 42, 66],
+  ['B1742', 116.38, 22.42, 1.5, 0.75, 152, 34, 68],
+  ['C3810', 102.32, 25.52, 1.35, 0.8, 126, 28, 58],
+  ['D0921', 121.5, 38.6, 1.0, 0.6, 210, 24, 52],
+]
+
+/** 一个雷暴单体内部的回波单元：越靠中心反射率越高，边缘自然衰减 */
+export const radarCells: RadarCell[] = STORM_CENTERS.flatMap(
+  ([, lon, lat, radiusLon, radiusLat, direction, speed, peak], cluster) =>
+    Array.from({ length: 46 }, (_, index) => {
+      const angle = (index * 137.5 + cluster * 41) * (Math.PI / 180)
+      /**
+       * 半径分布刻意做得密（0.12–0.78 而不是 0.18–0.94）：
+       * 单元之间必须互相重叠，整片回波才会连成一个团。
+       * 铺得太散会变成一颗颗独立的小球，看上去像气泡而不是雷达云。
+       */
+      const radial = 0.12 + (index % 12) * 0.056
+      return {
+        lon: lon + Math.cos(angle) * radiusLon * radial,
+        lat: lat + Math.sin(angle) * radiusLat * radial,
+        dbz: Math.max(15, Math.round(peak - radial * 46 - (index % 4) * 3)),
+        // 单元半径给大一些，保证相邻单元互相搭接成连续回波
+        radius: 26 + (index % 5) * 9,
+        direction,
+        speed,
+      }
+    }),
+)
+
+/** 雷暴单体（用于轨迹与临近预警） */
+export interface StormCell {
+  id: string
+  name: string
+  lon: number
+  lat: number
+  direction: number
+  speed: number
+  /** 峰值反射率 */
+  dbz: number
+  /** 未来 60 分钟落区（沿移动矢量的外推多边形） */
+  forecast: [number, number][]
+}
+
+export const stormCells: StormCell[] = STORM_CENTERS.map(
+  ([name, lon, lat, , , direction, speed, dbz]) => {
+    const rad = (direction * Math.PI) / 180
+    const dx = Math.cos(rad)
+    const dy = Math.sin(rad)
+    // 60 分钟行程对应度数：速度 km/h ÷ 111 得纬度增量
+    const reach = speed / 111
+    return {
+      id: `ST-${name}`,
+      name,
+      lon,
+      lat,
+      direction,
+      speed,
+      dbz,
+      forecast: [
+        [lon + dx * reach * 0.5 - dy * 0.5, lat + dy * reach * 0.5 + dx * 0.34],
+        [lon + dx * reach * 1.1, lat + dy * reach * 1.1],
+        [lon + dx * reach * 0.5 + dy * 0.5, lat + dy * reach * 0.5 - dx * 0.34],
+      ] as [number, number][],
+    }
+  },
+)
+
+/** 两点间近似地面距离（km） */
+export function distanceKm(
+  aLon: number,
+  aLat: number,
+  bLon: number,
+  bLat: number,
+): number {
+  const dx = (aLon - bLon) * 111.32 * Math.cos((((aLat + bLat) / 2) * Math.PI) / 180)
+  const dy = (aLat - bLat) * 110.57
+  return Math.hypot(dx, dy)
+}
+
+/** 每个受保护场区当前面临的最近雷暴与预警等级 */
+export interface SiteThreat {
+  siteId: string
+  /** 最近雷暴单体 */
+  stormId: string
+  stormName: string
+  stormLon: number
+  stormLat: number
+  stormDbz: number
+  stormSpeed: number
+  stormDirection: number
+  /** 单体边缘到场区边界的距离（km）—— 按客户预案口径，扣除场区自身半径 6km */
+  gapKm: number
+  warning: WarningLevel
+}
+
+export function computeThreats(): SiteThreat[] {
+  return assetSites.map((site) => {
+    let best: SiteThreat | null = null
+    for (const storm of stormCells) {
+      const raw = distanceKm(site.lon, site.lat, storm.lon, storm.lat)
+      // 客户预案按"雷暴边缘到场区边界"计距离；扣除雷暴半径 10 km
+      const gap = Math.max(0, Math.round(raw - 10))
+      if (!best || gap < best.gapKm) {
+        best = {
+          siteId: site.id,
+          stormId: storm.id,
+          stormName: storm.name,
+          stormLon: storm.lon,
+          stormLat: storm.lat,
+          stormDbz: storm.dbz,
+          stormSpeed: storm.speed,
+          stormDirection: storm.direction,
+          gapKm: gap,
+          warning: warningFor(gap),
+        }
+      }
+    }
+    return best!
+  })
+}
+
 /* ============================ 防护闭环指标 ============================ */
 /**
  * 指挥舱的主指标不该是"今天打了多少雷"——那是气象台的事。

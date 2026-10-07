@@ -61,6 +61,13 @@ const polygon = (coordinates: [number, number][], properties: Record<string, unk
 export interface MapController {
   map: MapLibreMap
   setLayer: (key: LayerKey, visible: boolean) => void
+  /**
+   * 切换"地形底图"层级。
+   * 全国尺度需要省界与卫星影像提供地理参照；
+   * 一旦进到场区尺度，这张省级粗粒度地图只会变成一团噪点——
+   * 场区图必须干净，靠 TwinCanvas 画的安全边界与设备来承载信息。
+   */
+  setContextLayer: (visible: boolean) => void
   setTimelineProgress: (progress: number) => void
   focusSite: (id: string, options?: { zoom?: number; duration?: number }) => void
   resetView: (duration?: number) => void
@@ -196,10 +203,11 @@ export async function createCommandMap(
       sources: {},
       layers: [{ id: 'cc-background', type: 'background', paint: { 'background-color': '#04070f' } }],
     },
-    center: [108.2, 30.6],
-    zoom: 4.15,
+    center: [110.6, 36.4],
+    zoom: 5.6,
     minZoom: 3.1,
-    maxZoom: 15,
+    // 场区尺度要把 600m 见方的场区铺满屏，无级缩放上限必须留到 17
+    maxZoom: 17,
     maxBounds: [
       [58, -2],
       [152, 66],
@@ -450,41 +458,29 @@ export async function createCommandMap(
   })
 
   map.addSource(SRC.asset, { type: 'geojson', data: assetCollection() })
+  /**
+   * 资产图形全部交给 TwinCanvas 绘制：它画的是"预警圈 + 距离读数"这类有语义的图形。
+   * 这里保留的三个图层只服务于鼠标命中判定，视觉上完全透明 ——
+   * 早先它们带描边，和画布上的环叠在一起，一个矿区会显示成两个点。
+   */
   map.addLayer({
     id: 'cc-asset-halo',
     type: 'circle',
     source: SRC.asset,
-    paint: {
-      'circle-color': ['get', 'color'],
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 10, 9, 20],
-      'circle-blur': 1,
-      'circle-opacity': 0.1,
-    },
+    paint: { 'circle-color': 'transparent', 'circle-radius': 16, 'circle-opacity': 0 },
   })
   map.addLayer({
     id: 'cc-asset',
     type: 'circle',
     source: SRC.asset,
-    paint: {
-      'circle-color': '#04101c',
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 3.2, 9, 5.6],
-      'circle-stroke-color': ['get', 'color'],
-      'circle-stroke-width': ['case', ['get', 'selected'], 2, 1.15],
-      'circle-opacity': 0.9,
-    },
+    paint: { 'circle-color': 'transparent', 'circle-radius': 12, 'circle-opacity': 0 },
   })
   map.addLayer({
     id: 'cc-asset-pulse',
     type: 'circle',
     source: SRC.asset,
     filter: ['==', ['get', 'risk'], 'impact'],
-    paint: {
-      'circle-color': 'transparent',
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 12, 9, 26],
-      'circle-stroke-color': '#ff3b52',
-      'circle-stroke-width': 1.2,
-      'circle-stroke-opacity': 0.6,
-    },
+    paint: { 'circle-color': 'transparent', 'circle-radius': 24, 'circle-opacity': 0 },
   })
   map.addSource('cc-label-src', { type: 'geojson', data: collection(labelFeatures) })
   /**
@@ -575,12 +571,32 @@ export async function createCommandMap(
     storm: ['cc-storm-glow', 'cc-storm-core'],
     lightning: [],
     mine: ['cc-mine', 'cc-mine-line'],
-    terrain: ['cc-imagery', 'cc-land', 'cc-land-halo'],
+    // 省界属于"空间参照系"，和地形同开同关，不单独占一个开关
+    terrain: ['cc-imagery', 'cc-land', 'cc-land-halo', 'cc-province', 'cc-province-glow'],
   }
   return {
     map,
     setLayer: (key, visible) => {
       for (const id of layerIds[key]) {
+        if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none')
+      }
+    },
+    setContextLayer: (visible) => {
+      /**
+       * 注意：这里刻意【不含】cc-label。
+       * 省级地名是地图库带出来的文字，它和小程序式的指标争夺注意力，
+       * 而领导根本不需要知道"山西"在哪 —— 他只需要知道哪个矿区在预警。
+       * 地名单独放在图层面板里，默认关闭。
+       */
+      for (const id of [
+        'cc-imagery',
+        'cc-land',
+        'cc-land-halo',
+        'cc-province',
+        'cc-province-glow',
+        'cc-border',
+        'cc-border-glow',
+      ]) {
         if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none')
       }
     },
@@ -597,11 +613,16 @@ export async function createCommandMap(
       if (!site) return
       selectedId = id
       ;(map.getSource(SRC.asset) as GeoJSONSource | undefined)?.setData(assetCollection(selectedId))
+      /**
+       * 场区尺度用 0 俯仰 + 0 偏角。
+       * 全国总览时的 26° 俯仰是为了"气势"，但一进场区，带俯仰的透视会让
+       * 保护半径圆变成椭圆、设备位置互相遮挡——工程图必须是正射的。
+       */
       map.flyTo({
         center: [site.lon, site.lat],
-        zoom: options.zoom ?? 7.6,
-        pitch: 48,
-        bearing: -12,
+        zoom: options.zoom ?? 14.2,
+        pitch: 0,
+        bearing: 0,
         duration: options.duration ?? 1500,
         essential: true,
       })

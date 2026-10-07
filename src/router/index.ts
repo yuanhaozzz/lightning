@@ -8,6 +8,7 @@ const router = createRouter({
     { path: '/command-center', name: 'command-center', component: RouteShell },
     { path: '/digital-twin', name: 'digital-twin-map', component: RouteShell },
     { path: '/water-screen', name: 'water-screen', component: RouteShell },
+    { path: '/tianji-command', name: 'tianji-command', component: RouteShell },
   ],
 })
 
