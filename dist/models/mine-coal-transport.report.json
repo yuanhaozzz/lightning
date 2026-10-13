@@ -1,0 +1,387 @@
+{
+  "outputs": [
+    {
+      "file": "mine-coal-silo-1.glb",
+      "triangles": 26680,
+      "meshes": 6,
+      "sourcePieces": 1157,
+      "bytes": 1708452
+    },
+    {
+      "file": "mine-coal-silo-2.glb",
+      "triangles": 26708,
+      "meshes": 6,
+      "sourcePieces": 1158,
+      "bytes": 1709796
+    },
+    {
+      "file": "mine-transfer-station.glb",
+      "triangles": 13360,
+      "meshes": 8,
+      "sourcePieces": 668,
+      "bytes": 1150136
+    },
+    {
+      "file": "mine-coal-conveyors.glb",
+      "triangles": 34244,
+      "meshes": 7,
+      "sourcePieces": 1678,
+      "bytes": 2187664
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "coal-silo-01",
+      "headBelt": [
+        -57,
+        12.35,
+        -28
+      ],
+      "socket": [
+        -57,
+        9.87,
+        -28
+      ],
+      "railPortalAngle": 1.2490457822386634
+    },
+    {
+      "id": "coal-silo-02",
+      "headBelt": [
+        -43,
+        12.35,
+        -28
+      ],
+      "socket": [
+        -43,
+        9.87,
+        -28
+      ],
+      "railPortalAngle": 1.89254687135113
+    },
+    {
+      "id": "station--1",
+      "source": [
+        -50.709999084472656,
+        9.629999160766602,
+        -7.369999885559082
+      ],
+      "mouth": [
+        -50.97999954223633,
+        6.761000156402588,
+        -9.940000534057617
+      ],
+      "gravitySlopeDegrees": 47.99023301992943,
+      "beltY": 6.63100004196167
+    },
+    {
+      "id": "station-1",
+      "source": [
+        -50.38999938964844,
+        9.629999160766602,
+        -7.369999885559082
+      ],
+      "mouth": [
+        -49.02000045776367,
+        6.761000156402588,
+        -9.940000534057617
+      ],
+      "gravitySlopeDegrees": 44.57034997996145,
+      "beltY": 6.63100004196167
+    }
+  ],
+  "supports": [
+    {
+      "id": "shaft-transfer",
+      "t": 0.2,
+      "feet": [
+        [
+          -25.876672744750977,
+          3.151923656463623
+        ],
+        [
+          -26.82332420349121,
+          5.24807596206665
+        ]
+      ],
+      "topY": 5.670000171661377,
+      "padSize": 0.75
+    },
+    {
+      "id": "shaft-transfer",
+      "t": 0.75,
+      "feet": [
+        [
+          -41.776676177978516,
+          -3.9480762481689453
+        ],
+        [
+          -42.723323822021484,
+          -1.8519238233566284
+        ]
+      ],
+      "topY": 7.7875,
+      "padSize": 0.75
+    },
+    {
+      "id": "transfer-silo-1",
+      "t": 0.6,
+      "feet": [
+        [
+          -53.109012603759766,
+          -19.96366310119629
+        ],
+        [
+          -55.29098129272461,
+          -19.236337661743164
+        ]
+      ],
+      "topY": 8.790000534057617,
+      "padSize": 0.75
+    },
+    {
+      "id": "transfer-silo-2",
+      "t": 0.6,
+      "feet": [
+        [
+          -44.709014892578125,
+          -19.236337661743164
+        ],
+        [
+          -46.89098358154297,
+          -19.96366310119629
+        ]
+      ],
+      "topY": 8.790000534057617,
+      "padSize": 0.75
+    }
+  ],
+  "paths": [
+    {
+      "id": "shaft-transfer",
+      "referenceFrom": [
+        -19,
+        5.8,
+        7
+      ],
+      "referenceTo": [
+        -50,
+        9,
+        -7
+      ],
+      "beltStart": [
+        -19.0,
+        5.800000190734863,
+        7.0
+      ],
+      "beltEnd": [
+        -50.0,
+        9.649999618530273,
+        -7.0
+      ],
+      "gradeDegrees": 6.4576164453291,
+      "lowerTrussOffset": -0.91,
+      "headRadius": 0.25,
+      "beltWidth": 1.0
+    },
+    {
+      "id": "transfer-silo-1",
+      "referenceFrom": [
+        -50,
+        9,
+        -7
+      ],
+      "referenceTo": [
+        -57,
+        13,
+        -28
+      ],
+      "beltStart": [
+        -50.97999954223633,
+        6.630999565124512,
+        -9.9399995803833
+      ],
+      "beltEnd": [
+        -57.0,
+        12.350000381469727,
+        -28.0
+      ],
+      "gradeDegrees": 16.72113014866578,
+      "lowerTrussOffset": -0.91,
+      "headRadius": 0.25,
+      "beltWidth": 0.9
+    },
+    {
+      "id": "transfer-silo-2",
+      "referenceFrom": [
+        -50,
+        9,
+        -7
+      ],
+      "referenceTo": [
+        -43,
+        13,
+        -28
+      ],
+      "beltStart": [
+        -49.02000045776367,
+        6.630999565124512,
+        -9.9399995803833
+      ],
+      "beltEnd": [
+        -43.0,
+        12.350000381469727,
+        -28.0
+      ],
+      "gradeDegrees": 16.72113014866578,
+      "lowerTrussOffset": -0.91,
+      "headRadius": 0.25,
+      "beltWidth": 0.9
+    }
+  ],
+  "parameters": {
+    "silos": [
+      {
+        "id": "coal-silo-01",
+        "position": [
+          -57,
+          0,
+          -28
+        ],
+        "size": [
+          10,
+          13,
+          10
+        ],
+        "ladderSide": -1
+      },
+      {
+        "id": "coal-silo-02",
+        "position": [
+          -43,
+          0,
+          -28
+        ],
+        "size": [
+          10,
+          13,
+          10
+        ],
+        "ladderSide": 1
+      }
+    ],
+    "station": {
+      "id": "transfer-01",
+      "position": [
+        -50,
+        0,
+        -7
+      ],
+      "size": [
+        10,
+        9,
+        8
+      ]
+    },
+    "conveyors": [
+      {
+        "id": "shaft-transfer",
+        "from": [
+          -19,
+          5.8,
+          7
+        ],
+        "to": [
+          -50,
+          9,
+          -7
+        ],
+        "width": 1.8,
+        "supports": [
+          0.2,
+          0.75
+        ],
+        "supportBaseOffsets": [
+          [
+            -1.15,
+            0
+          ],
+          [
+            0,
+            0.6
+          ]
+        ],
+        "trim": [
+          0,
+          1
+        ],
+        "beltOffsets": [
+          0,
+          0.65
+        ]
+      },
+      {
+        "id": "transfer-silo-1",
+        "from": [
+          -50,
+          9,
+          -7
+        ],
+        "to": [
+          -57,
+          13,
+          -28
+        ],
+        "width": 1.6,
+        "supports": [
+          0.6
+        ],
+        "trim": [
+          0.14,
+          1
+        ],
+        "beltOffsets": [
+          -3.3,
+          -0.65
+        ]
+      },
+      {
+        "id": "transfer-silo-2",
+        "from": [
+          -50,
+          9,
+          -7
+        ],
+        "to": [
+          -43,
+          13,
+          -28
+        ],
+        "width": 1.6,
+        "supports": [
+          0.6
+        ],
+        "trim": [
+          0.14,
+          1
+        ],
+        "beltOffsets": [
+          -3.3,
+          -0.65
+        ]
+      }
+    ],
+    "rollerPitch": 1.2,
+    "rollerSides": 12,
+    "siloSides": 64,
+    "inspectionCoversOpen": true,
+    "maximumTotalTriangles": 110000
+  },
+  "clearance": {
+    "triangleRayQueries": 56160,
+    "stationaryStructureHits": [],
+    "tested": "carrying and return flights, both edges, both upper/lower truss chords; authored wall/floor/guard geometry"
+  },
+  "protectedFilesUnchanged": true,
+  "referenceImagesUsedAsTextures": false,
+  "maintenanceState": "one hinged inspection bay per conveyor; static, no simulation"
+}

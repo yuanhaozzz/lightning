@@ -1,0 +1,41 @@
+{
+  "result": "PASS",
+  "layoutUnchanged": true,
+  "headframeUnchanged": true,
+  "tangentContinuity": true,
+  "ropeCollisionChecks": "PASS; intentional groove/drum contact excluded",
+  "models": [
+    {
+      "file": "mine-shaft-house.glb",
+      "triangles": 5286,
+      "meshes": 7,
+      "sourcePieces": 269,
+      "bytes": 649644,
+      "vertices": 10710,
+      "materials": 7,
+      "embeddedImages": 12
+    },
+    {
+      "file": "mine-hoist-house.glb",
+      "triangles": 26858,
+      "meshes": 10,
+      "sourcePieces": 453,
+      "bytes": 1569688,
+      "vertices": 33456,
+      "materials": 10,
+      "embeddedImages": 15
+    },
+    {
+      "file": "mine-production-links.glb",
+      "triangles": 26624,
+      "meshes": 8,
+      "sourcePieces": 689,
+      "bytes": 1604824,
+      "vertices": 37034,
+      "materials": 8,
+      "embeddedImages": 12
+    }
+  ],
+  "newTriangles": 58768,
+  "newBytes": 3824156
+}

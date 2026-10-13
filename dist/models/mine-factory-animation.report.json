@@ -1,0 +1,58 @@
+{
+  "result": "PASS",
+  "results": [
+    {
+      "file": "mine-hoist-house.glb",
+      "beforeBytes": 1569688,
+      "afterBytes": 1381948,
+      "beforeTriangles": 26858,
+      "afterTriangles": 26858,
+      "boundsErrorMeters": 2.1047890186309814e-7,
+      "animationGroups": 3
+    },
+    {
+      "file": "mine-production-links.glb",
+      "beforeBytes": 1604824,
+      "afterBytes": 1468916,
+      "beforeTriangles": 26624,
+      "afterTriangles": 26624,
+      "boundsErrorMeters": 0,
+      "animationGroups": 4
+    },
+    {
+      "file": "mine-coal-conveyors.glb",
+      "beforeBytes": 2187664,
+      "afterBytes": 2337876,
+      "beforeTriangles": 34244,
+      "afterTriangles": 34244,
+      "boundsErrorMeters": 0.0000055037106999971715,
+      "animationGroups": 228
+    },
+    {
+      "file": "mine-distribution-equipment.glb",
+      "beforeBytes": 617996,
+      "afterBytes": 565784,
+      "beforeTriangles": 6152,
+      "afterTriangles": 5144,
+      "boundsErrorMeters": 0,
+      "animationGroups": 0
+    },
+    {
+      "file": "mine-hoist-container.glb",
+      "bytes": 135976,
+      "triangles": 208
+    },
+    {
+      "file": "mine-coal-material.glb",
+      "bytes": 3520,
+      "triangles": 20
+    },
+    {
+      "file": "mine-power-indicators.glb",
+      "bytes": 77784,
+      "triangles": 1008
+    }
+  ],
+  "cabinetIdsPreserved": 12,
+  "SPDReservePreserved": true
+}

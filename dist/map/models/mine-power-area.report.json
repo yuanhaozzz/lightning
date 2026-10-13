@@ -1,0 +1,416 @@
+{
+  "outputs": [
+    {
+      "file": "mine-substation.glb",
+      "triangles": 25784,
+      "meshes": 21,
+      "sourcePieces": 712,
+      "bytes": 1509588,
+      "entityIds": [
+        "power-transformer-01",
+        "substation-foundations",
+        "substation-inner-fence",
+        "substation-switch-bay-01"
+      ],
+      "bounds": {
+        "min": [
+          -9.0,
+          0.0299999937415123,
+          -6.0
+        ],
+        "max": [
+          9.0,
+          5.460000038146973,
+          6.0
+        ]
+      }
+    },
+    {
+      "file": "mine-distribution-shell.glb",
+      "triangles": 3108,
+      "meshes": 8,
+      "sourcePieces": 179,
+      "bytes": 560484,
+      "entityIds": [
+        "distribution-shell"
+      ],
+      "bounds": {
+        "min": [
+          -9.440000534057617,
+          0.050000011920928955,
+          -4.599999904632568
+        ],
+        "max": [
+          9.100000381469727,
+          4.050000190734863,
+          4.599999904632568
+        ]
+      }
+    },
+    {
+      "file": "mine-distribution-roof.glb",
+      "triangles": 2548,
+      "meshes": 4,
+      "sourcePieces": 109,
+      "bytes": 375184,
+      "entityIds": [
+        "distribution-roof"
+      ],
+      "bounds": {
+        "min": [
+          -9.199999809265137,
+          0.18000006675720215,
+          -4.795000076293945
+        ],
+        "max": [
+          9.199999809265137,
+          4.565000057220459,
+          4.795000076293945
+        ]
+      }
+    },
+    {
+      "file": "mine-distribution-equipment.glb",
+      "triangles": 6152,
+      "meshes": 73,
+      "sourcePieces": 370,
+      "bytes": 617996,
+      "entityIds": [
+        "distribution-cable-trays",
+        "grounding-downlead-interface-01",
+        "grounding-monitor-reserve-01",
+        "grounding-test-point-01",
+        "power-cabinet-lv-01",
+        "power-cabinet-lv-02",
+        "power-cabinet-lv-03",
+        "power-cabinet-lv-04",
+        "power-cabinet-lv-05",
+        "power-cabinet-lv-06",
+        "power-cabinet-mv-01",
+        "power-cabinet-mv-02",
+        "power-cabinet-mv-03",
+        "power-cabinet-mv-04",
+        "power-cabinet-mv-05",
+        "power-cabinet-mv-06",
+        "spd-distribution"
+      ],
+      "bounds": {
+        "min": [
+          -9.6899995803833,
+          0.12000000476837158,
+          -2.575000047683716
+        ],
+        "max": [
+          6.550000190734863,
+          3.9049999713897705,
+          3.9225001335144043
+        ]
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "substation-foundations",
+      "name": "设备基础与检修通道",
+      "kind": "foundation"
+    },
+    {
+      "id": "power-transformer-01",
+      "name": "油浸变压器",
+      "kind": "transformer",
+      "position": [
+        3,
+        0,
+        2.4
+      ],
+      "size": [
+        4.6,
+        4.9,
+        3.6
+      ]
+    },
+    {
+      "id": "substation-switch-bay-01",
+      "name": "三相母线及开关间隔",
+      "kind": "switch-bay"
+    },
+    {
+      "id": "substation-inner-fence",
+      "name": "设备安全围栏与入口",
+      "kind": "safety-fence"
+    },
+    {
+      "id": "distribution-shell",
+      "name": "配电室建筑外壳",
+      "kind": "building"
+    },
+    {
+      "id": "distribution-roof",
+      "name": "配电室可隐藏屋顶",
+      "kind": "roof"
+    },
+    {
+      "id": "distribution-cable-trays",
+      "name": "电缆桥架及照明",
+      "kind": "cable-tray"
+    },
+    {
+      "id": "power-cabinet-mv-01",
+      "name": "高压配电柜 01",
+      "kind": "cabinet",
+      "position": [
+        -2.3499999999999996,
+        0.31,
+        -2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-mv-02",
+      "name": "高压配电柜 02",
+      "kind": "cabinet",
+      "position": [
+        -1.41,
+        0.31,
+        -2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-mv-03",
+      "name": "高压配电柜 03",
+      "kind": "cabinet",
+      "position": [
+        -0.47,
+        0.31,
+        -2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-mv-04",
+      "name": "高压配电柜 04",
+      "kind": "cabinet",
+      "position": [
+        0.47,
+        0.31,
+        -2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-mv-05",
+      "name": "高压配电柜 05",
+      "kind": "cabinet",
+      "position": [
+        1.41,
+        0.31,
+        -2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-mv-06",
+      "name": "高压配电柜 06",
+      "kind": "cabinet",
+      "position": [
+        2.3499999999999996,
+        0.31,
+        -2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-lv-01",
+      "name": "低压配电柜 01",
+      "kind": "cabinet",
+      "position": [
+        -2.3499999999999996,
+        0.31,
+        2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-lv-02",
+      "name": "低压配电柜 02",
+      "kind": "cabinet",
+      "position": [
+        -1.41,
+        0.31,
+        2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-lv-03",
+      "name": "低压配电柜 03",
+      "kind": "cabinet",
+      "position": [
+        -0.47,
+        0.31,
+        2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-lv-04",
+      "name": "低压配电柜 04",
+      "kind": "cabinet",
+      "position": [
+        0.47,
+        0.31,
+        2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-lv-05",
+      "name": "低压配电柜 05",
+      "kind": "cabinet",
+      "position": [
+        1.41,
+        0.31,
+        2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "power-cabinet-lv-06",
+      "name": "低压配电柜 06",
+      "kind": "cabinet",
+      "position": [
+        2.3499999999999996,
+        0.31,
+        2.0
+      ],
+      "size": [
+        0.82,
+        2.36,
+        1.15
+      ]
+    },
+    {
+      "id": "spd-distribution",
+      "name": "进线柜 SPD 安装预留",
+      "kind": "spd-reserve",
+      "position": [
+        -2.35,
+        1.25,
+        1.38
+      ],
+      "size": [
+        0.32,
+        0.35,
+        0.08
+      ],
+      "parentId": "power-cabinet-lv-01"
+    },
+    {
+      "id": "grounding-test-point-01",
+      "name": "接地装置示意位置",
+      "kind": "grounding-reserve",
+      "position": [
+        -9.45,
+        0.18,
+        3.1
+      ],
+      "size": [
+        0.48,
+        0.12,
+        0.48
+      ]
+    },
+    {
+      "id": "grounding-monitor-reserve-01",
+      "name": "接地电阻在线监测安装预留",
+      "kind": "grounding-monitor-reserve",
+      "position": [
+        -9.25,
+        1.35,
+        3.1
+      ],
+      "size": [
+        0.32,
+        0.4,
+        0.12
+      ]
+    },
+    {
+      "id": "grounding-downlead-interface-01",
+      "name": "接地引下线展示接口",
+      "kind": "grounding-interface",
+      "position": [
+        -9.16,
+        0.52,
+        3.1
+      ],
+      "size": [
+        0.1,
+        0.15,
+        0.08
+      ]
+    }
+  ],
+  "totalTriangles": 37592,
+  "totalBytes": 3063252,
+  "protectedFiles": 18,
+  "geometryChecks": {
+    "bareConductorToGroundedStructureMeters": 0.5473087096214294,
+    "triangleDistanceQueries": 113568,
+    "checked": "gantry, tank, conservator, radiators and grounded equipment bodies; intentional terminals excluded"
+  },
+  "checks": {
+    "centralAisleMeters": 2.85,
+    "rearAccessMeters": 1.7249999999999999,
+    "westDoorClearWidth": 2.3,
+    "cabinetGapMeters": 0.12,
+    "indoorTopClearanceMeters": 0.33000000000000007,
+    "substationWestGateWidth": 3.0
+  },
+  "scope": "industrial visualization; no underground ground grid or electrical rating certification"
+}

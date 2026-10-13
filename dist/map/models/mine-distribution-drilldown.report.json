@@ -1,0 +1,382 @@
+{
+  "file": "mine-distribution-drilldown.glb",
+  "bytes": 1233188,
+  "triangles": 11036,
+  "meshes": 40,
+  "materials": 15,
+  "sourcePieces": 457,
+  "shellSourcePieces": 179,
+  "shellBounds": {
+    "min": [
+      -9.440000534057617,
+      0.050000011920928955,
+      -4.599999904632568
+    ],
+    "max": [
+      9.100000381469727,
+      4.050000190734863,
+      4.59999942779541
+    ]
+  },
+  "shellBoundsDriftMeters": 4.76837158203125e-07,
+  "groups": [
+    {
+      "name": "distribution-shell-floor",
+      "drilldownId": "distribution-shell-floor",
+      "role": "floor",
+      "parent": "distribution-drilldown-root",
+      "pivotRoom": [
+        0,
+        0,
+        0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        0
+      ],
+      "boundsRoom": {
+        "min": [
+          -9.440000534057617,
+          0.050000011920928955,
+          -4.5
+        ],
+        "max": [
+          9.0,
+          0.3100000023841858,
+          4.5
+        ]
+      }
+    },
+    {
+      "name": "distribution-shell-walls",
+      "drilldownId": "distribution-shell-walls",
+      "role": "walls",
+      "parent": "distribution-drilldown-root",
+      "pivotRoom": [
+        0,
+        0,
+        0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        0
+      ],
+      "boundsRoom": {
+        "min": [
+          -9.200000762939453,
+          0.1199999451637268,
+          -4.599999904632568
+        ],
+        "max": [
+          9.100000381469727,
+          4.050000190734863,
+          4.599999904632568
+        ]
+      }
+    },
+    {
+      "name": "distribution-shell-structure",
+      "drilldownId": "distribution-shell-structure",
+      "role": "structure",
+      "parent": "distribution-drilldown-root",
+      "pivotRoom": [
+        0,
+        0,
+        0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        0
+      ],
+      "boundsRoom": {
+        "min": [
+          -8.800000190734863,
+          0.309999942779541,
+          -4.329999923706055
+        ],
+        "max": [
+          8.800000190734863,
+          4.03000020980835,
+          4.329999923706055
+        ]
+      }
+    },
+    {
+      "name": "cabinet-frame",
+      "drilldownId": "power-cabinet-lv-01/frame",
+      "role": "frame",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        0
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.759999990463257,
+          0.3100000023841858,
+          1.3980001211166382
+        ],
+        "max": [
+          -1.9399998188018799,
+          2.7699999809265137,
+          2.575000047683716
+        ]
+      }
+    },
+    {
+      "name": "cabinet-door",
+      "drilldownId": "power-cabinet-lv-01/door",
+      "role": "door",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.736999988555908,
+        0.42000001668930054,
+        1.4100000858306885
+      ],
+      "explodeVector": [
+        0,
+        0,
+        0
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.736999750137329,
+          0.45500004291534424,
+          1.3364999294281006
+        ],
+        "max": [
+          -1.9764999151229858,
+          2.635000228881836,
+          1.4530000686645508
+        ]
+      }
+    },
+    {
+      "name": "cabinet-backplate",
+      "drilldownId": "power-cabinet-lv-01/backplate",
+      "role": "backplate",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        -0.1
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.68999981880188,
+          0.5699999332427979,
+          2.2009999752044678
+        ],
+        "max": [
+          -2.009999990463257,
+          2.5299999713897705,
+          2.5440001487731934
+        ]
+      }
+    },
+    {
+      "name": "cabinet-busbars",
+      "drilldownId": "power-cabinet-lv-01/busbars",
+      "role": "busbars",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        0,
+        0.32,
+        -0.24
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.619999885559082,
+          2.059999942779541,
+          2.055000066757202
+        ],
+        "max": [
+          -2.0799999237060547,
+          2.615000009536743,
+          2.25
+        ]
+      }
+    },
+    {
+      "name": "cabinet-breaker",
+      "drilldownId": "power-cabinet-lv-01/breaker",
+      "role": "breaker",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        -0.43,
+        -0.015,
+        -0.62
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.5399999618530273,
+          0.6525000333786011,
+          1.9564999341964722
+        ],
+        "max": [
+          -2.1599998474121094,
+          1.127500057220459,
+          2.190000057220459
+        ]
+      }
+    },
+    {
+      "name": "cabinet-terminal-rail",
+      "drilldownId": "power-cabinet-lv-01/terminal-rail",
+      "role": "terminal-rail",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        0.43,
+        -0.08,
+        -0.44
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.6599998474121094,
+          0.44749999046325684,
+          2.0209996700286865
+        ],
+        "max": [
+          -2.0399999618530273,
+          0.6200000047683716,
+          2.2090001106262207
+        ]
+      }
+    },
+    {
+      "name": "cabinet-spd-mount",
+      "drilldownId": "power-cabinet-lv-01/spd-mount",
+      "role": "spd-mount",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        -0.42
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.5450000762939453,
+          1.4000000953674316,
+          2.0889999866485596
+        ],
+        "max": [
+          -2.1549997329711914,
+          1.440000057220459,
+          2.2750000953674316
+        ]
+      }
+    },
+    {
+      "name": "cabinet-cables",
+      "drilldownId": "power-cabinet-lv-01/cables",
+      "role": "cables",
+      "parent": "power-cabinet-lv-01-detail",
+      "pivotRoom": [
+        -2.3499999046325684,
+        0.3100000023841858,
+        2.0
+      ],
+      "explodeVector": [
+        0,
+        0,
+        -0.1
+      ],
+      "boundsRoom": {
+        "min": [
+          -2.7084999084472656,
+          0.4647737741470337,
+          1.9791169166564941
+        ],
+        "max": [
+          -1.991499900817871,
+          2.749638319015503,
+          2.202500104904175
+        ]
+      }
+    }
+  ],
+  "dimensions": {
+    "width": 0.82,
+    "bodyHeight": 2.25,
+    "depth": 1.15
+  },
+  "existingSpd": {
+    "id": "spd-lv-01",
+    "worldPosition": [
+      50.65,
+      1.42,
+      -8
+    ],
+    "cabinetPosition": [
+      0,
+      1.11,
+      0
+    ],
+    "generatedDuplicate": false
+  },
+  "hinge": {
+    "pivotCabinet": [
+      -0.387,
+      0.11,
+      -0.59
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "openAngleRadians": 1.92
+  },
+  "scope": "one generic LV cabinet sample; semantic shell regroup only; no original GLB changed",
+  "originalAssetsUnchanged": 26,
+  "assetSha256": "f25a876af82a4e9ce775a65141d40c609b9ea92a9965351fc6ce2dfcc16728be",
+  "originContract": {
+    "units": "meters",
+    "up": "Y",
+    "scenePosition": [
+      53,
+      0,
+      -10
+    ],
+    "cabinetRootRoomPosition": [
+      -2.35,
+      0.31,
+      2
+    ],
+    "independentRecentering": false
+  }
+}
