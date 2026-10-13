@@ -153,7 +153,9 @@ export function createSceneTelemetryLabels(parent: THREE.Group, onLocate: (id: s
   function layout() {
     if (disposed || !options || !group.visible) return
     const { width, height, overview, compact } = options
-    const inset = overview && !compact ? width >= 1400 ? 346 : width >= 1100 ? 302 : 18 : 18
+    // Keep this breakpoint aligned with the shell: side panels remain visible
+    // from 901 px, where they are 225 px wide with a 16 px outside margin.
+    const inset = overview && !compact ? width >= 1400 ? 346 : width >= 1100 ? 302 : width > 900 ? 253 : 18 : 18
     const bounds = { left: inset, right: width - inset, top: 100, bottom: height - (overview && !compact ? 155 : 115) }
     const occupied: { left: number; right: number; top: number; bottom: number }[] = []
     // Layout measurements are batched before position writes, and cached for hidden cards.
@@ -166,7 +168,7 @@ export function createSceneTelemetryLabels(parent: THREE.Group, onLocate: (id: s
       if (!card.enabled) continue
       const [preferredX, preferredY] = card.definition.offset
       const w = card.measuredWidth, h = card.measuredHeight
-      const offsets = [[preferredX, preferredY], [preferredX, preferredY - h - 10], [preferredX + w + 12, preferredY], [preferredX - w - 12, preferredY], [0, -26]]
+      const offsets = [[preferredX, preferredY], [preferredX, preferredY - h - 10], [preferredX + w + 12, preferredY], [preferredX - w - 12, preferredY], [preferredX, preferredY - h * 2 - 20], [0, -26]]
       let placement: number[] | undefined
       for (const offset of offsets) {
         const x = Math.max(bounds.left + w / 2, Math.min(bounds.right - w / 2, card.x + offset[0]!))

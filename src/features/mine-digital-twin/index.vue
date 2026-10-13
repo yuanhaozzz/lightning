@@ -26,9 +26,14 @@ import { createFactoryPerformance } from './factoryPerformance'
 import { createDistributionDrilldown, type DistributionCameraFrame } from './distributionDrilldown'
 import MineCommandShell from './MineCommandShell.vue'
 import { applySceneVisualStyle } from './sceneVisualStyle'
+import { createSceneTelemetryLabels } from './sceneTelemetryLabels'
+import { createSceneTechnology } from './sceneTechnology'
 
 const host = ref<HTMLDivElement>()
 let visualStyle: ReturnType<typeof applySceneVisualStyle> | undefined
+let telemetryLabels: ReturnType<typeof createSceneTelemetryLabels> | undefined
+let technology: ReturnType<typeof createSceneTechnology> | undefined
+const technologyDiagnostics = ref('')
 const visualDiagnostics = ref('')
 const viewNotice = ref('')
 const shellCompact = computed(() => drillActive.value || !!selected.value || sceneView.value !== 'overview' || showDemo.value || showFactory.value)
@@ -455,7 +460,7 @@ function arrangeLabels() {
         box.top < other.bottom + 5 &&
         box.bottom > other.top - 5,
     )
-    hidden.push(drillActive.value || offscreen || overlap)
+    hidden.push(drillActive.value || !!telemetryLabels && !selected.value || offscreen || overlap)
     if (!offscreen && !overlap) kept.push(box)
   }
   park.labels.forEach((item, i) => item.element.classList.toggle('mine-label--occluded', hidden[i]))
@@ -475,7 +480,7 @@ onMounted(async () => {
     if(import.meta.env.DEV)factoryMeter=createFactoryPerformance(renderer)
     renderer.outputColorSpace = THREE.SRGBColorSpace
     renderer.toneMapping = THREE.ACESFilmicToneMapping
-    renderer.toneMappingExposure = .94
+    renderer.toneMappingExposure = .88
     renderer.shadowMap.enabled = true
     renderer.shadowMap.type = THREE.PCFSoftShadowMap
     renderer.shadowMap.autoUpdate = false
@@ -511,10 +516,10 @@ onMounted(async () => {
       needsRender = true
       cameraMoved = true
     })
-    const ambient = new THREE.HemisphereLight(0xdce9f3, 0x6d7462, .7)
+    const ambient = new THREE.HemisphereLight(0xc6def0, 0x667267, .58)
     scene.add(ambient)
-    const sun = new THREE.DirectionalLight(0xfff0d5, 2.6)
-    sun.position.set(-40, 80, 55)
+    const sun = new THREE.DirectionalLight(0xffedce, 2.85)
+    sun.position.set(-65, 70, 40)
     sun.target.position.set(0, 0, 0)
     sun.castShadow = true
     sun.shadow.mapSize.set(3072, 3072)
@@ -527,7 +532,7 @@ onMounted(async () => {
     sun.shadow.bias = -0.00004
     sun.shadow.normalBias = 0.015
     scene.add(sun, sun.target)
-    const fill = new THREE.DirectionalLight(0xb7cedc, 0.32)
+    const fill = new THREE.DirectionalLight(0xaecce4, 0.48)
     fill.position.set(70, 55, -70)
     scene.add(fill)
     stormCloud = createStormCloud(scene, { sun, ambient })
@@ -616,6 +621,10 @@ onMounted(async () => {
       previousFactoryFrame=now
       const factoryUpdateStarted=performance.now()
       if(factory&&camera&&factory.update(factoryDelta,camera,layers.buildings))needsRender=true
+      if(factory && technology?.update(factory.snapshot, {
+        selectedId:selected.value?.id??null, ...layers,
+        drillActive:drillActive.value, overview:sceneView.value==='overview',
+      }))needsRender=true
       if(factory?.simulation.active&&camera&&renderer&&camera.position.distanceTo(new THREE.Vector3(-14,12,-6))<80&&now-previousFactoryShadow>500){renderer.shadowMap.needsUpdate=true;previousFactoryShadow=now}
       const factoryUpdateCost=performance.now()-factoryUpdateStarted
       const drillStarted=performance.now()
@@ -627,7 +636,7 @@ onMounted(async () => {
         if(now-previousDrillUI>100||wasTransition!==drilldown.snapshot.transitioning){previousDrillUI=now;syncDrilldown()}
       }
       const drillCost=performance.now()-drillStarted
-      if(factory&&now-previousFactoryUI>200){previousFactoryUI=now;syncFactory()}
+      if(factory&&now-previousFactoryUI>200){previousFactoryUI=now;syncFactory();technologyDiagnostics.value=JSON.stringify({effects:technology?.diagnostics,labels:telemetryLabels?.diagnostics})}
       previousDemoFrame = now
       if (demo.update(delta)) syncDemo()
       if (stormCloud?.update(demo.clock, delta)) needsRender = true
@@ -654,8 +663,14 @@ onMounted(async () => {
       if (import.meta.env.DEV) cameraPose.value = camera.position.toArray().map(v => v.toFixed(3)).join(',')
       const submitted = import.meta.env.DEV ? performance.now() : 0
       if (layers.labels) {
+        telemetryLabels?.update(factoryState.value, demoState.value, {
+          camera, width: container.clientWidth, height: container.clientHeight,
+          overview: sceneView.value === 'overview', compact: shellCompact.value,
+          layers, drillActive: drillActive.value, selectedId: selected.value?.id ?? null,
+        })
         labelRenderer?.render(scene, camera)
         arrangeLabels()
+        telemetryLabels?.layout()
       }
       if(measureFactory&&factoryMeter&&factory){const result=factoryMeter.sample(factoryDelta*1000,performance.now()-started,factoryUpdateCost);if(result){factoryPerformance.value=JSON.stringify({...result,...factory.resourceInfo});console.info('[mine-digital-twin] factory performance',factoryPerformance.value)}}
       if(measureDrill&&drillMeter){const result=drillMeter.sample(factoryDelta*1000,performance.now()-started,drillCost);if(result)drillPerformance.value=JSON.stringify({...result,stage:drilldown!.snapshot.stage,cpuDrilldownUpdateMedianMs:result.cpuFactoryUpdateMedianMs})}
@@ -735,6 +750,8 @@ onMounted(async () => {
     syncDrilldown()
     visualStyle=applySceneVisualStyle(park.root)
     visualDiagnostics.value=JSON.stringify(visualStyle.diagnostics)
+    telemetryLabels=createSceneTelemetryLabels(park.root, locateEntity)
+    technology=createSceneTechnology(park.root)
     if(import.meta.env.DEV)drillMeter=createFactoryPerformance(renderer)
     entities.value = interaction.list
     syncDemo()
@@ -773,6 +790,8 @@ onBeforeUnmount(() => {
   cancelInspectionFlight()
   observer?.disconnect()
   renderer?.setAnimationLoop(null)
+  telemetryLabels?.dispose()
+  technology?.dispose()
   visualStyle?.dispose()
   drilldown?.dispose()
   drillMeter?.dispose()
@@ -805,7 +824,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <main class="mine-view" :class="{'is-overview':!shellCompact}" :data-visual-style="visualDiagnostics" :data-model-status="status" :data-power-roof="powerRoofVisible ? 'visible' : 'hidden'"
+  <main class="mine-view" :class="{'is-overview':!shellCompact}" :data-visual-style="visualDiagnostics" :data-technology="technologyDiagnostics" :data-model-status="status" :data-power-roof="powerRoofVisible ? 'visible' : 'hidden'"
     :data-factory-state="JSON.stringify(factoryState)" :data-factory-motion="factoryMotion"
     :data-factory-performance="factoryPerformance"
     :data-drilldown="JSON.stringify(drillState)" :data-drilldown-stage="drillStage" :data-drilldown-performance="drillPerformance"

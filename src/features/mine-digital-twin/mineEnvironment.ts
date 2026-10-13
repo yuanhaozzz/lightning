@@ -10,7 +10,7 @@ export function createMineEnvironment(scene: THREE.Scene) {
   const oldFog = scene.fog
   // Keep the industrial foreground clear; aerial perspective separates the
   // existing foothills and distant ridges without a blue overlay on buildings.
-  const fog = new THREE.Fog('#bfd0d7', 320, 2350); scene.fog = fog
+  const fog = new THREE.Fog('#8da7b7', 260, 1950); scene.fog = fog
   const skyGeometry = new THREE.SphereGeometry(1, 24, 12)
   const skyMaterial = new THREE.ShaderMaterial({
     side: THREE.BackSide, depthWrite: false, toneMapped: false,
@@ -19,8 +19,8 @@ export function createMineEnvironment(scene: THREE.Scene) {
       void main(){vDirection=position; vec4 p=projectionMatrix*viewMatrix*vec4(cameraPosition+position*3000.0,1.0); gl_Position=p.xyww;}`,
     fragmentShader: `varying vec3 vDirection; uniform float uStorm;
       void main(){vec3 direction=normalize(vDirection);float h=direction.y;
-        vec3 horizon=mix(vec3(.521,.631,.680),vec3(.44,.49,.51),uStorm*.50);
-        vec3 zenith=mix(vec3(.16,.325,.49),vec3(.29,.365,.41),uStorm*.62);
+        vec3 horizon=mix(vec3(.30,.42,.50),vec3(.30,.36,.40),uStorm*.50);
+        vec3 zenith=mix(vec3(.075,.19,.31),vec3(.17,.25,.31),uStorm*.62);
         vec3 c=mix(horizon,zenith,smoothstep(-.02,.68,h));
         float sunFacing=max(0.0,dot(direction,normalize(vec3(-.40,.80,.55))));
         float aureole=pow(sunFacing,12.0)*.15+pow(sunFacing,80.0)*.06;
@@ -65,7 +65,7 @@ export function createMineEnvironment(scene: THREE.Scene) {
     const road=new THREE.Mesh(geometry,material);road.name=['approach-road-shoulders','approach-road-asphalt','approach-road-markings'][i]!
     road.raycast=()=>{};road.receiveShadow=true;root.add(road);roadResources.push(geometry);roadMaterials.push(material)
   }
-  const normalFog=new THREE.Color('#bfd0d7'), stormFog=new THREE.Color('#aebcc2')
+  const normalFog=new THREE.Color('#8da7b7'), stormFog=new THREE.Color('#8297a3')
   let disposed=false
   return {
     resourceInfo:{drawCalls:6,terrainTriangles:indices.length/3,terrainVertices:positions.length/3,roadTriangles:roadBuffers.reduce((sum,b)=>sum+b.length/9,0),textures:terrainSurface.textures.length,textureBytes:terrainSurface.textureBytes,

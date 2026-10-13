@@ -1,0 +1,91 @@
+{
+  "pass": true,
+  "diagnostics": {
+    "source": "演示数据",
+    "drawCalls": 5,
+    "materials": 5,
+    "textures": 0,
+    "triangles": 350,
+    "coalPaths": [
+      {
+        "id": "shaft-transfer",
+        "from": "shaft-house-01",
+        "to": "transfer-01",
+        "arclengthMeters": 34.231892957598916
+      },
+      {
+        "id": "transfer-silo-1",
+        "from": "transfer-01",
+        "to": "coal-silo-01",
+        "arclengthMeters": 19.87739951565916
+      },
+      {
+        "id": "transfer-silo-2",
+        "from": "transfer-01",
+        "to": "coal-silo-02",
+        "arclengthMeters": 19.87739951565916
+      }
+    ],
+    "powerPaths": "现有变电站三相母线—隔离开关—断路器—变压器套管；仅沿已建模导体",
+    "electricalSpeed": "示意电流方向；不表示实际电流传播速度",
+    "facilityHalos": [
+      {
+        "id": "headframe-01",
+        "deviceIds": [
+          "hoist-house-01"
+        ]
+      },
+      {
+        "id": "coal-silo-01",
+        "deviceIds": [
+          "coal-silo-01"
+        ]
+      },
+      {
+        "id": "coal-silo-02",
+        "deviceIds": [
+          "coal-silo-02"
+        ]
+      },
+      {
+        "id": "substation-01",
+        "deviceIds": [
+          "power-transformer-01"
+        ]
+      },
+      {
+        "id": "distribution-01",
+        "deviceIds": [
+          "power-cabinet-lv-01",
+          "power-cabinet-lv-02",
+          "power-cabinet-lv-03",
+          "power-cabinet-lv-04",
+          "power-cabinet-lv-05",
+          "power-cabinet-lv-06"
+        ]
+      }
+    ]
+  },
+  "cases": [
+    "authored conveyor axes and distances",
+    "authored power switch-bay envelope",
+    "running",
+    "independent stop",
+    "isolated fault",
+    "pause",
+    "replay reset",
+    "facility halo ground datum",
+    "independent halo state/time",
+    "selection",
+    "layers",
+    "drilldown visibility",
+    "raycast isolation",
+    "idempotent resource disposal",
+    "existing assets unchanged"
+  ],
+  "disposed": {
+    "geometries": 5,
+    "materials": 5
+  },
+  "note": "GLSL compilation, actual screenshot appearance and GPU performance require browser acceptance."
+}

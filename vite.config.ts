@@ -7,18 +7,25 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/map/', // 必须配，负责资源路径前缀
+  build: {
+    outDir: 'dist/map', // 产物输出到 dist/lowcode
+    emptyOutDir: true, // 构建前清空该目录
+  },
   define: {
     CESIUM_BASE_URL: JSON.stringify('/cesium'),
   },
   plugins: [
     vue(),
     vueDevTools(),
-    viteStaticCopy({ targets: [
-      { src: 'node_modules/cesium/Build/Cesium/Workers', dest: 'cesium' },
-      { src: 'node_modules/cesium/Build/Cesium/ThirdParty', dest: 'cesium' },
-      { src: 'node_modules/cesium/Build/Cesium/Assets', dest: 'cesium' },
-      { src: 'node_modules/cesium/Build/Cesium/Widgets', dest: 'cesium' },
-    ] }),
+    viteStaticCopy({
+      targets: [
+        { src: 'node_modules/cesium/Build/Cesium/Workers', dest: 'cesium' },
+        { src: 'node_modules/cesium/Build/Cesium/ThirdParty', dest: 'cesium' },
+        { src: 'node_modules/cesium/Build/Cesium/Assets', dest: 'cesium' },
+        { src: 'node_modules/cesium/Build/Cesium/Widgets', dest: 'cesium' },
+      ],
+    }),
   ],
   resolve: {
     alias: {

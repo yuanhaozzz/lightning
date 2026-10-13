@@ -1,9 +1,62 @@
 import * as THREE from 'three'
-import { ASSETS } from './layout'
+import { ASSETS, ZONES } from './layout'
 
 /** Runtime art direction only: keep authored coordinates, geometry, node identity,
  * texture maps and simulation-owned emissive/opacity values. Dispose before park. */
 export function applySceneVisualStyle(root: THREE.Object3D) {
+  // Ground and roofs carry the composition. A neutral slate/concrete palette
+  // separates bright industrial assets from their pads without tinting GLBs.
+  const surfaceColors: { material: THREE.MeshStandardMaterial; color: THREE.Color }[] = []
+  const colorSeen = new Set<THREE.Material>()
+  const setSurface = (object: THREE.Object3D | undefined, color: string) => {
+    if (!(object instanceof THREE.Mesh)) return
+    for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
+      if (!(material instanceof THREE.MeshStandardMaterial) || colorSeen.has(material)) continue
+      colorSeen.add(material)
+      surfaceColors.push({ material, color: material.color.clone() })
+      material.color.set(color)
+    }
+  }
+  setSurface(root.getObjectByName('mine-site-ground'), '#77817e')
+  setSurface(root.getObjectByName('connected-road-surface'), '#414c51')
+  setSurface(root.getObjectByName('connected-walkway-surface'), '#909b94')
+  for (const zone of ZONES) setSurface(root.getObjectByName(zone.id), '#7e8c89')
+  for (const asset of ASSETS) {
+    const group = root.getObjectByName(asset.id)
+    if (group) setSurface(group.getObjectByName('placeholder-roof'), '#40535c')
+  }
+  const facades: { mesh: THREE.Mesh; original: THREE.Material; material: THREE.MeshStandardMaterial }[] = []
+  // The remaining massing buildings gain a coherent facade finish through their
+  // existing material. This is surface treatment, not invented interior assets.
+  for (const asset of ASSETS.filter(a => a.type === 'office' || a.type === 'dispatch-center')) {
+    const mesh = root.getObjectByName(asset.id)?.getObjectByName('placeholder')
+    if (!(mesh instanceof THREE.Mesh) || !(mesh.material instanceof THREE.MeshStandardMaterial)) continue
+    const original = mesh.material, material = original.clone()
+    material.color.set('#bdc4bf'); material.roughness = .78; material.metalness = .08
+    material.customProgramCacheKey = () => `command-facade-${asset.size[1]}`
+    material.onBeforeCompile = shader => {
+      shader.vertexShader = shader.vertexShader.replace('#include <common>', '#include <common>\nvarying vec3 vFacadePosition; varying vec3 vFacadeNormal;')
+        .replace('#include <begin_vertex>', '#include <begin_vertex>\nvFacadePosition=position; vFacadeNormal=normal;')
+      shader.fragmentShader = shader.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vFacadePosition; varying vec3 vFacadeNormal;')
+        .replace('#include <color_fragment>', `#include <color_fragment>
+          float facadeH=vFacadePosition.y+${(asset.size[1] / 2).toFixed(3)};
+          float facadeU=abs(vFacadeNormal.x)>.5?vFacadePosition.z:vFacadePosition.x;
+          vec2 facadeCell=vec2(fract((facadeU+.6)/2.6),fract((facadeH-.6)/3.1));
+          vec2 facadeAA=max(fwidth(facadeCell),vec2(.007));
+          float facadeGlass=smoothstep(.18,.18+facadeAA.x,facadeCell.x)*(1.-smoothstep(.80-facadeAA.x,.80,facadeCell.x))
+            *smoothstep(.32,.32+facadeAA.y,facadeCell.y)*(1.-smoothstep(.79-facadeAA.y,.79,facadeCell.y));
+          facadeGlass*=1.-step(.5,abs(vFacadeNormal.y));
+          facadeGlass*=smoothstep(.8,1.2,facadeH)*(1.-smoothstep(${(asset.size[1]-.8).toFixed(2)},${(asset.size[1]-.3).toFixed(2)},facadeH));
+          float facadeJoint=1.-smoothstep(.015,.033,abs(fract(facadeH/3.1)-.08));
+          diffuseColor.rgb*=1.-facadeJoint*.13;
+          diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.038,.094,.132),facadeGlass);
+        `)
+        .replace('#include <roughnessmap_fragment>', '#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,.27,facadeGlass);')
+        .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance+=vec3(.012,.052,.075)*facadeGlass;')
+    }
+    mesh.material=material
+    facades.push({ mesh, original, material })
+  }
   const side = 128
   const normalPixels = new Uint8Array(side * side * 4)
   const roughPixels = new Uint8Array(side * side * 4)
@@ -106,11 +159,15 @@ export function applySceneVisualStyle(root: THREE.Object3D) {
   let disposed = false
   return {
     diagnostics: { materialCategories: categories, styledMaterials: snapshots.length,
+      artDirectedSurfaces: surfaceColors.length,
+      facadeFinishes: facades.length,
       extraDrawCalls: 1, extraTriangles: vertices.length / 9, textures: 2,
       textureBytes: side * side * 4 * 2 * 4 / 3, geometryUnchanged: true, animationCost: 0 },
     dispose() {
       if (disposed) return
       disposed = true
+      for (const original of surfaceColors) original.material.color.copy(original.color)
+      for (const facade of facades) { facade.mesh.material=facade.original; facade.material.dispose() }
       for (const original of snapshots) {
         const target = original.material
         target.roughness = original.roughness; target.metalness = original.metalness
