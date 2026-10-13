@@ -1,0 +1,45 @@
+{
+  "schematic": true,
+  "outputs": [
+    {
+      "type": "lightning-locator",
+      "file": "mine-lightning-locator.glb",
+      "triangles": 1876,
+      "meshes": 6,
+      "bytes": 166772,
+      "bounds": {
+        "min": [
+          -0.699999988079071,
+          0.0,
+          -0.699999988079071
+        ],
+        "max": [
+          0.699999988079071,
+          3.555000066757202,
+          0.699999988079071
+        ]
+      }
+    },
+    {
+      "type": "storm-warning",
+      "file": "mine-storm-warning.glb",
+      "triangles": 3516,
+      "meshes": 6,
+      "bytes": 250840,
+      "bounds": {
+        "min": [
+          -1.2000000476837158,
+          0.0,
+          -1.2000000476837158
+        ],
+        "max": [
+          1.2000000476837158,
+          3.01284122467041,
+          1.2000000476837158
+        ]
+      }
+    }
+  ],
+  "protectedFilesUnchanged": 20,
+  "scope": "Generic demonstration only. No claimed geolocation/false-alarm performance or validated deployment."
+}

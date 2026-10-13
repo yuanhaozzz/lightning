@@ -1,0 +1,17 @@
+{
+  "silos": [
+    {"id":"coal-silo-01","position":[-57,0,-28],"size":[10,13,10],"ladderSide":-1},
+    {"id":"coal-silo-02","position":[-43,0,-28],"size":[10,13,10],"ladderSide":1}
+  ],
+  "station": {"id":"transfer-01","position":[-50,0,-7],"size":[10,9,8]},
+  "conveyors": [
+    {"id":"shaft-transfer","from":[-19,5.8,7],"to":[-50,9,-7],"width":1.8,"supports":[0.2,0.75],"supportBaseOffsets":[[-1.15,0],[0,0.6]],"trim":[0,1],"beltOffsets":[0,0.65]},
+    {"id":"transfer-silo-1","from":[-50,9,-7],"to":[-57,13,-28],"width":1.6,"supports":[0.6],"trim":[0.14,1],"beltOffsets":[-3.3,-0.65]},
+    {"id":"transfer-silo-2","from":[-50,9,-7],"to":[-43,13,-28],"width":1.6,"supports":[0.6],"trim":[0.14,1],"beltOffsets":[-3.3,-0.65]}
+  ],
+  "rollerPitch":1.2,
+  "rollerSides":12,
+  "siloSides":64,
+  "inspectionCoversOpen":true,
+  "maximumTotalTriangles":110000
+}

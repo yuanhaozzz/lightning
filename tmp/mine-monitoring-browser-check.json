@@ -1,0 +1,47 @@
+{
+  "url": "http://127.0.0.1:5173/mine-digital-twin",
+  "finalState": {
+    "loaded": "loaded",
+    "selected": "",
+    "view": "",
+    "flying": "false"
+  },
+  "warningsAndErrors": [],
+  "verified": {
+    "actualModelClickIds": [
+      "lightning-location-01",
+      "storm-warning-01"
+    ],
+    "selectionHighlight": true,
+    "selectionIdentityDisplayed": true,
+    "smoothFlight": true,
+    "flightInterruptedByOverview": true,
+    "orbitRotationAndZoom": true,
+    "restoreClearsMonitoringSelection": true
+  },
+  "performance": [
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.7000000476837158,\"cpuRenderAndLabelsP95Ms\":2.100000023841858,\"cpuWebGLSubmissionMedianMs\":1.3000000715255737,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":213,\"triangles\":279818,\"geometries\":204,\"textures\":147,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-11T11:43:26.663Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791718987178"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.5,\"cpuRenderAndLabelsP95Ms\":2.700000047683716,\"cpuWebGLSubmissionMedianMs\":1,\"cpuLabelsMedianMs\":0.5,\"drawCalls\":38,\"triangles\":57112,\"geometries\":204,\"textures\":147,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-11T11:43:27.210Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791718987178"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":3,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.100000023841858,\"cpuRenderAndLabelsP95Ms\":1.7999999523162842,\"cpuWebGLSubmissionMedianMs\":0.7999999523162842,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":62,\"triangles\":154792,\"geometries\":204,\"textures\":147,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-11T11:44:12.453Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791718987178"
+    }
+  ],
+  "screenshots": [
+    "tmp/mine-lightning-locator-closeup.jpg",
+    "tmp/mine-storm-warning-closeup.jpg",
+    "tmp/mine-monitoring-overview.jpg"
+  ]
+}

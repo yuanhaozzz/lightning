@@ -1,0 +1,186 @@
+{
+  "result": "PASS",
+  "profile": {
+    "size": [
+      310,
+      72,
+      220
+    ],
+    "from": [
+      -48,
+      68,
+      -95
+    ],
+    "to": [
+      -12,
+      68,
+      -55
+    ]
+  },
+  "cameraChecks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "mode": "demo",
+      "cloud": {
+        "left": 174.31726201600387,
+        "right": 1277.368510129296,
+        "top": 60.20586574860199,
+        "bottom": 429.8990219600288
+      },
+      "park": {
+        "left": 162.6314898707038,
+        "right": 1095.9760278191175,
+        "top": 436.24383711978254,
+        "bottom": 794.7941342513981
+      },
+      "parkWidthPercent": 64.8
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "mode": "oblique",
+      "cloud": {
+        "left": 366.459141343162,
+        "right": 1520.3566543664597,
+        "top": -228.91996139972602,
+        "bottom": 384.3940936036085
+      },
+      "park": {
+        "left": 237.824942370422,
+        "right": 1202.175057629578,
+        "top": 199.77216452505206,
+        "bottom": 795.227835474948
+      },
+      "parkWidthPercent": 67
+    },
+    {
+      "width": 604,
+      "height": 871,
+      "mode": "demo",
+      "cloud": {
+        "left": 87.25338106330146,
+        "right": 549.6232440993002,
+        "top": 224.30246328680224,
+        "bottom": 463.3219838641702
+      },
+      "park": {
+        "left": 54.37675590069981,
+        "right": 460.61906540416413,
+        "top": 418.5356723654291,
+        "bottom": 601.6975367131977
+      },
+      "parkWidthPercent": 67.3
+    },
+    {
+      "width": 604,
+      "height": 871,
+      "mode": "oblique",
+      "cloud": {
+        "left": 119.26158206569492,
+        "right": 673.2829729969927,
+        "top": 90.42161672109408,
+        "bottom": 431.97443865130134
+      },
+      "park": {
+        "left": 54.15043670040225,
+        "right": 549.8495632995978,
+        "top": 332.09627337602694,
+        "bottom": 603.903726623973
+      },
+      "parkWidthPercent": 82.1
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "demo",
+      "cloud": {
+        "left": 40.27470970380475,
+        "right": 370.5182947241279,
+        "top": 233.55064496093974,
+        "bottom": 410.5708577004405
+      },
+      "park": {
+        "left": 19.481705275872137,
+        "right": 310.00989247515037,
+        "top": 377.47570738289625,
+        "bottom": 505.4493550390604
+      },
+      "parkWidthPercent": 74.5
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "oblique",
+      "cloud": {
+        "left": 63.69945693023796,
+        "right": 450.83082958878583,
+        "top": 150.01605563512382,
+        "bottom": 403.2225632130998
+      },
+      "park": {
+        "left": 19.36476130672678,
+        "right": 370.63523869327327,
+        "top": 330.5285916556085,
+        "bottom": 518.4714083443914
+      },
+      "parkWidthPercent": 90.1
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "mode": "demo",
+      "cloud": {
+        "left": 290.0493099954329,
+        "right": 1648.5182147781297,
+        "top": 62.722966617160246,
+        "bottom": 517.0413615861067
+      },
+      "park": {
+        "left": 271.4817852218704,
+        "right": 1423.8973902251003,
+        "top": 525.5630656227261,
+        "bottom": 972.2770333828398
+      },
+      "parkWidthPercent": 60
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "mode": "oblique",
+      "cloud": {
+        "left": 511.8210030996921,
+        "right": 1989.0333397139736,
+        "top": -335.1883129671414,
+        "bottom": 436.2788001846222
+      },
+      "park": {
+        "left": 348.45887474934494,
+        "right": 1571.541125250655,
+        "top": 202.9488621130428,
+        "bottom": 972.0511378869572
+      },
+      "parkWidthPercent": 63.7
+    }
+  ],
+  "environment": {
+    "drawCalls": 6,
+    "terrainTriangles": 13016,
+    "terrainVertices": 6640,
+    "roadTriangles": 7054,
+    "textures": 2,
+    "textureBytes": 699050.6666666666,
+    "lod": "stitched near/middle/far distance-adaptive rings",
+    "nearSamples": 196,
+    "farSamples": 68
+  },
+  "checks": [
+    "occupied silhouette fit",
+    "trajectory endpoint envelope",
+    "park prominence",
+    "responsive fit",
+    "terrain footprint exclusion",
+    "cutaway preservation",
+    "resource release"
+  ]
+}

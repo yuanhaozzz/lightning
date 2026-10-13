@@ -1,0 +1,82 @@
+{
+  "before": {
+    "sheaveQuaternion": [
+      0,
+      0,
+      0.3706707077284167,
+      0.9287643546304492
+    ],
+    "sheavePivot": [
+      -15.96,
+      22.383999389648437,
+      -6
+    ],
+    "drumQuaternion": [
+      0,
+      0,
+      -0.5433559781154043,
+      0.8395024008579441
+    ],
+    "containerBottomY": 1.3837449920232663,
+    "ropeLengthMeters": 19.450255786174978,
+    "beltTravel": [
+      {
+        "id": "shaft-transfer",
+        "meters": 60.4499999999987,
+        "coalInstances": 159
+      },
+      {
+        "id": "transfer-silo-1",
+        "meters": 62.699999999998575,
+        "coalInstances": 78
+      },
+      {
+        "id": "transfer-silo-2",
+        "meters": 62.699999999998575,
+        "coalInstances": 75
+      }
+    ],
+    "idlers": 210,
+    "inspection": "shaft-transfer"
+  },
+  "after": {
+    "sheaveQuaternion": [
+      0,
+      0,
+      0.3706707077284167,
+      0.9287643546304492
+    ],
+    "sheavePivot": [
+      -15.96,
+      22.383999389648437,
+      -6
+    ],
+    "drumQuaternion": [
+      0,
+      0,
+      -0.5433559781154043,
+      0.8395024008579441
+    ],
+    "containerBottomY": 1.3837449920232663,
+    "ropeLengthMeters": 19.450255786174978,
+    "beltTravel": [
+      {
+        "id": "shaft-transfer",
+        "meters": 165.00000000000327,
+        "coalInstances": 0
+      },
+      {
+        "id": "transfer-silo-1",
+        "meters": 167.25000000000378,
+        "coalInstances": 0
+      },
+      {
+        "id": "transfer-silo-2",
+        "meters": 167.25000000000378,
+        "coalInstances": 0
+      }
+    ],
+    "idlers": 210,
+    "inspection": "shaft-transfer"
+  }
+}

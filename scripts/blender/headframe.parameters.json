@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "assemblyId": "headframe-01",
+  "placement": { "scale": 1.6, "sourceOffset": [-1.225, 0.59, 0], "worldPosition": [-14, 0, -6] },
+  "interfaces": { "frameLevels": [0.35, 3.2, 6.1, 9, 11.9], "sheaveCenter": [0, 13.4, 0], "grooveRadius": 1.04, "deckHeight": 12.12 },
+  "access": { "guardrailHeightWorld": 1.1, "railDiameterWorld": 0.048, "postSpacingWorld": 1.2, "stairClearWidthWorld": 1.0, "stepsPerFlight": 15, "gratingPitchWorld": 0.064 },
+  "details": { "sheaveSegments": 128, "bevelSegments": 2, "spokeBevel": 0.012 },
+  "budget": { "maxTriangles": 95000, "maxPrimitives": 24, "maxBytes": 7000000 }
+}

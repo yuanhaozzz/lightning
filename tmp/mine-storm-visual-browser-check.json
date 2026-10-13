@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "check": "resume continuous",
+      "pass": true
+    },
+    {
+      "check": "stable approach framing",
+      "pass": true
+    },
+    {
+      "check": "approach shown",
+      "pass": true
+    },
+    {
+      "check": "cloud does not block building raycast",
+      "pass": true
+    },
+    {
+      "check": "SPD independent selection and roof opening",
+      "pass": true
+    },
+    {
+      "check": "SPD raycaster with hidden roof",
+      "pass": true
+    },
+    {
+      "check": "original overview clears selection/restores roof",
+      "pass": true
+    },
+    {
+      "check": "portrait scene stays in demo framing",
+      "pass": true
+    },
+    {
+      "check": "Orbit rotation remains usable and cloud paused",
+      "pass": true
+    },
+    {
+      "check": "monitoring layer independent of clouds",
+      "pass": true
+    },
+    {
+      "check": "exit restores daylight and removes cloud",
+      "pass": true,
+      "exitBeginning": {
+        "opacity": 0.9752170029338314,
+        "position": [
+          -43.44061000000164,
+          106,
+          -52.58045750000123
+        ],
+        "visible": true,
+        "sun": 1.885085422450937,
+        "ambient": 0.5739330737711612,
+        "environment": 0.2885613288151686
+      },
+      "exitFinal": {
+        "opacity": 0,
+        "position": [
+          -43.44061000000164,
+          106,
+          -52.58045750000123
+        ],
+        "visible": false,
+        "sun": 2.4,
+        "ambient": 0.65,
+        "environment": 0.35
+      }
+    },
+    {
+      "check": "replay resets cloud origin, time and run",
+      "pass": true
+    },
+    {
+      "check": "browser has no errors",
+      "pass": true
+    }
+  ],
+  "performance": {
+    "drawCalls": 1,
+    "triangles": 12,
+    "maxRaySteps": 48,
+    "densityBytes": 1916928,
+    "textures": 1,
+    "materials": 1,
+    "surroundings": {
+      "drawCalls": 3,
+      "terrainTriangles": 2624,
+      "terrainVertices": 1476,
+      "textures": 0
+    },
+    "frameIntervalMedianMs": 25,
+    "frameIntervalP95Ms": 29.199999999254942,
+    "cpuSubmissionAndLabelsMedianMs": 1.899999976158142,
+    "samples": 90,
+    "note": "Observed animation frame intervals; includes scene/browser cost, not an isolated GPU timer."
+  },
+  "errors": []
+}

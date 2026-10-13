@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "densityBytes": 958464,
+  "occupiedColumns": 6588,
+  "cloudBaseMinMeters": 37.714285714285715,
+  "baseVariationVoxels": 1,
+  "topVariationVoxels": 42,
+  "resources": {
+    "drawCalls": 1,
+    "triangles": 12,
+    "maxRaySteps": 48,
+    "densityBytes": 1916928,
+    "textures": 1,
+    "materials": 1
+  },
+  "checks": [
+    "timeline",
+    "pause/resume",
+    "exit fade",
+    "replay",
+    "deterministic volume",
+    "shape/base/height",
+    "lighting restore",
+    "non-pickable",
+    "resource disposal"
+  ]
+}

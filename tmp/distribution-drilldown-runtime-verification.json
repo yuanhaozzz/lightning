@@ -1,0 +1,147 @@
+{
+  "result": "PASS",
+  "originalModelResourcesPreserved": 39,
+  "originalGLBsPreserved": 26,
+  "components": [
+    {
+      "id": "power-cabinet-lv-01/backplate",
+      "name": "安装背板"
+    },
+    {
+      "id": "power-cabinet-lv-01/busbars",
+      "name": "三相母排"
+    },
+    {
+      "id": "power-cabinet-lv-01/breaker",
+      "name": "主断路器"
+    },
+    {
+      "id": "power-cabinet-lv-01/terminal-rail",
+      "name": "出线端子排"
+    },
+    {
+      "id": "power-cabinet-lv-01/cables",
+      "name": "柜内连接导体"
+    },
+    {
+      "id": "spd-lv-01",
+      "name": "SPD 浪涌保护器"
+    }
+  ],
+  "lampsReused": 3,
+  "ownedResourcesDisposed": 109,
+  "reusedResourcesPreserved": 155,
+  "refreshCases": [
+    {
+      "hz": 30,
+      "partialBuilding": {
+        "roofLift": 1.0551798981551048,
+        "wallOpacity": 0.8065503520048974,
+        "cabinetOffset": 0,
+        "doorAngle": 0,
+        "explode": 0
+      },
+      "partialDevice": {
+        "roofLift": 4.8,
+        "wallOpacity": 0.12,
+        "cabinetOffset": 0.05658436213991768,
+        "doorAngle": 0.0006312576344284207,
+        "explode": 0
+      },
+      "partialComponent": {
+        "roofLift": 4.8,
+        "wallOpacity": 0.12,
+        "cabinetOffset": 0.3,
+        "doorAngle": 1.92,
+        "explode": 0.3761574074074074
+      },
+      "restored": {
+        "roofLift": 0,
+        "wallOpacity": 1,
+        "cabinetOffset": 0,
+        "doorAngle": 0,
+        "explode": 0
+      }
+    },
+    {
+      "hz": 60,
+      "partialBuilding": {
+        "roofLift": 1.0551798981551048,
+        "wallOpacity": 0.8065503520048974,
+        "cabinetOffset": 0,
+        "doorAngle": 0,
+        "explode": 0
+      },
+      "partialDevice": {
+        "roofLift": 4.8,
+        "wallOpacity": 0.12,
+        "cabinetOffset": 0.05658436213991768,
+        "doorAngle": 0.0006312576344284207,
+        "explode": 0
+      },
+      "partialComponent": {
+        "roofLift": 4.8,
+        "wallOpacity": 0.12,
+        "cabinetOffset": 0.3,
+        "doorAngle": 1.92,
+        "explode": 0.3761574074074074
+      },
+      "restored": {
+        "roofLift": 0,
+        "wallOpacity": 1,
+        "cabinetOffset": 0,
+        "doorAngle": 0,
+        "explode": 0
+      }
+    },
+    {
+      "hz": 144,
+      "partialBuilding": {
+        "roofLift": 1.0551798981551017,
+        "wallOpacity": 0.806550352004898,
+        "cabinetOffset": 0,
+        "doorAngle": 0,
+        "explode": 0
+      },
+      "partialDevice": {
+        "roofLift": 4.8,
+        "wallOpacity": 0.12,
+        "cabinetOffset": 0.05658436213991752,
+        "doorAngle": 0.0006312576344283436,
+        "explode": 0
+      },
+      "partialComponent": {
+        "roofLift": 4.8,
+        "wallOpacity": 0.12,
+        "cabinetOffset": 0.3,
+        "doorAngle": 1.92,
+        "explode": 0.37615740740740633
+      },
+      "restored": {
+        "roofLift": 0,
+        "wallOpacity": 1,
+        "cabinetOffset": 0,
+        "doorAngle": 0,
+        "explode": 0
+      }
+    }
+  ],
+  "checks": [
+    "actual GLTFLoader geometry and runtime module",
+    "park-building-device-component and staged inverse restore",
+    "independent real door hinge and component offsets",
+    "interrupted retarget has no model jump",
+    "manual orbit stops only camera animation and stays cancelled across queued stages",
+    "fresh explicit navigation resumes camera tracking",
+    "hidden-roof state restoration",
+    "SPD/lamp identity and operational materials retained",
+    "simulated current visible only in connected running cabinet",
+    "transparent shell does not intercept interior picks",
+    "idempotent resource disposal without touching original assets",
+    "30/60/144Hz transform consistency"
+  ],
+  "limits": [
+    "Node omits image decoding; browser handles texture/visual/picking acceptance",
+    "GPU/frame-rate figures require actual browser measurement"
+  ]
+}

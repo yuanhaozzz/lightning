@@ -1,0 +1,149 @@
+{
+  "parameters": {
+    "shaftHouse": {
+      "position": [
+        -14,
+        0,
+        7
+      ],
+      "size": [
+        10,
+        4.5,
+        8
+      ],
+      "eaves": 3.65
+    },
+    "hoistHouse": {
+      "position": [
+        14,
+        0,
+        -6
+      ],
+      "size": [
+        20,
+        7,
+        12
+      ],
+      "eaves": 5.9
+    },
+    "headframe": {
+      "position": [
+        -14,
+        0,
+        -6
+      ],
+      "scale": 1.6,
+      "sourceCenterX": 1.225,
+      "sourceGroundY": -0.59,
+      "sheaveCenter": [
+        0,
+        13.4,
+        0
+      ],
+      "grooveRadius": 1.04
+    },
+    "rope": {
+      "radius": 0.022,
+      "drumCenter": [
+        8,
+        2.2,
+        -6
+      ],
+      "drumRadius": 1.1,
+      "guideCenters": [
+        [
+          -20.2,
+          26.5,
+          -6
+        ],
+        [
+          -5.6,
+          26.5,
+          -6
+        ]
+      ],
+      "guideRadius": 0.65
+    },
+    "outputs": [
+      "mine-shaft-house.glb",
+      "mine-hoist-house.glb",
+      "mine-production-links.glb"
+    ]
+  },
+  "alignment": {
+    "sheaveWorldCenter": [
+      -15.960000038146973,
+      22.384000778198242,
+      -6
+    ],
+    "sheaveRopeRadius": 1.6860000000000002,
+    "ropeRoofEntry": [
+      6.508449903727694,
+      7,
+      -6
+    ],
+    "guideCenters": [
+      [
+        -20.2,
+        26.5,
+        -6
+      ],
+      [
+        -5.6,
+        26.5,
+        -6
+      ]
+    ],
+    "mainWrapDegrees": 69.36815360344755,
+    "activeRopeDiameter": 0.044,
+    "ropeDirectionJoinDotProducts": [
+      1.0000000968575478,
+      1.0,
+      1.0000000298023224
+    ],
+    "tangentResiduals": [
+      1.4901161193847656e-07,
+      2.9802322387695312e-08
+    ]
+  },
+  "outputs": [
+    {
+      "file": "mine-shaft-house.glb",
+      "triangles": 5286,
+      "meshes": 7,
+      "sourcePieces": 269,
+      "bytes": 649644
+    },
+    {
+      "file": "mine-hoist-house.glb",
+      "triangles": 26858,
+      "meshes": 10,
+      "sourcePieces": 453,
+      "bytes": 1569688
+    },
+    {
+      "file": "mine-production-links.glb",
+      "triangles": 26624,
+      "meshes": 8,
+      "sourcePieces": 689,
+      "bytes": 1604824
+    }
+  ],
+  "clearance": {
+    "retainedFrameDistanceQueries": 35322,
+    "ropeStationaryMinimumClearance": 0.27600033569335936,
+    "retainedFrameRopeCollisions": []
+  },
+  "hoistHouseRopeClearance": {
+    "queries": 1391786,
+    "minimumClearance": 0.15852315711975098,
+    "collisions": []
+  },
+  "linksRopeClearance": {
+    "queries": 1663354,
+    "minimumClearance": 0.03196336317062378,
+    "collisions": []
+  },
+  "wallOpenings": 19,
+  "headframeUnchanged": true
+}

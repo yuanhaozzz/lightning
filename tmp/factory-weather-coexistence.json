@@ -1,0 +1,210 @@
+{
+  "weather": "warning",
+  "factory": {
+    "source": "演示数据",
+    "devices": [
+      {
+        "id": "hoist-house-01",
+        "name": "井架提升系统",
+        "speed": 0.35,
+        "status": "running",
+        "direction": 1,
+        "travel": 0.6833851745357786,
+        "fault": null
+      },
+      {
+        "id": "shaft-transfer",
+        "name": "井口 → 转载站",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 864.9499999997611,
+        "fault": null
+      },
+      {
+        "id": "transfer-silo-1",
+        "name": "转载站 → 煤仓 1",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 864.9499999997611,
+        "fault": null
+      },
+      {
+        "id": "transfer-silo-2",
+        "name": "转载站 → 煤仓 2",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 864.9499999997611,
+        "fault": null
+      },
+      {
+        "id": "coal-silo-01",
+        "name": "煤仓 1",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "coal-silo-02",
+        "name": "煤仓 2",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-transformer-01",
+        "name": "变压器",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-mv-01",
+        "name": "高压柜 1",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-mv-02",
+        "name": "高压柜 2",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-mv-03",
+        "name": "高压柜 3",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-mv-04",
+        "name": "高压柜 4",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-mv-05",
+        "name": "高压柜 5",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-mv-06",
+        "name": "高压柜 6",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-lv-01",
+        "name": "低压柜 1",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-lv-02",
+        "name": "低压柜 2",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-lv-03",
+        "name": "低压柜 3",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-lv-04",
+        "name": "低压柜 4",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-lv-05",
+        "name": "低压柜 5",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      },
+      {
+        "id": "power-cabinet-lv-06",
+        "name": "低压柜 6",
+        "speed": 1,
+        "status": "running",
+        "direction": 1,
+        "travel": 0,
+        "fault": null
+      }
+    ],
+    "stocks": [
+      {
+        "id": "coal-silo-01",
+        "mass": 72894.52791856277,
+        "capacity": 258399.8318518301,
+        "initial": 72351.95291851243,
+        "received": 1840,
+        "discharged": 1297.4250000004215,
+        "level": 0.28209974981857366
+      },
+      {
+        "id": "coal-silo-02",
+        "mass": 109070.50437781899,
+        "capacity": 258399.8318518301,
+        "initial": 108527.92937776864,
+        "received": 1840,
+        "discharged": 1297.4250000004215,
+        "level": 0.4220997498185737
+      }
+    ],
+    "hoistStrokeMeters": 0.6833851745357786,
+    "clock": 864.9499999997611,
+    "balance": {
+      "supplied": 3940,
+      "receivingHopperKg": 0,
+      "hoistDeliveredKg": 3900,
+      "initialHopperKg": 40,
+      "inTransit": 260,
+      "received": 3680,
+      "discharged": 2594.850000000843
+    }
+  }
+}

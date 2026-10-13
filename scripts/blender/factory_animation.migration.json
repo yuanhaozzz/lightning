@@ -1,0 +1,31 @@
+{
+  "reason": "User-confirmed dynamic factory phase 1 semantic preparation",
+  "changes": [
+    {
+      "path": "public/models/mine-coal-conveyors.glb",
+      "beforeSha256": "55AA55CB5888D37D3035828213607269F6B2F0BB599FFF394F7E84D03C48B41C",
+      "afterSha256": "52ECEF08EF145E1AD2870B1ED45011E334002CFC1F9DBC8E6871634D9CA5418E",
+      "archived": "scripts/blender/baselines/factory-v1/mine-coal-conveyors.glb"
+    },
+    {
+      "path": "public/models/mine-distribution-equipment.glb",
+      "beforeSha256": "486B545F6A485B2D63099971F310F2DDF603AA451D6452D8727B1A0793DB9C8C",
+      "afterSha256": "7F85AD608E79F53DDD9672B8AB4DD4EBBEF428EDA3C9BB622BC0069A3D01C231",
+      "archived": "scripts/blender/baselines/factory-v1/mine-distribution-equipment.glb"
+    },
+    {
+      "path": "public/models/mine-hoist-house.glb",
+      "beforeSha256": "54DCDEFA1A6657FC84A1A3B7D2D920C38AC4122E007A8A82B89086F9C2F9930C",
+      "afterSha256": "F9C42BF4E77EFB5F421F94AD3DA838D466BBD2CA37CE3896A7AA7584F34A67B2",
+      "archived": "scripts/blender/baselines/factory-v1/mine-hoist-house.glb"
+    },
+    {
+      "path": "public/models/mine-production-links.glb",
+      "beforeSha256": "1B2D0F8D4AA8E4BCFE932DE9EFB2103B205C43AE197077195CD99B70CC1F8F2E",
+      "afterSha256": "D283F347576E1A5A0067702BAD196E21B1B1770941E326FF3369061E7154FE70",
+      "archived": "scripts/blender/baselines/factory-v1/mine-production-links.glb"
+    }
+  ],
+  "otherGLBsPreserved": 19,
+  "headframeRegenerated": false
+}

@@ -1,0 +1,121 @@
+{
+  "url": "http://127.0.0.1:5173/mine-digital-twin",
+  "checks": [
+    {
+      "check": "headframe actual mesh click",
+      "selected": "headframe-01"
+    },
+    {
+      "check": "hide layer 建筑与基础环境",
+      "layers": "{\"buildings\":false,\"monitoring\":true,\"protection\":true,\"labels\":true}",
+      "selected": ""
+    },
+    {
+      "check": "hide layer 雷电监测设备",
+      "layers": "{\"buildings\":true,\"monitoring\":false,\"protection\":true,\"labels\":true}",
+      "selected": ""
+    },
+    {
+      "check": "hide layer 防雷设施",
+      "layers": "{\"buildings\":true,\"monitoring\":true,\"protection\":false,\"labels\":true}",
+      "selected": ""
+    },
+    {
+      "check": "hide layer 设备名称标识",
+      "layers": "{\"buildings\":true,\"monitoring\":true,\"protection\":true,\"labels\":false}",
+      "selected": ""
+    },
+    {
+      "check": "SPD actual mesh click after roof hidden",
+      "selected": "spd-lv-01",
+      "roof": "hidden"
+    },
+    {
+      "check": "close roof clears indoor selection",
+      "selected": ""
+    },
+    {
+      "check": "monitor actual mesh click",
+      "selected": "lightning-location-01"
+    },
+    {
+      "check": "orbit drag retains selection",
+      "selected": "lightning-location-01",
+      "before": "-61.268,4.320,44.024",
+      "after": "-63.399,2.365,42.330"
+    },
+    {
+      "check": "wheel zoom",
+      "before": "-63.405,2.365,42.322",
+      "after": "-60.797,2.158,40.317"
+    },
+    {
+      "check": "OrbitControls keyboard pan",
+      "before": "32.880,43.512,-26.482",
+      "after": "32.819,43.512,-26.408"
+    },
+    {
+      "check": "right button does not select",
+      "selected": "distribution-01"
+    },
+    {
+      "check": "distribution building actual click",
+      "selected": "distribution-01"
+    },
+    {
+      "check": "cabinet actual mesh click",
+      "selected": "power-cabinet-lv-02"
+    },
+    {
+      "check": "SPD selected directly from cabinet context",
+      "selected": "spd-lv-01"
+    },
+    {
+      "check": "resize-preserves-layer-and-roof",
+      "resizeBefore": {
+        "layers": "{\"buildings\":true,\"monitoring\":false,\"protection\":true,\"labels\":true}",
+        "roof": "hidden"
+      },
+      "resizeAfter": {
+        "layers": "{\"buildings\":true,\"monitoring\":false,\"protection\":true,\"labels\":true}",
+        "roof": "hidden"
+      },
+      "pass": true
+    },
+    {
+      "check": "earth-cutaway-preserved",
+      "pass": true
+    },
+    {
+      "check": "overview-resets-default-scene",
+      "finalState": {
+        "selected": "",
+        "roof": "visible",
+        "earth": "false",
+        "layers": "{\"buildings\":true,\"monitoring\":true,\"protection\":true,\"labels\":true}"
+      },
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "interactionTiming": [
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":true,\"powerRoofVisible\":false,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":7.700000047683716,\"cpuRenderAndLabelsP95Ms\":29.699999928474426,\"cpuWebGLSubmissionMedianMs\":6.100000023841858,\"cpuLabelsMedianMs\":1.4000000953674316,\"drawCalls\":67,\"triangles\":25818,\"geometries\":225,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-11T13:05:58.663Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791723834784"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":2,\"cpuRenderAndLabelsP95Ms\":31.5,\"cpuWebGLSubmissionMedianMs\":1.6999999284744263,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":228,\"triangles\":286874,\"geometries\":226,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-11T13:14:50.697Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791724064016"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.7999999523162842,\"cpuRenderAndLabelsP95Ms\":2.799999952316284,\"cpuWebGLSubmissionMedianMs\":1.2999999523162842,\"cpuLabelsMedianMs\":0.40000009536743164,\"drawCalls\":68,\"triangles\":52518,\"geometries\":226,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-11T13:14:51.399Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791724064016"
+    }
+  ]
+}

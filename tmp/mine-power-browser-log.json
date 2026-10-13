@@ -1,0 +1,722 @@
+[
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:37:42.864Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791714955731"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] environment ready {\"trees\":14,\"lamps\":12,\"instanceBatches\":13,\"gates\":2,\"roadBoundarySegments\":331}",
+    "timestamp": "2026-10-11T10:38:29.044Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/siteEnvironment.ts?t=1791708743793"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:38:29.050Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:38:29.119Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"headframe-01\",\"path\":\"models/mine-headframe.glb\",\"uniformScale\":1.6,\"sourceSize\":[9.149999618530273,15.755000366829336,6.7000004053115845]}",
+    "timestamp": "2026-10-11T10:38:29.138Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"shaft-house-01\",\"path\":\"models/mine-shaft-house.glb\",\"uniformScale\":1,\"sourceSize\":[10.542499542236328,4.5949998162686825,8.58999913930893]}",
+    "timestamp": "2026-10-11T10:38:29.151Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"hoist-house-01\",\"path\":\"models/mine-hoist-house.glb\",\"uniformScale\":1,\"sourceSize\":[20.44249963760376,7.095000054687262,12.590000331401825]}",
+    "timestamp": "2026-10-11T10:38:29.167Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"transfer-01\",\"path\":\"models/mine-transfer-station.glb\",\"uniformScale\":1,\"sourceSize\":[9.750000476837158,10.547552108764648,7.75]}",
+    "timestamp": "2026-10-11T10:38:29.179Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-01\",\"path\":\"models/mine-coal-silo-1.glb\",\"uniformScale\":1,\"sourceSize\":[9.591854721307755,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:38:29.191Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-02\",\"path\":\"models/mine-coal-silo-2.glb\",\"uniformScale\":1,\"sourceSize\":[9.59185379743576,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:38:29.204Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"substation-01\",\"path\":\"models/mine-substation.glb\",\"uniformScale\":1,\"sourceSize\":[18,5.43000004440546,12]}",
+    "timestamp": "2026-10-11T10:38:29.233Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-01\",\"path\":\"models/mine-distribution-shell.glb\",\"uniformScale\":1,\"sourceSize\":[18.540000915527344,4.0000002682209015,9.199999690055847]}",
+    "timestamp": "2026-10-11T10:38:29.247Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"production-connections\",\"path\":\"models/mine-production-links.glb\",\"uniformScale\":1,\"anchor\":\"world origin\"}",
+    "timestamp": "2026-10-11T10:38:29.260Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-transport-conveyors\",\"path\":\"models/mine-coal-conveyors.glb\",\"uniformScale\":1,\"anchor\":\"world origin\",\"replacedConveyors\":3}",
+    "timestamp": "2026-10-11T10:38:29.275Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-roof\",\"path\":\"models/mine-distribution-roof.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:38:29.284Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-equipment\",\"path\":\"models/mine-distribution-equipment.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:38:29.296Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power interaction ready {\"selectableEntities\":16}",
+    "timestamp": "2026-10-11T10:38:29.296Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":12,\"drawCalls\":386,\"triangles\":542818,\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:38:29.354Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] environment ready {\"trees\":14,\"lamps\":12,\"instanceBatches\":13,\"gates\":2,\"roadBoundarySegments\":331}",
+    "timestamp": "2026-10-11T10:38:50.851Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/siteEnvironment.ts?t=1791708743793"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:38:50.857Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:38:50.921Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"headframe-01\",\"path\":\"models/mine-headframe.glb\",\"uniformScale\":1.6,\"sourceSize\":[9.149999618530273,15.755000366829336,6.7000004053115845]}",
+    "timestamp": "2026-10-11T10:38:50.948Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"shaft-house-01\",\"path\":\"models/mine-shaft-house.glb\",\"uniformScale\":1,\"sourceSize\":[10.542499542236328,4.5949998162686825,8.58999913930893]}",
+    "timestamp": "2026-10-11T10:38:50.963Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"hoist-house-01\",\"path\":\"models/mine-hoist-house.glb\",\"uniformScale\":1,\"sourceSize\":[20.44249963760376,7.095000054687262,12.590000331401825]}",
+    "timestamp": "2026-10-11T10:38:50.983Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"transfer-01\",\"path\":\"models/mine-transfer-station.glb\",\"uniformScale\":1,\"sourceSize\":[9.750000476837158,10.547552108764648,7.75]}",
+    "timestamp": "2026-10-11T10:38:50.997Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-01\",\"path\":\"models/mine-coal-silo-1.glb\",\"uniformScale\":1,\"sourceSize\":[9.591854721307755,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:38:51.011Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-02\",\"path\":\"models/mine-coal-silo-2.glb\",\"uniformScale\":1,\"sourceSize\":[9.59185379743576,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:38:51.023Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"substation-01\",\"path\":\"models/mine-substation.glb\",\"uniformScale\":1,\"sourceSize\":[18,5.43000004440546,12]}",
+    "timestamp": "2026-10-11T10:38:51.040Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-01\",\"path\":\"models/mine-distribution-shell.glb\",\"uniformScale\":1,\"sourceSize\":[18.540000915527344,4.0000002682209015,9.199999690055847]}",
+    "timestamp": "2026-10-11T10:38:51.055Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"production-connections\",\"path\":\"models/mine-production-links.glb\",\"uniformScale\":1,\"anchor\":\"world origin\"}",
+    "timestamp": "2026-10-11T10:38:51.081Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-transport-conveyors\",\"path\":\"models/mine-coal-conveyors.glb\",\"uniformScale\":1,\"anchor\":\"world origin\",\"replacedConveyors\":3}",
+    "timestamp": "2026-10-11T10:38:51.094Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-roof\",\"path\":\"models/mine-distribution-roof.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:38:51.103Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-equipment\",\"path\":\"models/mine-distribution-equipment.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:38:51.115Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power interaction ready {\"selectableEntities\":16}",
+    "timestamp": "2026-10-11T10:38:51.115Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":12,\"drawCalls\":386,\"triangles\":542818,\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:38:51.175Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:39:41.762Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.1999999284744263,\"cpuRenderAndLabelsP95Ms\":1.8000000715255737,\"cpuWebGLSubmissionMedianMs\":1.1999999284744263,\"cpuLabelsMedianMs\":0,\"drawCalls\":202,\"triangles\":274436,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:39:42.094Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] environment ready {\"trees\":14,\"lamps\":12,\"instanceBatches\":13,\"gates\":2,\"roadBoundarySegments\":331}",
+    "timestamp": "2026-10-11T10:43:13.117Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/siteEnvironment.ts?t=1791708743793"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:43:13.122Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:43:13.203Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"headframe-01\",\"path\":\"models/mine-headframe.glb\",\"uniformScale\":1.6,\"sourceSize\":[9.149999618530273,15.755000366829336,6.7000004053115845]}",
+    "timestamp": "2026-10-11T10:43:13.227Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"shaft-house-01\",\"path\":\"models/mine-shaft-house.glb\",\"uniformScale\":1,\"sourceSize\":[10.542499542236328,4.5949998162686825,8.58999913930893]}",
+    "timestamp": "2026-10-11T10:43:13.240Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"hoist-house-01\",\"path\":\"models/mine-hoist-house.glb\",\"uniformScale\":1,\"sourceSize\":[20.44249963760376,7.095000054687262,12.590000331401825]}",
+    "timestamp": "2026-10-11T10:43:13.257Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"transfer-01\",\"path\":\"models/mine-transfer-station.glb\",\"uniformScale\":1,\"sourceSize\":[9.750000476837158,10.547552108764648,7.75]}",
+    "timestamp": "2026-10-11T10:43:13.271Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-01\",\"path\":\"models/mine-coal-silo-1.glb\",\"uniformScale\":1,\"sourceSize\":[9.591854721307755,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:43:13.284Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-02\",\"path\":\"models/mine-coal-silo-2.glb\",\"uniformScale\":1,\"sourceSize\":[9.59185379743576,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:43:13.297Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"substation-01\",\"path\":\"models/mine-substation.glb\",\"uniformScale\":1,\"sourceSize\":[18,5.43000004440546,12]}",
+    "timestamp": "2026-10-11T10:43:13.318Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-01\",\"path\":\"models/mine-distribution-shell.glb\",\"uniformScale\":1,\"sourceSize\":[18.540000915527344,4.0000002682209015,9.199999690055847]}",
+    "timestamp": "2026-10-11T10:43:13.332Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"production-connections\",\"path\":\"models/mine-production-links.glb\",\"uniformScale\":1,\"anchor\":\"world origin\"}",
+    "timestamp": "2026-10-11T10:43:13.346Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-transport-conveyors\",\"path\":\"models/mine-coal-conveyors.glb\",\"uniformScale\":1,\"anchor\":\"world origin\",\"replacedConveyors\":3}",
+    "timestamp": "2026-10-11T10:43:13.362Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-roof\",\"path\":\"models/mine-distribution-roof.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:43:13.373Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-equipment\",\"path\":\"models/mine-distribution-equipment.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:43:13.386Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power interaction ready {\"selectableEntities\":16}",
+    "timestamp": "2026-10-11T10:43:13.386Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":12,\"drawCalls\":386,\"triangles\":542846,\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:43:13.446Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:44:23.203Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"samples\":32,\"cpuRenderAndLabelsMedianMs\":17.799999952316284,\"cpuRenderAndLabelsP95Ms\":48.200000047683716,\"cpuWebGLSubmissionMedianMs\":15.399999976158142,\"cpuLabelsMedianMs\":2.200000047683716,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:44:24.683Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:45:38.026Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:47:17.062Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-mv-05\",\"name\":\"高压配电柜 05\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T10:49:13.603Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715108977"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] environment ready {\"trees\":14,\"lamps\":12,\"instanceBatches\":13,\"gates\":2,\"roadBoundarySegments\":331}",
+    "timestamp": "2026-10-11T10:50:25.128Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/siteEnvironment.ts?t=1791708743793"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:50:25.150Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:50:25.308Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"headframe-01\",\"path\":\"models/mine-headframe.glb\",\"uniformScale\":1.6,\"sourceSize\":[9.149999618530273,15.755000366829336,6.7000004053115845]}",
+    "timestamp": "2026-10-11T10:50:25.457Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"shaft-house-01\",\"path\":\"models/mine-shaft-house.glb\",\"uniformScale\":1,\"sourceSize\":[10.542499542236328,4.5949998162686825,8.58999913930893]}",
+    "timestamp": "2026-10-11T10:50:25.574Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"hoist-house-01\",\"path\":\"models/mine-hoist-house.glb\",\"uniformScale\":1,\"sourceSize\":[20.44249963760376,7.095000054687262,12.590000331401825]}",
+    "timestamp": "2026-10-11T10:50:25.670Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"transfer-01\",\"path\":\"models/mine-transfer-station.glb\",\"uniformScale\":1,\"sourceSize\":[9.750000476837158,10.547552108764648,7.75]}",
+    "timestamp": "2026-10-11T10:50:25.773Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-01\",\"path\":\"models/mine-coal-silo-1.glb\",\"uniformScale\":1,\"sourceSize\":[9.591854721307755,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:50:25.970Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-02\",\"path\":\"models/mine-coal-silo-2.glb\",\"uniformScale\":1,\"sourceSize\":[9.59185379743576,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:50:26.245Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"substation-01\",\"path\":\"models/mine-substation.glb\",\"uniformScale\":1,\"sourceSize\":[18,5.43000004440546,12]}",
+    "timestamp": "2026-10-11T10:50:26.417Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-01\",\"path\":\"models/mine-distribution-shell.glb\",\"uniformScale\":1,\"sourceSize\":[18.540000915527344,4.0000002682209015,9.199999690055847]}",
+    "timestamp": "2026-10-11T10:50:26.762Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"production-connections\",\"path\":\"models/mine-production-links.glb\",\"uniformScale\":1,\"anchor\":\"world origin\"}",
+    "timestamp": "2026-10-11T10:50:26.865Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-transport-conveyors\",\"path\":\"models/mine-coal-conveyors.glb\",\"uniformScale\":1,\"anchor\":\"world origin\",\"replacedConveyors\":3}",
+    "timestamp": "2026-10-11T10:50:26.945Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-roof\",\"path\":\"models/mine-distribution-roof.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:50:27.027Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-equipment\",\"path\":\"models/mine-distribution-equipment.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:50:27.121Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power interaction ready {\"selectableEntities\":16}",
+    "timestamp": "2026-10-11T10:50:27.124Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":12,\"drawCalls\":386,\"triangles\":542846,\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:50:27.259Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] environment ready {\"trees\":14,\"lamps\":12,\"instanceBatches\":13,\"gates\":2,\"roadBoundarySegments\":331}",
+    "timestamp": "2026-10-11T10:52:04.587Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/siteEnvironment.ts?t=1791708743793"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:52:04.616Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:52:04.826Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"headframe-01\",\"path\":\"models/mine-headframe.glb\",\"uniformScale\":1.6,\"sourceSize\":[9.149999618530273,15.755000366829336,6.7000004053115845]}",
+    "timestamp": "2026-10-11T10:52:04.961Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"shaft-house-01\",\"path\":\"models/mine-shaft-house.glb\",\"uniformScale\":1,\"sourceSize\":[10.542499542236328,4.5949998162686825,8.58999913930893]}",
+    "timestamp": "2026-10-11T10:52:05.076Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"hoist-house-01\",\"path\":\"models/mine-hoist-house.glb\",\"uniformScale\":1,\"sourceSize\":[20.44249963760376,7.095000054687262,12.590000331401825]}",
+    "timestamp": "2026-10-11T10:52:05.248Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"transfer-01\",\"path\":\"models/mine-transfer-station.glb\",\"uniformScale\":1,\"sourceSize\":[9.750000476837158,10.547552108764648,7.75]}",
+    "timestamp": "2026-10-11T10:52:05.352Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-01\",\"path\":\"models/mine-coal-silo-1.glb\",\"uniformScale\":1,\"sourceSize\":[9.591854721307755,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:52:05.607Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-02\",\"path\":\"models/mine-coal-silo-2.glb\",\"uniformScale\":1,\"sourceSize\":[9.59185379743576,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:52:05.879Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"substation-01\",\"path\":\"models/mine-substation.glb\",\"uniformScale\":1,\"sourceSize\":[18,5.43000004440546,12]}",
+    "timestamp": "2026-10-11T10:52:06.086Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-01\",\"path\":\"models/mine-distribution-shell.glb\",\"uniformScale\":1,\"sourceSize\":[18.540000915527344,4.0000002682209015,9.199999690055847]}",
+    "timestamp": "2026-10-11T10:52:06.304Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"production-connections\",\"path\":\"models/mine-production-links.glb\",\"uniformScale\":1,\"anchor\":\"world origin\"}",
+    "timestamp": "2026-10-11T10:52:06.420Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-transport-conveyors\",\"path\":\"models/mine-coal-conveyors.glb\",\"uniformScale\":1,\"anchor\":\"world origin\",\"replacedConveyors\":3}",
+    "timestamp": "2026-10-11T10:52:06.493Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-roof\",\"path\":\"models/mine-distribution-roof.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:52:06.545Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-equipment\",\"path\":\"models/mine-distribution-equipment.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:52:06.614Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power interaction ready {\"selectableEntities\":16}",
+    "timestamp": "2026-10-11T10:52:06.614Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":12,\"drawCalls\":386,\"triangles\":542846,\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:52:06.767Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] environment ready {\"trees\":14,\"lamps\":12,\"instanceBatches\":13,\"gates\":2,\"roadBoundarySegments\":331}",
+    "timestamp": "2026-10-11T10:52:49.121Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/siteEnvironment.ts?t=1791708743793"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:52:49.129Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:52:49.223Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"headframe-01\",\"path\":\"models/mine-headframe.glb\",\"uniformScale\":1.6,\"sourceSize\":[9.149999618530273,15.755000366829336,6.7000004053115845]}",
+    "timestamp": "2026-10-11T10:52:49.255Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"shaft-house-01\",\"path\":\"models/mine-shaft-house.glb\",\"uniformScale\":1,\"sourceSize\":[10.542499542236328,4.5949998162686825,8.58999913930893]}",
+    "timestamp": "2026-10-11T10:52:49.277Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"hoist-house-01\",\"path\":\"models/mine-hoist-house.glb\",\"uniformScale\":1,\"sourceSize\":[20.44249963760376,7.095000054687262,12.590000331401825]}",
+    "timestamp": "2026-10-11T10:52:49.301Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"transfer-01\",\"path\":\"models/mine-transfer-station.glb\",\"uniformScale\":1,\"sourceSize\":[9.750000476837158,10.547552108764648,7.75]}",
+    "timestamp": "2026-10-11T10:52:49.321Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-01\",\"path\":\"models/mine-coal-silo-1.glb\",\"uniformScale\":1,\"sourceSize\":[9.591854721307755,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:52:49.341Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-silo-02\",\"path\":\"models/mine-coal-silo-2.glb\",\"uniformScale\":1,\"sourceSize\":[9.59185379743576,13.040956005454063,9.152979418635368]}",
+    "timestamp": "2026-10-11T10:52:49.360Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"substation-01\",\"path\":\"models/mine-substation.glb\",\"uniformScale\":1,\"sourceSize\":[18,5.43000004440546,12]}",
+    "timestamp": "2026-10-11T10:52:49.387Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-01\",\"path\":\"models/mine-distribution-shell.glb\",\"uniformScale\":1,\"sourceSize\":[18.540000915527344,4.0000002682209015,9.199999690055847]}",
+    "timestamp": "2026-10-11T10:52:49.415Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"production-connections\",\"path\":\"models/mine-production-links.glb\",\"uniformScale\":1,\"anchor\":\"world origin\"}",
+    "timestamp": "2026-10-11T10:52:49.439Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"coal-transport-conveyors\",\"path\":\"models/mine-coal-conveyors.glb\",\"uniformScale\":1,\"anchor\":\"world origin\",\"replacedConveyors\":3}",
+    "timestamp": "2026-10-11T10:52:49.462Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-roof\",\"path\":\"models/mine-distribution-roof.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:52:49.477Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] model loaded {\"id\":\"distribution-equipment\",\"path\":\"models/mine-distribution-equipment.glb\",\"uniformScale\":1}",
+    "timestamp": "2026-10-11T10:52:49.497Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power interaction ready {\"selectableEntities\":16}",
+    "timestamp": "2026-10-11T10:52:49.497Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/parkScene.ts?t=1791715824781"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":12,\"drawCalls\":386,\"triangles\":542846,\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:52:49.581Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:53:46.995Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.600000023841858,\"cpuRenderAndLabelsP95Ms\":2.6999999284744263,\"cpuWebGLSubmissionMedianMs\":1.2000000476837158,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:53:47.439Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.5999999046325684,\"cpuRenderAndLabelsP95Ms\":3,\"cpuWebGLSubmissionMedianMs\":1.2000000476837158,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:53:47.966Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":3,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.600000023841858,\"cpuRenderAndLabelsP95Ms\":2.5,\"cpuWebGLSubmissionMedianMs\":1.100000023841858,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:53:48.504Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:55:21.923Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:55:35.979Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T10:56:24.201Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-mv-05\",\"name\":\"高压配电柜 05\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T10:56:53.373Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-mv-05\",\"name\":\"高压配电柜 05\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T10:57:34.193Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T10:58:16.537Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "result": "PASS",
+  "historicalFeatureHashes": "SKIPPED: phase2 authorized interaction changes; baseline preserved",
+  "cases": [
+    {
+      "hz": 30,
+      "clock": 79.9999999999976,
+      "stroke": 1.5229537640728452,
+      "travel": 79.9999999999976,
+      "balance": {
+        "supplied": 377.5,
+        "receivingHopperKg": 52.5,
+        "hoistDeliveredKg": 390,
+        "initialHopperKg": 40,
+        "inTransit": 230,
+        "received": 147.5,
+        "discharged": 240.00000000000622
+      }
+    },
+    {
+      "hz": 60,
+      "clock": 79.9999999999976,
+      "stroke": 1.5229537640728452,
+      "travel": 79.9999999999976,
+      "balance": {
+        "supplied": 377.5,
+        "receivingHopperKg": 52.5,
+        "hoistDeliveredKg": 390,
+        "initialHopperKg": 40,
+        "inTransit": 230,
+        "received": 147.5,
+        "discharged": 240.00000000000622
+      }
+    },
+    {
+      "hz": 144,
+      "clock": 79.9999999999976,
+      "stroke": 1.5229537640728452,
+      "travel": 79.9999999999976,
+      "balance": {
+        "supplied": 377.5,
+        "receivingHopperKg": 52.5,
+        "hoistDeliveredKg": 390,
+        "initialHopperKg": 40,
+        "inTransit": 230,
+        "received": 147.5,
+        "discharged": 240.00000000000622
+      }
+    }
+  ],
+  "idlers": 210,
+  "cabinetCount": 12,
+  "cabinetIds": [
+    "power-cabinet-lv-01",
+    "power-cabinet-lv-02",
+    "power-cabinet-lv-03",
+    "power-cabinet-lv-04",
+    "power-cabinet-lv-05",
+    "power-cabinet-lv-06",
+    "power-cabinet-mv-01",
+    "power-cabinet-mv-02",
+    "power-cabinet-mv-03",
+    "power-cabinet-mv-04",
+    "power-cabinet-mv-05",
+    "power-cabinet-mv-06"
+  ],
+  "protectedAssets": 19,
+  "protectedFeatures": 0,
+  "sheavePivot": [
+    -15.96,
+    22.383999389648437,
+    -6
+  ],
+  "runtimeResources": {
+    "idlerInstances": 210,
+    "idlerDrawCalls": 9,
+    "coalDrawCalls": 3,
+    "maxCoalInstancesPerSegment": 512,
+    "addedModels": 3,
+    "finiteHoistStroke": 1.6
+  },
+  "checks": [
+    "actual GLTFLoader nodes and runtime",
+    "stationary supports",
+    "fixed rotation pivots",
+    "synchronized rope/drum/container",
+    "instanced idlers",
+    "idempotent resource disposal",
+    "refresh-rate independence",
+    "stop/fault/recover",
+    "feeder independence",
+    "mass conservation",
+    "transport delay",
+    "silo bounds",
+    "unchanged layout/environment/weather/SPD",
+    "finite inspection stroke"
+  ]
+}

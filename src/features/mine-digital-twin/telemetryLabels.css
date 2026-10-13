@@ -1,0 +1,84 @@
+.mine-view .mine-telemetry-anchor {
+  --telemetry-accent: #4dd9ff;
+  --telemetry-state: #a6bacb;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  color: #f2f8ff;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+.mine-view .mine-telemetry-anchor[data-state="running"],
+.mine-view .mine-telemetry-anchor[data-state="normal"] { --telemetry-state: #40dca9; }
+.mine-view .mine-telemetry-anchor[data-state="warning"] { --telemetry-state: #f5ae45; --telemetry-accent: #f5ae45; }
+.mine-view .mine-telemetry-anchor[data-state="fault"] { --telemetry-state: #f57976; --telemetry-accent: #f57976; }
+.mine-view .mine-telemetry-card {
+  position: absolute;
+  display: block;
+  width: 156px;
+  padding: 9px 11px 7px;
+  box-sizing: border-box;
+  transform: translate(-50%, -100%);
+  text-align: left;
+  color: #f2f8ff;
+  background: linear-gradient(120deg, rgba(15, 57, 82, .94), rgba(5, 25, 43, .91));
+  border: 1px solid rgba(68, 168, 218, .58);
+  border-left: 2px solid var(--telemetry-accent);
+  border-radius: 3px 9px 3px 3px;
+  box-shadow: 0 6px 18px rgba(1, 14, 25, .28), inset 0 1px rgba(145, 223, 255, .11);
+  backdrop-filter: blur(8px);
+  pointer-events: auto;
+  cursor: pointer;
+  font: inherit;
+}
+.mine-view .mine-telemetry-card::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 35px;
+  top: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--telemetry-accent), transparent);
+  box-shadow: 0 0 6px rgba(51, 213, 255, .3);
+}
+.mine-view .mine-telemetry-card:hover,
+.mine-view .mine-telemetry-card:focus-visible,
+.mine-view .mine-telemetry-anchor.is-selected .mine-telemetry-card {
+  outline: 1px solid var(--telemetry-accent);
+  outline-offset: 2px;
+  background: linear-gradient(120deg, rgba(19, 78, 107, .97), rgba(7, 37, 59, .94));
+  box-shadow: 0 8px 24px rgba(1, 14, 25, .35), 0 0 16px rgba(51, 213, 255, .16);
+}
+.mine-view .mine-telemetry-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.mine-view .mine-telemetry-top svg {
+  flex: 0 0 15px;
+  width: 15px;
+  height: 17px;
+  stroke: var(--telemetry-accent);
+  fill: none;
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.mine-view .mine-telemetry-top strong { font-size: 11px; font-weight: 600; letter-spacing: .15px; }
+.mine-view .mine-telemetry-arrow { color: #83bdd6; font-size: 17px; line-height: 16px; margin-left: auto; }
+.mine-view .mine-telemetry-reading { display: flex; align-items: baseline; justify-content: space-between; gap: 5px; margin-top: 7px; }
+.mine-view .mine-telemetry-key { color: #a9bfd0; font-size: 9px; white-space: nowrap; }
+.mine-view .mine-telemetry-reading b { color: #eaf8ff; font-size: 13px; line-height: 16px; letter-spacing: .25px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mine-view .mine-telemetry-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; padding-top: 5px; border-top: 1px solid rgba(95, 160, 193, .16); }
+.mine-view .mine-telemetry-status { color: var(--telemetry-state); font-size: 9px; line-height: 10px; }
+.mine-view .mine-telemetry-status::before { content: ""; display: inline-block; width: 4px; height: 4px; margin-right: 5px; border-radius: 50%; background: currentColor; vertical-align: 1px; }
+.mine-view .mine-telemetry-bottom small { color: #93afc2; font-size: 8px; letter-spacing: .5px; }
+.mine-view .mine-telemetry-marker { position: absolute; left: -3px; top: -3px; width: 6px; height: 6px; border: 1px solid #dbf7ff; border-radius: 50%; background: var(--telemetry-accent); box-shadow: 0 0 0 4px rgba(51, 213, 255, .12), 0 0 10px rgba(51, 213, 255, .36); }
+.mine-view .mine-telemetry-leader { position: absolute; left: 0; top: 0; height: 1px; transform-origin: left center; background: linear-gradient(90deg, var(--telemetry-accent), rgba(155, 224, 246, .48)); opacity: .7; }
+@media (max-width: 1100px) {
+  .mine-view .mine-telemetry-card { width: 142px; padding: 7px 8px 6px; }
+  .mine-view .mine-telemetry-top { gap: 4px; }
+  .mine-view .mine-telemetry-top strong { font-size: 10px; }
+  .mine-view .mine-telemetry-reading b { font-size: 12px; }
+}

@@ -1,0 +1,31 @@
+{
+  "protectedBaselineMismatches": [
+    {
+      "baseline": "coal_transport.protected-baseline.json",
+      "changed": [
+        "src/features/mine-digital-twin/index.vue",
+        "src/features/mine-digital-twin/overviewCamera.ts"
+      ]
+    },
+    {
+      "baseline": "monitoring.protected-baseline.json",
+      "changed": [
+        "src/features/mine-digital-twin/overviewCamera.ts"
+      ]
+    },
+    {
+      "baseline": "power_area.protected-baseline.json",
+      "changed": [
+        "src/features/mine-digital-twin/overviewCamera.ts"
+      ]
+    },
+    {
+      "baseline": "protection.protected-baseline.json",
+      "changed": [
+        "src/features/mine-digital-twin/overviewCamera.ts"
+      ]
+    }
+  ],
+  "filesAudited": 96,
+  "filesChangedThisAudit": []
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T11:08:51.113Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":12.100000023841858,\"cpuRenderAndLabelsP95Ms\":17.100000023841858,\"cpuWebGLSubmissionMedianMs\":9.799999952316284,\"cpuLabelsMedianMs\":2,\"drawCalls\":197,\"triangles\":274400,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T11:09:23.515Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power inspection located {\"view\":\"substation\",\"camera\":[23.37660675689324,31.368393259051004,3.62772283058419],\"target\":[52,2.7450000159442425,-26]}",
+    "timestamp": "2026-10-11T11:09:24.132Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":false,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":7.100000023841858,\"cpuRenderAndLabelsP95Ms\":10.300000071525574,\"cpuWebGLSubmissionMedianMs\":5.300000071525574,\"cpuLabelsMedianMs\":1.7000000476837158,\"drawCalls\":80,\"triangles\":58906,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T11:10:06.764Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power inspection located {\"view\":\"distribution\",\"camera\":[33.7813604800936,41.64309407735961,-25.73423795090158],\"target\":[52.75500000268221,2.307499945163727,-10.000000298023224]}",
+    "timestamp": "2026-10-11T11:10:09.348Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected null",
+    "timestamp": "2026-10-11T11:15:19.960Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-mv-03\",\"name\":\"高压配电柜 03\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T11:15:44.125Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-lv-01\",\"name\":\"低压配电柜 01\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T11:16:21.796Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-lv-01\",\"name\":\"低压配电柜 01\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T11:16:40.314Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"power-cabinet-lv-01\",\"name\":\"低压配电柜 01\",\"kind\":\"cabinet\"}",
+    "timestamp": "2026-10-11T11:17:32.923Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power selected {\"id\":\"spd-distribution\",\"name\":\"进线柜 SPD 安装预留\",\"kind\":\"spd-reserve\",\"parentId\":\"power-cabinet-lv-01\"}",
+    "timestamp": "2026-10-11T11:18:06.779Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":3,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":8.200000047683716,\"cpuRenderAndLabelsP95Ms\":31.200000047683716,\"cpuWebGLSubmissionMedianMs\":8.200000047683716,\"cpuLabelsMedianMs\":0,\"drawCalls\":111,\"triangles\":37098,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T11:18:54.614Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] overview restored {\"camera\":[244.48882087678103,260.9437456410543,108.85343629160342],\"target\":[0,2.5,0],\"elevation\":44,\"distance\":372.04438416294755,\"viewOffset\":[23.92045716464429,20.551020130157326]}",
+    "timestamp": "2026-10-11T11:18:54.952Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] power inspection located {\"view\":\"distribution\",\"camera\":[33.78136048009361,41.64309407735962,-25.734237950901587],\"target\":[52.75500000268221,2.307499945163727,-10.000000298023224]}",
+    "timestamp": "2026-10-11T11:19:12.350Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791716863344"
+  }
+]

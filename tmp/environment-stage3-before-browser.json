@@ -1,0 +1,12 @@
+{
+  "load": "{\"modelLoadMs\":5663.5,\"sceneReadyMs\":8394.900000000023,\"loadedModels\":24,\"note\":\"Actual route load: fetch, decode and model setup; browser/HTTP caches may be warm.\"}",
+  "camera": "33.240,129.602,188.512",
+  "logs": [
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":11.300000000046566,\"cpuRenderAndLabelsP95Ms\":23.400000000023283,\"cpuWebGLSubmissionMedianMs\":10,\"cpuLabelsMedianMs\":1.2000000000698492,\"drawCalls\":242,\"triangles\":332868,\"geometries\":229,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T02:30:47.392Z",
+      "url": "http://127.0.0.1:5174/src/features/mine-digital-twin/index.vue"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "checked": [
+    "factory start: 19/19 running",
+    "fault: 18/19 running + 1 alert",
+    "alert locates hoist-house-01",
+    "canvas blank clears selection",
+    "canvas distribution pick opens roof",
+    "LV01 door 1.92rad and interior visible",
+    "SPD component stage and inverse restore",
+    "layers toggled and overview restores",
+    "orbit drag + wheel move camera without selection",
+    "storm pause stable, resume and exit restores"
+  ],
+  "pauseStable": true,
+  "finalState": {
+    "data-camera-flying": "true",
+    "data-camera-position": "66.724,60.836,205.356",
+    "data-cloud-performance": "{\"drawCalls\":1,\"triangles\":12,\"maxRaySteps\":48,\"densityBytes\":1916928,\"textures\":1,\"materials\":1,\"surroundings\":{\"drawCalls\":6,\"terrainTriangles\":13016,\"terrainVertices\":6640,\"roadTriangles\":7054,\"textures\":2,\"textureBytes\":699050.6666666666,\"lod\":\"stitched near/middle/far distance-adaptive rings\",\"nearSamples\":196,\"farSamples\":68},\"warningPulse\":{\"drawCalls\":1,\"triangles\":128,\"materials\":1,\"textures\":0},\"frameIntervalMedianMs\":58.39999999990687,\"frameIntervalP95Ms\":62.6999999997206,\"cpuSubmissionAndLabelsMedianMs\":19,\"samples\":90,\"note\":\"Observed animation frame intervals; includes scene/browser cost, not an isolated GPU timer.\"}",
+    "data-cloud-state": "{\"opacity\":0,\"position\":[-16.7934,68,-60.326],\"visible\":false,\"atmosphere\":{\"approach\":0,\"baseLight\":1,\"flash\":0,\"flashPosition\":[0.5,0.3,0.65],\"pulsePhase\":0,\"active\":false},\"sun\":2.6,\"ambient\":0.7,\"environment\":0.48}",
+    "data-demo-devices": "[{\"id\":\"lightning-location-01\",\"status\":\"normal\"},{\"id\":\"storm-warning-01\",\"status\":\"normal\"},{\"id\":\"air-terminal-production\",\"status\":\"normal\"},{\"id\":\"air-terminal-power\",\"status\":\"normal\"},{\"id\":\"roof-belt-hoist-01\",\"status\":\"normal\"},{\"id\":\"roof-belt-distribution-01\",\"status\":\"normal\"},{\"id\":\"downlead-hoist-01\",\"status\":\"normal\"},{\"id\":\"downlead-distribution-01\",\"status\":\"normal\"},{\"id\":\"spd-lv-01\",\"status\":\"normal\"},{\"id\":\"ground-monitor-01\",\"status\":\"normal\"},{\"id\":\"earth-section-01\",\"status\":\"normal\"}]",
+    "data-demo-elapsed-ms": "0",
+    "data-demo-phase": "normal",
+    "data-demo-playback": "idle",
+    "data-demo-run-id": "",
+    "data-drilldown": "{\"stage\":\"park\",\"targetStage\":\"park\",\"currentId\":\"distribution-01\",\"active\":false,\"transitioning\":false,\"progress\":1,\"roofLift\":0,\"wallOpacity\":1,\"cabinetOffset\":0,\"doorAngle\":0,\"explode\":0,\"lampCount\":3,\"status\":\"stopped\",\"cameraFollow\":false}",
+    "data-drilldown-performance": "",
+    "data-drilldown-stage": "park",
+    "data-earth-inspection": "false",
+    "data-factory-motion": "{\"sheaveQuaternion\":[0,0,0,1],\"sheavePivot\":[-15.96,22.383999389648437,-6],\"drumQuaternion\":[0,0,0,1],\"containerBottomY\":0.12,\"ropeLengthMeters\":20.71400077819824,\"beltTravel\":[{\"id\":\"shaft-transfer\",\"meters\":0,\"coalInstances\":0},{\"id\":\"transfer-silo-1\",\"meters\":0,\"coalInstances\":0},{\"id\":\"transfer-silo-2\",\"meters\":0,\"coalInstances\":0}],\"idlers\":210,\"inspection\":null}",
+    "data-factory-performance": "",
+    "data-factory-state": "{\"source\":\"演示数据\",\"devices\":[{\"id\":\"hoist-house-01\",\"name\":\"井架提升系统\",\"speed\":0.35,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"shaft-transfer\",\"name\":\"井口 → 转载站\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"transfer-silo-1\",\"name\":\"转载站 → 煤仓 1\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"transfer-silo-2\",\"name\":\"转载站 → 煤仓 2\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"coal-silo-01\",\"name\":\"煤仓 1\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"coal-silo-02\",\"name\":\"煤仓 2\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-transformer-01\",\"name\":\"变压器\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-mv-01\",\"name\":\"高压柜 1\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-mv-02\",\"name\":\"高压柜 2\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-mv-03\",\"name\":\"高压柜 3\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-mv-04\",\"name\":\"高压柜 4\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-mv-05\",\"name\":\"高压柜 5\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-mv-06\",\"name\":\"高压柜 6\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-lv-01\",\"name\":\"低压柜 1\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-lv-02\",\"name\":\"低压柜 2\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-lv-03\",\"name\":\"低压柜 3\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-lv-04\",\"name\":\"低压柜 4\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-lv-05\",\"name\":\"低压柜 5\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null},{\"id\":\"power-cabinet-lv-06\",\"name\":\"低压柜 6\",\"speed\":1,\"status\":\"stopped\",\"direction\":1,\"travel\":0,\"fault\":null}],\"stocks\":[{\"id\":\"coal-silo-01\",\"mass\":72351.95291851243,\"capacity\":258399.8318518301,\"initial\":72351.95291851243,\"received\":0,\"discharged\":0,\"level\":0.28},{\"id\":\"coal-silo-02\",\"mass\":108527.92937776864,\"capacity\":258399.8318518301,\"initial\":108527.92937776864,\"received\":0,\"discharged\":0,\"level\":0.42}],\"hoistStrokeMeters\":0,\"clock\":0,\"balance\":{\"supplied\":0,\"receivingHopperKg\":40,\"hoistDeliveredKg\":0,\"initialHopperKg\":40,\"inTransit\":0,\"received\":0,\"discharged\":0}}",
+    "data-hidden-headframe-parts": "[]",
+    "data-inspection-view": "",
+    "data-layers": "{\"buildings\":true,\"monitoring\":true,\"protection\":true,\"labels\":true}",
+    "data-load-performance": "{\"modelLoadMs\":1929.800000000745,\"sceneReadyMs\":4469.60000000149,\"loadedModels\":24,\"note\":\"Actual route load: fetch, decode and model setup; browser/HTTP caches may be warm.\"}",
+    "data-model-status": "loaded",
+    "data-power-roof": "visible",
+    "data-scene-view": "overview",
+    "data-selected-device-id": "",
+    "data-selected-entity-id": "",
+    "data-selected-entity-type": "",
+    "data-selected-facility-id": "",
+    "data-selected-power-id": "",
+    "data-v-0583aa2f": "",
+    "data-visual-style": "{\"materialCategories\":{\"concrete\":36,\"coating\":40,\"metal\":72,\"glass\":7,\"unchanged\":77},\"styledMaterials\":155,\"extraDrawCalls\":1,\"extraTriangles\":12,\"textures\":2,\"textureBytes\":174762.66666666666,\"geometryUnchanged\":true,\"animationCost\":0}"
+  },
+  "errors": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "core_production",
+    "result": "PASS"
+  },
+  {
+    "name": "coal_transport",
+    "result": "FAIL",
+    "message": "Protected file changed: src/features/mine-digital-twin/index.vue\n+ actual - expected\n\n+ '917D7825A2E08404CC93F2A2C7B5C63F1E597CC1EEA81A3739507EF7FB92736F'\n- '5731B6AE7A36A8BD8A184233C5959FC83DD2B911EA5364E9452274E4B4C783D6'"
+  },
+  {
+    "name": "power_area",
+    "result": "FAIL",
+    "message": "src/features/mine-digital-twin/overviewCamera.ts\n+ actual - expected\n\n+ '9E346497F0E4259B8788CB2340E70BBDE90A0A0251660FBBAFC25D4581954603'\n- 'C0F39F1842EC538C06362FD341A2660884EFF8D553DB3EB41096FCC2854002AA'"
+  },
+  {
+    "name": "monitoring_devices",
+    "result": "FAIL",
+    "message": "src/features/mine-digital-twin/overviewCamera.ts\n+ actual - expected\n\n+ '9E346497F0E4259B8788CB2340E70BBDE90A0A0251660FBBAFC25D4581954603'\n- 'C0F39F1842EC538C06362FD341A2660884EFF8D553DB3EB41096FCC2854002AA'"
+  },
+  {
+    "name": "protection_facilities",
+    "result": "FAIL",
+    "message": "src/features/mine-digital-twin/overviewCamera.ts\n+ actual - expected\n\n+ '9E346497F0E4259B8788CB2340E70BBDE90A0A0251660FBBAFC25D4581954603'\n- 'C0F39F1842EC538C06362FD341A2660884EFF8D553DB3EB41096FCC2854002AA'"
+  }
+]

@@ -8,9 +8,12 @@ import ChinaMap from './features/china-map/index.vue'
 import CommandCenter from './features/command-center/index.vue'
 import DigitalTwin from './features/digital-twin/index.vue'
 import WaterScreen from './features/water-screen/index.vue'
-import { useRoute } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 
 const route = useRoute()
+const TianjiCommandV1 = defineAsyncComponent(() => import('./features/tianji-command-v1/index.vue'))
+const TianjiCommandV2 = defineAsyncComponent(() => import('./features/tianji-command-v2/index.vue'))
+const TianjiCommandV3 = defineAsyncComponent(() => import('./features/tianji-command-v3/index.vue'))
 const TianjiCommand = defineAsyncComponent(() => import('./features/tianji-command/index.vue'))
 
 const mapEl = ref<HTMLDivElement>(),
@@ -264,7 +267,7 @@ function rebuildData() {
         pixelOffset: new Cesium.Cartesian2(0, 14),
         verticalOrigin: Cesium.VerticalOrigin.TOP,
         disableDepthTestDistance: Number.POSITIVE_INFINITY,
-          show: zoomLevel.value !== 'national' || t.risk === 'impact',
+        show: zoomLevel.value !== 'national' || t.risk === 'impact',
       })
       if (zoomLevel.value !== 'national') addPolygon(v, t, riskMeta[t.risk].color)
       if (zoomLevel.value === 'site' && layers.value.devices) {
@@ -432,222 +435,227 @@ watch(timeline, (v) => (live.value = v > 94))
 </script>
 
 <template>
-  <TianjiCommand v-if="route.name === 'tianji-command'" />
+  <RouterView v-if="route.name === 'mine-digital-twin'" />
+  <TianjiCommand v-else-if="route.name === 'tianji-command'" />
+  <TianjiCommandV1 v-else-if="route.name === 'tianji-command-v1'" />
+  <TianjiCommandV2 v-else-if="route.name === 'tianji-command-v2'" />
+  <TianjiCommandV3 v-else-if="route.name === 'tianji-command-v3'" />
   <CommandCenter v-else-if="route.name === 'command-center'" />
   <DigitalTwin v-else-if="route.name === 'digital-twin-map'" />
   <WaterScreen v-else-if="route.name === 'water-screen'" />
+  <WaterScreen v-else-if="route.name === 'water-screen'" />
   <template v-else>
-  <ChinaMap v-if="CHINA_MAP_ONLY" />
-  <template v-if="!CHINA_MAP_ONLY">
-  <main class="app">
-    <header class="topbar">
-      <button class="brand" @click="flyHome">
-        <span class="logo">ϟ</span><span>中国雷电监测预警平台</span>
-      </button>
-      <div class="search-wrap">
-        <span class="search-icon">⌕</span
-        ><input
-          v-model="search"
-          @focus="showSearch = true"
-          placeholder="搜索租户 / 场区 / 地区 / 设备..."
-        /><button v-if="search" @click="search = ''">×</button>
-        <div v-if="showSearch && search" class="search-results">
-          <button v-for="t in searchResults" :key="t.id" @click="flyTo(t)">
-            <span :style="{ background: riskMeta[t.risk].color }">⌂</span
-            ><em
-              ><b>{{ t.name }}</b
-              ><small>{{ t.type }} · {{ riskMeta[t.risk].label }}</small></em
-            ><i>定位 ›</i>
+    <ChinaMap v-if="CHINA_MAP_ONLY" />
+    <template v-if="!CHINA_MAP_ONLY">
+      <main class="app">
+        <header class="topbar">
+          <button class="brand" @click="flyHome">
+            <span class="logo">ϟ</span><span>中国雷电监测预警平台</span>
           </button>
-          <div v-if="!searchResults.length" class="empty">未找到匹配结果</div>
-        </div>
-      </div>
-      <div class="status">
-        <span class="live-dot"></span><b>实时</b><time>2024-08-20 {{ clock || '14:32:18' }}</time>
-      </div>
-      <button class="icon-btn">? <span>帮助</span></button
-      ><button class="user"><b>A</b><span>管理员⌄</span></button><button class="menu">☰</button>
-    </header>
-    <section class="map-shell" @click.self="showSearch = false">
-      <div ref="mapEl" class="map"></div>
-      <div v-if="!TDT_KEY" class="key-tip">
-        当前为开发底图 · 在 <code>.env.local</code> 填写 VITE_TDT_KEY 即切换天地图影像
-      </div>
-      <aside class="risk-panel" :class="{ collapsed: !showRisk }">
-        <button class="risk-head" @click="showRisk = !showRisk">
-          <span
-            >⚠ 风险租户 <b>{{ riskTenants.length }}</b></span
-          ><i>{{ showRisk ? '‹' : '›' }}</i>
-        </button>
-        <div v-if="showRisk" class="risk-list">
-          <button v-for="t in tenants.slice(0, 4)" :key="t.id" @click="flyTo(t)">
-            <span class="tenant-icon" :class="t.risk">⌂</span
-            ><em
-              ><strong>{{ t.name }}</strong
-              ><small v-if="t.risk === 'impact'">最近闪电 {{ t.lightningDistance }} km</small
-              ><small v-else-if="t.eta"
-                >预计影响 {{ t.eta }} min · 雷暴 {{ t.stormDistance }} km</small
-              ><small v-else>最近闪电 {{ t.lightningDistance }} km</small></em
-            ><label :class="t.risk">{{ riskMeta[t.risk].label }}</label
-            ><i>›</i></button
-          ><button class="all-risk">查看全部风险租户 <span>›</span></button>
-        </div>
-      </aside>
-      <aside class="layers" :class="{ open: showLayers }">
-        <button class="layers-head" @click="showLayers = !showLayers">
-          <span>◉</span><b>综合态势</b><i>{{ showLayers ? '⌃' : '···' }}</i>
-        </button>
-        <div v-if="showLayers" class="layer-list">
-          <button
-            v-for="item in [
-              { k: 'radar', n: '雷达回波 (dBZ)', i: '◉' },
-              { k: 'lightning', n: '闪电定位', i: 'ϟ' },
-              { k: 'storms', n: '雷暴单体', i: '☁' },
-              { k: 'tenants', n: '租户 / 场区', i: '⌂' },
-              { k: 'warning', n: '预警区域', i: '△' },
-              { k: 'devices', n: '设备', i: '▣' },
-              { k: 'labels', n: '地名标注', i: 'T' },
-            ]"
-            :key="item.k"
-            @click="toggleLayer(item.k as keyof typeof layers)"
+          <div class="search-wrap">
+            <span class="search-icon">⌕</span
+            ><input
+              v-model="search"
+              @focus="showSearch = true"
+              placeholder="搜索租户 / 场区 / 地区 / 设备..."
+            /><button v-if="search" @click="search = ''">×</button>
+            <div v-if="showSearch && search" class="search-results">
+              <button v-for="t in searchResults" :key="t.id" @click="flyTo(t)">
+                <span :style="{ background: riskMeta[t.risk].color }">⌂</span
+                ><em
+                  ><b>{{ t.name }}</b
+                  ><small>{{ t.type }} · {{ riskMeta[t.risk].label }}</small></em
+                ><i>定位 ›</i>
+              </button>
+              <div v-if="!searchResults.length" class="empty">未找到匹配结果</div>
+            </div>
+          </div>
+          <div class="status">
+            <span class="live-dot"></span><b>实时</b
+            ><time>2024-08-20 {{ clock || '14:32:18' }}</time>
+          </div>
+          <button class="icon-btn">? <span>帮助</span></button
+          ><button class="user"><b>A</b><span>管理员⌄</span></button
+          ><button class="menu">☰</button>
+        </header>
+        <section class="map-shell" @click.self="showSearch = false">
+          <div ref="mapEl" class="map"></div>
+          <div v-if="!TDT_KEY" class="key-tip">
+            当前为开发底图 · 在 <code>.env.local</code> 填写 VITE_TDT_KEY 即切换天地图影像
+          </div>
+          <aside class="risk-panel" :class="{ collapsed: !showRisk }">
+            <button class="risk-head" @click="showRisk = !showRisk">
+              <span
+                >⚠ 风险租户 <b>{{ riskTenants.length }}</b></span
+              ><i>{{ showRisk ? '‹' : '›' }}</i>
+            </button>
+            <div v-if="showRisk" class="risk-list">
+              <button v-for="t in tenants.slice(0, 4)" :key="t.id" @click="flyTo(t)">
+                <span class="tenant-icon" :class="t.risk">⌂</span
+                ><em
+                  ><strong>{{ t.name }}</strong
+                  ><small v-if="t.risk === 'impact'">最近闪电 {{ t.lightningDistance }} km</small
+                  ><small v-else-if="t.eta"
+                    >预计影响 {{ t.eta }} min · 雷暴 {{ t.stormDistance }} km</small
+                  ><small v-else>最近闪电 {{ t.lightningDistance }} km</small></em
+                ><label :class="t.risk">{{ riskMeta[t.risk].label }}</label
+                ><i>›</i></button
+              ><button class="all-risk">查看全部风险租户 <span>›</span></button>
+            </div>
+          </aside>
+          <aside class="layers" :class="{ open: showLayers }">
+            <button class="layers-head" @click="showLayers = !showLayers">
+              <span>◉</span><b>综合态势</b><i>{{ showLayers ? '⌃' : '···' }}</i>
+            </button>
+            <div v-if="showLayers" class="layer-list">
+              <button
+                v-for="item in [
+                  { k: 'radar', n: '雷达回波 (dBZ)', i: '◉' },
+                  { k: 'lightning', n: '闪电定位', i: 'ϟ' },
+                  { k: 'storms', n: '雷暴单体', i: '☁' },
+                  { k: 'tenants', n: '租户 / 场区', i: '⌂' },
+                  { k: 'warning', n: '预警区域', i: '△' },
+                  { k: 'devices', n: '设备', i: '▣' },
+                  { k: 'labels', n: '地名标注', i: 'T' },
+                ]"
+                :key="item.k"
+                @click="toggleLayer(item.k as keyof typeof layers)"
+              >
+                <span>{{ item.i }}</span
+                ><b>{{ item.n }}</b
+                ><i :class="{ on: layers[item.k as keyof typeof layers] }"></i>
+              </button>
+            </div>
+          </aside>
+          <div class="map-tools">
+            <button @click="flyHome">⌖</button>
+            <div>
+              <button
+                @click="viewer?.camera.zoomIn(viewer.camera.positionCartographic.height * 0.38)"
+              >
+                ＋</button
+              ><button
+                @click="viewer?.camera.zoomOut(viewer.camera.positionCartographic.height * 0.55)"
+              >
+                −
+              </button>
+            </div>
+          </div>
+          <div class="view-label">
+            {{
+              zoomLevel === 'national'
+                ? '全国态势'
+                : zoomLevel === 'regional'
+                  ? '区域态势'
+                  : '场区详情'
+            }}
+          </div>
+          <div
+            v-if="hovered && !selected"
+            class="hover-card"
+            :style="{
+              left: Math.min(cursor.x + 18, viewportWidth - 330) + 'px',
+              top: Math.max(90, cursor.y - 80) + 'px',
+            }"
           >
-            <span>{{ item.i }}</span
-            ><b>{{ item.n }}</b
-            ><i :class="{ on: layers[item.k as keyof typeof layers] }"></i>
-          </button>
-        </div>
-      </aside>
-      <div class="map-tools">
-        <button @click="flyHome">⌖</button>
-        <div>
-          <button @click="viewer?.camera.zoomIn(viewer.camera.positionCartographic.height * 0.38)">
-            ＋</button
-          ><button
-            @click="viewer?.camera.zoomOut(viewer.camera.positionCartographic.height * 0.55)"
-          >
-            −
-          </button>
-        </div>
-      </div>
-      <div class="view-label">
-        {{
-          zoomLevel === 'national' ? '全国态势' : zoomLevel === 'regional' ? '区域态势' : '场区详情'
-        }}
-      </div>
-      <div
-        v-if="hovered && !selected"
-        class="hover-card"
-        :style="{
-          left: Math.min(cursor.x + 18, viewportWidth - 330) + 'px',
-          top: Math.max(90, cursor.y - 80) + 'px',
-        }"
-      >
-        <b>{{ hovered.name }}</b
-        ><span :style="{ color: riskMeta[hovered.risk].color }"
-          >● {{ riskMeta[hovered.risk].label }}</span
-        ><small>雷暴距离 {{ hovered.stormDistance }} km</small>
-      </div>
-      <div v-if="selected && !showDetails" class="tenant-popover">
-        <button class="close" @click="selected = null">×</button>
-        <h3>{{ selected.name }}</h3>
-        <p :style="{ color: selectedMeta?.color }">● {{ selectedMeta?.label }}</p>
-        <dl>
-          <div>
-            <dt>雷暴距离</dt>
-            <dd>{{ selected.stormDistance }} km</dd>
+            <b>{{ hovered.name }}</b
+            ><span :style="{ color: riskMeta[hovered.risk].color }"
+              >● {{ riskMeta[hovered.risk].label }}</span
+            ><small>雷暴距离 {{ hovered.stormDistance }} km</small>
           </div>
-          <div>
-            <dt>预计影响</dt>
-            <dd>{{ selected.eta ? selected.eta + ' min' : '影响中' }}</dd>
+          <div v-if="selected && !showDetails" class="tenant-popover">
+            <button class="close" @click="selected = null">×</button>
+            <h3>{{ selected.name }}</h3>
+            <p :style="{ color: selectedMeta?.color }">● {{ selectedMeta?.label }}</p>
+            <dl>
+              <div>
+                <dt>雷暴距离</dt>
+                <dd>{{ selected.stormDistance }} km</dd>
+              </div>
+              <div>
+                <dt>预计影响</dt>
+                <dd>{{ selected.eta ? selected.eta + ' min' : '影响中' }}</dd>
+              </div>
+              <div>
+                <dt>最大反射率</dt>
+                <dd>{{ selected.maxDbz }} dBZ</dd>
+              </div>
+              <div>
+                <dt>近10分钟闪电</dt>
+                <dd>{{ selected.lightning10m }} 次</dd>
+              </div>
+            </dl>
+            <button class="details-btn" @click="openDetails">查看详情 <span>→</span></button>
           </div>
-          <div>
-            <dt>最大反射率</dt>
-            <dd>{{ selected.maxDbz }} dBZ</dd>
+          <aside v-if="selected && showDetails" class="detail-drawer">
+            <button class="close" @click="showDetails = false">×</button><small>租户风险分析</small>
+            <h2>{{ selected.name }}</h2>
+            <div class="detail-risk" :style="{ color: selectedMeta?.color }">
+              ● {{ selectedMeta?.label }}
+            </div>
+            <div class="metric-grid">
+              <div>
+                <span>最大反射率</span><b>{{ selected.maxDbz }} <small>dBZ</small></b>
+              </div>
+              <div>
+                <span>雷暴距离</span><b>{{ selected.stormDistance }} <small>km</small></b>
+              </div>
+              <div>
+                <span>近10分钟闪电</span><b>{{ selected.lightning10m }} <small>次</small></b>
+              </div>
+              <div>
+                <span>最近闪电</span><b>{{ selected.lightningDistance }} <small>km</small></b>
+              </div>
+            </div>
+            <h4>风险研判</h4>
+            <p>
+              强对流云团正向场区移动，场区及风险范围内已监测到实时闪电活动。建议关注生产设备和户外作业安全。
+            </p>
+            <h4>场区设备</h4>
+            <button v-for="d in selected.devices" :key="d.name" class="device-row">
+              <span>▣</span
+              ><em
+                ><b>{{ d.name }}</b
+                ><small>{{ d.type }} · 在线</small></em
+              ><i>›</i>
+            </button>
+          </aside>
+          <div class="legend">
+            <b>雷达回波强度 (dBZ)</b>
+            <div class="gradient"></div>
+            <div class="ticks">
+              <span
+                v-for="n in [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]"
+                :key="n"
+                >{{ n }}</span
+              >
+            </div>
           </div>
-          <div>
-            <dt>近10分钟闪电</dt>
-            <dd>{{ selected.lightning10m }} 次</dd>
+          <div class="timeline">
+            <button class="play" @click="playing = !playing">{{ playing ? 'Ⅱ' : '▶' }}</button>
+            <div class="date">
+              <small>8月20日</small
+              ><b
+                >14:{{
+                  Math.round(6 + timeline * 0.28)
+                    .toString()
+                    .padStart(2, '0')
+                }}</b
+              >
+            </div>
+            <div class="track">
+              <input v-model="timeline" type="range" min="0" max="100" />
+              <div class="times">
+                <span>13:30</span><span>13:40</span><span>13:50</span><span>14:00</span
+                ><span>14:10</span><span>14:20</span><span>14:30</span>
+              </div>
+            </div>
+            <button class="live-btn" :class="{ active: live }" @click="goLive">● LIVE</button
+            ><button class="speed">1x⌄</button><button class="calendar">▦</button>
           </div>
-        </dl>
-        <button
-          class="details-btn"
-          @click="openDetails"
-        >
-          查看详情 <span>→</span>
-        </button>
-      </div>
-      <aside v-if="selected && showDetails" class="detail-drawer">
-        <button class="close" @click="showDetails = false">×</button><small>租户风险分析</small>
-        <h2>{{ selected.name }}</h2>
-        <div class="detail-risk" :style="{ color: selectedMeta?.color }">
-          ● {{ selectedMeta?.label }}
-        </div>
-        <div class="metric-grid">
-          <div>
-            <span>最大反射率</span><b>{{ selected.maxDbz }} <small>dBZ</small></b>
-          </div>
-          <div>
-            <span>雷暴距离</span><b>{{ selected.stormDistance }} <small>km</small></b>
-          </div>
-          <div>
-            <span>近10分钟闪电</span><b>{{ selected.lightning10m }} <small>次</small></b>
-          </div>
-          <div>
-            <span>最近闪电</span><b>{{ selected.lightningDistance }} <small>km</small></b>
-          </div>
-        </div>
-        <h4>风险研判</h4>
-        <p>
-          强对流云团正向场区移动，场区及风险范围内已监测到实时闪电活动。建议关注生产设备和户外作业安全。
-        </p>
-        <h4>场区设备</h4>
-        <button v-for="d in selected.devices" :key="d.name" class="device-row">
-          <span>▣</span
-          ><em
-            ><b>{{ d.name }}</b
-            ><small>{{ d.type }} · 在线</small></em
-          ><i>›</i>
-        </button>
-      </aside>
-      <div class="legend">
-        <b>雷达回波强度 (dBZ)</b>
-        <div class="gradient"></div>
-        <div class="ticks">
-          <span v-for="n in [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]" :key="n">{{
-            n
-          }}</span>
-        </div>
-      </div>
-      <div class="timeline">
-        <button class="play" @click="playing = !playing">{{ playing ? 'Ⅱ' : '▶' }}</button>
-        <div class="date">
-          <small>8月20日</small
-          ><b
-            >14:{{
-              Math.round(6 + timeline * 0.28)
-                .toString()
-                .padStart(2, '0')
-            }}</b
-          >
-        </div>
-        <div class="track">
-          <input v-model="timeline" type="range" min="0" max="100" />
-          <div class="times">
-            <span>13:30</span><span>13:40</span><span>13:50</span><span>14:00</span
-            ><span>14:10</span><span>14:20</span><span>14:30</span>
-          </div>
-        </div>
-        <button
-          class="live-btn"
-          :class="{ active: live }"
-          @click="goLive"
-        >
-          ● LIVE</button
-        ><button class="speed">1x⌄</button><button class="calendar">▦</button>
-      </div>
-    </section>
-  </main>
-  </template>
+        </section>
+      </main>
+    </template>
   </template>
 </template>
 

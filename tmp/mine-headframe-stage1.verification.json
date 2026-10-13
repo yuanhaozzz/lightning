@@ -1,0 +1,68 @@
+{
+  "result": "PASS",
+  "candidate": "public/models/mine-headframe.glb",
+  "bytes": 5056032,
+  "triangles": 84920,
+  "vertices": 135288,
+  "meshes": 19,
+  "materials": 9,
+  "semanticParts": [
+    {
+      "id": "headframe-01/bearings",
+      "picked": true,
+      "visibilityRoundtrip": true,
+      "cameraChecks": 2
+    },
+    {
+      "id": "headframe-01/foundation",
+      "picked": true,
+      "visibilityRoundtrip": true,
+      "cameraChecks": 2
+    },
+    {
+      "id": "headframe-01/frame",
+      "picked": true,
+      "visibilityRoundtrip": true,
+      "cameraChecks": 2
+    },
+    {
+      "id": "headframe-01/platform",
+      "picked": true,
+      "visibilityRoundtrip": true,
+      "cameraChecks": 2
+    },
+    {
+      "id": "headframe-01/sheave",
+      "picked": true,
+      "visibilityRoundtrip": true,
+      "cameraChecks": 2
+    },
+    {
+      "id": "headframe-01/stairs",
+      "picked": true,
+      "visibilityRoundtrip": true,
+      "cameraChecks": 2
+    }
+  ],
+  "worldBounds": {
+    "min": [
+      -21.31999984741211,
+      -0.9679999155402186,
+      -11.360000610351562
+    ],
+    "max": [
+      -6.680000457763672,
+      24.24000067138672,
+      -0.6399999618530272
+    ]
+  },
+  "worldSheavePivot": [
+    -15.96,
+    22.383999389648437,
+    -6
+  ],
+  "rotationReady": true,
+  "sharedPrimitiveDefaultsUnchanged": true,
+  "unrelatedFilesPreserved": 84,
+  "baselineGlbSha256": "6d03cc94051c3d759a2b9e247ba08703dce507d994772d99091ae83c7729031b"
+}

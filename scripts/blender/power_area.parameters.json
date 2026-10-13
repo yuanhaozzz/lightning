@@ -1,0 +1,13 @@
+{
+  "substation": {"id":"substation-01","position":[52,0,-26],"size":[18,3,12],"gantryHeight":4.6,"busHeight":5.4},
+  "distribution": {"id":"distribution-01","position":[53,0,-10],"size":[18,4.5,9],"eaves":4.05,"roofPeak":4.5},
+  "cabinet": {"width":0.82,"height":2.25,"depth":1.15,"pitch":0.94,"countPerRow":6,"rowZ":2.0},
+  "reserves": [
+    {"id":"spd-distribution","name":"进线柜 SPD 安装预留","kind":"spd-reserve","position":[-2.35,1.25,1.38],"size":[0.32,0.35,0.08],"parentId":"power-cabinet-lv-01"},
+    {"id":"grounding-test-point-01","name":"接地装置示意位置","kind":"grounding-reserve","position":[-9.45,0.18,3.1],"size":[0.48,0.12,0.48]},
+    {"id":"grounding-monitor-reserve-01","name":"接地电阻在线监测安装预留","kind":"grounding-monitor-reserve","position":[-9.25,1.35,3.1],"size":[0.32,0.40,0.12]},
+    {"id":"grounding-downlead-interface-01","name":"接地引下线展示接口","kind":"grounding-interface","position":[-9.16,0.52,3.1],"size":[0.10,0.15,0.08]}
+  ],
+  "maxTriangles":70000,
+  "maxBytes":6000000
+}

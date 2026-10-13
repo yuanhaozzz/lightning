@@ -1,0 +1,129 @@
+{
+  "result": "PASS",
+  "protectedFilesUnchanged": 20,
+  "outputs": [
+    {
+      "type": "lightning-locator",
+      "file": "mine-lightning-locator.glb",
+      "triangles": 1876,
+      "meshes": 6,
+      "bytes": 166772,
+      "bounds": {
+        "min": [
+          -0.699999988079071,
+          0,
+          -0.699999988079071
+        ],
+        "max": [
+          0.699999988079071,
+          3.555000066757202,
+          0.699999988079071
+        ]
+      }
+    },
+    {
+      "type": "storm-warning",
+      "file": "mine-storm-warning.glb",
+      "triangles": 3516,
+      "meshes": 6,
+      "bytes": 250840,
+      "bounds": {
+        "min": [
+          -1.2000000476837158,
+          0,
+          -1.2000000476837158
+        ],
+        "max": [
+          1.2000000476837158,
+          3.01284122467041,
+          1.2000000476837158
+        ]
+      }
+    }
+  ],
+  "devices": [
+    {
+      "id": "lightning-location-01",
+      "roadClearanceMeters": 4.300000011920929,
+      "buildingClearanceMeters": 27.891733944416046,
+      "wallClearanceMeters": 16.30000001192093,
+      "worldBounds": {
+        "min": [
+          -56.69999998807907,
+          0.013999999999999999,
+          36.30000001192093
+        ],
+        "max": [
+          -55.30000001192093,
+          3.569000066757202,
+          37.69999998807907
+        ]
+      }
+    },
+    {
+      "id": "storm-warning-01",
+      "roadClearanceMeters": 6.799999952316284,
+      "buildingClearanceMeters": 27.3917338848114,
+      "wallClearanceMeters": 17.799999952316284,
+      "worldBounds": {
+        "min": [
+          -46.200000047683716,
+          0.013999999999999999,
+          35.799999952316284
+        ],
+        "max": [
+          -43.799999952316284,
+          3.0268412246704104,
+          38.200000047683716
+        ]
+      }
+    }
+  ],
+  "cameraChecks": [
+    {
+      "id": "lightning-location-01",
+      "width": 604,
+      "height": 871,
+      "distance": 9.287830298207698
+    },
+    {
+      "id": "lightning-location-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 9.11059757653624
+    },
+    {
+      "id": "lightning-location-01",
+      "width": 390,
+      "height": 844,
+      "distance": 10.953564505092801
+    },
+    {
+      "id": "storm-warning-01",
+      "width": 604,
+      "height": 871,
+      "distance": 9.1274041582644
+    },
+    {
+      "id": "storm-warning-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 8.959008337147532
+    },
+    {
+      "id": "storm-warning-01",
+      "width": 390,
+      "height": 844,
+      "distance": 12.521268091462556
+    }
+  ],
+  "checks": {
+    "uniqueIds": true,
+    "actualMeshRaycasts": 2,
+    "occlusionChecks": 2,
+    "modelReuse": true,
+    "foundationContact": true,
+    "layoutUnchanged": true
+  },
+  "scope": "Demonstration footprints and geometry only; no validated lightning deployment/performance."
+}

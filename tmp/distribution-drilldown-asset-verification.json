@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "path": "tmp/distribution-drilldown-candidate/mine-distribution-drilldown.glb",
+  "bytes": 1233188,
+  "triangles": 11036,
+  "meshes": 40,
+  "geometries": 40,
+  "materials": 15,
+  "bounds": {
+    "min": [
+      -9.440000534057617,
+      0.050000011920928955,
+      -4.600000023841858
+    ],
+    "max": [
+      9.100000381469727,
+      4.0500002801418304,
+      4.599999666213989
+    ]
+  },
+  "shellBoundsErrorMeters": 0,
+  "originalResourcesPreserved": 39,
+  "checks": [
+    "independent room layers",
+    "unchanged building bounds",
+    "original cabinet datum",
+    "populated independently movable internals",
+    "vertical hinge and stable pivot",
+    "fixed frame while door rotates",
+    "original GLB resources unchanged"
+  ]
+}

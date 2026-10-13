@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "resources": {
+    "drawCalls": 6,
+    "terrainTriangles": 13016,
+    "terrainVertices": 6640,
+    "roadTriangles": 7054,
+    "textures": 0,
+    "lod": "stitched near/middle/far distance-adaptive rings",
+    "nearSamples": 196,
+    "farSamples": 68
+  },
+  "maxDrapeErrorMeters": 0.000015651325835225327,
+  "roadMaxGradesPercent": [
+    1.32,
+    4.79
+  ],
+  "cameraChecks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "parkWidthPercent": 73,
+      "elevation": 20,
+      "azimuth": 10
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "parkWidthPercent": 79.1,
+      "elevation": 20,
+      "azimuth": 10
+    },
+    {
+      "width": 604,
+      "height": 871,
+      "parkWidthPercent": 88.5,
+      "elevation": 32,
+      "azimuth": 24
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "parkWidthPercent": 83.6,
+      "elevation": 32,
+      "azimuth": 24
+    }
+  ],
+  "protectedFeatureFiles": 34,
+  "protectedModelAndBlenderFiles": 39,
+  "checks": [
+    "deterministic height field",
+    "park exclusion",
+    "manifold LOD stitching",
+    "open south valley",
+    "graded valley routes",
+    "terrain-conforming roads",
+    "responsive static overview",
+    "non-pickable environment",
+    "cutaway preservation",
+    "fog/resource restoration",
+    "protected file hashes"
+  ]
+}

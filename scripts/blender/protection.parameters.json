@@ -1,0 +1,24 @@
+{
+  "schematic":true,
+  "coordinateSystem":"meters, Y up, +Z south; local GLB origins; demonstration only",
+  "pole":{"foundationSize":[1.4,0.24,1.4],"height":10},
+  "roofs":{
+    "hoist":{"model":"mine-hoist-house.glb","size":[20,7,12],"eaves":5.9,"halfExtent":[9.35,5.5]},
+    "distribution":{"model":"mine-distribution-roof.glb","size":[18,4.5,9],"eaves":4.05,"halfExtent":[8.6,4.2]}
+  },
+  "facilities":[
+    {"id":"air-terminal-production","name":"生产区接闪杆","type":"air-terminal","position":[12,0.014,-38],"rotation":[0,0,0],"modelPath":"models/mine-air-terminal.glb","schematic":true},
+    {"id":"air-terminal-power","name":"变电站接闪杆","type":"air-terminal","position":[63,0.014,-36],"rotation":[0,0,0],"modelPath":"models/mine-air-terminal.glb","schematic":true},
+    {"id":"roof-belt-hoist-01","name":"提升机房接闪带","type":"air-belt","position":[14,0,-6],"rotation":[0,0,0],"modelPath":"models/mine-air-belt-hoist.glb","schematic":true,"buildingId":"hoist-house-01"},
+    {"id":"roof-belt-distribution-01","name":"配电室接闪带","type":"air-belt","position":[53,0,-10],"rotation":[0,0,0],"modelPath":"models/mine-air-belt-distribution.glb","schematic":true,"buildingId":"distribution-01"},
+    {"id":"downlead-hoist-01","name":"提升机房引下线","type":"down-conductor","position":[14,0,-6],"rotation":[0,0,0],"modelPath":"models/mine-downlead-hoist.glb","schematic":true,"connectedTo":"roof-belt-hoist-01"},
+    {"id":"downlead-distribution-01","name":"配电室引下线","type":"down-conductor","position":[53,0,-10],"rotation":[0,0,0],"modelPath":"models/mine-downlead-distribution.glb","schematic":true,"connectedTo":"roof-belt-distribution-01"},
+    {"id":"spd-lv-01","name":"柜内 SPD 浪涌保护器","type":"spd","position":[50.65,1.42,-8],"rotation":[0,0,0],"modelPath":"models/mine-spd.glb","schematic":true,"cabinetId":"power-cabinet-lv-01"},
+    {"id":"ground-monitor-01","name":"接地电阻在线监测仪","type":"ground-monitor","position":[43.80,1.35,-6.9],"rotation":[0,0,0],"modelPath":"models/mine-ground-monitor.glb","schematic":true,"connectedTo":"earth-section-01"},
+    {"id":"earth-section-01","name":"局部接地装置剖视","type":"earth-section","position":[43.35,0,-6.9],"rotation":[0,0,0],"modelPath":"models/mine-earth-section.glb","schematic":true,"connectedTo":"downlead-distribution-01"}
+  ],
+  "cabinetInspection":{"cabinetId":"power-cabinet-lv-01","localPosition":[-2.35,0.31,2],"modelPath":"models/mine-spd-cabinet-liner.glb"},
+  "groundWindow":{"center":[43.35,-6.9],"size":[0.92,0.92]},
+  "maxTrianglesPerModel":15000,
+  "maxBytesPerModel":1000000
+}

@@ -1,0 +1,13 @@
+{
+  "coordinateSystem": "meters; Y up; +Z south; model origin at foundation bottom",
+  "models": {
+    "lightning-locator": {"file":"mine-lightning-locator.glb","mastTop":3.05,"foundationSize":[1.4,0.22,1.4]},
+    "storm-warning": {"file":"mine-storm-warning.glb","mastTop":2.72,"foundationSize":[2.4,0.16,2.4]}
+  },
+  "devices": [
+    {"id":"lightning-location-01","name":"闪电定位仪","type":"lightning-locator","position":[-56,0.014,37],"rotation":[0,0,0],"modelPath":"models/mine-lightning-locator.glb","status":"simulated-online","schematic":true,"monitoringData":{"source":"mock","timestamp":null,"flashCount10min":3,"lastFlashPosition":null}},
+    {"id":"storm-warning-01","name":"低误报雷暴预警仪","type":"storm-warning","position":[-45,0.014,37],"rotation":[0,0,0],"modelPath":"models/mine-storm-warning.glb","status":"simulated-online","schematic":true,"monitoringData":{"source":"mock","timestamp":null,"electricFieldKvPerM":0.7,"warningLevel":"normal","falseAlarmRate":null}}
+  ],
+  "maxTrianglesPerModel":15000,
+  "maxBytesPerModel":1000000
+}

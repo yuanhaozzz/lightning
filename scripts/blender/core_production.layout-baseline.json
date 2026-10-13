@@ -1,0 +1,936 @@
+{
+  "ASSETS": [
+    {
+      "id": "headframe-01",
+      "name": "井架 / 提升天轮",
+      "type": "headframe",
+      "position": [
+        -14,
+        0,
+        -6
+      ],
+      "size": [
+        14.64,
+        25.21,
+        10.72
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-headframe.glb",
+      "modelScale": 1.6,
+      "modelGroundY": -0.59,
+      "groundOpening": {
+        "center": [
+          -14.248,
+          -6
+        ],
+        "size": [
+          2.72,
+          2.72
+        ]
+      },
+      "zone": "production"
+    },
+    {
+      "id": "shaft-house-01",
+      "name": "井口房",
+      "type": "shaft-house",
+      "position": [
+        -14,
+        0,
+        7
+      ],
+      "size": [
+        10,
+        4.5,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "production"
+    },
+    {
+      "id": "hoist-house-01",
+      "name": "提升机房",
+      "type": "hoist-house",
+      "position": [
+        14,
+        0,
+        -6
+      ],
+      "size": [
+        20,
+        7,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "production",
+      "note": "沿天轮轮平面的地面提升布置，保留中间绳道空间。"
+    },
+    {
+      "id": "transfer-01",
+      "name": "转载站",
+      "type": "transfer-station",
+      "position": [
+        -50,
+        0,
+        -7
+      ],
+      "size": [
+        10,
+        9,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "transport"
+    },
+    {
+      "id": "coal-silo-01",
+      "name": "煤仓 1",
+      "type": "coal-silo",
+      "position": [
+        -57,
+        0,
+        -28
+      ],
+      "size": [
+        10,
+        13,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "transport"
+    },
+    {
+      "id": "coal-silo-02",
+      "name": "煤仓 2",
+      "type": "coal-silo",
+      "position": [
+        -43,
+        0,
+        -28
+      ],
+      "size": [
+        10,
+        13,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "transport"
+    },
+    {
+      "id": "substation-01",
+      "name": "变电站",
+      "type": "substation",
+      "position": [
+        52,
+        0,
+        -26
+      ],
+      "size": [
+        18,
+        3,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "power"
+    },
+    {
+      "id": "distribution-01",
+      "name": "配电室",
+      "type": "distribution-room",
+      "position": [
+        53,
+        0,
+        -10
+      ],
+      "size": [
+        18,
+        4.5,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "power"
+    },
+    {
+      "id": "office-01",
+      "name": "办公楼",
+      "type": "office",
+      "position": [
+        34,
+        0,
+        37
+      ],
+      "size": [
+        24,
+        9,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "management"
+    },
+    {
+      "id": "dispatch-01",
+      "name": "调度中心",
+      "type": "dispatch-center",
+      "position": [
+        8,
+        0,
+        37
+      ],
+      "size": [
+        16,
+        6,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "management"
+    },
+    {
+      "id": "lightning-location-01",
+      "name": "闪电定位仪预留",
+      "type": "lightning-location-reserve",
+      "position": [
+        -56,
+        0.05,
+        37
+      ],
+      "size": [
+        3,
+        0.12,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "monitoring",
+      "note": "开阔场地、远离电力区；设备型号确定后复核干扰和视野要求。"
+    },
+    {
+      "id": "storm-warning-01",
+      "name": "雷暴预警仪预留",
+      "type": "storm-warning-reserve",
+      "position": [
+        -45,
+        0.05,
+        37
+      ],
+      "size": [
+        3,
+        0.12,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "monitoring"
+    },
+    {
+      "id": "air-terminal-production",
+      "name": "生产区避雷针预留",
+      "type": "air-terminal-reserve",
+      "position": [
+        12,
+        0.05,
+        -38
+      ],
+      "size": [
+        2.5,
+        0.12,
+        2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "protection"
+    },
+    {
+      "id": "air-terminal-power",
+      "name": "电力区避雷针预留",
+      "type": "air-terminal-reserve",
+      "position": [
+        63,
+        0.05,
+        -36
+      ],
+      "size": [
+        2,
+        0.12,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "power"
+    },
+    {
+      "id": "spd-distribution",
+      "name": "配电室进线 SPD 预留",
+      "type": "spd-reserve",
+      "position": [
+        53,
+        4.8,
+        -10
+      ],
+      "size": [
+        1.4,
+        0.12,
+        1.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "power",
+      "note": "标识位于建筑顶部，仅关联建筑进线端位置，不表示真实安装高度。"
+    },
+    {
+      "id": "spd-dispatch",
+      "name": "调度中心进线 SPD 预留",
+      "type": "spd-reserve",
+      "position": [
+        8,
+        6.3,
+        37
+      ],
+      "size": [
+        1.4,
+        0.12,
+        1.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "management",
+      "note": "标识位于建筑顶部，仅关联建筑进线端位置，不表示真实安装高度。"
+    },
+    {
+      "id": "main-entrance",
+      "name": "主入口",
+      "type": "entrance",
+      "position": [
+        56,
+        0.11,
+        55
+      ],
+      "size": [
+        6,
+        0.1,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "management"
+    },
+    {
+      "id": "coal-entrance",
+      "name": "煤运入口",
+      "type": "entrance",
+      "position": [
+        -72,
+        0.11,
+        22
+      ],
+      "size": [
+        2,
+        0.1,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": null,
+      "zone": "transport"
+    }
+  ],
+  "ZONES": [
+    {
+      "id": "production",
+      "name": "01 核心生产区",
+      "center": [
+        0.5,
+        -8.5
+      ],
+      "size": [
+        61,
+        47
+      ],
+      "color": "#dce4e7",
+      "labelPosition": [
+        -8,
+        0.4,
+        15
+      ]
+    },
+    {
+      "id": "transport",
+      "name": "02 煤炭运输区",
+      "center": [
+        -51,
+        -14
+      ],
+      "size": [
+        28,
+        52
+      ],
+      "color": "#d5dfe6",
+      "labelPosition": [
+        -52,
+        0.4,
+        -43
+      ]
+    },
+    {
+      "id": "power",
+      "name": "03 电力保障区",
+      "center": [
+        52.5,
+        -21.5
+      ],
+      "size": [
+        23,
+        37
+      ],
+      "color": "#e7dfcf",
+      "labelPosition": [
+        53,
+        0.4,
+        -2
+      ]
+    },
+    {
+      "id": "management",
+      "name": "04 综合管理区",
+      "center": [
+        23,
+        36
+      ],
+      "size": [
+        54,
+        16
+      ],
+      "color": "#dbe4d9",
+      "labelPosition": [
+        27,
+        0.4,
+        45
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "05 安全监测预留",
+      "center": [
+        -51,
+        37
+      ],
+      "size": [
+        22,
+        12
+      ],
+      "color": "#d5e4df",
+      "labelPosition": [
+        -51,
+        0.4,
+        44
+      ]
+    },
+    {
+      "id": "protection",
+      "name": "06 防雷设施预留",
+      "center": [
+        14,
+        -38.5
+      ],
+      "size": [
+        28,
+        9
+      ],
+      "color": "#e6dfd5",
+      "labelPosition": [
+        14,
+        0.4,
+        -44
+      ]
+    }
+  ],
+  "ROADS": [
+    {
+      "id": "headframe-walk-south",
+      "from": [
+        -14,
+        12
+      ],
+      "to": [
+        -24,
+        12
+      ],
+      "width": 2,
+      "kind": "walkway"
+    },
+    {
+      "id": "headframe-walk-west",
+      "from": [
+        -24,
+        12
+      ],
+      "to": [
+        -24,
+        -6
+      ],
+      "width": 2,
+      "kind": "walkway"
+    },
+    {
+      "id": "headframe-walk-entry",
+      "from": [
+        -24,
+        -6
+      ],
+      "to": [
+        -21.32,
+        -6
+      ],
+      "width": 2,
+      "kind": "walkway"
+    },
+    {
+      "id": "ring-north",
+      "from": [
+        -67,
+        -49
+      ],
+      "to": [
+        67,
+        -49
+      ],
+      "width": 6,
+      "kind": "main"
+    },
+    {
+      "id": "ring-east",
+      "from": [
+        67,
+        -49
+      ],
+      "to": [
+        67,
+        49
+      ],
+      "width": 6,
+      "kind": "main"
+    },
+    {
+      "id": "ring-south",
+      "from": [
+        67,
+        49
+      ],
+      "to": [
+        -67,
+        49
+      ],
+      "width": 6,
+      "kind": "main"
+    },
+    {
+      "id": "ring-west",
+      "from": [
+        -67,
+        49
+      ],
+      "to": [
+        -67,
+        -49
+      ],
+      "width": 6,
+      "kind": "main"
+    },
+    {
+      "id": "main-spine",
+      "from": [
+        -67,
+        22
+      ],
+      "to": [
+        67,
+        22
+      ],
+      "width": 8,
+      "kind": "main"
+    },
+    {
+      "id": "production-service",
+      "from": [
+        -34,
+        -49
+      ],
+      "to": [
+        -34,
+        49
+      ],
+      "width": 6,
+      "kind": "service"
+    },
+    {
+      "id": "power-service",
+      "from": [
+        36,
+        -49
+      ],
+      "to": [
+        36,
+        22
+      ],
+      "width": 6,
+      "kind": "service"
+    },
+    {
+      "id": "main-entry-link",
+      "from": [
+        56,
+        22
+      ],
+      "to": [
+        56,
+        57
+      ],
+      "width": 7,
+      "kind": "main"
+    },
+    {
+      "id": "coal-entry-link",
+      "from": [
+        -74,
+        22
+      ],
+      "to": [
+        -67,
+        22
+      ],
+      "width": 7,
+      "kind": "main"
+    },
+    {
+      "id": "hoist-access",
+      "from": [
+        14,
+        22
+      ],
+      "to": [
+        14,
+        0
+      ],
+      "width": 5,
+      "kind": "service"
+    },
+    {
+      "id": "shaft-access",
+      "from": [
+        -14,
+        22
+      ],
+      "to": [
+        -14,
+        11
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "transfer-access",
+      "from": [
+        -34,
+        -7
+      ],
+      "to": [
+        -45,
+        -7
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "silo-west-access",
+      "from": [
+        -67,
+        -28
+      ],
+      "to": [
+        -62,
+        -28
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "silo-east-access",
+      "from": [
+        -34,
+        -28
+      ],
+      "to": [
+        -38,
+        -28
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "substation-access",
+      "from": [
+        36,
+        -26
+      ],
+      "to": [
+        43,
+        -26
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "distribution-access",
+      "from": [
+        36,
+        -10
+      ],
+      "to": [
+        44,
+        -10
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "office-access",
+      "from": [
+        34,
+        22
+      ],
+      "to": [
+        34,
+        31
+      ],
+      "width": 4.5,
+      "kind": "service"
+    },
+    {
+      "id": "dispatch-access",
+      "from": [
+        8,
+        22
+      ],
+      "to": [
+        8,
+        32
+      ],
+      "width": 4,
+      "kind": "service"
+    },
+    {
+      "id": "monitor-access",
+      "from": [
+        -56,
+        22
+      ],
+      "to": [
+        -56,
+        32
+      ],
+      "width": 2,
+      "kind": "walkway"
+    }
+  ],
+  "CONVEYORS": [
+    {
+      "id": "shaft-transfer",
+      "name": "井口至转载站输送带",
+      "fromAsset": "shaft-house-01",
+      "toAsset": "transfer-01",
+      "from": [
+        -19,
+        5.8,
+        7
+      ],
+      "to": [
+        -50,
+        9,
+        -7
+      ],
+      "width": 1.8,
+      "supports": [
+        0.2,
+        0.75
+      ]
+    },
+    {
+      "id": "transfer-silo-1",
+      "name": "煤仓 1 输送带",
+      "fromAsset": "transfer-01",
+      "toAsset": "coal-silo-01",
+      "from": [
+        -50,
+        9,
+        -7
+      ],
+      "to": [
+        -57,
+        13,
+        -28
+      ],
+      "width": 1.6,
+      "supports": [
+        0.6
+      ]
+    },
+    {
+      "id": "transfer-silo-2",
+      "name": "煤仓 2 输送带",
+      "fromAsset": "transfer-01",
+      "toAsset": "coal-silo-02",
+      "from": [
+        -50,
+        9,
+        -7
+      ],
+      "to": [
+        -43,
+        13,
+        -28
+      ],
+      "width": 1.6,
+      "supports": [
+        0.6
+      ]
+    }
+  ],
+  "GROUNDING_RESERVES": [
+    {
+      "id": "grounding-production",
+      "name": "生产区接地通道预留",
+      "points": [
+        [
+          -26,
+          -29
+        ],
+        [
+          29,
+          -29
+        ],
+        [
+          29,
+          14
+        ],
+        [
+          -26,
+          14
+        ],
+        [
+          -26,
+          -29
+        ]
+      ]
+    },
+    {
+      "id": "grounding-power",
+      "name": "电力区接地通道预留",
+      "points": [
+        [
+          42,
+          -38
+        ],
+        [
+          64,
+          -38
+        ],
+        [
+          64,
+          -4
+        ],
+        [
+          42,
+          -4
+        ],
+        [
+          42,
+          -38
+        ]
+      ]
+    }
+  ],
+  "SITE": {
+    "width": 148,
+    "depth": 114,
+    "groundY": 0
+  }
+}

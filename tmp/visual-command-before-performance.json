@@ -1,0 +1,38 @@
+{
+  "camera": "29.982,70.843,170.037",
+  "load": {
+    "loadedModels": 24,
+    "modelLoadMs": 1979.5999999977648,
+    "note": "Actual route load: fetch, decode and model setup; browser/HTTP caches may be warm.",
+    "sceneReadyMs": 4629.5
+  },
+  "performance": {
+    "addedModels": 3,
+    "coalDrawCalls": 3,
+    "cpuFactoryUpdateMedianMs": 0.4000000022351742,
+    "cpuRenderAndLabelsMedianMs": 18.599999997764822,
+    "drawCalls": 396,
+    "finiteHoistStroke": 1.6,
+    "frameIntervalMedianMs": 49.89999999999418,
+    "frameIntervalP95Ms": 79.10000000000582,
+    "geometries": 393,
+    "gpuMedianMs": 33.195572,
+    "gpuNote": "Asynchronous elapsed queries",
+    "gpuSamples": 28,
+    "hardwareRenderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "idlerDrawCalls": 9,
+    "idlerInstances": 210,
+    "maxCoalInstancesPerSegment": 512,
+    "note": "Observed foreground/background browser callback rate, not a stable 60 FPS claim; allocation counts are not measured VRAM.",
+    "observedFPS": 20.04008016032298,
+    "pixelRatio": 1.0000000298023224,
+    "samples": 32,
+    "textures": 182,
+    "triangles": 342912,
+    "viewport": {
+      "height": 1080,
+      "width": 1920
+    }
+  },
+  "status": "loaded"
+}

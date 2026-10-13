@@ -1,0 +1,202 @@
+{
+  "modelsUnchanged": true,
+  "glbHashes": {
+    "mine-coal-conveyors.glb": "55aa55cb5888d37d3035828213607269f6b2f0bb599fff394f7e84d03c48b41c",
+    "mine-coal-silo-1.glb": "dcdaef11521b4d2034f6cd3229b33d73575623f9930ee38e8098162bc86d7772",
+    "mine-coal-silo-2.glb": "5fc70403316b2f3cb7eab6f1f0305aeca12481dd5f9654fd5eacba2eef4157df",
+    "mine-distribution-equipment.glb": "486b545f6a485b2d63099971f310f2ddf603aa451d6452d8727b1a0793db9c8c",
+    "mine-distribution-roof.glb": "06f424803796aeef68deb5f7c9f61c3e07a8bbdefae7e1463dde3ab9091c5d18",
+    "mine-distribution-shell.glb": "d5a002ac21484245850b68a13c0a6ca2eca885ab8448deb71c200a7336bec86e",
+    "mine-headframe.glb": "6d03cc94051c3d759a2b9e247ba08703dce507d994772d99091ae83c7729031b",
+    "mine-hoist-house.glb": "54dcdefa1a6657fc84a1a3b7d2d920c38ac4122e007a8a82b89086f9c2f9930c",
+    "mine-production-links.glb": "1b2d0f8d4aa8e4bcfe932de9efb2103b205c43ae197077195cd99b70cc1f8f2e",
+    "mine-shaft-house.glb": "3fe02ed5ae6bb986bf4c8205ef9912d0d9df9ec42a41667b3d86cb3a6c10669e",
+    "mine-substation.glb": "52aa059a4fde48ca729dc5a8ab4dcc86d65fdc553e50b3115e8e7a8a1d7f9093",
+    "mine-transfer-station.glb": "21732d10c6e1a1e163ea13b4cc6e76c965c54c878d079bbc9fa38e2fd326f89d"
+  },
+  "hangerSamples": [
+    {
+      "hangerTopLocalYUp": [
+        -4.6,
+        3.88,
+        -2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.3131137490272522,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        -4.6,
+        3.88,
+        -1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.3624664843082428,
+      "verticalGapToBuildingMeters": 0.36410996317863464
+    },
+    {
+      "hangerTopLocalYUp": [
+        -4.6,
+        3.88,
+        1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.3624664843082428,
+      "verticalGapToBuildingMeters": 0.36410996317863464
+    },
+    {
+      "hangerTopLocalYUp": [
+        -4.6,
+        3.88,
+        2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.3131137490272522,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        -2.3,
+        3.88,
+        -2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.3131142556667328,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        -2.3,
+        3.88,
+        -1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.3624664843082428,
+      "verticalGapToBuildingMeters": 0.36410999298095703
+    },
+    {
+      "hangerTopLocalYUp": [
+        -2.3,
+        3.88,
+        1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.3624664843082428,
+      "verticalGapToBuildingMeters": 0.36410999298095703
+    },
+    {
+      "hangerTopLocalYUp": [
+        -2.3,
+        3.88,
+        2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.3131142556667328,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        0,
+        3.88,
+        -2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.18963581323623657,
+      "verticalGapToBuildingMeters": 0.19052432477474213
+    },
+    {
+      "hangerTopLocalYUp": [
+        0,
+        3.88,
+        -1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.2398023158311844,
+      "verticalGapToBuildingMeters": 0.24092614650726318
+    },
+    {
+      "hangerTopLocalYUp": [
+        0,
+        3.88,
+        1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.2398017942905426,
+      "verticalGapToBuildingMeters": 0.24092572927474976
+    },
+    {
+      "hangerTopLocalYUp": [
+        0,
+        3.88,
+        2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.18963484466075897,
+      "verticalGapToBuildingMeters": 0.19052377343177795
+    },
+    {
+      "hangerTopLocalYUp": [
+        2.3,
+        3.88,
+        -2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.31311410665512085,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        2.3,
+        3.88,
+        -1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.36246633529663086,
+      "verticalGapToBuildingMeters": 0.36410999298095703
+    },
+    {
+      "hangerTopLocalYUp": [
+        2.3,
+        3.88,
+        1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.36246633529663086,
+      "verticalGapToBuildingMeters": 0.36410999298095703
+    },
+    {
+      "hangerTopLocalYUp": [
+        2.3,
+        3.88,
+        2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.31311410665512085,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        4.6,
+        3.88,
+        -2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.3131137788295746,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    },
+    {
+      "hangerTopLocalYUp": [
+        4.6,
+        3.88,
+        -1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.3624664843082428,
+      "verticalGapToBuildingMeters": 0.36410999298095703
+    },
+    {
+      "hangerTopLocalYUp": [
+        4.6,
+        3.88,
+        1.74
+      ],
+      "nearestBuildingDistanceMeters": 0.3624664843082428,
+      "verticalGapToBuildingMeters": 0.36410999298095703
+    },
+    {
+      "hangerTopLocalYUp": [
+        4.6,
+        3.88,
+        2.26
+      ],
+      "nearestBuildingDistanceMeters": 0.3131137788295746,
+      "verticalGapToBuildingMeters": 0.31453371047973633
+    }
+  ],
+  "minimumHangerTopToBuildingMeters": 0.18963484466075897,
+  "maximumHangerTopToBuildingMeters": 0.3624664843082428,
+  "finding": "Existing cable-tray hanger tops are not connected to the roof/wall structural geometry. No models modified."
+}

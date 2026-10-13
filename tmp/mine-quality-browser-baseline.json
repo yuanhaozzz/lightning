@@ -1,0 +1,65 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "capturedAt": "2026-10-12T00:59:01.811Z",
+  "productionLogs": [
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":2,\"cpuRenderAndLabelsP95Ms\":5.899999976158142,\"cpuWebGLSubmissionMedianMs\":1.600000023841858,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":216,\"triangles\":301972,\"geometries\":219,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T00:57:25.506Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791734401918"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":2.100000023841858,\"cpuRenderAndLabelsP95Ms\":4.699999928474426,\"cpuWebGLSubmissionMedianMs\":1.6999999284744263,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":230,\"triangles\":307388,\"geometries\":219,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T00:57:26.728Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791734401918"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":3,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":2.100000023841858,\"cpuRenderAndLabelsP95Ms\":3.9000000953674316,\"cpuWebGLSubmissionMedianMs\":1.7000000476837158,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":232,\"triangles\":307424,\"geometries\":219,\"textures\":153,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T00:57:52.335Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791734401918"
+    }
+  ],
+  "cloudPerformance": {
+    "drawCalls": 1,
+    "triangles": 12,
+    "maxRaySteps": 48,
+    "densityBytes": 1916928,
+    "textures": 1,
+    "materials": 1,
+    "surroundings": {
+      "drawCalls": 6,
+      "terrainTriangles": 13016,
+      "terrainVertices": 6640,
+      "roadTriangles": 7054,
+      "textures": 0,
+      "lod": "stitched near/middle/far distance-adaptive rings",
+      "nearSamples": 196,
+      "farSamples": 68
+    },
+    "warningPulse": {
+      "drawCalls": 1,
+      "triangles": 128,
+      "materials": 1,
+      "textures": 0
+    },
+    "frameIntervalMedianMs": 33.39999999999418,
+    "frameIntervalP95Ms": 37.59999999999127,
+    "cpuSubmissionAndLabelsMedianMs": 1.7999999523162842,
+    "samples": 90,
+    "note": "Observed animation frame intervals; includes scene/browser cost, not an isolated GPU timer."
+  },
+  "errors": [],
+  "parkReady": [
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] park ready {\"assets\":18,\"zones\":6,\"roads\":22,\"conveyors\":3,\"loadedModels\":24,\"drawCalls\":443,\"triangles\":588220,\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T00:56:02.898Z",
+      "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791734401918"
+    }
+  ]
+}

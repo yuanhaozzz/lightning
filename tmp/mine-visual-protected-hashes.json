@@ -1,0 +1,30 @@
+[
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\layout.ts",
+    "Hash": "B0A0A076717B04091355E502B975E0B681857E7063B98AF34341260304DDE6D2"
+  },
+  {
+    "Path": "F:\\code\\lightning\\public\\models\\mine-headframe.glb",
+    "Hash": "6D03CC94051C3D759A2B9E247BA08703DCE507D994772D99091AE83C7729031B"
+  },
+  {
+    "Path": "F:\\code\\lightning\\public\\models\\mine-shaft-house.glb",
+    "Hash": "3FE02ED5AE6BB986BF4C8205EF9912D0D9DF9EC42A41667B3D86CB3A6C10669E"
+  },
+  {
+    "Path": "F:\\code\\lightning\\public\\models\\mine-hoist-house.glb",
+    "Hash": "54DCDEFA1A6657FC84A1A3B7D2D920C38AC4122E007A8A82B89086F9C2F9930C"
+  },
+  {
+    "Path": "F:\\code\\lightning\\public\\models\\mine-production-links.glb",
+    "Hash": "1B2D0F8D4AA8E4BCFE932DE9EFB2103B205C43AE197077195CD99B70CC1F8F2E"
+  },
+  {
+    "Path": "F:\\code\\lightning\\scripts\\blender\\generate_core_production.py",
+    "Hash": "26B809D827DFC6F25840ECC1DACA1CB54C2352C28353AE61449028A616EFFA1B"
+  },
+  {
+    "Path": "F:\\code\\lightning\\scripts\\blender\\generate_mine_headframe.py",
+    "Hash": "989DE6BFF8B797CF75F95107A0A6526CCFEAE246A91C095E9C406CE4CD2699B1"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\COAL_TRANSPORT.md",
+    "Hash": "966384CD821BEFD2F075AE3755DD458073DA33326175340C04E239D3428D5C95"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\headframeModel.ts",
+    "Hash": "195C18194986BD6BB3B3D0BC25AF3E6FC9CFCD3296D0AE2949884D370E3F0857"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\index.vue",
+    "Hash": "57495586876C4285FE271F936460BFC3503A8954191EF35E7D044968F9A9067E"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\layout.check.mjs",
+    "Hash": "8A7F8A3A04F186C76F611DA4A9626AA09AC812DF61D1F61246EA566EAAADC357"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\layout.ts",
+    "Hash": "B0A0A076717B04091355E502B975E0B681857E7063B98AF34341260304DDE6D2"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\MONITORING_DEVICES.md",
+    "Hash": "5F163572952040CAB088236D7C3BF5CC89C89E0D140C26C0691BA5A15BE0963F"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\monitoringDevices.ts",
+    "Hash": "5146FEDB84965461179F587E500D34E2B3568ACB71983C81B6A356A80526697F"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\monitoringScene.ts",
+    "Hash": "41CDFCCDDEF49136C439C5DF62A59E71FD748AED26AFC7F55E3741F00CF6AB59"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\overviewCamera.ts",
+    "Hash": "9E346497F0E4259B8788CB2340E70BBDE90A0A0251660FBBAFC25D4581954603"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\parkScene.ts",
+    "Hash": "BE4E1F806F7AAAF4BA46B59423F9DF234CDD301429882A605E720CF887DD1A2D"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\POWER_ACCEPTANCE.md",
+    "Hash": "61C1C4F916F0E1A193827996C2311359F1AA64232A4DF49C6DB6E35412846A90"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\POWER_AREA.md",
+    "Hash": "7CCA1C965FF37CD60CA8EAC5FFACEBB20C43C5B1600F2838D729AAF28E4A2D95"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\powerInspection.ts",
+    "Hash": "063CEC1159ABB692775A2A3D153235804A9E3B65F89B203E83C0FED159359A59"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\powerInteraction.ts",
+    "Hash": "8FFC64E1D205DE93D6F76B1BD7002C30A57E0F56C5774E0E4EB395E03D89A76F"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\powerModels.ts",
+    "Hash": "34289632CD12FCB02A590079AFFA150EE1C93F8613C93A02C5BBE3B85B633BEA"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\protectionFacilities.ts",
+    "Hash": "B71AB51283073B7819D370FBB15C1F47C580785F36A5B2987E81ADCCAD49D675"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\protectionInspection.ts",
+    "Hash": "2957BB93991F3ED25F5853C787B858860F1F3CAA91C531E80CEC10A827002C55"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\protectionScene.ts",
+    "Hash": "F2433868D38707B768E3C270EFE20E3DEDD48D36F0FEC54AC57006DD684158F6"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\README.md",
+    "Hash": "709DEDD0887EC0893BE1C67357539B04E141455816FA6ED8D23E5867D9802F19"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\sceneCamera.ts",
+    "Hash": "5C5162EEDF0A61CDF873AF0C9E569C1C671DFFD583B14CB834F52CB14757B8BC"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\sceneInteraction.ts",
+    "Hash": "DD30D29C93BB2170D40FE1C320583BE2FF5416A299F392FF07818C5B44BF31FE"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\siteEnvironment.ts",
+    "Hash": "A16F6AC920B8F159596D2232FDA23793A5157CE79FAACE4F39913F44B5B6717A"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\STORM_CLOUD_VISUAL_ACCEPTANCE.md",
+    "Hash": "C556046E8A2DF3F112721ECA24327AF1D9566936511557B8F0B629AC6ECCF4F8"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\STORM_DEMO_STEP1.md",
+    "Hash": "21D2D1132E47620D4645677782C65A5AECB244A24D1204A237784A26C93C17B3"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormAtmosphereState.ts",
+    "Hash": "48D875504A6EF84D34F1B6AC70986D80C20FE6C23335216390CA36CE9857E96B"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormCloud.check.mjs",
+    "Hash": "7FE0EA6ED4BE8E7C908279C31A809891E48E4F5556E8A5661548C9C08E9830B6"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormCloud.ts",
+    "Hash": "3C4672766D02B8BF60ABDD1D0236C6B6F643F625C362382481396868DF2C3D79"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormCloudDensity.ts",
+    "Hash": "63A29FA3EC5DD91D4DB4F1107853B9A656851FD7F8EB24B9898753AA0B58C000"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormCloudState.ts",
+    "Hash": "EB1F6F237B77F4326716E1C9C5521F460867AADBEB756A4AAC0F4ECF2E524591"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormDemo.check.mjs",
+    "Hash": "C1BE0261850ADC905DF633825CE3E50CDF207307EBC01035FDF5870763028B80"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormDemo.ts",
+    "Hash": "2D1B383866E73F0B6CA2DD1672528B732A36D8EDE0C7AD5D128AA67BF40A26C0"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\StormDemoControls.vue",
+    "Hash": "D6A8AA23C19C91ECD2615A7B9BE552EB1600DB5A72D6CB0FC3B0386FF81C0CD1"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormDemoData.ts",
+    "Hash": "571F39A7797693409C8BDDE1A2C5D27466A650746CC57DD22B6D903D1FF8421E"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormView.ts",
+    "Hash": "920612FC529DD9B1AC0F35F852DC672709805173E04F129237850D5687F05C57"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormVisual.check.mjs",
+    "Hash": "A8A62A43EBA91FFCA15AD897133A8F7833AED630284171AB8374DD2E18BF7D1F"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\stormWarningPulse.ts",
+    "Hash": "8C4E9740D4A173672D9BF4D2A2524DD9060F9053954A5915C02EDD8C9B4B11C3"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\surfaceMaterials.ts",
+    "Hash": "2A2DA3F376C41C2F45F28B7880BC2330E1DBB92183DF71792EE19E1C9311787B"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\transportModels.ts",
+    "Hash": "5BC47DC5BD9B2BE92DBB5C11D74A8A6D3E042B6DC83B54277787D7BB1624195C"
+  },
+  {
+    "Path": "F:\\code\\lightning\\src\\features\\mine-digital-twin\\valleyRoadSurface.ts",
+    "Hash": "9A964D46ADBB3FC4A4D475BCF2579B410BAAF5A3685A64199A6DDA7B3BC5DB9E"
+  }
+]

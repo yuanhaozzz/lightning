@@ -1,0 +1,158 @@
+[
+  {
+    "hash": "212AA058269ABFFC4C4023997B428C49ECAD701286AAFE3F7899B77E433482BE",
+    "path": "public/models/mine-air-belt-distribution.glb"
+  },
+  {
+    "hash": "38A8BEDB2FA2F30EE7B1F348B851522B15B4B15FC0D8F4A2671B7011FEDA9EDF",
+    "path": "public/models/mine-air-belt-hoist.glb"
+  },
+  {
+    "hash": "11A0C614BC1800452E3CA45D2D9F011093D5552CE35EB54A4E275F47D2B76555",
+    "path": "public/models/mine-air-terminal.glb"
+  },
+  {
+    "hash": "55AA55CB5888D37D3035828213607269F6B2F0BB599FFF394F7E84D03C48B41C",
+    "path": "public/models/mine-coal-conveyors.glb"
+  },
+  {
+    "hash": "DCDAEF11521B4D2034F6CD3229B33D73575623F9930EE38E8098162BC86D7772",
+    "path": "public/models/mine-coal-silo-1.glb"
+  },
+  {
+    "hash": "5FC70403316B2F3CB7EAB6F1F0305AECA12481DD5F9654FD5EACBA2EEF4157DF",
+    "path": "public/models/mine-coal-silo-2.glb"
+  },
+  {
+    "hash": "486B545F6A485B2D63099971F310F2DDF603AA451D6452D8727B1A0793DB9C8C",
+    "path": "public/models/mine-distribution-equipment.glb"
+  },
+  {
+    "hash": "06F424803796AEEF68DEB5F7C9F61C3E07A8BBDEFAE7E1463DDE3AB9091C5D18",
+    "path": "public/models/mine-distribution-roof.glb"
+  },
+  {
+    "hash": "D5A002AC21484245850B68A13C0A6CA2ECA885AB8448DEB71C200A7336BEC86E",
+    "path": "public/models/mine-distribution-shell.glb"
+  },
+  {
+    "hash": "9E69965F16280AE5A91319E35F35211C9D2FAC3D0FAF09C8FFC617C074B2C20E",
+    "path": "public/models/mine-downlead-distribution.glb"
+  },
+  {
+    "hash": "D7557588D86AF10009977EB2BD12F6D6B1A4C034BE4C29003F76EE65CB3C99B1",
+    "path": "public/models/mine-downlead-hoist.glb"
+  },
+  {
+    "hash": "2729F4DD78EFDCD313BC3D90444DDDCD15062AF0F613A5318431296D7250B051",
+    "path": "public/models/mine-earth-section.glb"
+  },
+  {
+    "hash": "DB483B399EAC0F33DDBDE28040A448B95251691C8CD00BE979CFB39881C2FDF2",
+    "path": "public/models/mine-ground-monitor.glb"
+  },
+  {
+    "hash": "6D03CC94051C3D759A2B9E247BA08703DCE507D994772D99091AE83C7729031B",
+    "path": "public/models/mine-headframe.glb"
+  },
+  {
+    "hash": "54DCDEFA1A6657FC84A1A3B7D2D920C38AC4122E007A8A82B89086F9C2F9930C",
+    "path": "public/models/mine-hoist-house.glb"
+  },
+  {
+    "hash": "C54B35522EE40A3795109A93030E0E14D34404316A7202DC86B19796C1A019AB",
+    "path": "public/models/mine-lightning-locator.glb"
+  },
+  {
+    "hash": "1B2D0F8D4AA8E4BCFE932DE9EFB2103B205C43AE197077195CD99B70CC1F8F2E",
+    "path": "public/models/mine-production-links.glb"
+  },
+  {
+    "hash": "3FE02ED5AE6BB986BF4C8205EF9912D0D9DF9EC42A41667B3D86CB3A6C10669E",
+    "path": "public/models/mine-shaft-house.glb"
+  },
+  {
+    "hash": "5F16A0F228BF087B8CDA677DD3AA1F440AF5B278AFA29CCE95FE7F4EB65BCF41",
+    "path": "public/models/mine-spd-cabinet-liner.glb"
+  },
+  {
+    "hash": "E83502F046925DA15D677EA2D734E37AD33633AEDE5EAB7EFA9BC403C4F6C2E7",
+    "path": "public/models/mine-spd.glb"
+  },
+  {
+    "hash": "794A23309A438B18AA62D5350869A22C1F3EF16EC6E34052BEAA8C7A0399B74B",
+    "path": "public/models/mine-storm-warning.glb"
+  },
+  {
+    "hash": "52AA059A4FDE48CA729DC5A8AB4DCC86D65FDC553E50B3115E8E7A8A1D7F9093",
+    "path": "public/models/mine-substation.glb"
+  },
+  {
+    "hash": "21732D10C6E1A1E163EA13B4CC6E76C965C54C878D079BBC9FA38E2FD326F89D",
+    "path": "public/models/mine-transfer-station.glb"
+  },
+  {
+    "hash": "7C83F4431BBCF72C82710AE3CB532AA20EEF18A7B028EEB566589C7EFDA7E743",
+    "path": "scripts/blender/coal_transport.parameters.json"
+  },
+  {
+    "hash": "D84DAFC2810552E6DF1FFE81D9A7B7D8EAEC4551571A2361A1782A52C91C969E",
+    "path": "scripts/blender/coal_transport.protected-baseline.json"
+  },
+  {
+    "hash": "B165F1239BB19D7317E63B903D202484A56101493A0DC1ED331254FB854E12B3",
+    "path": "scripts/blender/core_production.layout-baseline.json"
+  },
+  {
+    "hash": "194A848E1900CCCE7B133A6D4DEF43FBE770F7A073432849034B4AACA6D8DE54",
+    "path": "scripts/blender/core_production.parameters.json"
+  },
+  {
+    "hash": "F33163C4E323CF2C5E17459401F7F3557B435C9E98F4C0420EEDE2528497988B",
+    "path": "scripts/blender/generate_coal_transport.py"
+  },
+  {
+    "hash": "26B809D827DFC6F25840ECC1DACA1CB54C2352C28353AE61449028A616EFFA1B",
+    "path": "scripts/blender/generate_core_production.py"
+  },
+  {
+    "hash": "989DE6BFF8B797CF75F95107A0A6526CCFEAE246A91C095E9C406CE4CD2699B1",
+    "path": "scripts/blender/generate_mine_headframe.py"
+  },
+  {
+    "hash": "B6ABFAE2AB60DABC97D29584AA6A8248BA3DA2A4694916AA0E070C3BF23B2CCD",
+    "path": "scripts/blender/generate_monitoring_devices.py"
+  },
+  {
+    "hash": "545083AF9CE5432BE6F0AC03EB5891F8DCAC670AE5B41C47DAE2EF4B58D8BD67",
+    "path": "scripts/blender/generate_power_area.py"
+  },
+  {
+    "hash": "F7B1C109328711E8A01B66E09AEAC64079E0C1089D4D7975F369DB9777BD6A8C",
+    "path": "scripts/blender/generate_protection_facilities.py"
+  },
+  {
+    "hash": "888058390BB2B22908281B411AC04F91E2E85910983523D880C0CA816651DE54",
+    "path": "scripts/blender/monitoring.parameters.json"
+  },
+  {
+    "hash": "9DADDEB1F90C37195904B163EBA3B4128F2DA9CF96FCF4A7F645FDA56912BA27",
+    "path": "scripts/blender/monitoring.protected-baseline.json"
+  },
+  {
+    "hash": "9687F1D3C9909207DF43A408BEB1D6C34BB0ED102FC64F6587A85661340264CC",
+    "path": "scripts/blender/power_area.parameters.json"
+  },
+  {
+    "hash": "E28FED457516C2224B83A85F5509088873FA021A1B1EBE65E3745EF484B4F1B9",
+    "path": "scripts/blender/power_area.protected-baseline.json"
+  },
+  {
+    "hash": "B6E882D181F2B7E7371B7ADB12D9DD9D451B9F2629E53C8183DD2A58C9B856D4",
+    "path": "scripts/blender/protection.parameters.json"
+  },
+  {
+    "hash": "DA9FFBB781321B1BA00967676CCECDEB6EDF1C1254C55C472C5FED12FB3FDE9B",
+    "path": "scripts/blender/protection.protected-baseline.json"
+  }
+]

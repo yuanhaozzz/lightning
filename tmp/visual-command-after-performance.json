@@ -1,0 +1,53 @@
+{
+  "camera": "66.724,60.836,205.356",
+  "load": {
+    "loadedModels": 24,
+    "modelLoadMs": 2022.300000000745,
+    "note": "Actual route load: fetch, decode and model setup; browser/HTTP caches may be warm.",
+    "sceneReadyMs": 4624.199999999255
+  },
+  "performance": {
+    "addedModels": 3,
+    "coalDrawCalls": 3,
+    "cpuFactoryUpdateMedianMs": 0.5,
+    "cpuRenderAndLabelsMedianMs": 18.300000000745055,
+    "drawCalls": 397,
+    "finiteHoistStroke": 1.6,
+    "frameIntervalMedianMs": 50,
+    "frameIntervalP95Ms": 170.59999999999854,
+    "geometries": 394,
+    "gpuMedianMs": 33.174999,
+    "gpuNote": "Asynchronous elapsed queries",
+    "gpuSamples": 28,
+    "hardwareRenderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "idlerDrawCalls": 9,
+    "idlerInstances": 210,
+    "maxCoalInstancesPerSegment": 512,
+    "note": "Observed foreground/background browser callback rate, not a stable 60 FPS claim; allocation counts are not measured VRAM.",
+    "observedFPS": 20,
+    "pixelRatio": 1.0000000298023224,
+    "samples": 32,
+    "textures": 184,
+    "triangles": 342964,
+    "viewport": {
+      "height": 1080,
+      "width": 1920
+    }
+  },
+  "visual": {
+    "animationCost": 0,
+    "extraDrawCalls": 1,
+    "extraTriangles": 12,
+    "geometryUnchanged": true,
+    "materialCategories": {
+      "coating": 40,
+      "concrete": 36,
+      "glass": 7,
+      "metal": 72,
+      "unchanged": 77
+    },
+    "styledMaterials": 155,
+    "textureBytes": 174762.66666666666,
+    "textures": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "sampleCabinetId": "power-cabinet-lv-01",
+  "roomPosition": [53, 0, -10],
+  "cabinetPosition": [-2.35, 0.31, 2],
+  "cabinetWidth": 0.82,
+  "cabinetBodyHeight": 2.25,
+  "cabinetDepth": 1.15,
+  "plinthHeight": 0.11,
+  "hinge": [-0.387, 0.11, -0.59],
+  "openAngleRadians": 1.92,
+  "originalSpdWorldPosition": [50.65, 1.42, -8],
+  "originalSpdCabinetPosition": [0, 1.11, 0],
+  "forward": [0, 0, -1],
+  "maxTriangles": 25000,
+  "maxBytes": 1800000,
+  "schematic": true
+}

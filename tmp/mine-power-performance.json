@@ -1,0 +1,20 @@
+[
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.600000023841858,\"cpuRenderAndLabelsP95Ms\":2.6999999284744263,\"cpuWebGLSubmissionMedianMs\":1.2000000476837158,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:53:47.439Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.5999999046325684,\"cpuRenderAndLabelsP95Ms\":3,\"cpuWebGLSubmissionMedianMs\":1.2000000476837158,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:53:47.966Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  },
+  {
+    "level": "info",
+    "message": "[mine-digital-twin] production performance {\"batch\":3,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":1.600000023841858,\"cpuRenderAndLabelsP95Ms\":2.5,\"cpuWebGLSubmissionMedianMs\":1.100000023841858,\"cpuLabelsMedianMs\":0.3999999761581421,\"drawCalls\":203,\"triangles\":274462,\"geometries\":193,\"textures\":141,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+    "timestamp": "2026-10-11T10:53:48.504Z",
+    "url": "http://127.0.0.1:5173/src/features/mine-digital-twin/index.vue?t=1791715924001"
+  }
+]

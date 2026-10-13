@@ -1,0 +1,24 @@
+{
+  "load": "{\"modelLoadMs\":1916.2999999998137,\"sceneReadyMs\":4415.600000000093,\"loadedModels\":24,\"note\":\"Actual route load: fetch, decode and model setup; browser/HTTP caches may be warm.\"}",
+  "cloud": "{\"drawCalls\":1,\"triangles\":12,\"maxRaySteps\":48,\"densityBytes\":1916928,\"textures\":1,\"materials\":1,\"surroundings\":{\"drawCalls\":6,\"terrainTriangles\":13016,\"terrainVertices\":6640,\"roadTriangles\":7054,\"textures\":0,\"lod\":\"stitched near/middle/far distance-adaptive rings\",\"nearSamples\":196,\"farSamples\":68},\"warningPulse\":{\"drawCalls\":1,\"triangles\":128,\"materials\":1,\"textures\":0},\"frameIntervalMedianMs\":1004,\"frameIntervalP95Ms\":1004.3000000000029,\"cpuSubmissionAndLabelsMedianMs\":14,\"samples\":30,\"note\":\"Observed animation frame intervals; includes scene/browser cost, not an isolated GPU timer.\"}",
+  "logs": [
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":2,\"labelsVisible\":false,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":23.5999999998603,\"cpuRenderAndLabelsP95Ms\":33.699999999953434,\"cpuWebGLSubmissionMedianMs\":23.5999999998603,\"cpuLabelsMedianMs\":0,\"drawCalls\":246,\"triangles\":333138,\"geometries\":232,\"textures\":156,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T02:48:40.806Z",
+      "url": "http://127.0.0.1:5174/src/features/mine-digital-twin/index.vue?t=1791773016625"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":3,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":17.5999999998603,\"cpuRenderAndLabelsP95Ms\":38.800000000046566,\"cpuWebGLSubmissionMedianMs\":16.399999999906868,\"cpuLabelsMedianMs\":1.5,\"drawCalls\":242,\"triangles\":332868,\"geometries\":232,\"textures\":156,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T02:53:08.341Z",
+      "url": "http://127.0.0.1:5174/src/features/mine-digital-twin/index.vue?t=1791773016625"
+    },
+    {
+      "level": "info",
+      "message": "[mine-digital-twin] production performance {\"batch\":1,\"labelsVisible\":true,\"powerRoofVisible\":true,\"samples\":32,\"cpuRenderAndLabelsMedianMs\":14.299999999813735,\"cpuRenderAndLabelsP95Ms\":26.399999999906868,\"cpuWebGLSubmissionMedianMs\":12.600000000093132,\"cpuLabelsMedianMs\":1.6000000000931323,\"drawCalls\":246,\"triangles\":333138,\"geometries\":232,\"textures\":154,\"shadows\":\"static; refreshed on model load\",\"idleRendering\":\"on demand\"}",
+      "timestamp": "2026-10-12T02:58:18.087Z",
+      "url": "http://127.0.0.1:5174/src/features/mine-digital-twin/index.vue?t=1791773794495"
+    }
+  ]
+}

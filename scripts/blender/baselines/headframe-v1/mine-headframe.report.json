@@ -1,0 +1,25 @@
+{
+  "logicalColumns": 4,
+  "frameLevels": [
+    0.35,
+    3.2,
+    6.1,
+    9.0,
+    11.9
+  ],
+  "singleBracesAndPortalKnees": 17,
+  "stairFlights": 8,
+  "stairSteps": 72,
+  "stairClearWidthMeters": 0.85,
+  "maxRiserMeters": 0.17333333333333328,
+  "treadGoingMeters": 0.3,
+  "guardrailHeightMeters": 1.1,
+  "sheaveDeckClearanceMeters": 0.12,
+  "sheaveStationaryCollisionChecks": 274,
+  "sheaveCollisions": [],
+  "stairMainFrameClearanceMeters": 0.45,
+  "sourceObjects": 2681,
+  "exportMeshes": 9,
+  "triangles": 59476,
+  "glbBytes": 4143248
+}

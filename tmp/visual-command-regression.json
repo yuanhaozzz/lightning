@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "timestampUTC": "2026-10-12T16:36:19.095Z",
+  "modelPreservation": {
+    "baseline": "tmp/visual-command-baseline/model-hashes.json",
+    "resources": 41,
+    "glbs": 27,
+    "allHashesMatch": true
+  },
+  "visualStyle": {
+    "result": "PASS",
+    "actualGLBAssets": 27,
+    "checkedMaterials": 154,
+    "originalNodes": 893,
+    "diagnostics": {
+      "materialCategories": {
+        "concrete": 25,
+        "coating": 28,
+        "metal": 59,
+        "glass": 6,
+        "unchanged": 36
+      },
+      "styledMaterials": 118,
+      "extraDrawCalls": 1,
+      "extraTriangles": 12,
+      "textures": 2,
+      "textureBytes": 174762.66666666666,
+      "geometryUnchanged": true,
+      "animationCost": 0
+    },
+    "authoredPBRMapPreservation": true,
+    "statusEmissionAndTransparencyPreservation": true,
+    "originalTransformsAndSemanticsPreserved": true,
+    "fullMaterialRestoration": true,
+    "ownedGPUResourcesDisposedExactlyOnce": 4,
+    "originalResourcesNotDisposed": 692,
+    "contactShadowFollowsBuildingLayer": true
+  },
+  "checks": [
+    {
+      "file": "src/features/mine-digital-twin/distributionDrilldown.check.mjs",
+      "result": "PASS",
+      "exitCode": 0,
+      "logPath": "tmp/visual-command-distributionDrilldown.check.log"
+    },
+    {
+      "file": "tmp/factory-phase2-regression.mjs",
+      "result": "PASS",
+      "exitCode": 0,
+      "logPath": "tmp/visual-command-factory-phase2-regression.log"
+    },
+    {
+      "file": "src/features/mine-digital-twin/stormVisual.check.mjs",
+      "result": "PASS",
+      "exitCode": 0,
+      "logPath": "tmp/visual-command-stormVisual.check.log"
+    }
+  ],
+  "limits": [
+    "No browser run in this subtask; main task validates pixels, interaction and real GPU performance.",
+    "GLTFLoader preserves actual binary geometry/semantics but texture image decoding is omitted in Node. Authored-map preservation separately tested with texture objects.",
+    "Texture-byte and extra-draw metrics are resource estimates, not measured GPU memory or frame-rate claims.",
+    "Factory regression uses the existing scoped temporary runner; historical feature hash audit is skipped for authorized integration changes. Original baseline files remain unchanged."
+  ]
+}

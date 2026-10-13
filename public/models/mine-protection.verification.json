@@ -1,0 +1,462 @@
+{
+  "result": "PASS",
+  "protectedFilesUnchanged": 26,
+  "facilities": [
+    {
+      "id": "air-terminal-production",
+      "name": "生产区接闪杆",
+      "type": "air-terminal",
+      "position": [
+        12,
+        0.014,
+        -38
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-air-terminal.glb",
+      "schematic": true
+    },
+    {
+      "id": "air-terminal-power",
+      "name": "变电站接闪杆",
+      "type": "air-terminal",
+      "position": [
+        63,
+        0.014,
+        -36
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-air-terminal.glb",
+      "schematic": true
+    },
+    {
+      "id": "roof-belt-hoist-01",
+      "name": "提升机房接闪带",
+      "type": "air-belt",
+      "position": [
+        14,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-air-belt-hoist.glb",
+      "schematic": true,
+      "buildingId": "hoist-house-01"
+    },
+    {
+      "id": "roof-belt-distribution-01",
+      "name": "配电室接闪带",
+      "type": "air-belt",
+      "position": [
+        53,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-air-belt-distribution.glb",
+      "schematic": true,
+      "buildingId": "distribution-01"
+    },
+    {
+      "id": "downlead-hoist-01",
+      "name": "提升机房引下线",
+      "type": "down-conductor",
+      "position": [
+        14,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-downlead-hoist.glb",
+      "schematic": true,
+      "connectedTo": "roof-belt-hoist-01"
+    },
+    {
+      "id": "downlead-distribution-01",
+      "name": "配电室引下线",
+      "type": "down-conductor",
+      "position": [
+        53,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-downlead-distribution.glb",
+      "schematic": true,
+      "connectedTo": "roof-belt-distribution-01"
+    },
+    {
+      "id": "spd-lv-01",
+      "name": "柜内 SPD 浪涌保护器",
+      "type": "spd",
+      "position": [
+        50.65,
+        1.42,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-spd.glb",
+      "schematic": true,
+      "cabinetId": "power-cabinet-lv-01"
+    },
+    {
+      "id": "ground-monitor-01",
+      "name": "接地电阻在线监测仪",
+      "type": "ground-monitor",
+      "position": [
+        43.8,
+        1.35,
+        -6.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-ground-monitor.glb",
+      "schematic": true,
+      "connectedTo": "earth-section-01"
+    },
+    {
+      "id": "earth-section-01",
+      "name": "局部接地装置剖视",
+      "type": "earth-section",
+      "position": [
+        43.35,
+        0,
+        -6.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "modelPath": "models/mine-earth-section.glb",
+      "schematic": true,
+      "connectedTo": "downlead-distribution-01"
+    }
+  ],
+  "resources": [
+    {
+      "file": "mine-air-terminal.glb",
+      "triangles": 864,
+      "bytes": 119980,
+      "materials": 3,
+      "meshes": 3
+    },
+    {
+      "file": "mine-air-belt-hoist.glb",
+      "triangles": 1616,
+      "bytes": 92960,
+      "materials": 2,
+      "meshes": 2
+    },
+    {
+      "file": "mine-air-belt-distribution.glb",
+      "triangles": 1896,
+      "bytes": 107212,
+      "materials": 2,
+      "meshes": 2
+    },
+    {
+      "file": "mine-downlead-hoist.glb",
+      "triangles": 428,
+      "bytes": 24704,
+      "materials": 2,
+      "meshes": 2
+    },
+    {
+      "file": "mine-downlead-distribution.glb",
+      "triangles": 348,
+      "bytes": 20388,
+      "materials": 2,
+      "meshes": 2
+    },
+    {
+      "file": "mine-spd.glb",
+      "triangles": 1212,
+      "bytes": 74732,
+      "materials": 6,
+      "meshes": 6
+    },
+    {
+      "file": "mine-spd-cabinet-liner.glb",
+      "triangles": 436,
+      "bytes": 31312,
+      "materials": 5,
+      "meshes": 5
+    },
+    {
+      "file": "mine-ground-monitor.glb",
+      "triangles": 728,
+      "bytes": 45468,
+      "materials": 5,
+      "meshes": 5
+    },
+    {
+      "file": "mine-earth-section.glb",
+      "triangles": 420,
+      "bytes": 100876,
+      "materials": 4,
+      "meshes": 4
+    }
+  ],
+  "totalResourceBytes": 617632,
+  "totalResourceTriangles": 7948,
+  "instantiatedTriangles": 8812,
+  "checks": {
+    "uniqueIds": true,
+    "actualMeshRaycasts": [
+      "spd-lv-01",
+      "ground-monitor-01",
+      "earth-section-01"
+    ],
+    "occlusion": true,
+    "sharedResourceHighlightIsolation": true,
+    "reversibleRoofAndCabinet": true,
+    "spdInsideCabinet": true,
+    "localCutawayShader": true,
+    "roofNetClearance": [
+      {
+        "route": "roof_perimeter",
+        "roof": "hoist",
+        "surfaceClearanceMeters": 0.05091009211540222
+      },
+      {
+        "route": "roof_perimeter",
+        "roof": "distribution",
+        "surfaceClearanceMeters": 0.05874175500869751
+      },
+      {
+        "route": "roof_cross_conductor",
+        "roof": "distribution",
+        "surfaceClearanceMeters": 0.05874175500869751
+      },
+      {
+        "route": "roof_cross_conductor",
+        "roof": "distribution",
+        "surfaceClearanceMeters": 0.058742224395275114
+      }
+    ],
+    "connectedConductorEndpoints": true,
+    "originalModelsAndLayoutUntouched": true
+  },
+  "cameraChecks": [
+    {
+      "id": "air-terminal-production",
+      "width": 604,
+      "height": 871,
+      "distance": 27.491483344025912,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "air-terminal-production",
+      "width": 1440,
+      "height": 900,
+      "distance": 26.838574130963536,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "air-terminal-production",
+      "width": 390,
+      "height": 844,
+      "distance": 31.374078785832975,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "air-terminal-power",
+      "width": 604,
+      "height": 871,
+      "distance": 27.491483344025912,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "air-terminal-power",
+      "width": 1440,
+      "height": 900,
+      "distance": 26.838574130963536,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "air-terminal-power",
+      "width": 390,
+      "height": 844,
+      "distance": 31.374078785832975,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "roof-belt-hoist-01",
+      "width": 604,
+      "height": 871,
+      "distance": 52.993704476002605,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "roof-belt-hoist-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 35.972878047097474,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "roof-belt-hoist-01",
+      "width": 390,
+      "height": 844,
+      "distance": 85.4395521336794,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "roof-belt-distribution-01",
+      "width": 604,
+      "height": 871,
+      "distance": 46.23976628674195,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "roof-belt-distribution-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 29.86218425357714,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "roof-belt-distribution-01",
+      "width": 390,
+      "height": 844,
+      "distance": 74.61539867436514,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "downlead-hoist-01",
+      "width": 604,
+      "height": 871,
+      "distance": 18.066343958023936,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "downlead-hoist-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 17.638022916745395,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "downlead-hoist-01",
+      "width": 390,
+      "height": 844,
+      "distance": 20.613724579140545,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "downlead-distribution-01",
+      "width": 604,
+      "height": 871,
+      "distance": 10.532563894763587,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "downlead-distribution-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 10.282082379218194,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "downlead-distribution-01",
+      "width": 390,
+      "height": 844,
+      "distance": 12.021932799853381,
+      "nearPlane": 0.3
+    },
+    {
+      "id": "spd-lv-01",
+      "width": 604,
+      "height": 871,
+      "distance": 1.195900792993604,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "spd-lv-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 1.167482712146826,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "spd-lv-01",
+      "width": 390,
+      "height": 844,
+      "distance": 1.364884979902302,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "ground-monitor-01",
+      "width": 604,
+      "height": 871,
+      "distance": 1.614821318825705,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "ground-monitor-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 1.5786526808179895,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "ground-monitor-01",
+      "width": 390,
+      "height": 844,
+      "distance": 2.0314872179813706,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "earth-section-01",
+      "width": 604,
+      "height": 871,
+      "distance": 4.402308487873524,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "earth-section-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 4.3003448352869595,
+      "nearPlane": 0.025
+    },
+    {
+      "id": "earth-section-01",
+      "width": 390,
+      "height": 844,
+      "distance": 5.696030461052432,
+      "nearPlane": 0.025
+    }
+  ]
+}

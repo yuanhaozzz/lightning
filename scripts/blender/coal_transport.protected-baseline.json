@@ -1,0 +1,50 @@
+[
+  {
+    "path": "src/features/mine-digital-twin/layout.ts",
+    "hash": "B0A0A076717B04091355E502B975E0B681857E7063B98AF34341260304DDE6D2"
+  },
+  {
+    "path": "src/features/mine-digital-twin/index.vue",
+    "hash": "5731B6AE7A36A8BD8A184233C5959FC83DD2B911EA5364E9452274E4B4C783D6"
+  },
+  {
+    "path": "src/features/mine-digital-twin/overviewCamera.ts",
+    "hash": "C0F39F1842EC538C06362FD341A2660884EFF8D553DB3EB41096FCC2854002AA"
+  },
+  {
+    "path": "src/features/mine-digital-twin/siteEnvironment.ts",
+    "hash": "A16F6AC920B8F159596D2232FDA23793A5157CE79FAACE4F39913F44B5B6717A"
+  },
+  {
+    "path": "src/features/mine-digital-twin/surfaceMaterials.ts",
+    "hash": "2A2DA3F376C41C2F45F28B7880BC2330E1DBB92183DF71792EE19E1C9311787B"
+  },
+  {
+    "path": "public/models/mine-headframe.glb",
+    "hash": "6D03CC94051C3D759A2B9E247BA08703DCE507D994772D99091AE83C7729031B"
+  },
+  {
+    "path": "public/models/mine-shaft-house.glb",
+    "hash": "3FE02ED5AE6BB986BF4C8205EF9912D0D9DF9EC42A41667B3D86CB3A6C10669E"
+  },
+  {
+    "path": "public/models/mine-hoist-house.glb",
+    "hash": "54DCDEFA1A6657FC84A1A3B7D2D920C38AC4122E007A8A82B89086F9C2F9930C"
+  },
+  {
+    "path": "public/models/mine-production-links.glb",
+    "hash": "1B2D0F8D4AA8E4BCFE932DE9EFB2103B205C43AE197077195CD99B70CC1F8F2E"
+  },
+  {
+    "path": "scripts/blender/generate_core_production.py",
+    "hash": "26B809D827DFC6F25840ECC1DACA1CB54C2352C28353AE61449028A616EFFA1B"
+  },
+  {
+    "path": "scripts/blender/generate_mine_headframe.py",
+    "hash": "989DE6BFF8B797CF75F95107A0A6526CCFEAE246A91C095E9C406CE4CD2699B1"
+  },
+  {
+    "path": "scripts/blender/core_production.parameters.json",
+    "hash": "194A848E1900CCCE7B133A6D4DEF43FBE770F7A073432849034B4AACA6D8DE54"
+  }
+]

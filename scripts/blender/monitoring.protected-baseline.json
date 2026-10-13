@@ -1,0 +1,82 @@
+[
+  {
+    "hash": "55AA55CB5888D37D3035828213607269F6B2F0BB599FFF394F7E84D03C48B41C",
+    "path": "public/models/mine-coal-conveyors.glb"
+  },
+  {
+    "hash": "DCDAEF11521B4D2034F6CD3229B33D73575623F9930EE38E8098162BC86D7772",
+    "path": "public/models/mine-coal-silo-1.glb"
+  },
+  {
+    "hash": "5FC70403316B2F3CB7EAB6F1F0305AECA12481DD5F9654FD5EACBA2EEF4157DF",
+    "path": "public/models/mine-coal-silo-2.glb"
+  },
+  {
+    "hash": "486B545F6A485B2D63099971F310F2DDF603AA451D6452D8727B1A0793DB9C8C",
+    "path": "public/models/mine-distribution-equipment.glb"
+  },
+  {
+    "hash": "06F424803796AEEF68DEB5F7C9F61C3E07A8BBDEFAE7E1463DDE3AB9091C5D18",
+    "path": "public/models/mine-distribution-roof.glb"
+  },
+  {
+    "hash": "D5A002AC21484245850B68A13C0A6CA2ECA885AB8448DEB71C200A7336BEC86E",
+    "path": "public/models/mine-distribution-shell.glb"
+  },
+  {
+    "hash": "6D03CC94051C3D759A2B9E247BA08703DCE507D994772D99091AE83C7729031B",
+    "path": "public/models/mine-headframe.glb"
+  },
+  {
+    "hash": "54DCDEFA1A6657FC84A1A3B7D2D920C38AC4122E007A8A82B89086F9C2F9930C",
+    "path": "public/models/mine-hoist-house.glb"
+  },
+  {
+    "hash": "1B2D0F8D4AA8E4BCFE932DE9EFB2103B205C43AE197077195CD99B70CC1F8F2E",
+    "path": "public/models/mine-production-links.glb"
+  },
+  {
+    "hash": "3FE02ED5AE6BB986BF4C8205EF9912D0D9DF9EC42A41667B3D86CB3A6C10669E",
+    "path": "public/models/mine-shaft-house.glb"
+  },
+  {
+    "hash": "52AA059A4FDE48CA729DC5A8AB4DCC86D65FDC553E50B3115E8E7A8A1D7F9093",
+    "path": "public/models/mine-substation.glb"
+  },
+  {
+    "hash": "21732D10C6E1A1E163EA13B4CC6E76C965C54C878D079BBC9FA38E2FD326F89D",
+    "path": "public/models/mine-transfer-station.glb"
+  },
+  {
+    "hash": "F33163C4E323CF2C5E17459401F7F3557B435C9E98F4C0420EEDE2528497988B",
+    "path": "scripts/blender/generate_coal_transport.py"
+  },
+  {
+    "hash": "26B809D827DFC6F25840ECC1DACA1CB54C2352C28353AE61449028A616EFFA1B",
+    "path": "scripts/blender/generate_core_production.py"
+  },
+  {
+    "hash": "989DE6BFF8B797CF75F95107A0A6526CCFEAE246A91C095E9C406CE4CD2699B1",
+    "path": "scripts/blender/generate_mine_headframe.py"
+  },
+  {
+    "hash": "545083AF9CE5432BE6F0AC03EB5891F8DCAC670AE5B41C47DAE2EF4B58D8BD67",
+    "path": "scripts/blender/generate_power_area.py"
+  },
+  {
+    "hash": "B0A0A076717B04091355E502B975E0B681857E7063B98AF34341260304DDE6D2",
+    "path": "src/features/mine-digital-twin/layout.ts"
+  },
+  {
+    "hash": "A16F6AC920B8F159596D2232FDA23793A5157CE79FAACE4F39913F44B5B6717A",
+    "path": "src/features/mine-digital-twin/siteEnvironment.ts"
+  },
+  {
+    "hash": "C0F39F1842EC538C06362FD341A2660884EFF8D553DB3EB41096FCC2854002AA",
+    "path": "src/features/mine-digital-twin/overviewCamera.ts"
+  },
+  {
+    "hash": "2A2DA3F376C41C2F45F28B7880BC2330E1DBB92183DF71792EE19E1C9311787B",
+    "path": "src/features/mine-digital-twin/surfaceMaterials.ts"
+  }
+]

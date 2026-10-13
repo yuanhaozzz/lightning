@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "scenarios": [
+    "normal/warning boundary",
+    "pause/resume freeze",
+    "independent facility status",
+    "reserved future readings",
+    "background pause",
+    "completion once",
+    "replay resets devices",
+    "exit retains records",
+    "snapshot isolation",
+    "large/invalid deltas",
+    "bounded events",
+    "dispose",
+    "unique IDs"
+  ],
+  "protectedFilesUnchanged": 0
+}

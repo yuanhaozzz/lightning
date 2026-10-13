@@ -1,0 +1,3269 @@
+[
+  {
+    "file": "mine-coal-conveyors.glb",
+    "bytes": 2187664,
+    "triangles": 34244,
+    "animations": 0,
+    "nodes": 7,
+    "semantic": [],
+    "meshNames": [
+      "Transport_concrete",
+      "Transport_machined",
+      "Transport_rubber",
+      "Transport_safety",
+      "Transport_steel",
+      "Transport_trim",
+      "Transport_wall"
+    ]
+  },
+  {
+    "file": "mine-coal-silo-1.glb",
+    "bytes": 1708452,
+    "triangles": 26680,
+    "animations": 0,
+    "nodes": 6,
+    "semantic": [],
+    "meshNames": [
+      "Transport_concrete",
+      "Transport_machined",
+      "Transport_roof",
+      "Transport_safety",
+      "Transport_steel",
+      "Transport_trim"
+    ]
+  },
+  {
+    "file": "mine-coal-silo-2.glb",
+    "bytes": 1709796,
+    "triangles": 26708,
+    "animations": 0,
+    "nodes": 6,
+    "semantic": [],
+    "meshNames": [
+      "Transport_concrete",
+      "Transport_machined",
+      "Transport_roof",
+      "Transport_safety",
+      "Transport_steel",
+      "Transport_trim"
+    ]
+  },
+  {
+    "file": "mine-distribution-equipment.glb",
+    "bytes": 617996,
+    "triangles": 6152,
+    "animations": 0,
+    "nodes": 90,
+    "semantic": [
+      {
+        "name": "distribution-cable-trays__Power_copper",
+        "extras": {
+          "entityId": "distribution-cable-trays"
+        },
+        "translation": [
+          -7.300000190734863,
+          0.47999998927116394,
+          3.9000000953674316
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-cable-trays__Power_dark",
+        "extras": {
+          "entityId": "distribution-cable-trays"
+        },
+        "translation": [
+          0,
+          3.200000047683716,
+          -2.130000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-cable-trays__Power_safety",
+        "extras": {
+          "entityId": "distribution-cable-trays"
+        },
+        "translation": [
+          0,
+          0.32100000977516174,
+          -1.2200000286102295
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-cable-trays__Power_steel",
+        "extras": {
+          "entityId": "distribution-cable-trays"
+        },
+        "translation": [
+          -4.599999904632568,
+          3.555000066757202,
+          -2.259999990463257
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-cable-trays__Power_trim",
+        "extras": {
+          "entityId": "distribution-cable-trays"
+        },
+        "translation": [
+          0,
+          3.180000066757202,
+          -2.2699999809265137
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-cable-trays__Power_wall",
+        "extras": {
+          "entityId": "distribution-cable-trays"
+        },
+        "translation": [
+          -6,
+          3.859999895095825,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-cable-trays",
+        "extras": {
+          "id": "distribution-cable-trays",
+          "name": "电缆桥架及照明",
+          "kind": "cable-tray"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 6
+      },
+      {
+        "name": "grounding-downlead-interface-01__Power_copper",
+        "extras": {
+          "entityId": "grounding-downlead-interface-01"
+        },
+        "translation": [
+          -9.15999984741211,
+          0.5199999809265137,
+          3.0999999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "grounding-downlead-interface-01",
+        "extras": {
+          "id": "grounding-downlead-interface-01",
+          "name": "接地引下线展示接口",
+          "kind": "grounding-interface",
+          "position": [
+            -9.16,
+            0.52,
+            3.1
+          ],
+          "size": [
+            0.1,
+            0.15,
+            0.08
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 1
+      },
+      {
+        "name": "grounding-monitor-reserve-01__Power_safety",
+        "extras": {
+          "entityId": "grounding-monitor-reserve-01"
+        },
+        "translation": [
+          -9.25,
+          1.350000023841858,
+          3.0999999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "grounding-monitor-reserve-01__Power_trim",
+        "extras": {
+          "entityId": "grounding-monitor-reserve-01"
+        },
+        "translation": [
+          -9.199999809265137,
+          1.4700000286102295,
+          3.0999999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "grounding-monitor-reserve-01",
+        "extras": {
+          "id": "grounding-monitor-reserve-01",
+          "name": "接地电阻在线监测安装预留",
+          "kind": "grounding-monitor-reserve",
+          "position": [
+            -9.25,
+            1.35,
+            3.1
+          ],
+          "size": [
+            0.32,
+            0.4,
+            0.12
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 2
+      },
+      {
+        "name": "grounding-test-point-01__Power_safety",
+        "extras": {
+          "entityId": "grounding-test-point-01"
+        },
+        "translation": [
+          -9.449999809265137,
+          0.24500000476837158,
+          3.0999999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "grounding-test-point-01__Power_trim",
+        "extras": {
+          "entityId": "grounding-test-point-01"
+        },
+        "translation": [
+          -9.449999809265137,
+          0.18000000715255737,
+          3.0999999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "grounding-test-point-01",
+        "extras": {
+          "id": "grounding-test-point-01",
+          "name": "接地装置示意位置",
+          "kind": "grounding-reserve",
+          "position": [
+            -9.45,
+            0.18,
+            3.1
+          ],
+          "size": [
+            0.48,
+            0.12,
+            0.48
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 2
+      },
+      {
+        "name": "power-cabinet-lv-01__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-lv-01"
+        },
+        "translation": [
+          -2.3499999046325684,
+          2.240000009536743,
+          1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-01__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-lv-01"
+        },
+        "translation": [
+          -2.3499999046325684,
+          0.36500000953674316,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-01__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-lv-01"
+        },
+        "translation": [
+          -2.5199999809265137,
+          1.9199999570846558,
+          1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-01__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-lv-01"
+        },
+        "translation": [
+          -2.087599992752075,
+          0.7250000238418579,
+          1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-01__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-lv-01"
+        },
+        "translation": [
+          -2.3499999046325684,
+          0.7250000238418579,
+          1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-01",
+        "extras": {
+          "id": "power-cabinet-lv-01",
+          "name": "低压配电柜 01",
+          "kind": "cabinet",
+          "position": [
+            -2.3499999999999996,
+            0.31,
+            2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-lv-02__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-lv-02"
+        },
+        "translation": [
+          -1.409999966621399,
+          2.240000009536743,
+          1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-02__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-lv-02"
+        },
+        "translation": [
+          -1.409999966621399,
+          0.36500000953674316,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-02__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-lv-02"
+        },
+        "translation": [
+          -1.5800000429153442,
+          1.9199999570846558,
+          1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-02__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-lv-02"
+        },
+        "translation": [
+          -1.1476000547409058,
+          0.7250000238418579,
+          1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-02__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-lv-02"
+        },
+        "translation": [
+          -1.409999966621399,
+          0.7250000238418579,
+          1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-02",
+        "extras": {
+          "id": "power-cabinet-lv-02",
+          "name": "低压配电柜 02",
+          "kind": "cabinet",
+          "position": [
+            -1.41,
+            0.31,
+            2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-lv-03__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-lv-03"
+        },
+        "translation": [
+          -0.4699999988079071,
+          2.240000009536743,
+          1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-03__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-lv-03"
+        },
+        "translation": [
+          -0.4699999988079071,
+          0.36500000953674316,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-03__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-lv-03"
+        },
+        "translation": [
+          -0.6399999856948853,
+          1.9199999570846558,
+          1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-03__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-lv-03"
+        },
+        "translation": [
+          -0.20759999752044678,
+          0.7250000238418579,
+          1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-03__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-lv-03"
+        },
+        "translation": [
+          -0.4699999988079071,
+          0.7250000238418579,
+          1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-03",
+        "extras": {
+          "id": "power-cabinet-lv-03",
+          "name": "低压配电柜 03",
+          "kind": "cabinet",
+          "position": [
+            -0.47,
+            0.31,
+            2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-lv-04__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-lv-04"
+        },
+        "translation": [
+          0.4699999988079071,
+          2.240000009536743,
+          1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-04__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-lv-04"
+        },
+        "translation": [
+          0.4699999988079071,
+          0.36500000953674316,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-04__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-lv-04"
+        },
+        "translation": [
+          0.30000001192092896,
+          1.9199999570846558,
+          1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-04__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-lv-04"
+        },
+        "translation": [
+          0.7324000000953674,
+          0.7250000238418579,
+          1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-04__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-lv-04"
+        },
+        "translation": [
+          0.4699999988079071,
+          0.7250000238418579,
+          1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-04",
+        "extras": {
+          "id": "power-cabinet-lv-04",
+          "name": "低压配电柜 04",
+          "kind": "cabinet",
+          "position": [
+            0.47,
+            0.31,
+            2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-lv-05__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-lv-05"
+        },
+        "translation": [
+          1.409999966621399,
+          2.240000009536743,
+          1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-05__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-lv-05"
+        },
+        "translation": [
+          1.409999966621399,
+          0.36500000953674316,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-05__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-lv-05"
+        },
+        "translation": [
+          1.2400000095367432,
+          1.9199999570846558,
+          1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-05__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-lv-05"
+        },
+        "translation": [
+          1.6723999977111816,
+          0.7250000238418579,
+          1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-05__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-lv-05"
+        },
+        "translation": [
+          1.409999966621399,
+          0.7250000238418579,
+          1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-05",
+        "extras": {
+          "id": "power-cabinet-lv-05",
+          "name": "低压配电柜 05",
+          "kind": "cabinet",
+          "position": [
+            1.41,
+            0.31,
+            2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-lv-06__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-lv-06"
+        },
+        "translation": [
+          2.3499999046325684,
+          2.240000009536743,
+          1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-06__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-lv-06"
+        },
+        "translation": [
+          2.3499999046325684,
+          0.36500000953674316,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-06__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-lv-06"
+        },
+        "translation": [
+          2.180000066757202,
+          1.9199999570846558,
+          1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-06__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-lv-06"
+        },
+        "translation": [
+          2.6124000549316406,
+          0.7250000238418579,
+          1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-06__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-lv-06"
+        },
+        "translation": [
+          2.3499999046325684,
+          0.7250000238418579,
+          1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-lv-06",
+        "extras": {
+          "id": "power-cabinet-lv-06",
+          "name": "低压配电柜 06",
+          "kind": "cabinet",
+          "position": [
+            2.3499999999999996,
+            0.31,
+            2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-mv-01__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-mv-01"
+        },
+        "translation": [
+          -2.3499999046325684,
+          2.240000009536743,
+          -1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-01__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-mv-01"
+        },
+        "translation": [
+          -2.3499999046325684,
+          0.36500000953674316,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-01__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-mv-01"
+        },
+        "translation": [
+          -2.5199999809265137,
+          1.9199999570846558,
+          -1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-01__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-mv-01"
+        },
+        "translation": [
+          -2.087599992752075,
+          0.7250000238418579,
+          -1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-01__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-mv-01"
+        },
+        "translation": [
+          -2.3499999046325684,
+          0.7250000238418579,
+          -1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-01",
+        "extras": {
+          "id": "power-cabinet-mv-01",
+          "name": "高压配电柜 01",
+          "kind": "cabinet",
+          "position": [
+            -2.3499999999999996,
+            0.31,
+            -2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-mv-02__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-mv-02"
+        },
+        "translation": [
+          -1.409999966621399,
+          2.240000009536743,
+          -1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-02__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-mv-02"
+        },
+        "translation": [
+          -1.409999966621399,
+          0.36500000953674316,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-02__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-mv-02"
+        },
+        "translation": [
+          -1.5800000429153442,
+          1.9199999570846558,
+          -1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-02__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-mv-02"
+        },
+        "translation": [
+          -1.1476000547409058,
+          0.7250000238418579,
+          -1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-02__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-mv-02"
+        },
+        "translation": [
+          -1.409999966621399,
+          0.7250000238418579,
+          -1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-02",
+        "extras": {
+          "id": "power-cabinet-mv-02",
+          "name": "高压配电柜 02",
+          "kind": "cabinet",
+          "position": [
+            -1.41,
+            0.31,
+            -2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-mv-03__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-mv-03"
+        },
+        "translation": [
+          -0.4699999988079071,
+          2.240000009536743,
+          -1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-03__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-mv-03"
+        },
+        "translation": [
+          -0.4699999988079071,
+          0.36500000953674316,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-03__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-mv-03"
+        },
+        "translation": [
+          -0.6399999856948853,
+          1.9199999570846558,
+          -1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-03__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-mv-03"
+        },
+        "translation": [
+          -0.20759999752044678,
+          0.7250000238418579,
+          -1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-03__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-mv-03"
+        },
+        "translation": [
+          -0.4699999988079071,
+          0.7250000238418579,
+          -1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-03",
+        "extras": {
+          "id": "power-cabinet-mv-03",
+          "name": "高压配电柜 03",
+          "kind": "cabinet",
+          "position": [
+            -0.47,
+            0.31,
+            -2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-mv-04__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-mv-04"
+        },
+        "translation": [
+          0.4699999988079071,
+          2.240000009536743,
+          -1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-04__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-mv-04"
+        },
+        "translation": [
+          0.4699999988079071,
+          0.36500000953674316,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-04__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-mv-04"
+        },
+        "translation": [
+          0.30000001192092896,
+          1.9199999570846558,
+          -1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-04__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-mv-04"
+        },
+        "translation": [
+          0.7324000000953674,
+          0.7250000238418579,
+          -1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-04__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-mv-04"
+        },
+        "translation": [
+          0.4699999988079071,
+          0.7250000238418579,
+          -1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-04",
+        "extras": {
+          "id": "power-cabinet-mv-04",
+          "name": "高压配电柜 04",
+          "kind": "cabinet",
+          "position": [
+            0.47,
+            0.31,
+            -2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-mv-05__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-mv-05"
+        },
+        "translation": [
+          1.409999966621399,
+          2.240000009536743,
+          -1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-05__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-mv-05"
+        },
+        "translation": [
+          1.409999966621399,
+          0.36500000953674316,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-05__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-mv-05"
+        },
+        "translation": [
+          1.2400000095367432,
+          1.9199999570846558,
+          -1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-05__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-mv-05"
+        },
+        "translation": [
+          1.6723999977111816,
+          0.7250000238418579,
+          -1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-05__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-mv-05"
+        },
+        "translation": [
+          1.409999966621399,
+          0.7250000238418579,
+          -1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-05",
+        "extras": {
+          "id": "power-cabinet-mv-05",
+          "name": "高压配电柜 05",
+          "kind": "cabinet",
+          "position": [
+            1.41,
+            0.31,
+            -2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "power-cabinet-mv-06__Power_dark",
+        "extras": {
+          "entityId": "power-cabinet-mv-06"
+        },
+        "translation": [
+          2.3499999046325684,
+          2.240000009536743,
+          -1.3880000114440918
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-06__Power_machine",
+        "extras": {
+          "entityId": "power-cabinet-mv-06"
+        },
+        "translation": [
+          2.3499999046325684,
+          0.36500000953674316,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-06__Power_safety",
+        "extras": {
+          "entityId": "power-cabinet-mv-06"
+        },
+        "translation": [
+          2.180000066757202,
+          1.9199999570846558,
+          -1.3824999332427979
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-06__Power_trim",
+        "extras": {
+          "entityId": "power-cabinet-mv-06"
+        },
+        "translation": [
+          2.6124000549316406,
+          0.7250000238418579,
+          -1.3700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-06__Power_wall",
+        "extras": {
+          "entityId": "power-cabinet-mv-06"
+        },
+        "translation": [
+          2.3499999046325684,
+          0.7250000238418579,
+          -1.409999966621399
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-cabinet-mv-06",
+        "extras": {
+          "id": "power-cabinet-mv-06",
+          "name": "高压配电柜 06",
+          "kind": "cabinet",
+          "position": [
+            2.3499999999999996,
+            0.31,
+            -2
+          ],
+          "size": [
+            0.82,
+            2.36,
+            1.15
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "spd-distribution__Power_safety",
+        "extras": {
+          "entityId": "spd-distribution"
+        },
+        "translation": [
+          -2.3499999046325684,
+          1.25,
+          1.3799999952316284
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd-distribution__Power_trim",
+        "extras": {
+          "entityId": "spd-distribution"
+        },
+        "translation": [
+          -2.509999990463257,
+          1.25,
+          1.3799999952316284
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd-distribution",
+        "extras": {
+          "id": "spd-distribution",
+          "name": "进线柜 SPD 安装预留",
+          "kind": "spd-reserve",
+          "position": [
+            -2.35,
+            1.25,
+            1.38
+          ],
+          "size": [
+            0.32,
+            0.35,
+            0.08
+          ],
+          "parentId": "power-cabinet-lv-01"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 2
+      }
+    ],
+    "meshNames": [
+      "distribution-cable-trays__Power_copper",
+      "distribution-cable-trays__Power_dark",
+      "distribution-cable-trays__Power_safety",
+      "distribution-cable-trays__Power_steel",
+      "distribution-cable-trays__Power_trim",
+      "distribution-cable-trays__Power_wall",
+      "grounding-downlead-interface-01__Power_copper",
+      "grounding-monitor-reserve-01__Power_safety",
+      "grounding-monitor-reserve-01__Power_trim",
+      "grounding-test-point-01__Power_safety",
+      "grounding-test-point-01__Power_trim",
+      "power-cabinet-lv-01__Power_dark",
+      "power-cabinet-lv-01__Power_machine",
+      "power-cabinet-lv-01__Power_safety",
+      "power-cabinet-lv-01__Power_trim",
+      "power-cabinet-lv-01__Power_wall",
+      "power-cabinet-lv-02__Power_dark",
+      "power-cabinet-lv-02__Power_machine",
+      "power-cabinet-lv-02__Power_safety",
+      "power-cabinet-lv-02__Power_trim",
+      "power-cabinet-lv-02__Power_wall",
+      "power-cabinet-lv-03__Power_dark",
+      "power-cabinet-lv-03__Power_machine",
+      "power-cabinet-lv-03__Power_safety",
+      "power-cabinet-lv-03__Power_trim",
+      "power-cabinet-lv-03__Power_wall",
+      "power-cabinet-lv-04__Power_dark",
+      "power-cabinet-lv-04__Power_machine",
+      "power-cabinet-lv-04__Power_safety",
+      "power-cabinet-lv-04__Power_trim",
+      "power-cabinet-lv-04__Power_wall",
+      "power-cabinet-lv-05__Power_dark",
+      "power-cabinet-lv-05__Power_machine",
+      "power-cabinet-lv-05__Power_safety",
+      "power-cabinet-lv-05__Power_trim",
+      "power-cabinet-lv-05__Power_wall",
+      "power-cabinet-lv-06__Power_dark",
+      "power-cabinet-lv-06__Power_machine",
+      "power-cabinet-lv-06__Power_safety",
+      "power-cabinet-lv-06__Power_trim",
+      "power-cabinet-lv-06__Power_wall",
+      "power-cabinet-mv-01__Power_dark",
+      "power-cabinet-mv-01__Power_machine",
+      "power-cabinet-mv-01__Power_safety",
+      "power-cabinet-mv-01__Power_trim",
+      "power-cabinet-mv-01__Power_wall",
+      "power-cabinet-mv-02__Power_dark",
+      "power-cabinet-mv-02__Power_machine",
+      "power-cabinet-mv-02__Power_safety",
+      "power-cabinet-mv-02__Power_trim",
+      "power-cabinet-mv-02__Power_wall",
+      "power-cabinet-mv-03__Power_dark",
+      "power-cabinet-mv-03__Power_machine",
+      "power-cabinet-mv-03__Power_safety",
+      "power-cabinet-mv-03__Power_trim",
+      "power-cabinet-mv-03__Power_wall",
+      "power-cabinet-mv-04__Power_dark",
+      "power-cabinet-mv-04__Power_machine",
+      "power-cabinet-mv-04__Power_safety",
+      "power-cabinet-mv-04__Power_trim",
+      "power-cabinet-mv-04__Power_wall",
+      "power-cabinet-mv-05__Power_dark",
+      "power-cabinet-mv-05__Power_machine",
+      "power-cabinet-mv-05__Power_safety",
+      "power-cabinet-mv-05__Power_trim",
+      "power-cabinet-mv-05__Power_wall",
+      "power-cabinet-mv-06__Power_dark",
+      "power-cabinet-mv-06__Power_machine",
+      "power-cabinet-mv-06__Power_safety",
+      "power-cabinet-mv-06__Power_trim",
+      "power-cabinet-mv-06__Power_wall",
+      "spd-distribution__Power_safety",
+      "spd-distribution__Power_trim"
+    ]
+  },
+  {
+    "file": "mine-distribution-roof.glb",
+    "bytes": 375184,
+    "triangles": 2548,
+    "animations": 0,
+    "nodes": 5,
+    "semantic": [
+      {
+        "name": "distribution-roof__Power_roof",
+        "extras": {
+          "entityId": "distribution-roof"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-roof__Power_steel",
+        "extras": {
+          "entityId": "distribution-roof"
+        },
+        "translation": [
+          -8.699999809265137,
+          4.256617546081543,
+          -2.122910976409912
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-roof__Power_trim",
+        "extras": {
+          "entityId": "distribution-roof"
+        },
+        "translation": [
+          0,
+          3.9700000286102295,
+          -4.71999979019165
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-roof__Power_wall",
+        "extras": {
+          "entityId": "distribution-roof"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-roof",
+        "extras": {
+          "id": "distribution-roof",
+          "name": "配电室可隐藏屋顶",
+          "kind": "roof"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 4
+      }
+    ],
+    "meshNames": [
+      "distribution-roof__Power_roof",
+      "distribution-roof__Power_steel",
+      "distribution-roof__Power_trim",
+      "distribution-roof__Power_wall"
+    ]
+  },
+  {
+    "file": "mine-distribution-shell.glb",
+    "bytes": 560484,
+    "triangles": 3108,
+    "animations": 0,
+    "nodes": 9,
+    "semantic": [
+      {
+        "name": "distribution-shell__Power_concrete",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          0,
+          0.18000000715255737,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_dark",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          8.829999923706055,
+          1.2000000476837158,
+          -2.799999952316284
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_glass",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          9,
+          2.625,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_machine",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          8.5,
+          1.2999999523162842,
+          3.700000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_roof",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          -9,
+          3.2300000190734863,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_steel",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          -9,
+          1.6549999713897705,
+          -1.2699999809265137
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_trim",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          -9,
+          1.6549999713897705,
+          -1.1950000524520874
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell__Power_wall",
+        "extras": {
+          "entityId": "distribution-shell"
+        },
+        "translation": [
+          -9,
+          0.2150000035762787,
+          -2.825000047683716
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "distribution-shell",
+        "extras": {
+          "id": "distribution-shell",
+          "name": "配电室建筑外壳",
+          "kind": "building"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 8
+      }
+    ],
+    "meshNames": [
+      "distribution-shell__Power_concrete",
+      "distribution-shell__Power_dark",
+      "distribution-shell__Power_glass",
+      "distribution-shell__Power_machine",
+      "distribution-shell__Power_roof",
+      "distribution-shell__Power_steel",
+      "distribution-shell__Power_trim",
+      "distribution-shell__Power_wall"
+    ]
+  },
+  {
+    "file": "mine-headframe.glb",
+    "bytes": 5056032,
+    "triangles": 84920,
+    "animations": 0,
+    "nodes": 26,
+    "semantic": [
+      {
+        "name": "Headframe_bearings",
+        "extras": {
+          "kind": "headframe-part",
+          "entityId": "headframe-01/bearings",
+          "entityName": "天轮轴承及支撑",
+          "parentEntityId": "headframe-01",
+          "partType": "bearings"
+        },
+        "translation": [
+          0,
+          13.100000381469727,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 3
+      },
+      {
+        "name": "Headframe_foundation",
+        "extras": {
+          "kind": "headframe-part",
+          "entityId": "headframe-01/foundation",
+          "entityName": "基础与井口",
+          "parentEntityId": "headframe-01",
+          "partType": "foundation"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      },
+      {
+        "name": "Headframe_frame",
+        "extras": {
+          "kind": "headframe-part",
+          "entityId": "headframe-01/frame",
+          "entityName": "主承重框架",
+          "parentEntityId": "headframe-01",
+          "partType": "frame"
+        },
+        "translation": [
+          0,
+          6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 2
+      },
+      {
+        "name": "Headframe_platform",
+        "extras": {
+          "kind": "headframe-part",
+          "entityId": "headframe-01/platform",
+          "entityName": "顶部检修平台",
+          "parentEntityId": "headframe-01",
+          "partType": "platform"
+        },
+        "translation": [
+          0,
+          12.119999885559082,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 3
+      },
+      {
+        "name": "Headframe_sheave",
+        "extras": {
+          "kind": "headframe-part",
+          "entityId": "headframe-01/sheave",
+          "entityName": "提升天轮",
+          "parentEntityId": "headframe-01",
+          "partType": "sheave"
+        },
+        "translation": [
+          0,
+          13.399999618530273,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 3
+      },
+      {
+        "name": "Headframe_stairs",
+        "extras": {
+          "kind": "headframe-part",
+          "entityId": "headframe-01/stairs",
+          "entityName": "检修楼梯",
+          "parentEntityId": "headframe-01",
+          "partType": "stairs"
+        },
+        "translation": [
+          4.349999904632568,
+          6.199999809265137,
+          0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 3
+      },
+      {
+        "name": "Headframe_assembly",
+        "extras": {
+          "assemblyId": "headframe-01",
+          "schemaVersion": 2,
+          "sourceOffset": [
+            -1.225,
+            0.59,
+            0
+          ],
+          "assemblyScale": 1.6
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 6
+      }
+    ],
+    "meshNames": [
+      "bearings__Bearing_housings",
+      "bearings__Machined_shaft_and_fasteners",
+      "bearings__Painted_structural_steel",
+      "foundation__Foundation_concrete",
+      "foundation__Machined_shaft_and_fasteners",
+      "foundation__Painted_structural_steel",
+      "foundation__Safety_ochre_coating",
+      "foundation__Shaft_inner_lining",
+      "frame__Machined_shaft_and_fasteners",
+      "frame__Painted_structural_steel",
+      "platform__Galvanized_grating",
+      "platform__Painted_structural_steel",
+      "platform__Safety_ochre_coating",
+      "sheave__Cast_sheave_steel",
+      "sheave__Machined_shaft_and_fasteners",
+      "sheave__Sheave_groove_liner",
+      "stairs__Galvanized_grating",
+      "stairs__Painted_structural_steel",
+      "stairs__Safety_ochre_coating"
+    ]
+  },
+  {
+    "file": "mine-hoist-house.glb",
+    "bytes": 1569688,
+    "triangles": 26858,
+    "animations": 0,
+    "nodes": 10,
+    "semantic": [],
+    "meshNames": [
+      "Core_concrete",
+      "Core_glass",
+      "Core_machine",
+      "Core_machined",
+      "Core_roof",
+      "Core_rope",
+      "Core_safety",
+      "Core_steel",
+      "Core_trim",
+      "Core_wall"
+    ]
+  },
+  {
+    "file": "mine-production-links.glb",
+    "bytes": 1604824,
+    "triangles": 26624,
+    "animations": 0,
+    "nodes": 8,
+    "semantic": [],
+    "meshNames": [
+      "Core_concrete",
+      "Core_machine",
+      "Core_machined",
+      "Core_roof",
+      "Core_rope",
+      "Core_safety",
+      "Core_steel",
+      "Core_trim"
+    ]
+  },
+  {
+    "file": "mine-shaft-house.glb",
+    "bytes": 649644,
+    "triangles": 5286,
+    "animations": 0,
+    "nodes": 7,
+    "semantic": [],
+    "meshNames": [
+      "Core_concrete",
+      "Core_glass",
+      "Core_machined",
+      "Core_roof",
+      "Core_steel",
+      "Core_trim",
+      "Core_wall"
+    ]
+  },
+  {
+    "file": "mine-spd-cabinet-liner.glb",
+    "bytes": 31312,
+    "triangles": 436,
+    "animations": 0,
+    "nodes": 6,
+    "semantic": [
+      {
+        "name": "inspection-insert__main__Protection_copper",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          0,
+          0.36000001430511475,
+          0.47999998927116394
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "inspection-insert__main__Protection_dark",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          0,
+          1.3300000429153442,
+          0.05999999865889549
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "inspection-insert__main__Protection_green",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          -0.11500000208616257,
+          0.8899999856948853,
+          0.07500000298023224
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "inspection-insert__main__Protection_metal",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          -0.36500000953674316,
+          1.2350000143051147,
+          -0.5249999761581421
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "inspection-insert__main__Protection_paint",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          0,
+          0.054999999701976776,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "schematic-inspection-insert",
+        "extras": {
+          "facilityType": "inspection-insert",
+          "schematic": true
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 5
+      }
+    ],
+    "meshNames": [
+      "inspection-insert__main__Protection_copper",
+      "inspection-insert__main__Protection_dark",
+      "inspection-insert__main__Protection_green",
+      "inspection-insert__main__Protection_metal",
+      "inspection-insert__main__Protection_paint"
+    ]
+  },
+  {
+    "file": "mine-spd.glb",
+    "bytes": 74732,
+    "triangles": 1212,
+    "animations": 0,
+    "nodes": 7,
+    "semantic": [
+      {
+        "name": "spd__main__Protection_dark",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          -0.03750000149011612,
+          0.09999999403953552,
+          0.012000000104308128
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd__main__Protection_green",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          -0.03750000149011612,
+          -0.0430000014603138,
+          -0.0560000017285347
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd__main__Protection_metal",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          0,
+          0,
+          0.07500000298023224
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd__main__Protection_paint",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          -0.03750000149011612,
+          0.00800000037997961,
+          -0.0560000017285347
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd__main__Protection_red",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          0,
+          0,
+          0.013000000268220901
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "spd__main__Protection_yellow",
+        "extras": {
+          "displayRole": "main"
+        },
+        "translation": [
+          0.03750000149011612,
+          0.09999999403953552,
+          0.012000000104308128
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "schematic-spd",
+        "extras": {
+          "facilityType": "spd",
+          "schematic": true
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 6
+      }
+    ],
+    "meshNames": [
+      "spd__main__Protection_dark",
+      "spd__main__Protection_green",
+      "spd__main__Protection_metal",
+      "spd__main__Protection_paint",
+      "spd__main__Protection_red",
+      "spd__main__Protection_yellow"
+    ]
+  },
+  {
+    "file": "mine-substation.glb",
+    "bytes": 1509588,
+    "triangles": 25784,
+    "animations": 0,
+    "nodes": 25,
+    "semantic": [
+      {
+        "name": "power-transformer-01__Power_ceramic",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          2.049999952316284,
+          3.759999990463257,
+          1.7000000476837158
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_copper",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          1.5999999046325684,
+          0.6499999761581421,
+          3.4749999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_dark",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          1.4900000095367432,
+          3.869999885559082,
+          3.049999952316284
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_glass",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          1.649999976158142,
+          2.7699999809265137,
+          3.5199999809265137
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_machine",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          3,
+          1.899999976158142,
+          2.4000000953674316
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_roof",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          4.309999942779541,
+          1.7999999523162842,
+          2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_steel",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          2.200000047683716,
+          3.4250001907348633,
+          3.049999952316284
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01__Power_trim",
+        "extras": {
+          "entityId": "power-transformer-01"
+        },
+        "translation": [
+          3,
+          3.1700000762939453,
+          2.4000000953674316
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "power-transformer-01",
+        "extras": {
+          "id": "power-transformer-01",
+          "name": "油浸变压器",
+          "kind": "transformer",
+          "position": [
+            3,
+            0,
+            2.4
+          ],
+          "size": [
+            4.6,
+            4.9,
+            3.6
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 8
+      },
+      {
+        "name": "substation-foundations__Power_concrete",
+        "extras": {
+          "entityId": "substation-foundations"
+        },
+        "translation": [
+          0,
+          0.11999999731779099,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-foundations__Power_steel",
+        "extras": {
+          "entityId": "substation-foundations"
+        },
+        "translation": [
+          1.9500000476837158,
+          0.6100000143051147,
+          2.4000000953674316
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-foundations__Power_trim",
+        "extras": {
+          "entityId": "substation-foundations"
+        },
+        "translation": [
+          -4,
+          0.23499999940395355,
+          5.150000095367432
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-foundations__Power_wall",
+        "extras": {
+          "entityId": "substation-foundations"
+        },
+        "translation": [
+          -6,
+          0.22499999403953552,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-foundations",
+        "extras": {
+          "id": "substation-foundations",
+          "name": "设备基础与检修通道",
+          "kind": "foundation"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 4
+      },
+      {
+        "name": "substation-inner-fence__Power_safety",
+        "extras": {
+          "entityId": "substation-inner-fence"
+        },
+        "translation": [
+          -8.670000076293945,
+          1.3799999952316284,
+          1.9500000476837158
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-inner-fence__Power_steel",
+        "extras": {
+          "entityId": "substation-inner-fence"
+        },
+        "translation": [
+          -8.649999618530273,
+          1.0499999523162842,
+          -5.650000095367432
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-inner-fence__Power_trim",
+        "extras": {
+          "entityId": "substation-inner-fence"
+        },
+        "translation": [
+          0,
+          0.30000001192092896,
+          -5.650000095367432
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-inner-fence",
+        "extras": {
+          "id": "substation-inner-fence",
+          "name": "设备安全围栏与入口",
+          "kind": "safety-fence"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 3
+      },
+      {
+        "name": "substation-switch-bay-01__Power_ceramic",
+        "extras": {
+          "entityId": "substation-switch-bay-01"
+        },
+        "translation": [
+          2.049999952316284,
+          5.055000305175781,
+          -4.449999809265137
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-switch-bay-01__Power_concrete",
+        "extras": {
+          "entityId": "substation-switch-bay-01"
+        },
+        "translation": [
+          2.049999952316284,
+          0.3799999952316284,
+          -2.299999952316284
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-switch-bay-01__Power_dark",
+        "extras": {
+          "entityId": "substation-switch-bay-01"
+        },
+        "translation": [
+          5.400000095367432,
+          1.2000000476837158,
+          -2.244999885559082
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-switch-bay-01__Power_machine",
+        "extras": {
+          "entityId": "substation-switch-bay-01"
+        },
+        "translation": [
+          2.049999952316284,
+          1.25,
+          -0.25
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-switch-bay-01__Power_steel",
+        "extras": {
+          "entityId": "substation-switch-bay-01"
+        },
+        "translation": [
+          2.049999952316284,
+          1.2999999523162842,
+          -2.8499999046325684
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-switch-bay-01__Power_trim",
+        "extras": {
+          "entityId": "substation-switch-bay-01"
+        },
+        "translation": [
+          2.049999952316284,
+          4.779999732971191,
+          -4.449999809265137
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 0
+      },
+      {
+        "name": "substation-switch-bay-01",
+        "extras": {
+          "id": "substation-switch-bay-01",
+          "name": "三相母线及开关间隔",
+          "kind": "switch-bay"
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": 6
+      }
+    ],
+    "meshNames": [
+      "power-transformer-01__Power_ceramic",
+      "power-transformer-01__Power_copper",
+      "power-transformer-01__Power_dark",
+      "power-transformer-01__Power_glass",
+      "power-transformer-01__Power_machine",
+      "power-transformer-01__Power_roof",
+      "power-transformer-01__Power_steel",
+      "power-transformer-01__Power_trim",
+      "substation-foundations__Power_concrete",
+      "substation-foundations__Power_steel",
+      "substation-foundations__Power_trim",
+      "substation-foundations__Power_wall",
+      "substation-inner-fence__Power_safety",
+      "substation-inner-fence__Power_steel",
+      "substation-inner-fence__Power_trim",
+      "substation-switch-bay-01__Power_ceramic",
+      "substation-switch-bay-01__Power_concrete",
+      "substation-switch-bay-01__Power_dark",
+      "substation-switch-bay-01__Power_machine",
+      "substation-switch-bay-01__Power_steel",
+      "substation-switch-bay-01__Power_trim"
+    ]
+  },
+  {
+    "file": "mine-transfer-station.glb",
+    "bytes": 1150136,
+    "triangles": 13360,
+    "animations": 0,
+    "nodes": 8,
+    "semantic": [],
+    "meshNames": [
+      "Transport_concrete",
+      "Transport_glass",
+      "Transport_machined",
+      "Transport_roof",
+      "Transport_safety",
+      "Transport_steel",
+      "Transport_trim",
+      "Transport_wall"
+    ]
+  }
+]

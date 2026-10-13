@@ -1,0 +1,7 @@
+{
+  "shaftHouse": {"position": [-14, 0, 7], "size": [10, 4.5, 8], "eaves": 3.65},
+  "hoistHouse": {"position": [14, 0, -6], "size": [20, 7, 12], "eaves": 5.9},
+  "headframe": {"position": [-14, 0, -6], "scale": 1.6, "sourceCenterX": 1.225, "sourceGroundY": -0.59, "sheaveCenter": [0, 13.4, 0], "grooveRadius": 1.04},
+  "rope": {"radius": 0.022, "drumCenter": [8, 2.2, -6], "drumRadius": 1.1, "guideCenters": [[-20.2, 26.5, -6], [-5.6, 26.5, -6]], "guideRadius": 0.65},
+  "outputs": ["mine-shaft-house.glb", "mine-hoist-house.glb", "mine-production-links.glb"]
+}

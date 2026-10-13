@@ -1,0 +1,226 @@
+{
+  "result": "PASS",
+  "protectedModelAndBlenderFilesUnchanged": 39,
+  "registeredEntities": 34,
+  "raycastEntities": [
+    "headframe-01",
+    "hoist-house-01",
+    "substation-01",
+    "distribution-01",
+    "lightning-location-01",
+    "storm-warning-01",
+    "air-terminal-production",
+    "spd-lv-01",
+    "power-cabinet-lv-01",
+    "ground-monitor-01",
+    "earth-section-01"
+  ],
+  "cameraChecks": [
+    {
+      "id": "headframe-01",
+      "width": 604,
+      "height": 871,
+      "distance": 71.16279013182967
+    },
+    {
+      "id": "headframe-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 69.85721932858227
+    },
+    {
+      "id": "headframe-01",
+      "width": 390,
+      "height": 844,
+      "distance": 80.14793957334011
+    },
+    {
+      "id": "hoist-house-01",
+      "width": 604,
+      "height": 871,
+      "distance": 59.16302503963932
+    },
+    {
+      "id": "hoist-house-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 40.149572339784356
+    },
+    {
+      "id": "hoist-house-01",
+      "width": 390,
+      "height": 844,
+      "distance": 93.86485572880133
+    },
+    {
+      "id": "substation-01",
+      "width": 604,
+      "height": 871,
+      "distance": 52.66286055184901
+    },
+    {
+      "id": "substation-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 39.53216774504632
+    },
+    {
+      "id": "substation-01",
+      "width": 390,
+      "height": 844,
+      "distance": 83.45955928897486
+    },
+    {
+      "id": "distribution-01",
+      "width": 604,
+      "height": 871,
+      "distance": 48.712212297208616
+    },
+    {
+      "id": "distribution-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 46.15071112453938
+    },
+    {
+      "id": "distribution-01",
+      "width": 390,
+      "height": 844,
+      "distance": 76.81499195588754
+    },
+    {
+      "id": "lightning-location-01",
+      "width": 604,
+      "height": 871,
+      "distance": 9.136927041746677
+    },
+    {
+      "id": "lightning-location-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 8.970004726126794
+    },
+    {
+      "id": "lightning-location-01",
+      "width": 390,
+      "height": 844,
+      "distance": 10.28602637138218
+    },
+    {
+      "id": "storm-warning-01",
+      "width": 604,
+      "height": 871,
+      "distance": 8.984018377363682
+    },
+    {
+      "id": "storm-warning-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 8.82550023812801
+    },
+    {
+      "id": "storm-warning-01",
+      "width": 390,
+      "height": 844,
+      "distance": 12.521268091462556
+    },
+    {
+      "id": "air-terminal-production",
+      "width": 604,
+      "height": 871,
+      "distance": 24.751256287526342
+    },
+    {
+      "id": "air-terminal-production",
+      "width": 1440,
+      "height": 900,
+      "distance": 24.29735196819529
+    },
+    {
+      "id": "air-terminal-production",
+      "width": 390,
+      "height": 844,
+      "distance": 27.87518304264173
+    },
+    {
+      "id": "spd-lv-01",
+      "width": 604,
+      "height": 871,
+      "distance": 1.0766287207477718
+    },
+    {
+      "id": "spd-lv-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 1.056871048003435
+    },
+    {
+      "id": "spd-lv-01",
+      "width": 390,
+      "height": 844,
+      "distance": 1.340605378393549
+    },
+    {
+      "id": "power-cabinet-lv-01",
+      "width": 604,
+      "height": 871,
+      "distance": 6.588199785327541
+    },
+    {
+      "id": "power-cabinet-lv-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 6.467533659501001
+    },
+    {
+      "id": "power-cabinet-lv-01",
+      "width": 390,
+      "height": 844,
+      "distance": 7.418732650419697
+    },
+    {
+      "id": "ground-monitor-01",
+      "width": 604,
+      "height": 871,
+      "distance": 1.4633654203545285
+    },
+    {
+      "id": "ground-monitor-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 1.4383721675667924
+    },
+    {
+      "id": "ground-monitor-01",
+      "width": 390,
+      "height": 844,
+      "distance": 2.0314872179813706
+    },
+    {
+      "id": "earth-section-01",
+      "width": 604,
+      "height": 871,
+      "distance": 3.9748095013294376
+    },
+    {
+      "id": "earth-section-01",
+      "width": 1440,
+      "height": 900,
+      "distance": 3.904118305100128
+    },
+    {
+      "id": "earth-section-01",
+      "width": 390,
+      "height": 844,
+      "distance": 5.696030461052432
+    }
+  ],
+  "checks": {
+    "semanticRegistry": true,
+    "softHighlight": true,
+    "layerSelectionCleared": true,
+    "nestedVisibilityPreserved": true,
+    "dragPanTouchRejected": true,
+    "noNewModels": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "url": "http://127.0.0.1:5173/mine-digital-twin",
+  "result": "PASS",
+  "checks": [
+    {
+      "check": "initial-normal",
+      "pass": true
+    },
+    {
+      "check": "pause-freezes-time",
+      "before": "270.79999999981374",
+      "after": "270.79999999981374",
+      "pass": true
+    },
+    {
+      "check": "normal-to-warning-and-finish",
+      "pass": true
+    },
+    {
+      "check": "no-automatic-camera",
+      "pass": true
+    },
+    {
+      "check": "replay-resets",
+      "pass": true
+    },
+    {
+      "check": "exit-normal-retains-records",
+      "pass": true
+    },
+    {
+      "check": "SPD-internal-view-retained",
+      "pass": true
+    },
+    {
+      "check": "actual-SPD-mesh-click",
+      "pass": true
+    },
+    {
+      "check": "layer-toggle-retained",
+      "pass": true
+    },
+    {
+      "check": "390px-controls-fit",
+      "bounds": {
+        "bottom": 420.6666870117187,
+        "height": 320.66668701171875,
+        "left": 86,
+        "right": 372,
+        "top": 100,
+        "width": 286
+      },
+      "pass": true
+    }
+  ],
+  "consoleErrors": []
+}

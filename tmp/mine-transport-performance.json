@@ -1,0 +1,1 @@
+{"samples":32,"cpuRenderAndLabelsMedianMs":7.199999928474426,"cpuRenderAndLabelsP95Ms":13.199999928474426,"cpuWebGLSubmissionMedianMs":5.200000047683716,"cpuLabelsMedianMs":1.5999999046325684,"drawCalls":102,"triangles":236930,"geometries":92,"textures":93,"shadows":"static; refreshed on model load","idleRendering":"on demand"}
