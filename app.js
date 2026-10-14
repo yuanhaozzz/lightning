@@ -8,6 +8,11 @@ const __dirname = path.dirname(__filename)
 
 const app = express()
 
+app.use((req, res, next) => {
+  console.log('REQ:', req.method, req.url)
+  next()
+})
+
 // ★ 关键：把 dist/map 挂到 /map 前缀下
 app.use('/map', express.static(path.resolve(__dirname, 'dist/map')))
 
