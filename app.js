@@ -8,10 +8,10 @@ const __dirname = path.dirname(__filename)
 
 const app = express()
 
-// ★ 关键改动：{ index: false } 让 static 不处理目录索引，避免 301
-app.use(express.static(path.resolve(__dirname, 'dist'), { redirect: false }))
+// ★ 关键：把 dist/map 挂到 /map 前缀下
+app.use('/map', express.static(path.resolve(__dirname, 'dist/map')))
 
-// 兜底：所有非静态请求都返回 index.html
+// 兜底
 app.get('*', (req, res) => {
   const html = fs.readFileSync(path.resolve(__dirname, 'dist/map/index.html'), 'utf-8')
   res.type('html').send(html)
