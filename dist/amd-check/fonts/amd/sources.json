@@ -1,0 +1,87 @@
+{
+  "family": "Barlow / Barlow Condensed",
+  "version": "Google Fonts v13",
+  "subset": "latin",
+  "retrieved": "2026-10-23",
+  "license": "SIL Open Font License 1.1",
+  "licenseSources": [
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/barlow/OFL.txt",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt"
+  ],
+  "stylesheetSource": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700;800;900&display=swap",
+  "note": "Unmodified Google Fonts WOFF2 Latin subsets. Retain OFL.txt with redistribution. CJK glyphs use the page system font stack.",
+  "fonts": [
+    {
+      "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5.woff2",
+      "file": "barlow-latin-400.woff2",
+      "bytes": 22196,
+      "sha256": "b0a8ad37ac45f5fb22ced461576db72e44e295107aad7a9c8a7a4bad728fd03b",
+      "weight": 400,
+      "family": "Barlow"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51os.woff2",
+      "file": "barlow-latin-500.woff2",
+      "bytes": 22008,
+      "sha256": "cd759df8ef9efc98fee14307b4eb5ba27f08b1f8f2f3ad2872432e25c89907a8",
+      "weight": 500,
+      "family": "Barlow"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51os.woff2",
+      "file": "barlow-latin-600.woff2",
+      "bytes": 22772,
+      "sha256": "4b52ddd4836b592df0e4832b8286956883cdc651b015126bdd18f184b7f90cc3",
+      "weight": 600,
+      "family": "Barlow"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s51os.woff2",
+      "file": "barlow-latin-700.woff2",
+      "bytes": 22788,
+      "sha256": "2d797dd8b35dcb3413e1af9d7052b3f4f8c341a147cdcb01f4f06af80db53289",
+      "weight": 700,
+      "family": "Barlow"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3q-0s51os.woff2",
+      "file": "barlow-latin-800.woff2",
+      "bytes": 22976,
+      "sha256": "231d487a993e28bc5567c2be8da48acd8e0a209891c11448491eab45db0f8d7c",
+      "weight": 800,
+      "family": "Barlow"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3j-ws51os.woff2",
+      "file": "barlow-latin-900.woff2",
+      "bytes": 22368,
+      "sha256": "6f5d995ccc4d8ffd9e8cb4c303fc1f3646d6c62d40269ef59463332f12d5b897",
+      "weight": 900,
+      "family": "Barlow"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2",
+      "file": "barlow-condensed-latin-500.woff2",
+      "bytes": 21424,
+      "sha256": "460f141ec8f6c9a1516bfd2bd9fe71656246d7a9d04a0955faf53158d8970c4c",
+      "weight": 500,
+      "family": "Barlow Condensed"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2",
+      "file": "barlow-condensed-latin-600.woff2",
+      "bytes": 22308,
+      "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66",
+      "weight": 600,
+      "family": "Barlow Condensed"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2",
+      "file": "barlow-condensed-latin-700.woff2",
+      "bytes": 22444,
+      "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8",
+      "weight": 700,
+      "family": "Barlow Condensed"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+packages:
+  - apps/api
+  - apps/admin
+storeDir: .pnpm-store
+allowBuilds:
+  esbuild: true

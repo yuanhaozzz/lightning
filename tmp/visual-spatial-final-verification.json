@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "timestampUTC": "2026-10-14T04:29:26.418Z",
+  "namedSceneSurfaces": {
+    "changedSurfaces": 27,
+    "facadeClones": 2,
+    "fullMaterialRestoration": true,
+    "facadeCloneDisposalExactlyOnce": true,
+    "originalResourcesDisposed": 0
+  },
+  "telemetry": {
+    "cards": 7,
+    "actualSimulationSnapshots": true,
+    "stateMutation": false,
+    "independentStormAndEquipmentStates": true,
+    "layersAndDrilldown": true,
+    "eventListenersRemoved": 21,
+    "ownedGroupRemoved": true,
+    "doubleDisposeSafe": true,
+    "visibleBeforeDispose": 6,
+    "visibleAfterDispose": 0
+  },
+  "integration": {
+    "actualApplyLayersExecuted": true,
+    "parentDisplaySuppressesExplicitVisibleChildren": true,
+    "disableEnableCycles": 2,
+    "telemetryUpdateOutsideLabelRenderGuard": true,
+    "disabledDiagnosticsZero": true
+  },
+  "observations": [],
+  "limits": [
+    "No browser or GPU shader compilation in this test; actual appearance and frame timing belong to browser acceptance.",
+    "Named surface test uses authored layout IDs with representative meshes to cover restoration paths; original GLB regression separately covers 27 actual binary assets."
+  ]
+}

@@ -5,6 +5,17 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/amd',
+      name: 'amd-concept',
+      meta: { standalone: true },
+      component: () => import('../features/amd/index.vue'),
+    },
+    {
+      path: '/aerotwin',
+      name: 'aerotwin',
+      component: () => import('../pages/AirportOverview.vue'),
+    },
+    {
       path: '/mine-digital-twin',
       name: 'mine-digital-twin',
       component: () => import('../features/mine-digital-twin/index.vue'),

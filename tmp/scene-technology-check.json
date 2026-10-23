@@ -5,7 +5,7 @@
     "drawCalls": 5,
     "materials": 5,
     "textures": 0,
-    "triangles": 350,
+    "triangles": 370,
     "coalPaths": [
       {
         "id": "shaft-transfer",
@@ -33,25 +33,49 @@
         "id": "headframe-01",
         "deviceIds": [
           "hoist-house-01"
-        ]
+        ],
+        "radius": [
+          9.5,
+          7.5
+        ],
+        "groundY": 0.39,
+        "contourExponent": 4
       },
       {
         "id": "coal-silo-01",
         "deviceIds": [
           "coal-silo-01"
-        ]
+        ],
+        "radius": [
+          6.3,
+          6.3
+        ],
+        "groundY": 0.16,
+        "contourExponent": 2
       },
       {
         "id": "coal-silo-02",
         "deviceIds": [
           "coal-silo-02"
-        ]
+        ],
+        "radius": [
+          6.3,
+          6.3
+        ],
+        "groundY": 0.16,
+        "contourExponent": 2
       },
       {
         "id": "substation-01",
         "deviceIds": [
           "power-transformer-01"
-        ]
+        ],
+        "radius": [
+          11.2,
+          8.4
+        ],
+        "groundY": 0.28,
+        "contourExponent": 4
       },
       {
         "id": "distribution-01",
@@ -62,7 +86,13 @@
           "power-cabinet-lv-04",
           "power-cabinet-lv-05",
           "power-cabinet-lv-06"
-        ]
+        ],
+        "radius": [
+          10.8,
+          6.4
+        ],
+        "groundY": 0.38,
+        "contourExponent": 4
       }
     ]
   },
@@ -74,7 +104,9 @@
     "isolated fault",
     "pause",
     "replay reset",
-    "facility halo ground datum",
+    "facility-specific halo datum",
+    "real GLB ring footprint clearance",
+    "tracking strokes outside real GLB bounds",
     "independent halo state/time",
     "selection",
     "layers",
@@ -82,6 +114,38 @@
     "raycast isolation",
     "idempotent resource disposal",
     "existing assets unchanged"
+  ],
+  "contourClearance": [
+    {
+      "id": "headframe-01",
+      "sampledPoints": 128,
+      "obscuredPoints": 0,
+      "datumY": 0.39
+    },
+    {
+      "id": "coal-silo-01",
+      "sampledPoints": 128,
+      "obscuredPoints": 0,
+      "datumY": 0.16
+    },
+    {
+      "id": "coal-silo-02",
+      "sampledPoints": 128,
+      "obscuredPoints": 0,
+      "datumY": 0.16
+    },
+    {
+      "id": "substation-01",
+      "sampledPoints": 128,
+      "obscuredPoints": 0,
+      "datumY": 0.28
+    },
+    {
+      "id": "distribution-01",
+      "sampledPoints": 128,
+      "obscuredPoints": 0,
+      "datumY": 0.38
+    }
   ],
   "disposed": {
     "geometries": 5,

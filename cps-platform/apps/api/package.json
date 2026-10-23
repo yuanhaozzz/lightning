@@ -1,0 +1,15 @@
+{
+  "name": "@cps/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file-if-exists=.env.local dist/index.js",
+    "test": "tsc -p tsconfig.test.json && node --test .test-dist/test/*.test.js",
+    "backup": "tsc -p tsconfig.json && node --env-file-if-exists=.env.local dist/backup.js"
+  },
+  "dependencies": { "fastify": "^5.6.0", "zod": "^3.24.0" },
+  "devDependencies": { "@types/node": "^24.0.0", "typescript": "~5.7.3" }
+}

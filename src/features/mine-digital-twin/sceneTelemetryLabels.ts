@@ -196,7 +196,12 @@ export function createSceneTelemetryLabels(parent: THREE.Group, onLocate: (id: s
     dispose() {
       if (disposed) return
       disposed = true
+      group.visible = false
+      options = null
       for (const card of cards) {
+        card.enabled = false
+        card.visible = false
+        card.element.style.visibility = 'hidden'
         card.button.removeEventListener('click', card.onClick)
         card.button.removeEventListener('pointerdown', card.stopPointer)
         card.button.removeEventListener('dblclick', card.stopPointer)

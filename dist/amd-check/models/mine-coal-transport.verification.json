@@ -1,0 +1,74 @@
+{
+  "result": "PASS",
+  "protectedFilesUnchanged": true,
+  "layoutUnchanged": true,
+  "foundationRoadOverlaps": 0,
+  "actualGeometryPassages": {
+    "triangleRayQueries": 56160,
+    "stationaryStructureHits": [],
+    "tested": "carrying and return flights, both edges, both upper/lower truss chords; authored wall/floor/guard geometry"
+  },
+  "gravityTransfersChecked": true,
+  "headInterfacesChecked": true,
+  "crossings": [
+    {
+      "conveyor": "shaft-transfer",
+      "road": "headframe-walk-west",
+      "conservativeClearanceMeters": 4.9619584806760155
+    },
+    {
+      "conveyor": "shaft-transfer",
+      "road": "production-service",
+      "conservativeClearanceMeters": 5.956541666189829
+    },
+    {
+      "conveyor": "shaft-transfer",
+      "road": "transfer-access",
+      "conservativeClearanceMeters": 7.518999767303467
+    }
+  ],
+  "models": [
+    {
+      "file": "mine-coal-silo-1.glb",
+      "triangles": 26680,
+      "meshes": 6,
+      "sourcePieces": 1157,
+      "bytes": 1708452,
+      "vertices": 42176,
+      "materials": 6,
+      "embeddedImages": 9
+    },
+    {
+      "file": "mine-coal-silo-2.glb",
+      "triangles": 26708,
+      "meshes": 6,
+      "sourcePieces": 1158,
+      "bytes": 1709796,
+      "vertices": 42212,
+      "materials": 6,
+      "embeddedImages": 9
+    },
+    {
+      "file": "mine-transfer-station.glb",
+      "triangles": 13360,
+      "meshes": 8,
+      "sourcePieces": 668,
+      "bytes": 1150136,
+      "vertices": 25280,
+      "materials": 8,
+      "embeddedImages": 12
+    },
+    {
+      "file": "mine-coal-conveyors.glb",
+      "triangles": 34244,
+      "meshes": 7,
+      "sourcePieces": 1678,
+      "bytes": 2187664,
+      "vertices": 55674,
+      "materials": 7,
+      "embeddedImages": 9
+    }
+  ],
+  "totalTriangles": 100992,
+  "totalBytes": 6756048
+}

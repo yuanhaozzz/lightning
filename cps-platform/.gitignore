@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+**/dist/
+**/.test-dist/
+**/.env
+**/.env.local
+**/data/
+**/backups/
+*.log
+*.tsbuildinfo
+project.private.config.json
+test-results/

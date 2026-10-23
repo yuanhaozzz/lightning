@@ -1,0 +1,1027 @@
+{
+  "label": "final",
+  "url": "http://127.0.0.1:5190/map/amd",
+  "date": "2026-10-23T09:45:26.056Z",
+  "browser": "156.0.4314.42",
+  "hostCpu": "Intel(R) Core(TM) i7-14650HX",
+  "methodology": {
+    "cache": "New browser context per profile; CDP browser cache disabled; localhost production preview.",
+    "metrics": "PerformanceObserver paint/LCP/layout-shift/longtask; CDP Network.loadingFinished encoded transfer bytes; CDP JS heap; DOM MutationObserver readiness.",
+    "cadence": "requestAnimationFrame callback intervals during visible hero and actual chapter scroll/selection. This is presentation scheduling cadence, not WebGL GPU render FPS.",
+    "limits": "Single-run local lab samples. CPU/network emulation is not real mobile hardware; no GPU utilization measurement; LCP observed before first interaction; CLS uses maximum session-window score. Browser/OS caches outside HTTP cache can be warm. Full load is sampled after scene readiness plus five seconds."
+  },
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "cpuRate": 1,
+      "errors": [],
+      "failedRequests": [],
+      "consoleWarnings": [
+        "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:5190/map/amd",
+          "type": "Document",
+          "encodedDataLength": 612
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/index-CXgnmxrb.js",
+          "type": "Script",
+          "encodedDataLength": 40466
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/amd-B25SOSbT.js",
+          "type": "Script",
+          "encodedDataLength": 14192
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/amd-Eg23rZi0.css",
+          "type": "Stylesheet",
+          "encodedDataLength": 10979
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-400.woff2",
+          "type": "Font",
+          "encodedDataLength": 22516
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-600.woff2",
+          "type": "Font",
+          "encodedDataLength": 23092
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-700.woff2",
+          "type": "Font",
+          "encodedDataLength": 22764
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-500.woff2",
+          "type": "Font",
+          "encodedDataLength": 22328
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-500.woff2",
+          "type": "Font",
+          "encodedDataLength": 21744
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-700.woff2",
+          "type": "Font",
+          "encodedDataLength": 23108
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-600.woff2",
+          "type": "Font",
+          "encodedDataLength": 22628
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-800.woff2",
+          "type": "Font",
+          "encodedDataLength": 23296
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-900.woff2",
+          "type": "Font",
+          "encodedDataLength": 22688
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/favicon.ico",
+          "type": "Other",
+          "encodedDataLength": 4554
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/ProcessorScene-BtZS32GZ.js",
+          "type": "Script",
+          "encodedDataLength": 7315
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/RoomEnvironment-BeDnmiI1.js",
+          "type": "Script",
+          "encodedDataLength": 1255
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/ProcessorScene-xJyYG9Nu.css",
+          "type": "Stylesheet",
+          "encodedDataLength": 971
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/amd-concept.svg",
+          "type": "Other",
+          "encodedDataLength": 562
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/favicon.ico",
+          "type": "Other",
+          "encodedDataLength": 4554
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/three.module-DcFpJlvA.js",
+          "type": "Script",
+          "encodedDataLength": 155305
+        }
+      ],
+      "initial": {
+        "observedAtMs": 6758.4000000059605,
+        "marks": {
+          "headingDomMs": 222.1000000089407,
+          "canvasAttachedMs": 1736.9000000059605,
+          "sceneReadyStatusMs": 1737
+        },
+        "paints": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 388,
+            "duration": 0,
+            "navigationId": 2616,
+            "paintTime": 247.70000000298023,
+            "presentationTime": 388
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 388,
+            "duration": 0,
+            "navigationId": 2616,
+            "paintTime": 247.70000000298023,
+            "presentationTime": 388
+          }
+        ],
+        "lcp": {
+          "startTime": 388,
+          "size": 398351,
+          "element": "DIV.hero-watermark",
+          "url": ""
+        },
+        "cls": 0.000012361653645833334,
+        "shifts": [
+          {
+            "startTime": 1739.1000000089407,
+            "value": 0.000012361653645833334,
+            "hadRecentInput": false
+          }
+        ],
+        "longTasks": [
+          {
+            "startTime": 98.90000000596046,
+            "duration": 123,
+            "name": "self"
+          },
+          {
+            "startTime": 358.20000000298023,
+            "duration": 1378,
+            "name": "self"
+          },
+          {
+            "startTime": 1739.5,
+            "duration": 236,
+            "name": "self"
+          }
+        ],
+        "totalLongTaskDurationMs": 1737,
+        "estimatedBlockingAfterFcpMs": 186,
+        "navigation": {
+          "name": "http://127.0.0.1:5190/map/amd",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 98.40000000596046,
+          "navigationId": 2616,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 4,
+          "domainLookupStart": 4,
+          "domainLookupEnd": 4,
+          "connectStart": 4,
+          "secureConnectionStart": 0,
+          "connectEnd": 4,
+          "requestStart": 4.9000000059604645,
+          "responseStart": 8.799999997019768,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 8.799999997019768,
+          "responseEnd": 9.400000005960464,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 0,
+          "unloadEventEnd": 0,
+          "domInteractive": 17.600000008940697,
+          "domContentLoadedEventStart": 71.29999999701977,
+          "domContentLoadedEventEnd": 71.40000000596046,
+          "domComplete": 98.40000000596046,
+          "loadEventStart": 98.40000000596046,
+          "loadEventEnd": 98.40000000596046,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "low"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5190/map/assets/index-CXgnmxrb.js",
+            "initiatorType": "script",
+            "startTime": 14.900000005960464,
+            "duration": 49.20000000298023,
+            "transferSize": 40374,
+            "encodedBodySize": 40074,
+            "decodedBodySize": 104322
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/amd-B25SOSbT.js",
+            "initiatorType": "script",
+            "startTime": 71.1000000089407,
+            "duration": 25.69999998807907,
+            "transferSize": 14120,
+            "encodedBodySize": 13820,
+            "decodedBodySize": 36628
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/amd-Eg23rZi0.css",
+            "initiatorType": "link",
+            "startTime": 71.29999999701977,
+            "duration": 26.200000002980232,
+            "transferSize": 10914,
+            "encodedBodySize": 10614,
+            "decodedBodySize": 53041
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-400.woff2",
+            "initiatorType": "css",
+            "startTime": 113.90000000596046,
+            "duration": 30.099999994039536,
+            "transferSize": 22496,
+            "encodedBodySize": 22196,
+            "decodedBodySize": 22196
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-600.woff2",
+            "initiatorType": "css",
+            "startTime": 113.90000000596046,
+            "duration": 30.799999997019768,
+            "transferSize": 23072,
+            "encodedBodySize": 22772,
+            "decodedBodySize": 22772
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-700.woff2",
+            "initiatorType": "css",
+            "startTime": 114,
+            "duration": 31.400000005960464,
+            "transferSize": 22744,
+            "encodedBodySize": 22444,
+            "decodedBodySize": 22444
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-500.woff2",
+            "initiatorType": "css",
+            "startTime": 114,
+            "duration": 36.1000000089407,
+            "transferSize": 22308,
+            "encodedBodySize": 22008,
+            "decodedBodySize": 22008
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-500.woff2",
+            "initiatorType": "css",
+            "startTime": 114,
+            "duration": 54.79999999701977,
+            "transferSize": 21724,
+            "encodedBodySize": 21424,
+            "decodedBodySize": 21424
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-700.woff2",
+            "initiatorType": "css",
+            "startTime": 114.1000000089407,
+            "duration": 58,
+            "transferSize": 23088,
+            "encodedBodySize": 22788,
+            "decodedBodySize": 22788
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-600.woff2",
+            "initiatorType": "css",
+            "startTime": 114.20000000298023,
+            "duration": 62.20000000298023,
+            "transferSize": 22608,
+            "encodedBodySize": 22308,
+            "decodedBodySize": 22308
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-800.woff2",
+            "initiatorType": "css",
+            "startTime": 114.40000000596046,
+            "duration": 65.59999999403954,
+            "transferSize": 23276,
+            "encodedBodySize": 22976,
+            "decodedBodySize": 22976
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-900.woff2",
+            "initiatorType": "css",
+            "startTime": 114.5,
+            "duration": 67.70000000298023,
+            "transferSize": 22668,
+            "encodedBodySize": 22368,
+            "decodedBodySize": 22368
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/ProcessorScene-BtZS32GZ.js",
+            "initiatorType": "script",
+            "startTime": 252.6000000089407,
+            "duration": 46.19999998807907,
+            "transferSize": 7243,
+            "encodedBodySize": 6943,
+            "decodedBodySize": 17374
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/RoomEnvironment-BeDnmiI1.js",
+            "initiatorType": "script",
+            "startTime": 252.79999999701977,
+            "duration": 48.1000000089407,
+            "transferSize": 1185,
+            "encodedBodySize": 885,
+            "decodedBodySize": 2042
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/three.module-DcFpJlvA.js",
+            "initiatorType": "script",
+            "startTime": 252.79999999701977,
+            "duration": 103.1000000089407,
+            "transferSize": 155115,
+            "encodedBodySize": 154815,
+            "decodedBodySize": 618263
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/ProcessorScene-xJyYG9Nu.css",
+            "initiatorType": "link",
+            "startTime": 252.90000000596046,
+            "duration": 48.79999999701977,
+            "transferSize": 908,
+            "encodedBodySize": 608,
+            "decodedBodySize": 1313
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/favicon.ico",
+            "initiatorType": "other",
+            "startTime": 253.90000000596046,
+            "duration": 39.099999994039536,
+            "transferSize": 4586,
+            "encodedBodySize": 4286,
+            "decodedBodySize": 4286
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/amd-concept.svg",
+            "initiatorType": "other",
+            "startTime": 255.20000000298023,
+            "duration": 47.900000005960464,
+            "transferSize": 595,
+            "encodedBodySize": 295,
+            "decodedBodySize": 295
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/favicon.ico",
+            "initiatorType": "other",
+            "startTime": 305.5,
+            "duration": 4,
+            "transferSize": 4586,
+            "encodedBodySize": 4286,
+            "decodedBodySize": 4286
+          }
+        ],
+        "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "canvasSize": {
+          "width": 950,
+          "height": 670
+        },
+        "heroBounds": {
+          "x": 518.40625,
+          "y": 102,
+          "width": 950.390625,
+          "height": 670,
+          "top": 102,
+          "right": 1468.796875,
+          "bottom": 772,
+          "left": 518.40625
+        },
+        "title": "AMD Ryzen 9000 系列 | 生而强悍，不止于快",
+        "heading": "生而强悍。不止于快。"
+      },
+      "initialNetwork": {
+        "completedRequests": 20,
+        "encodedTransferBytes": 444929
+      },
+      "initialHeap": {
+        "usedSize": 15168352,
+        "totalSize": 24231936,
+        "embedderHeapUsedSize": 2960024,
+        "backingStorageSize": 1125537
+      },
+      "heroCadence": {
+        "samples": 519,
+        "elapsedMs": 4013.0999999940395,
+        "meanIntervalMs": 7.706551059730252,
+        "medianIntervalMs": 8.299999999999272,
+        "p95IntervalMs": 12.5,
+        "callbacksPerSecond": 129.75973197989848,
+        "intervalsOver50ms": 0,
+        "documentVisibility": "visible",
+        "scrollY": 0
+      },
+      "chapterCadence": {
+        "samples": 530,
+        "elapsedMs": 4004.7000000029802,
+        "meanIntervalMs": 7.538490566037739,
+        "medianIntervalMs": 8.299999999999272,
+        "p95IntervalMs": 12.5,
+        "callbacksPerSecond": 132.6525504329979,
+        "intervalsOver50ms": 0,
+        "documentVisibility": "visible",
+        "scrollY": 1646
+      },
+      "endHeap": {
+        "usedSize": 11956892,
+        "totalSize": 25280512,
+        "embedderHeapUsedSize": 6698000,
+        "backingStorageSize": 1126617
+      },
+      "complete": true
+    },
+    {
+      "name": "mobile-simulated",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 2,
+      "cpuRate": 4,
+      "network": {
+        "latency": 150,
+        "downloadThroughput": 200000,
+        "uploadThroughput": 93750
+      },
+      "errors": [],
+      "failedRequests": [],
+      "consoleWarnings": [],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:5190/map/amd",
+          "type": "Document",
+          "encodedDataLength": 612
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/index-CXgnmxrb.js",
+          "type": "Script",
+          "encodedDataLength": 40466
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/amd-Eg23rZi0.css",
+          "type": "Stylesheet",
+          "encodedDataLength": 10979
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/amd-B25SOSbT.js",
+          "type": "Script",
+          "encodedDataLength": 14192
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/favicon.ico",
+          "type": "Other",
+          "encodedDataLength": 4554
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-500.woff2",
+          "type": "Font",
+          "encodedDataLength": 22328
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-500.woff2",
+          "type": "Font",
+          "encodedDataLength": 21744
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-600.woff2",
+          "type": "Font",
+          "encodedDataLength": 23092
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-400.woff2",
+          "type": "Font",
+          "encodedDataLength": 22516
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-700.woff2",
+          "type": "Font",
+          "encodedDataLength": 22764
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-700.woff2",
+          "type": "Font",
+          "encodedDataLength": 23108
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/ProcessorScene-xJyYG9Nu.css",
+          "type": "Stylesheet",
+          "encodedDataLength": 971
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/amd-concept.svg",
+          "type": "Other",
+          "encodedDataLength": 562
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/ProcessorScene-BtZS32GZ.js",
+          "type": "Script",
+          "encodedDataLength": 7315
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/RoomEnvironment-BeDnmiI1.js",
+          "type": "Script",
+          "encodedDataLength": 1255
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/favicon.ico",
+          "type": "Other",
+          "encodedDataLength": 4554
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-600.woff2",
+          "type": "Font",
+          "encodedDataLength": 22628
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-800.woff2",
+          "type": "Font",
+          "encodedDataLength": 23296
+        },
+        {
+          "url": "http://127.0.0.1:5190/map/assets/three.module-DcFpJlvA.js",
+          "type": "Script",
+          "encodedDataLength": 155305
+        }
+      ],
+      "initial": {
+        "observedAtMs": 12405.89999999106,
+        "marks": {
+          "headingDomMs": 989.7999999970198,
+          "canvasAttachedMs": 7358.0999999940395,
+          "sceneReadyStatusMs": 7358.199999988079
+        },
+        "paints": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 1664,
+            "duration": 0,
+            "navigationId": 6107,
+            "paintTime": 1542.5999999940395,
+            "presentationTime": 1664
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 1664,
+            "duration": 0,
+            "navigationId": 6107,
+            "paintTime": 1542.5999999940395,
+            "presentationTime": 1664
+          }
+        ],
+        "lcp": {
+          "startTime": 1664,
+          "size": 38332,
+          "element": "DIV.hero-watermark",
+          "url": ""
+        },
+        "cls": 0.0046552091161574174,
+        "shifts": [
+          {
+            "startTime": 1984,
+            "value": 0.003865947313504892,
+            "hadRecentInput": false
+          },
+          {
+            "startTime": 2006,
+            "value": 0.000010336157912575666,
+            "hadRecentInput": false
+          },
+          {
+            "startTime": 2401.199999988079,
+            "value": 0.00034352178174012083,
+            "hadRecentInput": false
+          },
+          {
+            "startTime": 2432.0999999940395,
+            "value": 0.00043540386299982894,
+            "hadRecentInput": false
+          }
+        ],
+        "longTasks": [
+          {
+            "startTime": 916.7999999970198,
+            "duration": 73,
+            "name": "self"
+          },
+          {
+            "startTime": 1879,
+            "duration": 110,
+            "name": "self"
+          },
+          {
+            "startTime": 3183.7999999970198,
+            "duration": 2516,
+            "name": "self"
+          },
+          {
+            "startTime": 5728.0999999940395,
+            "duration": 1630,
+            "name": "self"
+          },
+          {
+            "startTime": 7358.399999991059,
+            "duration": 78,
+            "name": "self"
+          },
+          {
+            "startTime": 7628.79999999702,
+            "duration": 70,
+            "name": "self"
+          },
+          {
+            "startTime": 7733.5,
+            "duration": 221,
+            "name": "self"
+          },
+          {
+            "startTime": 8067.29999999702,
+            "duration": 83,
+            "name": "self"
+          },
+          {
+            "startTime": 8382.59999999404,
+            "duration": 62,
+            "name": "self"
+          },
+          {
+            "startTime": 8495.699999988079,
+            "duration": 52,
+            "name": "self"
+          },
+          {
+            "startTime": 8694,
+            "duration": 58,
+            "name": "self"
+          },
+          {
+            "startTime": 10022.89999999106,
+            "duration": 53,
+            "name": "self"
+          },
+          {
+            "startTime": 10475,
+            "duration": 54,
+            "name": "self"
+          },
+          {
+            "startTime": 10629.39999999106,
+            "duration": 50,
+            "name": "self"
+          },
+          {
+            "startTime": 10681.09999999404,
+            "duration": 50,
+            "name": "self"
+          },
+          {
+            "startTime": 11008.59999999404,
+            "duration": 60,
+            "name": "self"
+          },
+          {
+            "startTime": 11156.29999999702,
+            "duration": 51,
+            "name": "self"
+          },
+          {
+            "startTime": 11631.29999999702,
+            "duration": 51,
+            "name": "self"
+          },
+          {
+            "startTime": 12068.79999999702,
+            "duration": 66,
+            "name": "self"
+          },
+          {
+            "startTime": 12137.59999999404,
+            "duration": 58,
+            "name": "self"
+          },
+          {
+            "startTime": 12316.09999999404,
+            "duration": 51,
+            "name": "self"
+          }
+        ],
+        "totalLongTaskDurationMs": 5497,
+        "estimatedBlockingAfterFcpMs": 4424,
+        "navigation": {
+          "name": "http://127.0.0.1:5190/map/amd",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 907.3999999910593,
+          "navigationId": 6107,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 5.5,
+          "domainLookupStart": 5.5,
+          "domainLookupEnd": 5.5,
+          "connectStart": 5.5,
+          "secureConnectionStart": 0,
+          "connectEnd": 5.5,
+          "requestStart": 8.799999997019768,
+          "responseStart": 15.099999994039536,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 15.099999994039536,
+          "responseEnd": 188,
+          "transferSize": 662,
+          "encodedBodySize": 362,
+          "decodedBodySize": 362,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 0,
+          "unloadEventEnd": 0,
+          "domInteractive": 230.59999999403954,
+          "domContentLoadedEventStart": 619.1999999880791,
+          "domContentLoadedEventEnd": 619.6999999880791,
+          "domComplete": 907.3999999910593,
+          "loadEventStart": 907.3999999910593,
+          "loadEventEnd": 907.3999999910593,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:5190/map/assets/index-CXgnmxrb.js",
+            "initiatorType": "script",
+            "startTime": 222.8999999910593,
+            "duration": 366.20000000298023,
+            "transferSize": 40374,
+            "encodedBodySize": 40074,
+            "decodedBodySize": 104322
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/amd-B25SOSbT.js",
+            "initiatorType": "script",
+            "startTime": 617.3999999910593,
+            "duration": 297.20000000298023,
+            "transferSize": 14120,
+            "encodedBodySize": 13820,
+            "decodedBodySize": 36628
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/amd-Eg23rZi0.css",
+            "initiatorType": "link",
+            "startTime": 618.5999999940395,
+            "duration": 281.70000000298023,
+            "transferSize": 10914,
+            "encodedBodySize": 10614,
+            "decodedBodySize": 53041
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/favicon.ico",
+            "initiatorType": "other",
+            "startTime": 912.7999999970198,
+            "duration": 194.79999999701977,
+            "transferSize": 4586,
+            "encodedBodySize": 4286,
+            "decodedBodySize": 4286
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-600.woff2",
+            "initiatorType": "css",
+            "startTime": 1012.5999999940395,
+            "duration": 835,
+            "transferSize": 23072,
+            "encodedBodySize": 22772,
+            "decodedBodySize": 22772
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-400.woff2",
+            "initiatorType": "css",
+            "startTime": 1013.1999999880791,
+            "duration": 845.7000000029802,
+            "transferSize": 22496,
+            "encodedBodySize": 22196,
+            "decodedBodySize": 22196
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-700.woff2",
+            "initiatorType": "css",
+            "startTime": 1013.3999999910593,
+            "duration": 851.6000000089407,
+            "transferSize": 22744,
+            "encodedBodySize": 22444,
+            "decodedBodySize": 22444
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-500.woff2",
+            "initiatorType": "css",
+            "startTime": 1013.5999999940395,
+            "duration": 819,
+            "transferSize": 22308,
+            "encodedBodySize": 22008,
+            "decodedBodySize": 22008
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-500.woff2",
+            "initiatorType": "css",
+            "startTime": 1013.7999999970198,
+            "duration": 833.5999999940395,
+            "transferSize": 21724,
+            "encodedBodySize": 21424,
+            "decodedBodySize": 21424
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-700.woff2",
+            "initiatorType": "css",
+            "startTime": 1014,
+            "duration": 872,
+            "transferSize": 23088,
+            "encodedBodySize": 22788,
+            "decodedBodySize": 22788
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-condensed-latin-600.woff2",
+            "initiatorType": "css",
+            "startTime": 1014.1999999880791,
+            "duration": 1361.4000000059605,
+            "transferSize": 22608,
+            "encodedBodySize": 22308,
+            "decodedBodySize": 22308
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/fonts/amd/barlow-latin-800.woff2",
+            "initiatorType": "css",
+            "startTime": 1015.1999999880791,
+            "duration": 1406.7000000029802,
+            "transferSize": 23276,
+            "encodedBodySize": 22976,
+            "decodedBodySize": 22976
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/amd-concept.svg",
+            "initiatorType": "other",
+            "startTime": 1558,
+            "duration": 477.8999999910593,
+            "transferSize": 595,
+            "encodedBodySize": 295,
+            "decodedBodySize": 295
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/ProcessorScene-BtZS32GZ.js",
+            "initiatorType": "script",
+            "startTime": 1673.5,
+            "duration": 484.29999999701977,
+            "transferSize": 7243,
+            "encodedBodySize": 6943,
+            "decodedBodySize": 17374
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/three.module-DcFpJlvA.js",
+            "initiatorType": "script",
+            "startTime": 1674.2999999970198,
+            "duration": 1431.8999999910593,
+            "transferSize": 155115,
+            "encodedBodySize": 154815,
+            "decodedBodySize": 618263
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/RoomEnvironment-BeDnmiI1.js",
+            "initiatorType": "script",
+            "startTime": 1675.0999999940395,
+            "duration": 529.9000000059605,
+            "transferSize": 1185,
+            "encodedBodySize": 885,
+            "decodedBodySize": 2042
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/assets/ProcessorScene-xJyYG9Nu.css",
+            "initiatorType": "link",
+            "startTime": 1675.5,
+            "duration": 359.8999999910593,
+            "transferSize": 908,
+            "encodedBodySize": 608,
+            "decodedBodySize": 1313
+          },
+          {
+            "name": "http://127.0.0.1:5190/map/favicon.ico",
+            "initiatorType": "other",
+            "startTime": 2049.8999999910593,
+            "duration": 278.29999999701977,
+            "transferSize": 4586,
+            "encodedBodySize": 4286,
+            "decodedBodySize": 4286
+          }
+        ],
+        "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "canvasSize": {
+          "width": 529,
+          "height": 520
+        },
+        "heroBounds": {
+          "x": -8.703125,
+          "y": 459.859375,
+          "width": 407.40625,
+          "height": 400,
+          "top": 459.859375,
+          "right": 398.703125,
+          "bottom": 859.859375,
+          "left": -8.703125
+        },
+        "title": "AMD Ryzen 9000 系列 | 生而强悍，不止于快",
+        "heading": "生而强悍。不止于快。"
+      },
+      "initialNetwork": {
+        "completedRequests": 19,
+        "encodedTransferBytes": 422241
+      },
+      "initialHeap": {
+        "usedSize": 9286380,
+        "totalSize": 23707648,
+        "embedderHeapUsedSize": 2801936,
+        "backingStorageSize": 1124927
+      },
+      "heroCadence": {
+        "samples": 148,
+        "elapsedMs": 4019.1000000089407,
+        "meanIntervalMs": 26.910810810810805,
+        "medianIntervalMs": 25,
+        "p95IntervalMs": 62.599999999998545,
+        "callbacksPerSecond": 37.1597870844632,
+        "intervalsOver50ms": 15,
+        "documentVisibility": "visible",
+        "scrollY": 16
+      },
+      "chapterCadence": {
+        "samples": 160,
+        "elapsedMs": 4027.4000000059605,
+        "meanIntervalMs": 24.944999999999983,
+        "medianIntervalMs": 24.799999999999272,
+        "p95IntervalMs": 45.900000000001455,
+        "callbacksPerSecond": 40.08819402685912,
+        "intervalsOver50ms": 5,
+        "documentVisibility": "visible",
+        "scrollY": 1486
+      },
+      "endHeap": {
+        "usedSize": 11840712,
+        "totalSize": 28164096,
+        "embedderHeapUsedSize": 3238616,
+        "backingStorageSize": 1125841
+      },
+      "complete": true
+    }
+  ]
+}

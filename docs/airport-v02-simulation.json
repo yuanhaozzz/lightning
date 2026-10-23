@@ -1,0 +1,397 @@
+{
+  "capturedAt": "2026-10-14T15:49:03.198Z",
+  "implementation": "src/three/airport/simulation.ts",
+  "runtime": {
+    "node": "v22.22.1",
+    "typescript": "6.0.3",
+    "platform": "win32",
+    "architecture": "x64",
+    "cpu": "Intel(R) Core(TM) i7-14650HX"
+  },
+  "note": "Headless deterministic simulation tests; frame rates below are supplied dt values, not measured browser rendering FPS.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "complete articulated sweep and configured minimum clearance",
+      "passed": true,
+      "detail": {
+        "wallTimeMs": 777.4062000000001
+      }
+    },
+    {
+      "name": "three complete start/reset cycles with no accumulated pose/time/events",
+      "passed": true
+    },
+    {
+      "name": "30/60/120 Hz supplied dt produce identical physical results",
+      "passed": true
+    },
+    {
+      "name": "pause freezes all state; resume advances only new supplied time",
+      "passed": true
+    },
+    {
+      "name": "no frame-time truncation and snapshot mutation cannot change the model",
+      "passed": true
+    },
+    {
+      "name": "invalid route, invalid geometry and external asset errors block start",
+      "passed": true
+    },
+    {
+      "name": "mid-arc obstacle is detected away from every route control point",
+      "passed": true,
+      "detail": {
+        "firstCollision": {
+          "elapsed": 11.075000000000012,
+          "phase": "to_service",
+          "part": "tractor-body",
+          "obstacle": "acceptance-mid-arc-obstacle",
+          "clearance": 0.04429537866774022
+        }
+      }
+    },
+    {
+      "name": "tractor/cart body self-collision is rejected independently of the drawbar",
+      "passed": true,
+      "detail": {
+        "minTrainClearance": -1.3632708150507296
+      }
+    },
+    {
+      "name": "route remains exact arcs/lines with C1 joints and prescribed length",
+      "passed": true
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "steps": 5886,
+    "duration": 49.04999999999786,
+    "routeDistance": 93.6946861306418,
+    "minClearance": 0.20285024953623634,
+    "minObstacleClearance": 1.1579761870773981,
+    "minTrainClearance": 0.20285024953623634,
+    "clearanceMargin": 0.05,
+    "minimumTurnRadius": 6,
+    "maxArticulation": 0.3664136464319201,
+    "maxArticulationDegrees": 20.993955496547795,
+    "maxTractorTrailerAngle": 0.7044114703334872,
+    "hitchErrors": {
+      "drawbarMax": 7.32410687763558e-15,
+      "wheelbaseMax": 3.552713678800501e-15,
+      "max": 7.32410687763558e-15
+    },
+    "maxSpeed": 3,
+    "maxLateralAcceleration": 0.6500000000000001,
+    "collisions": []
+  },
+  "cycles": [
+    {
+      "frames": 2943,
+      "elapsed": 49.04999999999786,
+      "serviceSeconds": 5.999999999999659,
+      "distance": 93.6945153216706,
+      "phases": [
+        "to_service",
+        "servicing",
+        "returning",
+        "completed"
+      ],
+      "maxHitchError": 7.32410687763558e-15,
+      "minimumMeasuredRadius": 5.999999999989317,
+      "maxHeadingStep": 0.005485671571703321,
+      "finalTractor": {
+        "x": -28,
+        "z": 13.999940975955404,
+        "heading": 6.283185307179586
+      },
+      "finalTrailer": {
+        "x": -27.825274945069157,
+        "z": 9.766402376981485,
+        "heading": 6.204943802836442,
+        "bogieHeading": 6.276221115843218
+      },
+      "wheelDistances": {
+        "tractorRear": 93.6945153216706,
+        "tractorFront": 95.10018055706925,
+        "trailerRear": 91.41199876715984,
+        "trailerFront": 92.96325403714445
+      },
+      "events": [
+        {
+          "time": 0,
+          "message": "BAG-001 开始，前往服务区"
+        },
+        {
+          "time": 25.999999999999165,
+          "message": "抵达交接点并停稳，开始模拟交接"
+        },
+        {
+          "time": 31.999999999998824,
+          "message": "模拟交接计时完成，开始返回"
+        },
+        {
+          "time": 49.04999999999786,
+          "message": "已返回待命点并停稳，任务完成"
+        }
+      ]
+    },
+    {
+      "frames": 2943,
+      "elapsed": 49.04999999999786,
+      "serviceSeconds": 5.999999999999659,
+      "distance": 93.6945153216706,
+      "phases": [
+        "to_service",
+        "servicing",
+        "returning",
+        "completed"
+      ],
+      "maxHitchError": 7.32410687763558e-15,
+      "minimumMeasuredRadius": 5.999999999989317,
+      "maxHeadingStep": 0.005485671571703321,
+      "finalTractor": {
+        "x": -28,
+        "z": 13.999940975955404,
+        "heading": 6.283185307179586
+      },
+      "finalTrailer": {
+        "x": -27.825274945069157,
+        "z": 9.766402376981485,
+        "heading": 6.204943802836442,
+        "bogieHeading": 6.276221115843218
+      },
+      "wheelDistances": {
+        "tractorRear": 93.6945153216706,
+        "tractorFront": 95.10018055706925,
+        "trailerRear": 91.41199876715984,
+        "trailerFront": 92.96325403714445
+      },
+      "events": [
+        {
+          "time": 0,
+          "message": "BAG-001 开始，前往服务区"
+        },
+        {
+          "time": 25.999999999999165,
+          "message": "抵达交接点并停稳，开始模拟交接"
+        },
+        {
+          "time": 31.999999999998824,
+          "message": "模拟交接计时完成，开始返回"
+        },
+        {
+          "time": 49.04999999999786,
+          "message": "已返回待命点并停稳，任务完成"
+        }
+      ]
+    },
+    {
+      "frames": 2943,
+      "elapsed": 49.04999999999786,
+      "serviceSeconds": 5.999999999999659,
+      "distance": 93.6945153216706,
+      "phases": [
+        "to_service",
+        "servicing",
+        "returning",
+        "completed"
+      ],
+      "maxHitchError": 7.32410687763558e-15,
+      "minimumMeasuredRadius": 5.999999999989317,
+      "maxHeadingStep": 0.005485671571703321,
+      "finalTractor": {
+        "x": -28,
+        "z": 13.999940975955404,
+        "heading": 6.283185307179586
+      },
+      "finalTrailer": {
+        "x": -27.825274945069157,
+        "z": 9.766402376981485,
+        "heading": 6.204943802836442,
+        "bogieHeading": 6.276221115843218
+      },
+      "wheelDistances": {
+        "tractorRear": 93.6945153216706,
+        "tractorFront": 95.10018055706925,
+        "trailerRear": 91.41199876715984,
+        "trailerFront": 92.96325403714445
+      },
+      "events": [
+        {
+          "time": 0,
+          "message": "BAG-001 开始，前往服务区"
+        },
+        {
+          "time": 25.999999999999165,
+          "message": "抵达交接点并停稳，开始模拟交接"
+        },
+        {
+          "time": 31.999999999998824,
+          "message": "模拟交接计时完成，开始返回"
+        },
+        {
+          "time": 49.04999999999786,
+          "message": "已返回待命点并停稳，任务完成"
+        }
+      ]
+    }
+  ],
+  "frameRateResults": [
+    {
+      "suppliedFps": 30,
+      "frames": 1472,
+      "elapsed": 49.04999999999786,
+      "serviceSeconds": 5.999999999999659,
+      "distance": 93.6945153216706,
+      "phases": [
+        "to_service",
+        "servicing",
+        "returning",
+        "completed"
+      ],
+      "maxHitchError": 7.105427357601002e-15,
+      "minimumMeasuredRadius": 5.999999999994512,
+      "maxHeadingStep": 0.010971343143406642,
+      "finalTractor": {
+        "x": -28,
+        "z": 13.999940975955404,
+        "heading": 6.283185307179586
+      },
+      "finalTrailer": {
+        "x": -27.825274945069157,
+        "z": 9.766402376981485,
+        "heading": 6.204943802836442,
+        "bogieHeading": 6.276221115843218
+      },
+      "wheelDistances": {
+        "tractorRear": 93.6945153216706,
+        "tractorFront": 95.10018055706925,
+        "trailerRear": 91.41199876715984,
+        "trailerFront": 92.96325403714445
+      },
+      "events": [
+        {
+          "time": 0,
+          "message": "BAG-001 开始，前往服务区"
+        },
+        {
+          "time": 25.999999999999165,
+          "message": "抵达交接点并停稳，开始模拟交接"
+        },
+        {
+          "time": 31.999999999998824,
+          "message": "模拟交接计时完成，开始返回"
+        },
+        {
+          "time": 49.04999999999786,
+          "message": "已返回待命点并停稳，任务完成"
+        }
+      ]
+    },
+    {
+      "suppliedFps": 60,
+      "frames": 2943,
+      "elapsed": 49.04999999999786,
+      "serviceSeconds": 5.999999999999659,
+      "distance": 93.6945153216706,
+      "phases": [
+        "to_service",
+        "servicing",
+        "returning",
+        "completed"
+      ],
+      "maxHitchError": 7.32410687763558e-15,
+      "minimumMeasuredRadius": 5.999999999989317,
+      "maxHeadingStep": 0.005485671571703321,
+      "finalTractor": {
+        "x": -28,
+        "z": 13.999940975955404,
+        "heading": 6.283185307179586
+      },
+      "finalTrailer": {
+        "x": -27.825274945069157,
+        "z": 9.766402376981485,
+        "heading": 6.204943802836442,
+        "bogieHeading": 6.276221115843218
+      },
+      "wheelDistances": {
+        "tractorRear": 93.6945153216706,
+        "tractorFront": 95.10018055706925,
+        "trailerRear": 91.41199876715984,
+        "trailerFront": 92.96325403714445
+      },
+      "events": [
+        {
+          "time": 0,
+          "message": "BAG-001 开始，前往服务区"
+        },
+        {
+          "time": 25.999999999999165,
+          "message": "抵达交接点并停稳，开始模拟交接"
+        },
+        {
+          "time": 31.999999999998824,
+          "message": "模拟交接计时完成，开始返回"
+        },
+        {
+          "time": 49.04999999999786,
+          "message": "已返回待命点并停稳，任务完成"
+        }
+      ]
+    },
+    {
+      "suppliedFps": 120,
+      "frames": 5886,
+      "elapsed": 49.04999999999786,
+      "serviceSeconds": 5.999999999999659,
+      "distance": 93.6945153216706,
+      "phases": [
+        "to_service",
+        "servicing",
+        "returning",
+        "completed"
+      ],
+      "maxHitchError": 7.32410687763558e-15,
+      "minimumMeasuredRadius": 5.999999999977796,
+      "maxHeadingStep": 0.002742835785852549,
+      "finalTractor": {
+        "x": -28,
+        "z": 13.999940975955404,
+        "heading": 6.283185307179586
+      },
+      "finalTrailer": {
+        "x": -27.825274945069157,
+        "z": 9.766402376981485,
+        "heading": 6.204943802836442,
+        "bogieHeading": 6.276221115843218
+      },
+      "wheelDistances": {
+        "tractorRear": 93.6945153216706,
+        "tractorFront": 95.10018055706925,
+        "trailerRear": 91.41199876715984,
+        "trailerFront": 92.96325403714445
+      },
+      "events": [
+        {
+          "time": 0,
+          "message": "BAG-001 开始，前往服务区"
+        },
+        {
+          "time": 25.999999999999165,
+          "message": "抵达交接点并停稳，开始模拟交接"
+        },
+        {
+          "time": 31.999999999998824,
+          "message": "模拟交接计时完成，开始返回"
+        },
+        {
+          "time": 49.04999999999786,
+          "message": "已返回待命点并停稳，任务完成"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

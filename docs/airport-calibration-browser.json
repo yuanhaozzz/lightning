@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-14T13:33:59.278Z",
+  "url": "http://127.0.0.1:5176/map/aerotwin?calibration=1",
+  "browser": "155.0.4283.45",
+  "screenshots": [
+    {
+      "path": "00-calibration-1920.png",
+      "preset": "calibration",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:5176/map/node_modules/.vite/deps/cesium.js?v=38269643",
+    "http://127.0.0.1:5176/map/node_modules/.pnpm/cesium@1.145.0/node_modules/cesium/Build/Cesium/Widgets/widgets.css",
+    "http://127.0.0.1:5176/map/models/airport/calibration.glb"
+  ],
+  "results": {
+    "calibration": {
+      "ready": true,
+      "viewport": [
+        1920,
+        1016
+      ],
+      "pixelRatio": 1,
+      "camera": [
+        3,
+        2.5,
+        4
+      ],
+      "target": [
+        0,
+        0.4,
+        0
+      ],
+      "transitioning": false,
+      "triangles": 1260,
+      "drawCalls": 6,
+      "geometries": 6,
+      "textures": 4,
+      "fps": 40.13625201341395,
+      "sampleFrames": 152,
+      "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "assetBounds": {
+        "calibration": {
+          "min": [
+            -4,
+            -0.10000000149011612,
+            -4
+          ],
+          "max": [
+            4,
+            2.0000000596046448,
+            4
+          ],
+          "size": [
+            8,
+            2.100000061094761,
+            8
+          ]
+        }
+      },
+      "calibrationCube": [
+        1,
+        1,
+        1
+      ],
+      "shadowEnabled": true,
+      "up": [
+        0,
+        1,
+        0
+      ]
+    }
+  }
+}

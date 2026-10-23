@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFileSync, writeFileSync } from 'node:fs'
 import ts from 'typescript'
 import * as THREE from 'three'
+import { loadGLB } from '../../../scripts/blender/verify_distribution_drilldown.mjs'
 
 // Execute production geometry/state code in Node. Browser QA is still required
 // for the actual GLSL compile, visibility, antialiasing and compositing result.
@@ -12,6 +13,7 @@ const compile = path => ts.transpileModule(read(path), { compilerOptions: {
 } }).outputText
 const dataModule = source => 'data:text/javascript;base64,' + Buffer.from(source).toString('base64')
 const layoutSource = compile('src/features/mine-digital-twin/layout.ts')
+const { ASSETS } = await import(dataModule(layoutSource))
 const bindings = JSON.parse(read('public/models/mine-factory-animation.bindings.json'))
 const power = JSON.parse(read('scripts/blender/power_area.parameters.json'))
 const { createFactorySimulation } = await import(dataModule(compile('src/features/mine-digital-twin/factorySimulation.ts')))
@@ -46,8 +48,38 @@ assert.equal(system.diagnostics.drawCalls, 5)
 assert.equal(system.diagnostics.textures, 0)
 assert.ok(system.diagnostics.triangles < 1500)
 assert.deepEqual(halos.userData.facilityIds, ['headframe-01', 'coal-silo-01', 'coal-silo-02', 'substation-01', 'distribution-01'])
-for (let i = 0; i < halos.geometry.getAttribute('position').count; i++)
-  assert.ok(Math.abs(halos.geometry.getAttribute('position').getY(i) - .16) < 1e-6, 'Plinth halo stays on industrial ground datum')
+for (let i = 0; i < halos.geometry.getAttribute('position').count; i++) {
+  const index = halos.geometry.getAttribute('channel').getX(i)
+  const expected = system.diagnostics.facilityHalos[index].groundY
+  assert.ok(Math.abs(halos.geometry.getAttribute('position').getY(i) - expected) < 1e-6, 'Halo uses its facility plinth datum')
+}
+const contourClearance = []
+const modelPaths = ['mine-headframe.glb', 'mine-coal-silo-1.glb', 'mine-coal-silo-2.glb', 'mine-substation.glb', 'mine-distribution-shell.glb']
+for (const [index, facility] of system.diagnostics.facilityHalos.entries()) {
+  const asset = ASSETS.find(a => a.id === facility.id)
+  const model = await loadGLB(`public/models/${modelPaths[index]}`)
+  const group = new THREE.Group(); group.position.fromArray(asset.position); group.add(model)
+  if (facility.id === 'headframe-01') { model.scale.setScalar(1.6); model.position.set(-1.225 * 1.6, .59 * 1.6, 0) }
+  group.updateMatrixWorld(true)
+  const meshes = []; model.traverse(o => { if (o.isMesh) meshes.push(o) })
+  const ray = new THREE.Raycaster(new THREE.Vector3(), new THREE.Vector3(0, -1, 0), 0, 101)
+  let obscured = 0
+  for (let sample = 0; sample < 128; sample++) {
+    const theta = sample / 128 * Math.PI * 2, x = Math.cos(theta), z = Math.sin(theta), p = facility.contourExponent
+    const factor = .94 / Math.pow(Math.pow(Math.abs(x), p) + Math.pow(Math.abs(z), p), 1 / p)
+    ray.ray.origin.set(asset.position[0] + x * facility.radius[0] * factor, 100, asset.position[2] + z * facility.radius[1] * factor)
+    const hit = ray.intersectObjects(meshes, false)[0]
+    if (hit && hit.point.y > facility.groundY + .02) obscured++
+  }
+  assert.equal(obscured, 0, `${facility.id} primary ground ring must not run through its real GLB footprint`)
+  // The paired tracking beams must remain beyond the building's lateral edge.
+  const extent = new THREE.Box3().setFromObject(group, true)
+  for (const sign of [-1, 1]) {
+    const x = asset.position[0] + sign * facility.radius[0] * .97
+    assert.ok(sign < 0 ? x + .19 < extent.min.x : x - .19 > extent.max.x, `${facility.id} tracking beam outside model lateral footprint`)
+  }
+  contourClearance.push({ id: facility.id, sampledPoints: 128, obscuredPoints: obscured, datumY: facility.groundY })
+}
 
 const positions = flow.geometry.getAttribute('position')
 const trace = flow.geometry.getAttribute('trace')
@@ -133,7 +165,8 @@ assert.deepEqual(untouched.quaternion.toArray(), original.quaternion)
 assert.equal(untouched.geometry, original.geometry); assert.equal(untouched.material, original.material)
 const report = {
   pass: true, diagnostics: system.diagnostics,
-  cases: ['authored conveyor axes and distances', 'authored power switch-bay envelope', 'running', 'independent stop', 'isolated fault', 'pause', 'replay reset', 'facility halo ground datum', 'independent halo state/time', 'selection', 'layers', 'drilldown visibility', 'raycast isolation', 'idempotent resource disposal', 'existing assets unchanged'],
+  cases: ['authored conveyor axes and distances', 'authored power switch-bay envelope', 'running', 'independent stop', 'isolated fault', 'pause', 'replay reset', 'facility-specific halo datum', 'real GLB ring footprint clearance', 'tracking strokes outside real GLB bounds', 'independent halo state/time', 'selection', 'layers', 'drilldown visibility', 'raycast isolation', 'idempotent resource disposal', 'existing assets unchanged'],
+  contourClearance,
   disposed: { geometries: geometryDisposals, materials: materialDisposals },
   note: 'GLSL compilation, actual screenshot appearance and GPU performance require browser acceptance.',
 }

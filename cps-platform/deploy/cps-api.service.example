@@ -1,0 +1,23 @@
+[Unit]
+Description=CPS API
+After=network.target
+
+[Service]
+Type=simple
+User=cps
+Group=cps
+WorkingDirectory=/opt/cps-platform/apps/api
+EnvironmentFile=/etc/cps-platform.env
+Environment=NODE_OPTIONS=--max-old-space-size=384
+ExecStart=/usr/bin/node dist/index.js
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/cps
+MemoryMax=768M
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1732 @@
+{
+  "startedAt": "2026-10-14T16:10:31.161Z",
+  "url": "http://127.0.0.1:4176/map/aerotwin",
+  "browser": "155.0.4283.45",
+  "headless": true,
+  "device": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCores": 24,
+    "totalMemoryGiB": 31.718048095703125,
+    "os": "Windows_NT 10.0.26200 x64"
+  },
+  "screenshots": [],
+  "errors": [],
+  "requests": [
+    {
+      "scope": "native visibility",
+      "url": "http://127.0.0.1:4176/map/models/airport/apron.glb"
+    },
+    {
+      "scope": "native visibility",
+      "url": "http://127.0.0.1:4176/map/models/airport/terminal.glb"
+    },
+    {
+      "scope": "native visibility",
+      "url": "http://127.0.0.1:4176/map/models/airport/aircraft.glb"
+    },
+    {
+      "scope": "native visibility",
+      "url": "http://127.0.0.1:4176/map/models/airport/bridge.glb"
+    },
+    {
+      "scope": "native visibility",
+      "url": "http://127.0.0.1:4176/map/models/airport/vehicles.glb"
+    }
+  ],
+  "tests": {
+    "nativeVisibility": {
+      "status": "passed",
+      "stage": "application",
+      "attempt": 1,
+      "method": "Actual tab switch in dedicated Edge; connectOverCDP noDefaults=true",
+      "profile": "F:\\code\\lightning\\tmp\\airport-visibility-0c496d9d-e115-44c1-866d-c8581981cd6d",
+      "browserStderr": "\r\nDevTools listening on ws://127.0.0.1:56136/devtools/browser/8e45369a-bb6d-4001-b52f-518b0b1f1985\r\n[17632:22736:1015/001031.593:ERROR:chrome\\browser\\importer\\edge_china_browsers\\edge_qqbrowser_importer_utils_win.cc:165] QQBrowser user data path not found.\r\n",
+      "browser": "155.0.4283.45",
+      "before": {
+        "scene": {
+          "ready": true,
+          "viewport": [
+            1366,
+            704
+          ],
+          "pixelRatio": 1,
+          "camera": [
+            -47.99999999999999,
+            20,
+            39
+          ],
+          "target": [
+            0,
+            4.4,
+            0
+          ],
+          "transitioning": false,
+          "triangles": 281622,
+          "drawCalls": 594,
+          "geometries": 323,
+          "textures": 6,
+          "fps": 15.909409948060453,
+          "sampleFrames": 34,
+          "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "assetBounds": {
+            "apron": {
+              "min": [
+                -100,
+                -0.26999999582767487,
+                -100
+              ],
+              "max": [
+                100,
+                0.020999999600462615,
+                100
+              ],
+              "size": [
+                200,
+                0.2909999954281375,
+                200
+              ]
+            },
+            "terminal": {
+              "min": [
+                -77.89999961853027,
+                -0.35999999940395355,
+                -149.4000015258789
+              ],
+              "max": [
+                37.80001134893455,
+                12.514999771490693,
+                33.000004357744075
+              ],
+              "size": [
+                115.70001096746482,
+                12.874999770894647,
+                182.40000588362298
+              ]
+            },
+            "aircraft": {
+              "min": [
+                -17.899999618530273,
+                0,
+                -18.78499984741211
+              ],
+              "max": [
+                17.899999618530273,
+                11.760000228881836,
+                18.78499984741211
+              ],
+              "size": [
+                35.79999923706055,
+                11.760000228881836,
+                37.56999969482422
+              ]
+            },
+            "bridge": {
+              "min": [
+                1.329830288887024,
+                -9.270761464064137e-8,
+                11.549999952316284
+              ],
+              "max": [
+                24.044999599456787,
+                6.21999990940094,
+                21.385000228881836
+              ],
+              "size": [
+                22.715169310569763,
+                6.220000002108555,
+                9.835000276565552
+              ]
+            },
+            "vehicles": {
+              "min": [
+                -37.20000000298023,
+                0,
+                -18.200000002980232
+              ],
+              "max": [
+                23.599999621510506,
+                2.730000138282776,
+                20.900000765919685
+              ],
+              "size": [
+                60.79999962449074,
+                2.730000138282776,
+                39.10000076889992
+              ]
+            }
+          },
+          "calibrationCube": null,
+          "shadowEnabled": true,
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "task": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 0.6000000000000003,
+            "phaseElapsed": 0.6000000000000003,
+            "distance": 0.14399999999999985,
+            "progress": 0.0023283967470538913,
+            "tractor": {
+              "x": -28,
+              "z": 14.144,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.904000000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.47999999999999937,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.14399999999999985,
+              "tractorFront": 0.14400000000000013,
+              "trailerRear": 0.14400000000000013,
+              "trailerFront": 0.14400000000000013
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              }
+            ],
+            "error": null
+          },
+          "debugVisible": false
+        },
+        "task": {
+          "taskId": "BAG-001",
+          "vehicleId": "BT-01",
+          "phase": "to_service",
+          "runState": "running",
+          "elapsed": 0.6000000000000003,
+          "phaseElapsed": 0.6000000000000003,
+          "distance": 0.14399999999999985,
+          "progress": 0.0023283967470538913,
+          "tractor": {
+            "x": -28,
+            "z": 14.144,
+            "heading": 0
+          },
+          "trailer": {
+            "x": -28,
+            "z": 9.904000000000002,
+            "heading": 0,
+            "bogieHeading": 0
+          },
+          "speed": 0.47999999999999937,
+          "steering": 0,
+          "wheelDistances": {
+            "tractorRear": 0.14399999999999985,
+            "tractorFront": 0.14400000000000013,
+            "trailerRear": 0.14400000000000013,
+            "trailerFront": 0.14400000000000013
+          },
+          "events": [
+            {
+              "time": 0,
+              "message": "BAG-001 开始，前往服务区"
+            }
+          ],
+          "error": null
+        },
+        "vehicles": {
+          "errors": [],
+          "anchors": {
+            "leftDoor": [
+              1.980802059173584,
+              4.324999809265137,
+              13.5
+            ],
+            "cargoDoor": [
+              -1.6752179861068726,
+              3.059999942779541,
+              8.600000381469727
+            ]
+          },
+          "hitchDistance": 7.24792482031944e-7,
+          "tractorHitch": [
+            -28,
+            0.4000000059604645,
+            13.524000114440918
+          ],
+          "trailerHitch": [
+            -28,
+            0.4000000059604645,
+            13.5240008392334
+          ],
+          "nodeCounts": {
+            "tractor": 1,
+            "trailer": 1
+          },
+          "wheelAngles": {
+            "tractorFront": [
+              0.38918918918918954,
+              0.38918918918918954
+            ],
+            "tractorRear": [
+              0.38918918918918877,
+              0.38918918918918877
+            ],
+            "trailerFront": [
+              0.4645161290322585,
+              0.4645161290322585
+            ],
+            "trailerRear": [
+              0.4645161290322585,
+              0.4645161290322585
+            ]
+          },
+          "bogieAngle": 0,
+          "state": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 0.6000000000000003,
+            "phaseElapsed": 0.6000000000000003,
+            "distance": 0.14399999999999985,
+            "progress": 0.0023283967470538913,
+            "tractor": {
+              "x": -28,
+              "z": 14.144,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.904000000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.47999999999999937,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.14399999999999985,
+              "tractorFront": 0.14400000000000013,
+              "trailerRear": 0.14400000000000013,
+              "trailerFront": 0.14400000000000013
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              }
+            ],
+            "error": null
+          }
+        },
+        "validation": {
+          "ok": true,
+          "errors": [],
+          "steps": 5886,
+          "duration": 49.04999999999786,
+          "routeDistance": 93.6946861306418,
+          "minClearance": 0.2028502495362347,
+          "minObstacleClearance": 1.1579761870773981,
+          "minTrainClearance": 0.2028502495362347,
+          "clearanceMargin": 0.05,
+          "minimumTurnRadius": 6,
+          "maxArticulation": 0.3664136464319192,
+          "maxArticulationDegrees": 20.993955496547745,
+          "maxTractorTrailerAngle": 0.7044114703334863,
+          "hitchErrors": {
+            "drawbarMax": 7.32410687763558e-15,
+            "wheelbaseMax": 3.552713678800501e-15,
+            "max": 7.32410687763558e-15
+          },
+          "maxSpeed": 3,
+          "maxLateralAcceleration": 0.6500000000000001,
+          "collisions": []
+        },
+        "pendingRAF": 1,
+        "canvasCount": 1,
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "browserTime": 3752.300000011921
+      },
+      "hidden": {
+        "scene": {
+          "ready": true,
+          "viewport": [
+            1366,
+            704
+          ],
+          "pixelRatio": 1,
+          "camera": [
+            -47.99999999999999,
+            20,
+            39
+          ],
+          "target": [
+            0,
+            4.4,
+            0
+          ],
+          "transitioning": false,
+          "triangles": 281622,
+          "drawCalls": 594,
+          "geometries": 323,
+          "textures": 6,
+          "fps": 16.156580344365967,
+          "sampleFrames": 35,
+          "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "assetBounds": {
+            "apron": {
+              "min": [
+                -100,
+                -0.26999999582767487,
+                -100
+              ],
+              "max": [
+                100,
+                0.020999999600462615,
+                100
+              ],
+              "size": [
+                200,
+                0.2909999954281375,
+                200
+              ]
+            },
+            "terminal": {
+              "min": [
+                -77.89999961853027,
+                -0.35999999940395355,
+                -149.4000015258789
+              ],
+              "max": [
+                37.80001134893455,
+                12.514999771490693,
+                33.000004357744075
+              ],
+              "size": [
+                115.70001096746482,
+                12.874999770894647,
+                182.40000588362298
+              ]
+            },
+            "aircraft": {
+              "min": [
+                -17.899999618530273,
+                0,
+                -18.78499984741211
+              ],
+              "max": [
+                17.899999618530273,
+                11.760000228881836,
+                18.78499984741211
+              ],
+              "size": [
+                35.79999923706055,
+                11.760000228881836,
+                37.56999969482422
+              ]
+            },
+            "bridge": {
+              "min": [
+                1.329830288887024,
+                -9.270761464064137e-8,
+                11.549999952316284
+              ],
+              "max": [
+                24.044999599456787,
+                6.21999990940094,
+                21.385000228881836
+              ],
+              "size": [
+                22.715169310569763,
+                6.220000002108555,
+                9.835000276565552
+              ]
+            },
+            "vehicles": {
+              "min": [
+                -37.20000000298023,
+                0,
+                -18.200000002980232
+              ],
+              "max": [
+                23.599999621510506,
+                2.730000138282776,
+                20.900000765919685
+              ],
+              "size": [
+                60.79999962449074,
+                2.730000138282776,
+                39.10000076889992
+              ]
+            }
+          },
+          "calibrationCube": null,
+          "shadowEnabled": true,
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "task": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "paused",
+            "elapsed": 0.6250000000000002,
+            "phaseElapsed": 0.6250000000000002,
+            "distance": 0.15624999999999983,
+            "progress": 0.0025264721647720173,
+            "tractor": {
+              "x": -28,
+              "z": 14.15625,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.916250000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.49999999999999933,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.15624999999999983,
+              "tractorFront": 0.15625,
+              "trailerRear": 0.15625,
+              "trailerFront": 0.15625
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "页面离开前台，已自动暂停"
+              }
+            ],
+            "error": null
+          },
+          "debugVisible": false
+        },
+        "task": {
+          "taskId": "BAG-001",
+          "vehicleId": "BT-01",
+          "phase": "to_service",
+          "runState": "paused",
+          "elapsed": 0.6250000000000002,
+          "phaseElapsed": 0.6250000000000002,
+          "distance": 0.15624999999999983,
+          "progress": 0.0025264721647720173,
+          "tractor": {
+            "x": -28,
+            "z": 14.15625,
+            "heading": 0
+          },
+          "trailer": {
+            "x": -28,
+            "z": 9.916250000000002,
+            "heading": 0,
+            "bogieHeading": 0
+          },
+          "speed": 0.49999999999999933,
+          "steering": 0,
+          "wheelDistances": {
+            "tractorRear": 0.15624999999999983,
+            "tractorFront": 0.15625,
+            "trailerRear": 0.15625,
+            "trailerFront": 0.15625
+          },
+          "events": [
+            {
+              "time": 0,
+              "message": "BAG-001 开始，前往服务区"
+            },
+            {
+              "time": 0.6250000000000002,
+              "message": "页面离开前台，已自动暂停"
+            }
+          ],
+          "error": null
+        },
+        "vehicles": {
+          "errors": [],
+          "anchors": {
+            "leftDoor": [
+              1.980802059173584,
+              4.324999809265137,
+              13.5
+            ],
+            "cargoDoor": [
+              -1.6752179861068726,
+              3.059999942779541,
+              8.600000381469727
+            ]
+          },
+          "hitchDistance": 7.24792482031944e-7,
+          "tractorHitch": [
+            -28,
+            0.4000000059604645,
+            13.536250114440918
+          ],
+          "trailerHitch": [
+            -28,
+            0.4000000059604645,
+            13.5362508392334
+          ],
+          "nodeCounts": {
+            "tractor": 1,
+            "trailer": 1
+          },
+          "wheelAngles": {
+            "tractorFront": [
+              0.4222972972972973,
+              0.4222972972972973
+            ],
+            "tractorRear": [
+              0.42229729729729687,
+              0.42229729729729687
+            ],
+            "trailerFront": [
+              0.5040322580645161,
+              0.5040322580645161
+            ],
+            "trailerRear": [
+              0.5040322580645161,
+              0.5040322580645161
+            ]
+          },
+          "bogieAngle": 0,
+          "state": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 0.6250000000000002,
+            "phaseElapsed": 0.6250000000000002,
+            "distance": 0.15624999999999983,
+            "progress": 0.0025264721647720173,
+            "tractor": {
+              "x": -28,
+              "z": 14.15625,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.916250000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.49999999999999933,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.15624999999999983,
+              "tractorFront": 0.15625,
+              "trailerRear": 0.15625,
+              "trailerFront": 0.15625
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              }
+            ],
+            "error": null
+          }
+        },
+        "validation": {
+          "ok": true,
+          "errors": [],
+          "steps": 5886,
+          "duration": 49.04999999999786,
+          "routeDistance": 93.6946861306418,
+          "minClearance": 0.2028502495362347,
+          "minObstacleClearance": 1.1579761870773981,
+          "minTrainClearance": 0.2028502495362347,
+          "clearanceMargin": 0.05,
+          "minimumTurnRadius": 6,
+          "maxArticulation": 0.3664136464319192,
+          "maxArticulationDegrees": 20.993955496547745,
+          "maxTractorTrailerAngle": 0.7044114703334863,
+          "hitchErrors": {
+            "drawbarMax": 7.32410687763558e-15,
+            "wheelbaseMax": 3.552713678800501e-15,
+            "max": 7.32410687763558e-15
+          },
+          "maxSpeed": 3,
+          "maxLateralAcceleration": 0.6500000000000001,
+          "collisions": []
+        },
+        "pendingRAF": 1,
+        "canvasCount": 1,
+        "visibility": "hidden",
+        "visibilityEvents": [
+          {
+            "time": 3770.600000023842,
+            "state": "hidden",
+            "hidden": true,
+            "isTrusted": true
+          }
+        ],
+        "browserTime": 3861.2000000178814
+      },
+      "afterHiddenHold": {
+        "scene": {
+          "ready": true,
+          "viewport": [
+            1366,
+            704
+          ],
+          "pixelRatio": 1,
+          "camera": [
+            -47.99999999999999,
+            20,
+            39
+          ],
+          "target": [
+            0,
+            4.4,
+            0
+          ],
+          "transitioning": false,
+          "triangles": 281622,
+          "drawCalls": 594,
+          "geometries": 323,
+          "textures": 6,
+          "fps": 16.156580344365967,
+          "sampleFrames": 35,
+          "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "assetBounds": {
+            "apron": {
+              "min": [
+                -100,
+                -0.26999999582767487,
+                -100
+              ],
+              "max": [
+                100,
+                0.020999999600462615,
+                100
+              ],
+              "size": [
+                200,
+                0.2909999954281375,
+                200
+              ]
+            },
+            "terminal": {
+              "min": [
+                -77.89999961853027,
+                -0.35999999940395355,
+                -149.4000015258789
+              ],
+              "max": [
+                37.80001134893455,
+                12.514999771490693,
+                33.000004357744075
+              ],
+              "size": [
+                115.70001096746482,
+                12.874999770894647,
+                182.40000588362298
+              ]
+            },
+            "aircraft": {
+              "min": [
+                -17.899999618530273,
+                0,
+                -18.78499984741211
+              ],
+              "max": [
+                17.899999618530273,
+                11.760000228881836,
+                18.78499984741211
+              ],
+              "size": [
+                35.79999923706055,
+                11.760000228881836,
+                37.56999969482422
+              ]
+            },
+            "bridge": {
+              "min": [
+                1.329830288887024,
+                -9.270761464064137e-8,
+                11.549999952316284
+              ],
+              "max": [
+                24.044999599456787,
+                6.21999990940094,
+                21.385000228881836
+              ],
+              "size": [
+                22.715169310569763,
+                6.220000002108555,
+                9.835000276565552
+              ]
+            },
+            "vehicles": {
+              "min": [
+                -37.20000000298023,
+                0,
+                -18.200000002980232
+              ],
+              "max": [
+                23.599999621510506,
+                2.730000138282776,
+                20.900000765919685
+              ],
+              "size": [
+                60.79999962449074,
+                2.730000138282776,
+                39.10000076889992
+              ]
+            }
+          },
+          "calibrationCube": null,
+          "shadowEnabled": true,
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "task": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "paused",
+            "elapsed": 0.6250000000000002,
+            "phaseElapsed": 0.6250000000000002,
+            "distance": 0.15624999999999983,
+            "progress": 0.0025264721647720173,
+            "tractor": {
+              "x": -28,
+              "z": 14.15625,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.916250000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.49999999999999933,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.15624999999999983,
+              "tractorFront": 0.15625,
+              "trailerRear": 0.15625,
+              "trailerFront": 0.15625
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "页面离开前台，已自动暂停"
+              }
+            ],
+            "error": null
+          },
+          "debugVisible": false
+        },
+        "task": {
+          "taskId": "BAG-001",
+          "vehicleId": "BT-01",
+          "phase": "to_service",
+          "runState": "paused",
+          "elapsed": 0.6250000000000002,
+          "phaseElapsed": 0.6250000000000002,
+          "distance": 0.15624999999999983,
+          "progress": 0.0025264721647720173,
+          "tractor": {
+            "x": -28,
+            "z": 14.15625,
+            "heading": 0
+          },
+          "trailer": {
+            "x": -28,
+            "z": 9.916250000000002,
+            "heading": 0,
+            "bogieHeading": 0
+          },
+          "speed": 0.49999999999999933,
+          "steering": 0,
+          "wheelDistances": {
+            "tractorRear": 0.15624999999999983,
+            "tractorFront": 0.15625,
+            "trailerRear": 0.15625,
+            "trailerFront": 0.15625
+          },
+          "events": [
+            {
+              "time": 0,
+              "message": "BAG-001 开始，前往服务区"
+            },
+            {
+              "time": 0.6250000000000002,
+              "message": "页面离开前台，已自动暂停"
+            }
+          ],
+          "error": null
+        },
+        "vehicles": {
+          "errors": [],
+          "anchors": {
+            "leftDoor": [
+              1.980802059173584,
+              4.324999809265137,
+              13.5
+            ],
+            "cargoDoor": [
+              -1.6752179861068726,
+              3.059999942779541,
+              8.600000381469727
+            ]
+          },
+          "hitchDistance": 7.24792482031944e-7,
+          "tractorHitch": [
+            -28,
+            0.4000000059604645,
+            13.536250114440918
+          ],
+          "trailerHitch": [
+            -28,
+            0.4000000059604645,
+            13.5362508392334
+          ],
+          "nodeCounts": {
+            "tractor": 1,
+            "trailer": 1
+          },
+          "wheelAngles": {
+            "tractorFront": [
+              0.4222972972972973,
+              0.4222972972972973
+            ],
+            "tractorRear": [
+              0.42229729729729687,
+              0.42229729729729687
+            ],
+            "trailerFront": [
+              0.5040322580645161,
+              0.5040322580645161
+            ],
+            "trailerRear": [
+              0.5040322580645161,
+              0.5040322580645161
+            ]
+          },
+          "bogieAngle": 0,
+          "state": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 0.6250000000000002,
+            "phaseElapsed": 0.6250000000000002,
+            "distance": 0.15624999999999983,
+            "progress": 0.0025264721647720173,
+            "tractor": {
+              "x": -28,
+              "z": 14.15625,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.916250000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.49999999999999933,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.15624999999999983,
+              "tractorFront": 0.15625,
+              "trailerRear": 0.15625,
+              "trailerFront": 0.15625
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              }
+            ],
+            "error": null
+          }
+        },
+        "validation": {
+          "ok": true,
+          "errors": [],
+          "steps": 5886,
+          "duration": 49.04999999999786,
+          "routeDistance": 93.6946861306418,
+          "minClearance": 0.2028502495362347,
+          "minObstacleClearance": 1.1579761870773981,
+          "minTrainClearance": 0.2028502495362347,
+          "clearanceMargin": 0.05,
+          "minimumTurnRadius": 6,
+          "maxArticulation": 0.3664136464319192,
+          "maxArticulationDegrees": 20.993955496547745,
+          "maxTractorTrailerAngle": 0.7044114703334863,
+          "hitchErrors": {
+            "drawbarMax": 7.32410687763558e-15,
+            "wheelbaseMax": 3.552713678800501e-15,
+            "max": 7.32410687763558e-15
+          },
+          "maxSpeed": 3,
+          "maxLateralAcceleration": 0.6500000000000001,
+          "collisions": []
+        },
+        "pendingRAF": 1,
+        "canvasCount": 1,
+        "visibility": "hidden",
+        "visibilityEvents": [
+          {
+            "time": 3770.600000023842,
+            "state": "hidden",
+            "hidden": true,
+            "isTrusted": true
+          }
+        ],
+        "browserTime": 5911
+      },
+      "hiddenHoldSeconds": 2.0543858,
+      "returned": {
+        "scene": {
+          "ready": true,
+          "viewport": [
+            1366,
+            704
+          ],
+          "pixelRatio": 1,
+          "camera": [
+            -47.99999999999999,
+            20,
+            39
+          ],
+          "target": [
+            0,
+            4.4,
+            0
+          ],
+          "transitioning": false,
+          "triangles": 151910,
+          "drawCalls": 304,
+          "geometries": 323,
+          "textures": 6,
+          "fps": 16.5860400829302,
+          "sampleFrames": 36,
+          "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "assetBounds": {
+            "apron": {
+              "min": [
+                -100,
+                -0.26999999582767487,
+                -100
+              ],
+              "max": [
+                100,
+                0.020999999600462615,
+                100
+              ],
+              "size": [
+                200,
+                0.2909999954281375,
+                200
+              ]
+            },
+            "terminal": {
+              "min": [
+                -77.89999961853027,
+                -0.35999999940395355,
+                -149.4000015258789
+              ],
+              "max": [
+                37.80001134893455,
+                12.514999771490693,
+                33.000004357744075
+              ],
+              "size": [
+                115.70001096746482,
+                12.874999770894647,
+                182.40000588362298
+              ]
+            },
+            "aircraft": {
+              "min": [
+                -17.899999618530273,
+                0,
+                -18.78499984741211
+              ],
+              "max": [
+                17.899999618530273,
+                11.760000228881836,
+                18.78499984741211
+              ],
+              "size": [
+                35.79999923706055,
+                11.760000228881836,
+                37.56999969482422
+              ]
+            },
+            "bridge": {
+              "min": [
+                1.329830288887024,
+                -9.270761464064137e-8,
+                11.549999952316284
+              ],
+              "max": [
+                24.044999599456787,
+                6.21999990940094,
+                21.385000228881836
+              ],
+              "size": [
+                22.715169310569763,
+                6.220000002108555,
+                9.835000276565552
+              ]
+            },
+            "vehicles": {
+              "min": [
+                -37.20000000298023,
+                0,
+                -18.200000002980232
+              ],
+              "max": [
+                23.599999621510506,
+                2.730000138282776,
+                20.900000765919685
+              ],
+              "size": [
+                60.79999962449074,
+                2.730000138282776,
+                39.10000076889992
+              ]
+            }
+          },
+          "calibrationCube": null,
+          "shadowEnabled": true,
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "task": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "paused",
+            "elapsed": 0.6250000000000002,
+            "phaseElapsed": 0.6250000000000002,
+            "distance": 0.15624999999999983,
+            "progress": 0.0025264721647720173,
+            "tractor": {
+              "x": -28,
+              "z": 14.15625,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.916250000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.49999999999999933,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.15624999999999983,
+              "tractorFront": 0.15625,
+              "trailerRear": 0.15625,
+              "trailerFront": 0.15625
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "页面离开前台，已自动暂停"
+              }
+            ],
+            "error": null
+          },
+          "debugVisible": false
+        },
+        "task": {
+          "taskId": "BAG-001",
+          "vehicleId": "BT-01",
+          "phase": "to_service",
+          "runState": "paused",
+          "elapsed": 0.6250000000000002,
+          "phaseElapsed": 0.6250000000000002,
+          "distance": 0.15624999999999983,
+          "progress": 0.0025264721647720173,
+          "tractor": {
+            "x": -28,
+            "z": 14.15625,
+            "heading": 0
+          },
+          "trailer": {
+            "x": -28,
+            "z": 9.916250000000002,
+            "heading": 0,
+            "bogieHeading": 0
+          },
+          "speed": 0.49999999999999933,
+          "steering": 0,
+          "wheelDistances": {
+            "tractorRear": 0.15624999999999983,
+            "tractorFront": 0.15625,
+            "trailerRear": 0.15625,
+            "trailerFront": 0.15625
+          },
+          "events": [
+            {
+              "time": 0,
+              "message": "BAG-001 开始，前往服务区"
+            },
+            {
+              "time": 0.6250000000000002,
+              "message": "页面离开前台，已自动暂停"
+            }
+          ],
+          "error": null
+        },
+        "vehicles": {
+          "errors": [],
+          "anchors": {
+            "leftDoor": [
+              1.980802059173584,
+              4.324999809265137,
+              13.5
+            ],
+            "cargoDoor": [
+              -1.6752179861068726,
+              3.059999942779541,
+              8.600000381469727
+            ]
+          },
+          "hitchDistance": 7.24792482031944e-7,
+          "tractorHitch": [
+            -28,
+            0.4000000059604645,
+            13.536250114440918
+          ],
+          "trailerHitch": [
+            -28,
+            0.4000000059604645,
+            13.5362508392334
+          ],
+          "nodeCounts": {
+            "tractor": 1,
+            "trailer": 1
+          },
+          "wheelAngles": {
+            "tractorFront": [
+              0.4222972972972973,
+              0.4222972972972973
+            ],
+            "tractorRear": [
+              0.42229729729729687,
+              0.42229729729729687
+            ],
+            "trailerFront": [
+              0.5040322580645161,
+              0.5040322580645161
+            ],
+            "trailerRear": [
+              0.5040322580645161,
+              0.5040322580645161
+            ]
+          },
+          "bogieAngle": 0,
+          "state": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 0.6250000000000002,
+            "phaseElapsed": 0.6250000000000002,
+            "distance": 0.15624999999999983,
+            "progress": 0.0025264721647720173,
+            "tractor": {
+              "x": -28,
+              "z": 14.15625,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 9.916250000000002,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.49999999999999933,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.15624999999999983,
+              "tractorFront": 0.15625,
+              "trailerRear": 0.15625,
+              "trailerFront": 0.15625
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              }
+            ],
+            "error": null
+          }
+        },
+        "validation": {
+          "ok": true,
+          "errors": [],
+          "steps": 5886,
+          "duration": 49.04999999999786,
+          "routeDistance": 93.6946861306418,
+          "minClearance": 0.2028502495362347,
+          "minObstacleClearance": 1.1579761870773981,
+          "minTrainClearance": 0.2028502495362347,
+          "clearanceMargin": 0.05,
+          "minimumTurnRadius": 6,
+          "maxArticulation": 0.3664136464319192,
+          "maxArticulationDegrees": 20.993955496547745,
+          "maxTractorTrailerAngle": 0.7044114703334863,
+          "hitchErrors": {
+            "drawbarMax": 7.32410687763558e-15,
+            "wheelbaseMax": 3.552713678800501e-15,
+            "max": 7.32410687763558e-15
+          },
+          "maxSpeed": 3,
+          "maxLateralAcceleration": 0.6500000000000001,
+          "collisions": []
+        },
+        "pendingRAF": 1,
+        "canvasCount": 1,
+        "visibility": "visible",
+        "visibilityEvents": [
+          {
+            "time": 3770.600000023842,
+            "state": "hidden",
+            "hidden": true,
+            "isTrusted": true
+          },
+          {
+            "time": 5930.600000023842,
+            "state": "visible",
+            "hidden": false,
+            "isTrusted": true
+          }
+        ],
+        "browserTime": 5939.700000017881
+      },
+      "resumed": {
+        "scene": {
+          "ready": true,
+          "viewport": [
+            1366,
+            704
+          ],
+          "pixelRatio": 1,
+          "camera": [
+            -47.99999999999999,
+            20,
+            39
+          ],
+          "target": [
+            0,
+            4.4,
+            0
+          ],
+          "transitioning": false,
+          "triangles": 281530,
+          "drawCalls": 593,
+          "geometries": 323,
+          "textures": 6,
+          "fps": 24.538333280901,
+          "sampleFrames": 78,
+          "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "assetBounds": {
+            "apron": {
+              "min": [
+                -100,
+                -0.26999999582767487,
+                -100
+              ],
+              "max": [
+                100,
+                0.020999999600462615,
+                100
+              ],
+              "size": [
+                200,
+                0.2909999954281375,
+                200
+              ]
+            },
+            "terminal": {
+              "min": [
+                -77.89999961853027,
+                -0.35999999940395355,
+                -149.4000015258789
+              ],
+              "max": [
+                37.80001134893455,
+                12.514999771490693,
+                33.000004357744075
+              ],
+              "size": [
+                115.70001096746482,
+                12.874999770894647,
+                182.40000588362298
+              ]
+            },
+            "aircraft": {
+              "min": [
+                -17.899999618530273,
+                0,
+                -18.78499984741211
+              ],
+              "max": [
+                17.899999618530273,
+                11.760000228881836,
+                18.78499984741211
+              ],
+              "size": [
+                35.79999923706055,
+                11.760000228881836,
+                37.56999969482422
+              ]
+            },
+            "bridge": {
+              "min": [
+                1.329830288887024,
+                -9.270761464064137e-8,
+                11.549999952316284
+              ],
+              "max": [
+                24.044999599456787,
+                6.21999990940094,
+                21.385000228881836
+              ],
+              "size": [
+                22.715169310569763,
+                6.220000002108555,
+                9.835000276565552
+              ]
+            },
+            "vehicles": {
+              "min": [
+                -37.20000000298023,
+                0,
+                -18.200000002980232
+              ],
+              "max": [
+                23.599999621510506,
+                2.730000138282776,
+                20.900000765919685
+              ],
+              "size": [
+                60.79999962449074,
+                2.730000138282776,
+                39.10000076889992
+              ]
+            }
+          },
+          "calibrationCube": null,
+          "shadowEnabled": true,
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "task": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 1.033333333333332,
+            "phaseElapsed": 1.033333333333332,
+            "distance": 0.4271111111111111,
+            "progress": 0.006906139734317259,
+            "tractor": {
+              "x": -28,
+              "z": 14.427111111111111,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 10.187111111111113,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.8266666666666681,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.4271111111111111,
+              "tractorFront": 0.42711111111111144,
+              "trailerRear": 0.42711111111111144,
+              "trailerFront": 0.42711111111111144
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "页面离开前台，已自动暂停"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "任务继续"
+              }
+            ],
+            "error": null
+          },
+          "debugVisible": false
+        },
+        "task": {
+          "taskId": "BAG-001",
+          "vehicleId": "BT-01",
+          "phase": "to_service",
+          "runState": "running",
+          "elapsed": 1.033333333333332,
+          "phaseElapsed": 1.033333333333332,
+          "distance": 0.4271111111111111,
+          "progress": 0.006906139734317259,
+          "tractor": {
+            "x": -28,
+            "z": 14.427111111111111,
+            "heading": 0
+          },
+          "trailer": {
+            "x": -28,
+            "z": 10.187111111111113,
+            "heading": 0,
+            "bogieHeading": 0
+          },
+          "speed": 0.8266666666666681,
+          "steering": 0,
+          "wheelDistances": {
+            "tractorRear": 0.4271111111111111,
+            "tractorFront": 0.42711111111111144,
+            "trailerRear": 0.42711111111111144,
+            "trailerFront": 0.42711111111111144
+          },
+          "events": [
+            {
+              "time": 0,
+              "message": "BAG-001 开始，前往服务区"
+            },
+            {
+              "time": 0.6250000000000002,
+              "message": "页面离开前台，已自动暂停"
+            },
+            {
+              "time": 0.6250000000000002,
+              "message": "任务继续"
+            }
+          ],
+          "error": null
+        },
+        "vehicles": {
+          "errors": [],
+          "anchors": {
+            "leftDoor": [
+              1.980802059173584,
+              4.324999809265137,
+              13.5
+            ],
+            "cargoDoor": [
+              -1.6752179861068726,
+              3.059999942779541,
+              8.600000381469727
+            ]
+          },
+          "hitchDistance": 7.24792482031944e-7,
+          "tractorHitch": [
+            -28,
+            0.4000000059604645,
+            13.80711122555203
+          ],
+          "trailerHitch": [
+            -28,
+            0.4000000059604645,
+            13.807111950344511
+          ],
+          "nodeCounts": {
+            "tractor": 1,
+            "trailer": 1
+          },
+          "wheelAngles": {
+            "tractorFront": [
+              1.1543543543543553,
+              1.1543543543543553
+            ],
+            "tractorRear": [
+              1.1543543543543544,
+              1.1543543543543544
+            ],
+            "trailerFront": [
+              1.3777777777777789,
+              1.3777777777777789
+            ],
+            "trailerRear": [
+              1.3777777777777789,
+              1.3777777777777789
+            ]
+          },
+          "bogieAngle": 0,
+          "state": {
+            "taskId": "BAG-001",
+            "vehicleId": "BT-01",
+            "phase": "to_service",
+            "runState": "running",
+            "elapsed": 1.033333333333332,
+            "phaseElapsed": 1.033333333333332,
+            "distance": 0.4271111111111111,
+            "progress": 0.006906139734317259,
+            "tractor": {
+              "x": -28,
+              "z": 14.427111111111111,
+              "heading": 0
+            },
+            "trailer": {
+              "x": -28,
+              "z": 10.187111111111113,
+              "heading": 0,
+              "bogieHeading": 0
+            },
+            "speed": 0.8266666666666681,
+            "steering": 0,
+            "wheelDistances": {
+              "tractorRear": 0.4271111111111111,
+              "tractorFront": 0.42711111111111144,
+              "trailerRear": 0.42711111111111144,
+              "trailerFront": 0.42711111111111144
+            },
+            "events": [
+              {
+                "time": 0,
+                "message": "BAG-001 开始，前往服务区"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "页面离开前台，已自动暂停"
+              },
+              {
+                "time": 0.6250000000000002,
+                "message": "任务继续"
+              }
+            ],
+            "error": null
+          }
+        },
+        "validation": {
+          "ok": true,
+          "errors": [],
+          "steps": 5886,
+          "duration": 49.04999999999786,
+          "routeDistance": 93.6946861306418,
+          "minClearance": 0.2028502495362347,
+          "minObstacleClearance": 1.1579761870773981,
+          "minTrainClearance": 0.2028502495362347,
+          "clearanceMargin": 0.05,
+          "minimumTurnRadius": 6,
+          "maxArticulation": 0.3664136464319192,
+          "maxArticulationDegrees": 20.993955496547745,
+          "maxTractorTrailerAngle": 0.7044114703334863,
+          "hitchErrors": {
+            "drawbarMax": 7.32410687763558e-15,
+            "wheelbaseMax": 3.552713678800501e-15,
+            "max": 7.32410687763558e-15
+          },
+          "maxSpeed": 3,
+          "maxLateralAcceleration": 0.6500000000000001,
+          "collisions": []
+        },
+        "pendingRAF": 1,
+        "canvasCount": 1,
+        "visibility": "visible",
+        "visibilityEvents": [
+          {
+            "time": 3770.600000023842,
+            "state": "hidden",
+            "hidden": true,
+            "isTrusted": true
+          },
+          {
+            "time": 5930.600000023842,
+            "state": "visible",
+            "hidden": false,
+            "isTrusted": true
+          }
+        ],
+        "browserTime": 7062.9000000059605
+      },
+      "startupAttempts": []
+    }
+  },
+  "cycles": [],
+  "recording": {},
+  "limitations": [],
+  "passed": true,
+  "expected": {
+    "taskId": "BAG-001",
+    "vehicleId": "BT-01",
+    "parking": {
+      "x": -28,
+      "z": 14,
+      "heading": 0
+    },
+    "service": {
+      "x": -9,
+      "z": 8,
+      "heading": 3.141592653589793
+    },
+    "motion": {
+      "maxSpeed": 3,
+      "acceleration": 0.8,
+      "deceleration": 1.1,
+      "lateralAcceleration": 0.65,
+      "maxSteeringRate": 1.4,
+      "minTurnRadius": 6,
+      "serviceSeconds": 6,
+      "positionTolerance": 0.08,
+      "angleTolerance": 0.03490658503988659,
+      "speedTolerance": 0.02,
+      "maxArticulation": 1.413716694115407
+    }
+  },
+  "modelResources": [
+    {
+      "filename": "public/models/airport/apron.glb",
+      "bytes": 2326692
+    },
+    {
+      "filename": "public/models/airport/terminal.glb",
+      "bytes": 401176
+    },
+    {
+      "filename": "public/models/airport/aircraft.glb",
+      "bytes": 2543944
+    },
+    {
+      "filename": "public/models/airport/bridge.glb",
+      "bytes": 473220
+    },
+    {
+      "filename": "public/models/airport/vehicles.glb",
+      "bytes": 825332
+    }
+  ],
+  "firstScreenGlbBytes": 6570364,
+  "finishedAt": "2026-10-14T16:10:40.577Z"
+}

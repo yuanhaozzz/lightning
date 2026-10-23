@@ -1,0 +1,39 @@
+{
+  "url": "http://127.0.0.1:5190/map/amd",
+  "passed": true,
+  "checks": [
+    "Direct /map/amd load, title, WebGL render and isolated route bundle",
+    "Production preview loads without development client or toolbar",
+    "Energy effect toggle changes accessible state",
+    "Temporary WebGL context loss restores the scene and controls",
+    "Typography loads locally without Google Fonts network requests",
+    "Pinned scroll narrative, exploded/core chapters and reverse keyboard navigation",
+    "Scenario tabs respond to pointer and keyboard",
+    "Use-case selector, native radio keyboard navigation, recommendation and product anchor",
+    "Compare 3 / 0 / 1 selections, specs, escape close and restored focus/scroll",
+    "Compact desktop chapter remains within viewport with 700px scroll travel",
+    "Mobile chapter selection updates the model without pinned scrolling",
+    "1920 / 1024 / 768 / 390 / 360 responsive layout, mobile menu and comparison",
+    "Reduced-motion startup retains functional WebGL scene",
+    "No uncaught browser errors",
+    "Failed 3D resource retains product content and comparison",
+    "WebGL unavailable: static visual fallback and working comparison"
+  ],
+  "errors": [],
+  "screenshots": [
+    "desktop.png",
+    "desktop-full.png",
+    "anatomy-exploded.png",
+    "anatomy-core.png",
+    "scenario-creation.png",
+    "scenario-work.png",
+    "scenario-gaming.png",
+    "products.png",
+    "products-768.png",
+    "products-360.png",
+    "anatomy-compact.png",
+    "mobile-anatomy.png",
+    "mobile.png",
+    "mobile-full.png"
+  ]
+}

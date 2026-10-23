@@ -1,0 +1,17 @@
+{
+  "name": "qingdao-cps-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=24.15.0 <25" },
+  "workspaces": ["apps/api", "apps/admin"],
+  "scripts": {
+    "dev:api": "pnpm --filter @cps/api dev",
+    "dev:admin": "pnpm --filter @cps/admin dev",
+    "build": "pnpm --filter @cps/api build && pnpm --filter @cps/admin build",
+    "test": "pnpm --filter @cps/api test && node --test apps/miniprogram/tests/flow.test.cjs",
+    "start": "pnpm --filter @cps/api start",
+    "backup": "pnpm --filter @cps/api backup"
+  }
+}

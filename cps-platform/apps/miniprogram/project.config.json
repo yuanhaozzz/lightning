@@ -1,0 +1,15 @@
+{
+  "description": "青岛省心券原生微信小程序开发工程；touristappid 仅供本地演示",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "qingdao-cps-miniprogram",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "packOptions": { "ignore": [{ "type": "file", "value": "README.md" }, { "type": "folder", "value": "tests" }] }
+}

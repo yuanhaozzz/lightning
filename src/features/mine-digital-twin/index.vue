@@ -282,7 +282,9 @@ function applyLayers() {
   if (!layers.buildings && drilldown?.snapshot.active) { clearSelection(); drilldown.restore(false); powerRoofVisible.value=true; syncDrilldown() }
   interaction?.setLayers(layers)
   if (selected.value && !layers[selected.value.layer]) clearSelection()
-  if (labelRenderer) labelRenderer.domElement.style.visibility = layers.labels ? 'visible' : 'hidden'
+  // Cards set their own visibility during collision layout; use display on the
+  // owning layer so no child can override a disabled label layer.
+  if (labelRenderer) labelRenderer.domElement.style.display = layers.labels ? '' : 'none'
   if (drilldown && park) park.protection.object('spd-lv-01')!.visible = layers.protection
   if (renderer) renderer.shadowMap.needsUpdate = true
   needsRender = true
@@ -475,20 +477,24 @@ onMounted(async () => {
     scene.background = new THREE.Color('#e3e7e3')
     camera = new THREE.PerspectiveCamera(40, 1, 0.5, 5000)
     renderer = new THREE.WebGLRenderer({ antialias: true })
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5))
+    // Cap the drawing buffer independently of CSS/UI resolution. At 1080p,
+    // DPR 1.5 otherwise shades 4.67 million pixels before antialiasing.
+    const pixelBudgetRatio = () => Math.min(window.devicePixelRatio, 1.5,
+      Math.sqrt(2_400_000 / Math.max(1, container.clientWidth * container.clientHeight)))
+    renderer.setPixelRatio(pixelBudgetRatio())
     renderer.localClippingEnabled=true
     if(import.meta.env.DEV)factoryMeter=createFactoryPerformance(renderer)
     renderer.outputColorSpace = THREE.SRGBColorSpace
     renderer.toneMapping = THREE.ACESFilmicToneMapping
-    renderer.toneMappingExposure = .88
+    renderer.toneMappingExposure = .86
     renderer.shadowMap.enabled = true
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap
+    renderer.shadowMap.type = THREE.PCFShadowMap
     renderer.shadowMap.autoUpdate = false
     const room = new RoomEnvironment()
     const pmrem = new THREE.PMREMGenerator(renderer)
     environment = pmrem.fromScene(room, 0.04)
     scene.environment = environment.texture
-    scene.environmentIntensity = 0.48
+    scene.environmentIntensity = 0.32
     room.dispose()
     pmrem.dispose()
     renderer.domElement.setAttribute('aria-label', '煤矿地面工业园区三维布局')
@@ -516,9 +522,9 @@ onMounted(async () => {
       needsRender = true
       cameraMoved = true
     })
-    const ambient = new THREE.HemisphereLight(0xc6def0, 0x667267, .58)
+    const ambient = new THREE.HemisphereLight(0xc6def0, 0x667267, .46)
     scene.add(ambient)
-    const sun = new THREE.DirectionalLight(0xffedce, 2.85)
+    const sun = new THREE.DirectionalLight(0xffedce, 2.1)
     sun.position.set(-65, 70, 40)
     sun.target.position.set(0, 0, 0)
     sun.castShadow = true
@@ -594,6 +600,7 @@ onMounted(async () => {
       camera.clearViewOffset()
       camera.updateProjectionMatrix()
       renderer.setSize(width, height)
+      renderer.setPixelRatio(pixelBudgetRatio())
       labelRenderer.setSize(width, height)
       if (drilldown?.snapshot.active) { sceneView.value='manual' }
       else if (activeView==='overview') restoreOverview(false,false)
@@ -662,12 +669,12 @@ onMounted(async () => {
       if(measureDrill)drillMeter?.end()
       if (import.meta.env.DEV) cameraPose.value = camera.position.toArray().map(v => v.toFixed(3)).join(',')
       const submitted = import.meta.env.DEV ? performance.now() : 0
+      telemetryLabels?.update(factoryState.value, demoState.value, {
+        camera, width: container.clientWidth, height: container.clientHeight,
+        overview: sceneView.value === 'overview', compact: shellCompact.value,
+        layers, drillActive: drillActive.value, selectedId: selected.value?.id ?? null,
+      })
       if (layers.labels) {
-        telemetryLabels?.update(factoryState.value, demoState.value, {
-          camera, width: container.clientWidth, height: container.clientHeight,
-          overview: sceneView.value === 'overview', compact: shellCompact.value,
-          layers, drillActive: drillActive.value, selectedId: selected.value?.id ?? null,
-        })
         labelRenderer?.render(scene, camera)
         arrangeLabels()
         telemetryLabels?.layout()
@@ -972,11 +979,12 @@ button[aria-expanded="true"], button[aria-pressed="true"] { background: #dce9e5;
 /* Phase-one command cockpit: bridge existing controls into the same design system. */
 .mine-view { background:var(--dt-bg); color:var(--dt-text); font-family:var(--dt-font); }
 .mine-canvas:after { content:''; position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg,#05233a22 0%,transparent 23%,transparent 78%,#0317254d 100%); }
-.mine-view .glass { color:var(--dt-text); background:var(--dt-panel); border:1px solid var(--dt-border); box-shadow:var(--dt-shadow); border-radius:5px; backdrop-filter:blur(16px); }
+.mine-view .glass { color:var(--dt-text); background:var(--dt-panel); border:1px solid var(--dt-border); box-shadow:var(--dt-shadow); border-radius:5px; backdrop-filter:none; }
 .mine-view button,.mine-view select { color:var(--dt-text); }
 .mine-view button:hover { background:#2186ca26; }
 .mine-view button[aria-expanded="true"],.mine-view button[aria-pressed="true"] { background:#177aca32; }
 .mine-toolbar { bottom:105px; padding:5px; gap:2px; z-index:4; }
+.mine-view .mine-toolbar.glass { backdrop-filter:none; background:linear-gradient(120deg,#0b304bf5,#041c30f5); box-shadow:0 3px 12px #00132244,inset 0 1px #74d7ff25; }
 .mine-toolbar button { padding:8px 11px; font-size:11px; }
 .mine-toolbar .primary { background:#197caa58; }
 .mine-popover { bottom:calc(100% + 12px); }
@@ -991,7 +999,7 @@ button[aria-expanded="true"], button[aria-pressed="true"] { background: #dce9e5;
 .drill-breadcrumb button[aria-current=step] { color:var(--dt-cyan); background:#2483b528; }
 .drill-breadcrumb span,.drill-breadcrumb small { color:var(--dt-sub); }
 .mine-message { top:92px; z-index:5; padding:12px 18px; background:var(--dt-panel); border:1px solid var(--dt-border); }
-.mine-canvas :deep(.mine-label) { background:linear-gradient(120deg,#0b2c45e8,#0a243bcc); color:#d9edf9; border:1px solid #559ec16b; border-left:2px solid #69c6ec; padding:6px 10px; border-radius:3px; box-shadow:0 3px 14px #00172524; font-size:11px; backdrop-filter:blur(7px); }
+.mine-canvas :deep(.mine-label) { background:linear-gradient(120deg,#0b2c45e8,#0a243bcc); color:#d9edf9; border:1px solid #559ec16b; border-left:2px solid #69c6ec; padding:6px 10px; border-radius:3px; box-shadow:0 3px 14px #00172524; font-size:11px; backdrop-filter:none; }
 .mine-canvas :deep(.mine-label--zone) { color:#eaf7ff; background:linear-gradient(110deg,#123b58eb,#0a2941d9); border-color:#558dab8a; border-left-color:#4aceff; font-size:12px; padding:8px 13px; }
 .mine-canvas :deep(.mine-label--key) { color:#edfbff; }
 .mine-canvas :deep(.mine-label--monitoring[data-demo-status=normal]) { border-color:#328e806b; color:#a4dec8; }

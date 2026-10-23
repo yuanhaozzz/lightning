@@ -1,0 +1,23 @@
+{
+  "pages": ["pages/home/index", "pages/offer/index", "pages/guide/index"],
+  "window": {
+    "navigationBarTitleText": "青岛省心券",
+    "navigationBarBackgroundColor": "#f6f8f5",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f8f5",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#77847d",
+    "selectedColor": "#12654f",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/index", "text": "发现优惠" },
+      { "pagePath": "pages/guide/index", "text": "使用与帮助" }
+    ]
+  },
+  "usingComponents": { "mode-banner": "/components/mode-banner/index" },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

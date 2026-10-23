@@ -1,0 +1,1 @@
+<view wx:if="{{mode !== 'live'}}" class="mode-space"><view class="mode-banner"><text class="mode-dot"></text><text>演示模式 · 优惠为示例，暂不可领取</text></view></view>

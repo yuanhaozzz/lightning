@@ -1,0 +1,1171 @@
+{
+  "version": "0.2.0",
+  "executedAtUtc": "2026-10-14T15:49:02.563Z",
+  "execution": {
+    "node": "v22.22.1",
+    "platform": "win32",
+    "threeRevision": "186"
+  },
+  "method": "Three.js GLTFLoader parses actual exported binary files; CPU world vertices and in-memory joint poses",
+  "tolerance_m": 0.0001,
+  "assets": {
+    "vehicles": {
+      "file": "vehicles.glb",
+      "bytes": 825332,
+      "modifiedAtUtc": "2026-10-14T15:39:39.372Z",
+      "sha256": "a792f0f28b5884d12c0345b2362a4f96557d5a2b2fbf345274fe3f9798258932"
+    },
+    "aircraft": {
+      "file": "aircraft.glb",
+      "bytes": 2543944,
+      "modifiedAtUtc": "2026-10-14T15:39:11.657Z",
+      "sha256": "2f882d77f40fab56e2a68e04298514750dec9f78fd6aa8fbb0a9cd7fc85a2fa5"
+    }
+  },
+  "checks": [
+    {
+      "name": "vehicles: byte size matches completed export",
+      "passed": true,
+      "actual": 825332,
+      "expected": 825332
+    },
+    {
+      "name": "aircraft: byte size matches completed export",
+      "passed": true,
+      "actual": 2543944,
+      "expected": 2543944
+    },
+    {
+      "name": "semantic node: BaggageTractor_ROOT",
+      "passed": true,
+      "parent": "GroundEquipment_A21_ROOT",
+      "localPosition_m": [
+        -28,
+        0,
+        14
+      ],
+      "positionError_m": 0,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_Front_NegX_Steer",
+      "passed": true,
+      "parent": "BaggageTractor_ROOT",
+      "localPosition_m": [
+        -0.6700000762939453,
+        0.3700000047683716,
+        1.8299999237060547
+      ],
+      "positionError_m": 4.768371586472142e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_Front_NegX_Roll",
+      "passed": true,
+      "parent": "BaggageTractor_Front_NegX_Steer",
+      "localPosition_m": [
+        0,
+        0,
+        0
+      ],
+      "positionError_m": 0,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_Front_PosX_Steer",
+      "passed": true,
+      "parent": "BaggageTractor_ROOT",
+      "localPosition_m": [
+        0.6700000762939453,
+        0.3700000047683716,
+        1.8299999237060547
+      ],
+      "positionError_m": 4.768371586472142e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_Front_PosX_Roll",
+      "passed": true,
+      "parent": "BaggageTractor_Front_PosX_Steer",
+      "localPosition_m": [
+        0,
+        0,
+        0
+      ],
+      "positionError_m": 0,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_Rear_NegX_Roll",
+      "passed": true,
+      "parent": "BaggageTractor_ROOT",
+      "localPosition_m": [
+        -0.6700000762939453,
+        0.3700000047683716,
+        0
+      ],
+      "positionError_m": 4.768371586472142e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_Rear_PosX_Roll",
+      "passed": true,
+      "parent": "BaggageTractor_ROOT",
+      "localPosition_m": [
+        0.6700000762939453,
+        0.3700000047683716,
+        0
+      ],
+      "positionError_m": 4.768371586472142e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageTractor_RearHitch_anchor",
+      "passed": true,
+      "parent": "BaggageTractor_ROOT",
+      "localPosition_m": [
+        0,
+        0.4000000059604645,
+        -0.619999885559082
+      ],
+      "positionError_m": 4.4409179666971e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_ROOT",
+      "passed": true,
+      "parent": "GroundEquipment_A21_ROOT",
+      "localPosition_m": [
+        -28,
+        0,
+        9.760000228881836
+      ],
+      "positionError_m": 1.1181633396972757e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_FrontBogie",
+      "passed": true,
+      "parent": "BaggageCart_1_ROOT",
+      "localPosition_m": [
+        0,
+        0,
+        2.1000003814697266
+      ],
+      "positionError_m": 1.4697265626750777e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_Drawbar",
+      "passed": true,
+      "parent": "BaggageCart_1_FrontBogie",
+      "localPosition_m": [
+        0,
+        0,
+        0
+      ],
+      "positionError_m": 0,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_Front_NegX_Roll",
+      "passed": true,
+      "parent": "BaggageCart_1_FrontBogie",
+      "localPosition_m": [
+        -0.9099998474121094,
+        0.3100000023841858,
+        0
+      ],
+      "positionError_m": 2.5878906795284706e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_Front_PosX_Roll",
+      "passed": true,
+      "parent": "BaggageCart_1_FrontBogie",
+      "localPosition_m": [
+        0.9099998474121094,
+        0.3100000023841858,
+        0
+      ],
+      "positionError_m": 2.5878906795284706e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_FrontHitch_anchor",
+      "passed": true,
+      "parent": "BaggageCart_1_FrontBogie",
+      "localPosition_m": [
+        0,
+        0.4000000059604645,
+        1.5200004577636719
+      ],
+      "positionError_m": 4.0395355394018395e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_Rear_NegX_Roll",
+      "passed": true,
+      "parent": "BaggageCart_1_ROOT",
+      "localPosition_m": [
+        -0.9099998474121094,
+        0.3100000023841858,
+        0
+      ],
+      "positionError_m": 2.5878906795284706e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_Rear_PosX_Roll",
+      "passed": true,
+      "parent": "BaggageCart_1_ROOT",
+      "localPosition_m": [
+        0.9099998474121094,
+        0.3100000023841858,
+        0
+      ],
+      "positionError_m": 2.5878906795284706e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "semantic node: BaggageCart_1_RearHitch_anchor",
+      "passed": true,
+      "parent": "BaggageCart_1_ROOT",
+      "localPosition_m": [
+        0,
+        0.4000000059604645,
+        -0.7700004577636719
+      ],
+      "positionError_m": 4.0395355394018395e-9,
+      "rotationError_rad": 0,
+      "scaleError": 0
+    },
+    {
+      "name": "initial world pose: BaggageTractor_ROOT",
+      "passed": true,
+      "actual": [
+        -28,
+        0,
+        14
+      ],
+      "expected": [
+        -28,
+        0,
+        14
+      ]
+    },
+    {
+      "name": "actual vertex bounds: BaggageTractor_ROOT",
+      "passed": true,
+      "actual": {
+        "min_m": [
+          -28.800000190734863,
+          0,
+          13.189999163150787
+        ],
+        "max_m": [
+          -27.199999809265137,
+          2.3899999856948853,
+          16.334999561309814
+        ],
+        "size_m": [
+          1.6000003814697266,
+          2.3899999856948853,
+          3.145000398159027
+        ]
+      },
+      "expected": {
+        "min_m": [
+          -28.80000114,
+          0,
+          13.18999958
+        ],
+        "max_m": [
+          -27.19999886,
+          2.38999987,
+          16.33499908
+        ],
+        "size_m": [
+          1.6000022799999982,
+          2.38999987,
+          3.144999499999999
+        ]
+      }
+    },
+    {
+      "name": "initial world pose: BaggageCart_1_ROOT",
+      "passed": true,
+      "actual": [
+        -28,
+        0,
+        9.760000228881836
+      ],
+      "expected": [
+        -28,
+        0,
+        9.76000023
+      ]
+    },
+    {
+      "name": "actual vertex bounds: BaggageCart_1_ROOT",
+      "passed": true,
+      "actual": {
+        "min_m": [
+          -29.019999980926514,
+          0,
+          8.99000072479248
+        ],
+        "max_m": [
+          -26.980000019073486,
+          1.8499999642372131,
+          13.379998197740642
+        ],
+        "size_m": [
+          2.0399999618530273,
+          1.8499999642372131,
+          4.389997472948162
+        ]
+      },
+      "expected": {
+        "min_m": [
+          -29.02000046,
+          0,
+          8.99000072
+        ],
+        "max_m": [
+          -26.97999954,
+          1.8499999,
+          13.37999821
+        ],
+        "size_m": [
+          2.040000919999997,
+          1.8499999,
+          4.389997490000001
+        ]
+      }
+    },
+    {
+      "name": "initial world pose: BaggageCart_2_ROOT",
+      "passed": true,
+      "actual": [
+        -34,
+        0,
+        18
+      ],
+      "expected": [
+        -34,
+        0,
+        18
+      ]
+    },
+    {
+      "name": "actual vertex bounds: BaggageCart_2_ROOT",
+      "passed": true,
+      "actual": {
+        "min_m": [
+          -35.019999980926514,
+          0,
+          16.179999351501465
+        ],
+        "max_m": [
+          -32.980000019073486,
+          1.8499999642372131,
+          20.519999504089355
+        ],
+        "size_m": [
+          2.0399999618530273,
+          1.8499999642372131,
+          4.340000152587891
+        ]
+      },
+      "expected": {
+        "min_m": [
+          -35.02000046,
+          0,
+          16.18000031
+        ],
+        "max_m": [
+          -32.97999954,
+          1.8499999,
+          20.52000046
+        ],
+        "size_m": [
+          2.040000919999997,
+          1.8499999,
+          4.340000149999998
+        ]
+      }
+    },
+    {
+      "name": "initial world hitch coincidence",
+      "passed": true,
+      "error_m": 9.5367431640625e-7,
+      "position_m": [
+        -28,
+        0.4000000059604645,
+        13.380000114440918
+      ]
+    },
+    {
+      "name": "actual tyre and pivot: BaggageTractor_Front_PosX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3700000047683716,
+      "measuredWidth_m": 0.2199993133544922,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageTractor_Front_NegX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3700000047683716,
+      "measuredWidth_m": 0.2199993133544922,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageTractor_Rear_PosX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3700000047683716,
+      "measuredWidth_m": 0.2199993133544922,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageTractor_Rear_NegX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3700000047683716,
+      "measuredWidth_m": 0.2199993133544922,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageCart_1_Front_PosX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3100000023841858,
+      "measuredWidth_m": 0.18000030517578125,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageCart_1_Front_NegX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3100000023841858,
+      "measuredWidth_m": 0.18000030517578125,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageCart_1_Rear_PosX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3100000023841858,
+      "measuredWidth_m": 0.18000030517578125,
+      "centreError_m": 0
+    },
+    {
+      "name": "actual tyre and pivot: BaggageCart_1_Rear_NegX_Roll",
+      "passed": true,
+      "groundY_m": 0,
+      "measuredRadius_m": 0.3100000023841858,
+      "measuredWidth_m": 0.18000030517578125,
+      "centreError_m": 0
+    },
+    {
+      "name": "exactly eight animated wheel groups",
+      "passed": true,
+      "count": 8
+    },
+    {
+      "name": "aircraft reference: Aircraft_L1_anchor",
+      "passed": true,
+      "position_m": [
+        1.980802059173584,
+        4.324999809265137,
+        13.5
+      ],
+      "error_m": 1.997030324906431e-7,
+      "parent": "Aircraft_A320neo_root"
+    },
+    {
+      "name": "aircraft reference: Aircraft_forward_cargo_anchor",
+      "passed": true,
+      "position_m": [
+        -1.6752179861068726,
+        3.059999942779541,
+        8.600000381469727
+      ],
+      "error_m": 3.859875030100948e-7,
+      "parent": "Aircraft_A320neo_root"
+    },
+    {
+      "name": "two grounded aircraft chocks: Aircraft_Nose_NegX_Chocks",
+      "passed": true,
+      "count": 2,
+      "groundY_m": 0,
+      "tyreGroundY_m": 0,
+      "peakTreadGaps_m": [
+        0.014674958406917035,
+        0.01467544512377255
+      ]
+    },
+    {
+      "name": "two grounded aircraft chocks: Aircraft_Nose_PosX_Chocks",
+      "passed": true,
+      "count": 2,
+      "groundY_m": 0,
+      "tyreGroundY_m": 0,
+      "peakTreadGaps_m": [
+        0.014674958406917035,
+        0.0146754451237739
+      ]
+    },
+    {
+      "name": "two grounded aircraft chocks: Aircraft_Port_inner_Chocks",
+      "passed": true,
+      "count": 2,
+      "groundY_m": 0,
+      "tyreGroundY_m": 0,
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251614
+      ]
+    },
+    {
+      "name": "two grounded aircraft chocks: Aircraft_Port_outer_Chocks",
+      "passed": true,
+      "count": 2,
+      "groundY_m": 0,
+      "tyreGroundY_m": 0,
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251597
+      ]
+    },
+    {
+      "name": "two grounded aircraft chocks: Aircraft_Starboard_outer_Chocks",
+      "passed": true,
+      "count": 2,
+      "groundY_m": 0,
+      "tyreGroundY_m": 0,
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251614
+      ]
+    },
+    {
+      "name": "two grounded aircraft chocks: Aircraft_Starboard_inner_Chocks",
+      "passed": true,
+      "count": 2,
+      "groundY_m": 0,
+      "tyreGroundY_m": 0,
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251614
+      ]
+    },
+    {
+      "name": "six aircraft wheels have twelve chocks",
+      "passed": true,
+      "wheels": 6,
+      "chocks": 12
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageTractor_Front_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageTractor_Front_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageTractor_Rear_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageTractor_Rear_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageCart_1_Front_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageCart_1_Front_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageCart_1_Rear_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "steering does not orbit tyre: BaggageCart_1_Rear_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageTractor_Front_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageTractor_Front_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageTractor_Rear_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageTractor_Rear_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageCart_1_Front_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageCart_1_Front_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageCart_1_Rear_PosX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "wheel roll stays on its axle: BaggageCart_1_Rear_NegX_Roll",
+      "passed": true,
+      "centreShift_m": 0
+    },
+    {
+      "name": "cart front bogie carries wheel: PosX",
+      "passed": true,
+      "error_m": 4.5078928647166684e-7,
+      "expectedCentre_m": [
+        -27.130643794895697,
+        0.31,
+        11.591076840820017
+      ]
+    },
+    {
+      "name": "cart front bogie carries wheel: NegX",
+      "passed": true,
+      "error_m": 3.6661263051235025e-7,
+      "expectedCentre_m": [
+        -28.869356205104303,
+        0.31,
+        12.128923616943656
+      ]
+    },
+    {
+      "name": "drawbar hitch follows front bogie",
+      "passed": true,
+      "error_m": 8.299094355697868e-7
+    },
+    {
+      "name": "steer/roll/bogie leave rigid bodies and parked cart unchanged",
+      "passed": true,
+      "maxMatrixError": 0,
+      "checkedMeshes": 25
+    },
+    {
+      "name": "restoring in-memory poses restores hitch coincidence",
+      "passed": true,
+      "error_m": 9.5367431640625e-7
+    }
+  ],
+  "failures": [],
+  "sourceInterface": {
+    "path": "assets/blender/vehicle-interface.json",
+    "sha256": "198ca6fc90d945fce944ecd55707f14f6dcbad93c2a53d3a47da817f9132c89c"
+  },
+  "blenderVerification": {
+    "meshTransformPreservationMaxError": 6.357302595461078e-8,
+    "initialHitchWorldError_m": 9.5367431640625e-7,
+    "vehicleTyreGroundMaxError_m": 7.2123773620091924e-9,
+    "aircraftChocks": {
+      "executed": true,
+      "method": "actual world tyre mesh BVH; chock face centres and edge midpoints; Blender source geometry",
+      "wheels": [
+        {
+          "wheel": "Nose_wheel_-1",
+          "chockGroup": "Aircraft_Nose_NegX_Chocks",
+          "minimumSampledTreadGap_m": 0.014674915932118893,
+          "aircraftTyreGroundError_m": 0,
+          "chockGroundError_m": 0
+        },
+        {
+          "wheel": "Nose_wheel_1",
+          "chockGroup": "Aircraft_Nose_PosX_Chocks",
+          "minimumSampledTreadGap_m": 0.014674915932118893,
+          "aircraftTyreGroundError_m": 0,
+          "chockGroundError_m": 0
+        },
+        {
+          "wheel": "Port_main_wheel_1",
+          "chockGroup": "Aircraft_Port_inner_Chocks",
+          "minimumSampledTreadGap_m": 0.021530698984861374,
+          "aircraftTyreGroundError_m": 0,
+          "chockGroundError_m": 0
+        },
+        {
+          "wheel": "Port_main_wheel_2",
+          "chockGroup": "Aircraft_Port_outer_Chocks",
+          "minimumSampledTreadGap_m": 0.021530698984861374,
+          "aircraftTyreGroundError_m": 0,
+          "chockGroundError_m": 0
+        },
+        {
+          "wheel": "Starboard_main_wheel_1",
+          "chockGroup": "Aircraft_Starboard_outer_Chocks",
+          "minimumSampledTreadGap_m": 0.021530698984861374,
+          "aircraftTyreGroundError_m": 0,
+          "chockGroundError_m": 0
+        },
+        {
+          "wheel": "Starboard_main_wheel_2",
+          "chockGroup": "Aircraft_Starboard_inner_Chocks",
+          "minimumSampledTreadGap_m": 0.021530698984861374,
+          "aircraftTyreGroundError_m": 0,
+          "chockGroundError_m": 0
+        }
+      ]
+    },
+    "executedIn": "Blender 5.2.2 LTS",
+    "exported": false
+  },
+  "semanticNodeCount": 17,
+  "animatedWheels": [
+    {
+      "roll": "BaggageTractor_Front_PosX_Roll",
+      "tyre": "BaggageTractor_Front_PosX_tyre",
+      "centre_m": [
+        -27.329999923706055,
+        0.3700000047683716,
+        15.829999923706055
+      ],
+      "bounds": {
+        "min_m": [
+          -27.4399995803833,
+          0,
+          15.459999918937683
+        ],
+        "max_m": [
+          -27.22000026702881,
+          0.7400000095367432,
+          16.199999928474426
+        ],
+        "size_m": [
+          0.2199993133544922,
+          0.7400000095367432,
+          0.7400000095367432
+        ]
+      }
+    },
+    {
+      "roll": "BaggageTractor_Front_NegX_Roll",
+      "tyre": "BaggageTractor_Front_NegX_tyre",
+      "centre_m": [
+        -28.670000076293945,
+        0.3700000047683716,
+        15.829999923706055
+      ],
+      "bounds": {
+        "min_m": [
+          -28.77999973297119,
+          0,
+          15.459999918937683
+        ],
+        "max_m": [
+          -28.5600004196167,
+          0.7400000095367432,
+          16.199999928474426
+        ],
+        "size_m": [
+          0.2199993133544922,
+          0.7400000095367432,
+          0.7400000095367432
+        ]
+      }
+    },
+    {
+      "roll": "BaggageTractor_Rear_PosX_Roll",
+      "tyre": "BaggageTractor_Rear_PosX_tyre",
+      "centre_m": [
+        -27.329999923706055,
+        0.3700000047683716,
+        14
+      ],
+      "bounds": {
+        "min_m": [
+          -27.4399995803833,
+          0,
+          13.629999995231628
+        ],
+        "max_m": [
+          -27.22000026702881,
+          0.7400000095367432,
+          14.370000004768372
+        ],
+        "size_m": [
+          0.2199993133544922,
+          0.7400000095367432,
+          0.7400000095367432
+        ]
+      }
+    },
+    {
+      "roll": "BaggageTractor_Rear_NegX_Roll",
+      "tyre": "BaggageTractor_Rear_NegX_tyre",
+      "centre_m": [
+        -28.670000076293945,
+        0.3700000047683716,
+        14
+      ],
+      "bounds": {
+        "min_m": [
+          -28.77999973297119,
+          0,
+          13.629999995231628
+        ],
+        "max_m": [
+          -28.5600004196167,
+          0.7400000095367432,
+          14.370000004768372
+        ],
+        "size_m": [
+          0.2199993133544922,
+          0.7400000095367432,
+          0.7400000095367432
+        ]
+      }
+    },
+    {
+      "roll": "BaggageCart_1_Front_PosX_Roll",
+      "tyre": "BaggageCart_1_Front_PosX_tyre",
+      "centre_m": [
+        -27.09000015258789,
+        0.3100000023841858,
+        11.860000610351562
+      ],
+      "bounds": {
+        "min_m": [
+          -27.18000030517578,
+          0,
+          11.550000607967377
+        ],
+        "max_m": [
+          -27,
+          0.6200000047683716,
+          12.170000612735748
+        ],
+        "size_m": [
+          0.18000030517578125,
+          0.6200000047683716,
+          0.6200000047683716
+        ]
+      }
+    },
+    {
+      "roll": "BaggageCart_1_Front_NegX_Roll",
+      "tyre": "BaggageCart_1_Front_NegX_tyre",
+      "centre_m": [
+        -28.90999984741211,
+        0.3100000023841858,
+        11.860000610351562
+      ],
+      "bounds": {
+        "min_m": [
+          -29,
+          0,
+          11.550000607967377
+        ],
+        "max_m": [
+          -28.81999969482422,
+          0.6200000047683716,
+          12.170000612735748
+        ],
+        "size_m": [
+          0.18000030517578125,
+          0.6200000047683716,
+          0.6200000047683716
+        ]
+      }
+    },
+    {
+      "roll": "BaggageCart_1_Rear_PosX_Roll",
+      "tyre": "BaggageCart_1_Rear_PosX_tyre",
+      "centre_m": [
+        -27.09000015258789,
+        0.3100000023841858,
+        9.760000228881836
+      ],
+      "bounds": {
+        "min_m": [
+          -27.18000030517578,
+          0,
+          9.45000022649765
+        ],
+        "max_m": [
+          -27,
+          0.6200000047683716,
+          10.070000231266022
+        ],
+        "size_m": [
+          0.18000030517578125,
+          0.6200000047683716,
+          0.6200000047683716
+        ]
+      }
+    },
+    {
+      "roll": "BaggageCart_1_Rear_NegX_Roll",
+      "tyre": "BaggageCart_1_Rear_NegX_tyre",
+      "centre_m": [
+        -28.90999984741211,
+        0.3100000023841858,
+        9.760000228881836
+      ],
+      "bounds": {
+        "min_m": [
+          -29,
+          0,
+          9.45000022649765
+        ],
+        "max_m": [
+          -28.81999969482422,
+          0.6200000047683716,
+          10.070000231266022
+        ],
+        "size_m": [
+          0.18000030517578125,
+          0.6200000047683716,
+          0.6200000047683716
+        ]
+      }
+    }
+  ],
+  "aircraftAnchors": [
+    {
+      "node": "Aircraft_L1_anchor",
+      "position_m": [
+        1.980802059173584,
+        4.324999809265137,
+        13.5
+      ]
+    },
+    {
+      "node": "Aircraft_forward_cargo_anchor",
+      "position_m": [
+        -1.6752179861068726,
+        3.059999942779541,
+        8.600000381469727
+      ]
+    }
+  ],
+  "aircraftChocks": [
+    {
+      "group": "Aircraft_Nose_NegX_Chocks",
+      "wheel": "Nose_wheel_-1",
+      "count": 2,
+      "bounds": {
+        "min_m": [
+          -0.36500000953674316,
+          0,
+          12.670000076293945
+        ],
+        "max_m": [
+          -0.10499999672174454,
+          0.11999999731779099,
+          13.430000305175781
+        ],
+        "size_m": [
+          0.2600000128149986,
+          0.11999999731779099,
+          0.7600002288818359
+        ]
+      },
+      "peakTreadGaps_m": [
+        0.014674958406917035,
+        0.01467544512377255
+      ]
+    },
+    {
+      "group": "Aircraft_Nose_PosX_Chocks",
+      "wheel": "Nose_wheel_1",
+      "count": 2,
+      "bounds": {
+        "min_m": [
+          0.10499999672174454,
+          0,
+          12.670000076293945
+        ],
+        "max_m": [
+          0.36500000953674316,
+          0.11999999731779099,
+          13.430000305175781
+        ],
+        "size_m": [
+          0.2600000128149986,
+          0.11999999731779099,
+          0.7600002288818359
+        ]
+      },
+      "peakTreadGaps_m": [
+        0.014674958406917035,
+        0.0146754451237739
+      ]
+    },
+    {
+      "group": "Aircraft_Port_inner_Chocks",
+      "wheel": "Port_main_wheel_1",
+      "count": 2,
+      "bounds": {
+        "min_m": [
+          2.9200000762939453,
+          0,
+          -2.7300000190734863
+        ],
+        "max_m": [
+          3.3399999141693115,
+          0.1599999964237213,
+          -1.6699999570846558
+        ],
+        "size_m": [
+          0.4199998378753662,
+          0.1599999964237213,
+          1.0600000619888306
+        ]
+      },
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251614
+      ]
+    },
+    {
+      "group": "Aircraft_Port_outer_Chocks",
+      "wheel": "Port_main_wheel_2",
+      "count": 2,
+      "bounds": {
+        "min_m": [
+          3.5,
+          0,
+          -2.7300000190734863
+        ],
+        "max_m": [
+          3.9200000762939453,
+          0.1599999964237213,
+          -1.6699999570846558
+        ],
+        "size_m": [
+          0.4200000762939453,
+          0.1599999964237213,
+          1.0600000619888306
+        ]
+      },
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251597
+      ]
+    },
+    {
+      "group": "Aircraft_Starboard_outer_Chocks",
+      "wheel": "Starboard_main_wheel_1",
+      "count": 2,
+      "bounds": {
+        "min_m": [
+          -3.9200000762939453,
+          0,
+          -2.7300000190734863
+        ],
+        "max_m": [
+          -3.5,
+          0.1599999964237213,
+          -1.6699999570846558
+        ],
+        "size_m": [
+          0.4200000762939453,
+          0.1599999964237213,
+          1.0600000619888306
+        ]
+      },
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251614
+      ]
+    },
+    {
+      "group": "Aircraft_Starboard_inner_Chocks",
+      "wheel": "Starboard_main_wheel_2",
+      "count": 2,
+      "bounds": {
+        "min_m": [
+          -3.3399999141693115,
+          0,
+          -2.7300000190734863
+        ],
+        "max_m": [
+          -2.9200000762939453,
+          0.1599999964237213,
+          -1.6699999570846558
+        ],
+        "size_m": [
+          0.4199998378753662,
+          0.1599999964237213,
+          1.0600000619888306
+        ]
+      },
+      "peakTreadGaps_m": [
+        0.021530671826991605,
+        0.021530666450251614
+      ]
+    }
+  ],
+  "poseTest": {
+    "tractorSteering_rad": [
+      0.3,
+      0.34
+    ],
+    "wheelRollRange_rad": [
+      0.87,
+      1.64
+    ],
+    "cartFrontBogieYaw_rad": 0.3,
+    "writesToModelFiles": false,
+    "note": "Independent joint basis tests; the cart hitch is not constrained to a stationary tractor during the temporary bogie test. All poses restored."
+  },
+  "passed": true,
+  "summary": {
+    "checked": 65,
+    "passed": 65,
+    "failures": 0
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-14T15:29:50.932Z",
+  "modes": [
+    {
+      "headless": true,
+      "observations": [
+        {
+          "label": "one page",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": null
+        },
+        {
+          "label": "second bringToFront",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "first bringToFront",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "window minimized",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "window restored",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        }
+      ],
+      "version": "155.0.4283.45",
+      "window": {
+        "windowId": 160060044,
+        "bounds": {
+          "left": 10,
+          "top": 10,
+          "width": 640,
+          "height": 480,
+          "windowState": "normal"
+        }
+      },
+      "minimizedBounds": {
+        "bounds": {
+          "left": 10,
+          "top": 10,
+          "width": 640,
+          "height": 480,
+          "windowState": "minimized"
+        }
+      },
+      "minimizeWorks": false,
+      "tabWorks": false
+    },
+    {
+      "headless": false,
+      "observations": [
+        {
+          "label": "one page",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": null
+        },
+        {
+          "label": "second bringToFront",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "first bringToFront",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "window minimized",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "window restored",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        }
+      ],
+      "version": "155.0.4283.45",
+      "window": {
+        "windowId": 141574221,
+        "bounds": {
+          "left": -21845,
+          "top": -21845,
+          "width": 657,
+          "height": 569,
+          "windowState": "normal"
+        }
+      },
+      "minimizedBounds": {
+        "bounds": {
+          "left": -21845,
+          "top": -21845,
+          "width": 657,
+          "height": 569,
+          "windowState": "minimized"
+        }
+      },
+      "minimizeWorks": false,
+      "tabWorks": false
+    }
+  ]
+}

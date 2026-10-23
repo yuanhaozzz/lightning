@@ -228,3 +228,6 @@
 .command-bottom button.active {background:linear-gradient(0deg,#087fd0ca,#167bac68);box-shadow:inset 0 0 0 1px #5be3ff60,inset 0 1px #afefff55,0 2px 16px #069beb20;text-shadow:0 0 8px #8adfff44;}
 .command-bottom button.active svg {color:#d9f8ff;filter:drop-shadow(0 0 4px #53d0ffa1);}
 .command-corner-tools button {border-color:#65b8d981;background:linear-gradient(135deg,#164565d9,#03192ee8);box-shadow:inset 0 1px #a1e6ff24,0 5px 14px #03132338;}
+/* Stable glass compositing over a continuously changing WebGL surface. */
+.mine-view .command-header,.mine-view .command-profile,.mine-view .command-card,.mine-view .command-bottom,.mine-view .command-corner-tools button {backdrop-filter:none;}
+.mine-view .mine-toolbar.glass {backdrop-filter:none;background:linear-gradient(120deg,#0b304bf5,#041c30f5);}

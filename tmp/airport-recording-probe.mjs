@@ -1,0 +1,3 @@
+import {chromium} from 'file:///C:/Users/1/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs'
+const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true})
+try { const context=await browser.newContext({viewport:{width:1366,height:768},recordVideo:{dir:'tmp/airport-video-probe',size:{width:1366,height:768}}});const page=await context.newPage();await page.goto('about:blank');await page.waitForTimeout(1000);await context.close();console.log(await page.video().path()) } finally { await browser.close() }

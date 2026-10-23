@@ -93,7 +93,7 @@ export function createTerrainMaterial() {
         vec4 terrainDetail=terrainSample(uMineralDetail,vTerrain/12.0,terrainW);
         float detailFade=1.0-smoothstep(.9,4.0,length(fwidth(q)));
         diffuseColor.rgb=surface*(.91+.20*surfacePatch)*mix(vec3(1),mineral*1.55,detailFade*.78)*mix(vec3(.94),macroMineral*1.6,.31);
-        diffuseColor.rgb*=mix(1.0,terrainDetail.a,.4*detailFade);`)
+        diffuseColor.rgb*=mix(1.0,terrainDetail.a,.4*detailFade)*.68;`)
       .replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>
         roughnessFactor=clamp(mix(.96,terrainDetail.b,.8*detailFade)-rock*.08,.72,1.0);`)
       .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>

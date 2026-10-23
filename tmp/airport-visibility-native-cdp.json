@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-14T15:39:30.632Z",
+  "noDefaults": true,
+  "modes": [
+    {
+      "headless": true,
+      "observations": [
+        {
+          "label": "one page without Playwright focus override",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          },
+          "second": null
+        },
+        {
+          "label": "second real tab foreground",
+          "first": {
+            "state": "hidden",
+            "hidden": true,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 748
+              }
+            ]
+          },
+          "second": {
+            "state": "visible",
+            "hidden": false,
+            "events": []
+          }
+        },
+        {
+          "label": "first real tab foreground",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 748
+              },
+              {
+                "state": "visible",
+                "hidden": false,
+                "trusted": true,
+                "time": 1517.2000000178814
+              }
+            ]
+          },
+          "second": {
+            "state": "hidden",
+            "hidden": true,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 743.9000000059605
+              }
+            ]
+          }
+        },
+        {
+          "label": "real window minimized",
+          "first": {
+            "state": "hidden",
+            "hidden": true,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 748
+              },
+              {
+                "state": "visible",
+                "hidden": false,
+                "trusted": true,
+                "time": 1517.2000000178814
+              },
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 2244.9000000059605
+              }
+            ]
+          },
+          "second": {
+            "state": "hidden",
+            "hidden": true,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 743.9000000059605
+              }
+            ]
+          }
+        },
+        {
+          "label": "real window restored",
+          "first": {
+            "state": "visible",
+            "hidden": false,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 748
+              },
+              {
+                "state": "visible",
+                "hidden": false,
+                "trusted": true,
+                "time": 1517.2000000178814
+              },
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 2244.9000000059605
+              },
+              {
+                "state": "visible",
+                "hidden": false,
+                "trusted": true,
+                "time": 3038.2000000178814
+              }
+            ]
+          },
+          "second": {
+            "state": "hidden",
+            "hidden": true,
+            "events": [
+              {
+                "state": "hidden",
+                "hidden": true,
+                "trusted": true,
+                "time": 743.9000000059605
+              }
+            ]
+          }
+        }
+      ],
+      "window": {
+        "windowId": 1981225318,
+        "bounds": {
+          "left": -30000,
+          "top": -30000,
+          "width": 640,
+          "height": 480,
+          "windowState": "normal"
+        }
+      },
+      "tabWorks": true,
+      "minimizeWorks": true
+    }
+  ]
+}

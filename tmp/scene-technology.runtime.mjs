@@ -159,14 +159,15 @@ export function createSceneTechnology(parent) {
     });
     const flowMesh = addMesh(flowData, flowMaterial, 'technology-authored-process-flows');
     flowMesh.userData.sourcePaths = { coal: 'mine-factory-animation.bindings.json', power: 'generate_power_area.py/substation' };
-    // Rings mark a facility's ground contact rather than surrounding it with an
-    // opaque selection box. Five ellipses and paired tracking strokes are batched.
+    // Circular silos and rectangular facilities need different ground contours:
+    // an ellipse through a rectangular footing's corners gets hidden by the slab.
+    // The small Y offsets follow each authored plinth top; depth testing remains on.
     const facilities = [
-        { id: 'headframe-01', deviceIds: ['hoist-house-01'], radius: [9.1, 7.0], height: 24.0 },
-        { id: 'coal-silo-01', deviceIds: ['coal-silo-01'], radius: [6.3, 6.3], height: 11.8 },
-        { id: 'coal-silo-02', deviceIds: ['coal-silo-02'], radius: [6.3, 6.3], height: 11.8 },
-        { id: 'substation-01', deviceIds: ['power-transformer-01'], radius: [10.1, 7.6], height: 5.8 },
-        { id: 'distribution-01', deviceIds: Array.from({ length: 6 }, (_, i) => `power-cabinet-lv-${String(i + 1).padStart(2, '0')}`), radius: [10.1, 5.5], height: 5.2 },
+        { id: 'headframe-01', deviceIds: ['hoist-house-01'], radius: [9.5, 7.5], height: 24.0, groundY: .39, shape: 4 },
+        { id: 'coal-silo-01', deviceIds: ['coal-silo-01'], radius: [6.3, 6.3], height: 11.8, groundY: .16, shape: 2 },
+        { id: 'coal-silo-02', deviceIds: ['coal-silo-02'], radius: [6.3, 6.3], height: 11.8, groundY: .16, shape: 2 },
+        { id: 'substation-01', deviceIds: ['power-transformer-01'], radius: [11.2, 8.4], height: 5.8, groundY: .28, shape: 4 },
+        { id: 'distribution-01', deviceIds: Array.from({ length: 6 }, (_, i) => `power-cabinet-lv-${String(i + 1).padStart(2, '0')}`), radius: [10.8, 6.4], height: 5.2, groundY: .38, shape: 4 },
     ];
     const haloData = emptyData(), trackingData = emptyData();
     const facilityState = { value: new Float32Array(5) }, facilityPhase = { value: new Float32Array(5) };
@@ -177,41 +178,46 @@ export function createSceneTechnology(parent) {
         const origin = new THREE.Vector3(...asset.position);
         const [rx, rz] = facility.radius;
         for (const [x, z] of [[-1, -1], [1, -1], [1, 1], [-1, -1], [1, 1], [-1, 1]]) {
-            haloData.position.push(origin.x + x * rx * 1.14, .16, origin.z + z * rz * 1.14);
+            haloData.position.push(origin.x + x * rx * 1.14, facility.groundY, origin.z + z * rz * 1.14);
             haloData.trace.push(x * 1.14, z * 1.14);
             haloData.channel.push(index);
         }
         // Only two narrow tracks per facility. They sit outside the real footprint
         // and have depth testing, so industrial parts retain their material/detail.
         for (const sign of [-1, 1]) {
-            const a = origin.clone().add(new THREE.Vector3(sign * rx * .84, .18, -rz * .52));
+            const a = origin.clone().add(new THREE.Vector3(sign * rx * .97, facility.groundY, sign * rz * .24));
             const b = a.clone().add(new THREE.Vector3(0, facility.height, 0));
             for (const side of [new THREE.Vector3(1, 0, 0), new THREE.Vector3(0, 0, 1)])
-                ribbon(trackingData, a, b, side, .13, index);
+                ribbon(trackingData, a, b, side, .19, index);
+            // A restrained cap makes each spatial registration stroke legible without
+            // drawing a box or connecting across the building's upper silhouette.
+            ribbon(trackingData, b.clone().add(new THREE.Vector3(-.33, 0, 0)), b.clone().add(new THREE.Vector3(.33, 0, 0)), new THREE.Vector3(0, 1, 0), .085, index, facility.height);
         }
     }
-    const facilityUniforms = { uState: facilityState, uPhase: facilityPhase, uSelected: facilitySelected };
+    const facilityUniforms = { uState: facilityState, uPhase: facilityPhase, uSelected: facilitySelected, uShape: { value: new Float32Array(facilities.map(f => f.shape)) } };
     const haloMaterial = new THREE.ShaderMaterial({
         uniforms: facilityUniforms, vertexShader,
         fragmentShader: /* glsl */ `
       precision highp float;
-      uniform float uState[5]; uniform float uPhase[5]; uniform float uSelected;
+      uniform float uState[5]; uniform float uPhase[5]; uniform float uSelected; uniform float uShape[5];
       varying float vChannel; varying vec2 vTrace;
       void main(){
         int index=int(vChannel+.5);
         float selected=1.0-step(.25,abs(vChannel-uSelected));
         float fault=step(1.5,uState[index]);
-        float radius=length(vTrace);
+        float exponent=uShape[index];
+        float radius=pow(pow(abs(vTrace.x),exponent)+pow(abs(vTrace.y),exponent),1.0/exponent);
+        float aa=max(fwidth(radius),.002);
         float angle=atan(vTrace.y,vTrace.x)/6.2831853+.5;
         float outside=1.0-smoothstep(1.045,1.13,radius);
-        float core=1.0-smoothstep(.006,.024,abs(radius-.94));
-        float outer=1.0-smoothstep(.005,.014,abs(radius-1.025));
-        float inner=1.0-smoothstep(.006,.015,abs(radius-.85));
+        float core=1.0-smoothstep(.014,.014+aa*1.3,abs(radius-.94));
+        float outer=1.0-smoothstep(.005,.005+aa,abs(radius-1.025));
+        float inner=1.0-smoothstep(.006,.006+aa,abs(radius-.85));
         float ticks=1.0-smoothstep(.18,.24,fract(angle*48.0));
         float segments=1.0-smoothstep(.70,.77,fract(angle*8.0));
-        float glow=exp(-pow((radius-.94)/.075,2.0));
+        float glow=exp(-pow((radius-.94)/.085,2.0));
         float arc=1.0-smoothstep(.0,.12,fract(angle-uPhase[index]*.028));
-        float alpha=(core*(.61+arc*.32)+outer*segments*.48+inner*ticks*.5+glow*.25)*outside;
+        float alpha=(core*(.72+arc*.26)+outer*segments*.56+inner*ticks*.54+glow*.25)*outside;
         alpha*=1.0+selected*.17;
         vec3 color=mix(mix(vec3(.03,.55,.93),vec3(.37,.91,1.0),core*.84+arc*.12),vec3(.98,.42,.20),fault);
         gl_FragColor=vec4(color,alpha);
@@ -233,10 +239,10 @@ export function createSceneTechnology(parent) {
         float running=step(.5,uState[index])*(1.0-step(1.5,uState[index]));
         float fault=step(1.5,uState[index]);
         float edge=1.0-smoothstep(.02,1.0,abs(vTrace.y));
-        float core=1.0-smoothstep(.02,.22,abs(vTrace.y));
+        float core=1.0-smoothstep(.02,.38,abs(vTrace.y));
         float pulse=exp(-pow((fract((vTrace.x-uPhase[index]*1.7)/8.0)-.65)*8.0,2.0));
-        float fade=exp(-vTrace.x*.042);
-        float alpha=(edge*.12+core*.30+running*pulse*.32)*(1.0+selected*.3)*fade;
+        float fade=exp(-vTrace.x*.025);
+        float alpha=(edge*.18+core*.45+running*pulse*.26)*(1.0+selected*.2)*fade;
         gl_FragColor=vec4(mix(vec3(.18,.82,1.0),vec3(.98,.42,.20),fault),alpha);
       }
     `,
@@ -315,7 +321,7 @@ export function createSceneTechnology(parent) {
             coalPaths: bindings.conveyors.map(c => ({ id: c.id, from: c.from, to: c.to, arclengthMeters: c.length })),
             powerPaths: '现有变电站三相母线—隔离开关—断路器—变压器套管；仅沿已建模导体',
             electricalSpeed: '示意电流方向；不表示实际电流传播速度',
-            facilityHalos: facilities.map(f => ({ id: f.id, deviceIds: f.deviceIds })),
+            facilityHalos: facilities.map(f => ({ id: f.id, deviceIds: f.deviceIds, radius: f.radius, groundY: f.groundY, contourExponent: f.shape })),
         },
         dispose() {
             if (disposed)

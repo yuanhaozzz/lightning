@@ -1,0 +1,163 @@
+{
+  "result": "PASS",
+  "protectedFilesUnchanged": 18,
+  "layoutUnchanged": true,
+  "models": [
+    {
+      "file": "mine-substation.glb",
+      "triangles": 25784,
+      "meshes": 21,
+      "sourcePieces": 712,
+      "bytes": 1509588,
+      "entityIds": [
+        "power-transformer-01",
+        "substation-foundations",
+        "substation-inner-fence",
+        "substation-switch-bay-01"
+      ],
+      "bounds": {
+        "min": [
+          -9,
+          0.0299999937415123,
+          -6
+        ],
+        "max": [
+          9,
+          5.460000038146973,
+          6
+        ]
+      },
+      "materials": 11,
+      "embeddedImages": 15
+    },
+    {
+      "file": "mine-distribution-shell.glb",
+      "triangles": 3108,
+      "meshes": 8,
+      "sourcePieces": 179,
+      "bytes": 560484,
+      "entityIds": [
+        "distribution-shell"
+      ],
+      "bounds": {
+        "min": [
+          -9.440000534057617,
+          0.050000011920928955,
+          -4.599999904632568
+        ],
+        "max": [
+          9.100000381469727,
+          4.050000190734863,
+          4.599999904632568
+        ]
+      },
+      "materials": 8,
+      "embeddedImages": 15
+    },
+    {
+      "file": "mine-distribution-roof.glb",
+      "triangles": 2548,
+      "meshes": 4,
+      "sourcePieces": 109,
+      "bytes": 375184,
+      "entityIds": [
+        "distribution-roof"
+      ],
+      "bounds": {
+        "min": [
+          -9.199999809265137,
+          0.18000006675720215,
+          -4.795000076293945
+        ],
+        "max": [
+          9.199999809265137,
+          4.565000057220459,
+          4.795000076293945
+        ]
+      },
+      "materials": 4,
+      "embeddedImages": 9
+    },
+    {
+      "file": "mine-distribution-equipment.glb",
+      "triangles": 6152,
+      "meshes": 73,
+      "sourcePieces": 370,
+      "bytes": 617996,
+      "entityIds": [
+        "distribution-cable-trays",
+        "grounding-downlead-interface-01",
+        "grounding-monitor-reserve-01",
+        "grounding-test-point-01",
+        "power-cabinet-lv-01",
+        "power-cabinet-lv-02",
+        "power-cabinet-lv-03",
+        "power-cabinet-lv-04",
+        "power-cabinet-lv-05",
+        "power-cabinet-lv-06",
+        "power-cabinet-mv-01",
+        "power-cabinet-mv-02",
+        "power-cabinet-mv-03",
+        "power-cabinet-mv-04",
+        "power-cabinet-mv-05",
+        "power-cabinet-mv-06",
+        "spd-distribution"
+      ],
+      "bounds": {
+        "min": [
+          -9.6899995803833,
+          0.12000000476837158,
+          -2.575000047683716
+        ],
+        "max": [
+          6.550000190734863,
+          3.9049999713897705,
+          3.9225001335144043
+        ]
+      },
+      "materials": 7,
+      "embeddedImages": 9
+    }
+  ],
+  "totalTriangles": 37592,
+  "totalBytes": 3063252,
+  "selectableEntities": 16,
+  "cabinetRaycastIds": [
+    "power-cabinet-mv-01",
+    "power-cabinet-mv-02",
+    "power-cabinet-mv-03",
+    "power-cabinet-mv-04",
+    "power-cabinet-mv-05",
+    "power-cabinet-mv-06",
+    "power-cabinet-lv-01",
+    "power-cabinet-lv-02",
+    "power-cabinet-lv-03",
+    "power-cabinet-lv-04",
+    "power-cabinet-lv-05",
+    "power-cabinet-lv-06"
+  ],
+  "reserveRaycastIds": [
+    "spd-distribution",
+    "grounding-test-point-01",
+    "grounding-monitor-reserve-01",
+    "grounding-downlead-interface-01"
+  ],
+  "roofOcclusionChecks": 12,
+  "cabinetOverlaps": 0,
+  "groundingRoadOverlaps": 0,
+  "checks": {
+    "centralAisleMeters": 2.85,
+    "rearAccessMeters": 1.7249999999999999,
+    "westDoorClearWidth": 2.3,
+    "cabinetGapMeters": 0.12,
+    "indoorTopClearanceMeters": 0.33000000000000007,
+    "substationWestGateWidth": 3,
+    "actualFrontClearMeters": 2.700000010430813
+  },
+  "geometryChecks": {
+    "bareConductorToGroundedStructureMeters": 0.5473087096214294,
+    "triangleDistanceQueries": 113568,
+    "checked": "gantry, tank, conservator, radiators and grounded equipment bodies; intentional terminals excluded"
+  },
+  "limits": "Visual model and maintenance-space checks; not electrical design certification."
+}

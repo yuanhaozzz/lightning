@@ -11,7 +11,7 @@ export function frameOverview(
   height: number,
 ) {
   const portrait = width / height < 1
-  const elevation = THREE.MathUtils.degToRad(portrait ? 36 : 18)
+  const elevation = THREE.MathUtils.degToRad(portrait ? 36 : 16)
   const azimuth = THREE.MathUtils.degToRad(portrait ? 24 : 22)
   const direction = new THREE.Vector3(
     Math.sin(azimuth) * Math.cos(elevation),
@@ -20,7 +20,7 @@ export function frameOverview(
   )
   const target = new THREE.Vector3(0, 7, 0)
   const sideInset = width >= 1400 ? 318 : width >= 1100 ? 276 : 32
-  const margins = { left: sideInset, right: sideInset, top: width < 600 ? 155 : Math.min(350,height*.33), bottom: width < 600 ? 175 : 150 }
+  const margins = { left: sideInset, right: sideInset, top: width < 600 ? 155 : Math.min(370,height*.35), bottom: width < 600 ? 175 : 150 }
   const availableW = Math.max(100, width - margins.left - margins.right)
   const availableH = Math.max(100, height - margins.top - margins.bottom)
   camera.clearViewOffset()
@@ -47,5 +47,5 @@ export function frameOverview(
   const offsetX = (box.left + box.right) / 2 - contentCenterX
   const offsetY = (box.top + box.bottom) / 2 - contentCenterY
   camera.setViewOffset(width, height, offsetX, offsetY, width, height)
-  return { target, elevation: portrait ? 36 : 18, azimuth: portrait ? 24 : 22, distance, offsetX, offsetY }
+  return { target, elevation: portrait ? 36 : 16, azimuth: portrait ? 24 : 22, distance, offsetX, offsetY }
 }

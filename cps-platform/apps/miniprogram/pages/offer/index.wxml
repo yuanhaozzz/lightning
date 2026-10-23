@@ -1,0 +1,28 @@
+<mode-banner mode="{{mode}}" />
+<view class="page detail-page">
+  <view wx:if="{{loading}}" class="state"><view class="state-title">正在读取优惠</view><view class="state-copy">请稍候…</view></view>
+  <view wx:elif="{{error}}" class="state"><view class="state-title">这项优惠暂不可用</view><view class="state-copy">{{error}}</view><button class="secondary" bindtap="loadOffer">重新加载</button><button class="text-button" bindtap="onHome">返回首页</button></view>
+  <block wx:elif="{{offer}}">
+    <view class="ticket">
+      <view class="ticket-head"><text class="tag">{{offer.platform === 'meituan' ? '美团' : '平台优惠'}}</text><text class="ticket-label">日常省心 · 按需领取</text></view>
+      <view class="detail-title">{{offer.title}}</view>
+      <view class="benefit">{{offer.benefitText}}</view>
+      <view class="ticket-line"></view>
+      <view class="ticket-foot">最终优惠、适用用户和有效期，以平台展示为准</view>
+    </view>
+    <view class="section-heading"><text class="section-title">活动说明</text></view>
+    <view class="panel"><view class="body-copy">{{offer.description || '暂未提供额外说明，请在承接平台查看完整活动规则。'}}</view></view>
+    <view class="section-heading"><text class="section-title">领取前看这里</text></view>
+    <view class="panel steps">
+      <view class="step"><text class="step-number">1</text><view><view class="step-title">确认领取入口</view><view class="small">查看活动条件，按需选择优惠。</view></view></view>
+      <view class="step"><text class="step-number">2</text><view><view class="step-title">主动打开承接平台</view><view class="small">入口准备好后，点击按钮前往平台。</view></view></view>
+      <view class="step"><text class="step-number">3</text><view><view class="step-title">在平台核对并使用</view><view class="small">是否领取成功及订单状态，以平台为准。</view></view></view>
+    </view>
+    <view class="disclosure">本服务可能因有效推广获得平台佣金。这里不收取领券费，不提供余额、充值或返现。</view>
+    <button class="text-button" bindtap="onGuide">使用说明、隐私与客服 →</button>
+    <view class="claim-bar">
+      <view class="claim-tip">{{ready ? '入口已准备，请主动点击继续' : mode === 'live' ? '先确认入口，再前往平台领取' : '演示预览，不会实际领券或下单'}}</view>
+      <button class="primary" bindtap="onClaim" loading="{{claiming}}" disabled="{{claiming}}">{{ready ? '打开平台领取' : mode === 'live' ? '领取优惠' : '预览领取流程'}}</button>
+    </view>
+  </block>
+</view>

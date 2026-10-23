@@ -1,0 +1,36 @@
+<mode-banner mode="{{mode}}" />
+<view class="page">
+  <view class="eyebrow">{{siteName}} · 服务说明</view>
+  <view class="title">用得明白，省得安心。</view>
+  <view class="subtitle">关于领取、隐私与联系，都在这里。</view>
+  <view wx:if="{{loading}}" class="state guide-loading"><view class="state-copy">正在读取服务信息…</view></view>
+  <view wx:elif="{{error}}" class="state guide-loading"><view class="state-copy">{{error}}</view><button class="secondary" bindtap="loadConfig">重新加载</button></view>
+  <view class="section-heading"><text class="section-title">怎样使用优惠</text><text class="small">3 个步骤</text></view>
+  <view class="panel">
+    <view class="guide-row"><text class="guide-number">01</text><view><view class="guide-title">找到所需优惠</view><view class="body-copy">从首页按分类或关键词查找，先阅读活动详情。</view></view></view>
+    <view class="divider"></view>
+    <view class="guide-row"><text class="guide-number">02</text><view><view class="guide-title">确认平台入口</view><view class="body-copy">点击领取准备入口，再主动点击打开平台。演示模式只展示流程。</view></view></view>
+    <view class="divider"></view>
+    <view class="guide-row"><text class="guide-number">03</text><view><view class="guide-title">在平台核对使用</view><view class="body-copy">领取、支付、退款和订单售后在承接平台处理。适用用户、门槛、时效以其规则为准。</view></view></view>
+  </view>
+  <view class="section-heading"><text class="section-title">服务边界</text></view>
+  <view class="panel"><view class="body-copy">我们整理优惠入口，可能因有效推广获得平台佣金。不会收取领券费，也不提供充值、余额或消费者返现。
+
+点击入口只是访问行为，不代表已领到优惠或已产生订单。不要为获得优惠而进行不必要消费。</view></view>
+  <view class="section-heading"><text class="section-title">隐私说明</text></view>
+  <view class="panel">
+    <view class="body-copy">{{privacyText || (loading ? '正在加载服务方隐私说明…' : '服务方隐私说明暂不可用，请稍后重试。')}}</view>
+    <view class="divider"></view>
+    <view class="body-copy">本小程序浏览无需登录，不主动请求手机号、头像、定位或通讯录权限。仅在你主动点击“复制客服微信”时调用剪贴板写入。
+
+通过带推广来源的链接进入时，会在本机保存渠道代码；确认领取入口时将代码发送给服务端用于来源统计。渠道代码不是消费者身份，也不代表订单归因。</view>
+    <button class="secondary clear-button" bindtap="onClearChannel">清除本机推广来源记录</button>
+  </view>
+  <view class="section-heading"><text class="section-title">联系与反馈</text></view>
+  <view class="panel">
+    <block wx:if="{{supportWechat}}"><view class="small">客服微信</view><view class="support-id" user-select>{{supportWechat}}</view><button class="secondary" bindtap="onCopySupport">复制客服微信</button><view class="support-note">仅主动复制联系，不自动添加好友。</view></block>
+    <view wx:else class="body-copy">客服联系方式暂未配置。订单和退款问题，请直接联系实际下单的平台客服。</view>
+    <view class="divider"></view><view class="small">反馈优惠失效时，可提供优惠名称和问题描述；请不要发送密码或完整支付信息。</view>
+  </view>
+  <view class="footer-note">{{siteName}} · 让日常省心一点</view>
+</view>

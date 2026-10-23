@@ -1,0 +1,10 @@
+{
+  "blender": "5.2.2 LTS",
+  "cube_m": [
+    1,
+    1,
+    1
+  ],
+  "gltf_up": "+Y",
+  "method": "Blender export_yup=True; no browser correction"
+}

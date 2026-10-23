@@ -1,0 +1,38 @@
+<mode-banner mode="{{mode}}" />
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">日常消费 · 省心一点</view>
+    <view class="title">{{siteName}}</view>
+    <view class="subtitle">把实用优惠，放在顺手的地方。</view>
+    <view class="hero-bottom"><text>先看使用条件，再按需领取</text><view class="hero-stamp">省</view></view>
+  </view>
+  <view class="search-bar">
+    <text class="search-mark">⌕</text>
+    <input value="{{search}}" bindinput="onSearchInput" bindconfirm="onSearch" confirm-type="search" maxlength="80" placeholder="搜索你需要的优惠" placeholder-class="search-placeholder" aria-label="搜索优惠" />
+    <button bindtap="onSearch" class="search-button">搜索</button>
+  </view>
+  <view wx:if="{{notice}}" class="notice"><text class="notice-label">公告</text><text>{{notice}}</text></view>
+  <view class="section-heading"><text class="section-title">按需找到优惠</text><button class="text-button" bindtap="onGuide">领取指南 →</button></view>
+  <view class="services">
+    <button wx:for="{{categories}}" wx:key="id" class="service {{activeCategory === item.id ? 'service-active' : ''}}" data-id="{{item.id}}" bindtap="onCategory">
+      <view class="service-icon">{{item.name[0]}}</view><text>{{item.name}}</text>
+    </button>
+  </view>
+  <view class="section-heading"><text class="section-title">精选优惠</text><text class="small">以平台实际展示为准</text></view>
+  <scroll-view scroll-x class="filters" show-scrollbar="{{false}}">
+    <button class="filter {{!activeCategory ? 'filter-active' : ''}}" data-id="" bindtap="onCategory">全部</button>
+    <button wx:for="{{categories}}" wx:key="id" class="filter {{activeCategory === item.id ? 'filter-active' : ''}}" data-id="{{item.id}}" bindtap="onCategory">{{item.name}}</button>
+  </scroll-view>
+  <view wx:if="{{loading}}" class="state"><view class="state-title">正在查找优惠</view><view class="state-copy">请稍候…</view></view>
+  <view wx:elif="{{error}}" class="state"><view class="state-title">暂时没能连接服务</view><view class="state-copy">{{error}}</view><button class="secondary" bindtap="onRetry">重新加载</button></view>
+  <view wx:elif="{{!offers.length}}" class="state"><view class="state-title">暂时没有匹配的优惠</view><view class="state-copy">换个关键词，或稍后再来看看。</view><button class="secondary" bindtap="onReset">查看全部优惠</button></view>
+  <view wx:else class="offer-list">
+    <button wx:for="{{offers}}" wx:key="id" class="offer-card" data-id="{{item.id}}" bindtap="onOffer">
+      <view class="offer-top"><text class="tag">{{item.platform === 'meituan' ? '美团' : '平台优惠'}}</text><text wx:if="{{mode !== 'live'}}" class="demo-tag">示例</text></view>
+      <view class="offer-title">{{item.title}}</view>
+      <view class="offer-benefit">{{item.benefitText}}</view>
+      <view class="offer-bottom"><text>查看活动与领取条件</text><text class="card-arrow">↗</text></view>
+    </button>
+  </view>
+  <view class="footer-note">理性消费 · 优惠与活动规则以承接平台为准</view>
+</view>

@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "blender": "5.2.2 LTS",
+  "unit": "metre",
+  "browser_up": "+Y",
+  "nose": "+Z",
+  "port": "+X",
+  "assets": [
+    {
+      "id": "aircraft",
+      "file": "aircraft.glb",
+      "bytes": 2543944,
+      "root": "Aircraft_A320neo_root",
+      "objects": 191
+    },
+    {
+      "id": "terminal",
+      "file": "terminal.glb",
+      "bytes": 401176,
+      "root": "Terminal_A21_ROOT",
+      "objects": 21
+    },
+    {
+      "id": "bridge",
+      "file": "bridge.glb",
+      "bytes": 473220,
+      "root": "PassengerBridge_A21_ROOT",
+      "objects": 47
+    },
+    {
+      "id": "apron",
+      "file": "apron.glb",
+      "bytes": 2326692,
+      "root": "Apron_A21_ROOT",
+      "objects": 13
+    },
+    {
+      "id": "vehicles",
+      "file": "vehicles.glb",
+      "bytes": 825332,
+      "root": "GroundEquipment_A21_ROOT",
+      "objects": 134
+    }
+  ],
+  "total_model_bytes": 6570364
+}
